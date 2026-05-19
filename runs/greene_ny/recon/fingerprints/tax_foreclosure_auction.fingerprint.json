@@ -1,0 +1,26 @@
+{
+  "source_id": "tax_foreclosure_auction",
+  "county_slug": "greene_ny",
+  "framework_version": "v5.3.0",
+  "fingerprinted_at": "2026-05-19T00:00:00Z",
+  "url": "https://aarauctions.com/auctions/tax-foreclosures/",
+  "portal_family": "custom_vendor",
+  "access_pattern": "static_html",
+  "access_method": "SEARCHABLE_PUBLIC_PORTAL",
+  "fingerprint_confidence": "MEDIUM",
+  "fingerprint_summary": "Absolute Auctions & Realty (aarauctions.com / nysauctions.com) auction-catalog web app; lots browsed via /servlet/Search.do?auctionId=<id>; seasonal \u2014 Greene catalog exists only during the annual auction window.",
+  "recommended_adapter": "aar_auction_catalog (HTML, seasonal)",
+  "records_available": [
+    "tax_foreclosed_parcel_lots",
+    "former_owner_of_record",
+    "auction_dates"
+  ],
+  "search_fields": [
+    "auction_id",
+    "lot_number"
+  ],
+  "known_limitations": [
+    "Seasonal \u2014 catalog published only during the annual auction window",
+    "Auction vendor is a mirror of county data (grade C)"
+  ]
+}

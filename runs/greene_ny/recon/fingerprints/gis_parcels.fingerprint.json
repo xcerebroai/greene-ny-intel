@@ -1,0 +1,30 @@
+{
+  "source_id": "gis_parcels",
+  "county_slug": "greene_ny",
+  "framework_version": "v5.3.0",
+  "fingerprinted_at": "2026-05-19T00:00:00Z",
+  "url": "https://gis.gcgovny.com/arcgis/rest/services",
+  "portal_family": "ArcGIS",
+  "access_pattern": "open_api",
+  "access_method": "API_ENDPOINT",
+  "fingerprint_confidence": "HIGH",
+  "fingerprint_summary": "Esri ArcGIS Server at gis.gcgovny.com/arcgis/rest/services (folders AGOL, Hosted, Utilities); open REST query API; county GIS maintains the RPTS tax-parcel geodatabase.",
+  "recommended_adapter": "arcgis_feature_query",
+  "records_available": [
+    "tax_parcel_boundaries",
+    "municipal_boundaries",
+    "fire_school_districts",
+    "wetlands",
+    "flood_zones",
+    "address_points"
+  ],
+  "search_fields": [
+    "parcel_id",
+    "geometry",
+    "address"
+  ],
+  "known_limitations": [
+    "Enrichment only",
+    "Specific parcel layer id within the MapServer to be confirmed in Build Mode"
+  ]
+}

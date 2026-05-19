@@ -1,0 +1,31 @@
+{
+  "source_id": "parcel_master",
+  "county_slug": "greene_ny",
+  "framework_version": "v5.3.0",
+  "fingerprinted_at": "2026-05-19T00:00:00Z",
+  "url": "https://greenecounty.prosgar.com/",
+  "portal_family": "GAR_PROS",
+  "access_pattern": "spa_with_api",
+  "access_method": "SEARCHABLE_PUBLIC_PORTAL",
+  "fingerprint_confidence": "HIGH",
+  "fingerprint_summary": "GAR Associates PROS (Property Record Online System) assessment-data portal at greenecounty.prosgar.com; public property search, no login; quick/advanced/related-parcel search.",
+  "recommended_adapter": "nys_clearinghouse_parcel_bulk (preferred \u2014 ArcGIS bulk) OR gar_pros_parcel (per-parcel web)",
+  "records_available": [
+    "parcel_assessment",
+    "property_inventory",
+    "owner_of_record",
+    "comparable_sales",
+    "deed_map_references",
+    "tax_maps"
+  ],
+  "search_fields": [
+    "address",
+    "owner_name",
+    "parcel_id",
+    "municipality"
+  ],
+  "known_limitations": [
+    "Enrichment only \u2014 never originates a lead",
+    "Assessment data lags clerk recordings on ownership/transfer timing"
+  ]
+}

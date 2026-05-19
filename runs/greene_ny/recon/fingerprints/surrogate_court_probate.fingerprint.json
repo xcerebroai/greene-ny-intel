@@ -1,0 +1,32 @@
+{
+  "source_id": "surrogate_court_probate",
+  "county_slug": "greene_ny",
+  "framework_version": "v5.3.0",
+  "fingerprinted_at": "2026-05-19T00:00:00Z",
+  "url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch",
+  "portal_family": "NYSCEF_iApps",
+  "access_pattern": "static_html",
+  "access_method": "SEARCHABLE_PUBLIC_PORTAL",
+  "fingerprint_confidence": "HIGH",
+  "fingerprint_summary": "NYSCEF / iApps; Surrogate's Court case search; public, free PDF documents; same bot-gating as the Supreme Court surface.",
+  "recommended_adapter": "nyscef_case_search (headless browser, county=Greene, court=Surrogate's Court)",
+  "records_available": [
+    "probate_proceedings",
+    "administration_proceedings",
+    "letters_testamentary",
+    "letters_of_administration",
+    "miscellaneous_estate_proceedings"
+  ],
+  "search_fields": [
+    "index_number",
+    "decedent_name",
+    "county",
+    "court_type",
+    "filing_date_range"
+  ],
+  "known_limitations": [
+    "Only e-filed estate proceedings (post-2021-02-16) are visible",
+    "Some estate documents may be access-restricted per Surrogate's Court rules; case index and core filings are public",
+    "Automated fetch HTTP 403 \u2014 headless browser adapter required"
+  ]
+}

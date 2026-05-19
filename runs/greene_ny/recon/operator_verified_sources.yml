@@ -1,0 +1,15 @@
+# Operator-Verified Sources — Greene County, New York
+# Framework version: v5.3.0
+# Generated: 2026-05-19
+# Per knowledge_base/protocols/01_county_recon.md §01.25 and
+# knowledge_base/architecture/16_source_of_record_matrix.md §16.H.
+#
+# This file captures source links the OPERATOR manually surfaces that recon
+# missed. It is a recon supplement, not an override — subsequent recon runs
+# still attempt independent discovery.
+#
+# No operator-verified sources were surfaced during this Phase 0 run. All
+# sources in the Source-of-Record Matrix were discovered by automated recon.
+# This file is intentionally empty pending operator input.
+
+operator_verified_sources: []

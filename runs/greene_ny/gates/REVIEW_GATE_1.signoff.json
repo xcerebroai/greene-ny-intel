@@ -1,0 +1,17 @@
+{
+  "gate_id": "REVIEW_GATE_1",
+  "reviewed_at": "2026-05-19T00:00:00Z",
+  "reviewer": "operator (infinitygauntletllc@gmail.com)",
+  "status": "APPROVED",
+  "decision": "proceed_full",
+  "build_label": "FULL_BUILD",
+  "notes": "Phase 0 recon reviewed and approved for full build. build_verdict READY_TO_BUILD; P0 gate PASS (clerk land records + NYSCEF Supreme Court foreclosure + NYSCEF Surrogate probate). Operator answers to open questions: (a) SearchIQS — proceed with whatever guest mode provides; document exact access level (index-only vs document-image) in the build report. (b) Bankruptcy/PACER — OUT OF SCOPE for the v5.3.0 client-experience test; deferred (paid federal source, operator credentials required). (c) Lis pendens index coverage — use whatever SearchIQS surfaces; do not pre-seed assumptions; document actual coverage. (d) doc_type_synonyms — derive only from verified SearchIQS / Greene County Clerk document-type lists; do not fabricate. (e) parcel_master ingest — use the NYS GIS Clearinghouse full-county bulk download as the primary ingest; derive the field map from the bulk download's documented schema.",
+  "approved_artifacts": [
+    "config/counties/greene_ny.json",
+    "runs/greene_ny/recon/source_of_record_matrix.json",
+    "runs/greene_ny/recon/recon_summary.md",
+    "runs/greene_ny/recon/build_eligibility_report.md",
+    "runs/greene_ny/recon/RECON.md",
+    "runs/greene_ny/recon/fingerprints/"
+  ]
+}

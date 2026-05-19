@@ -1,0 +1,30 @@
+{
+  "source_id": "webcivil_supreme",
+  "county_slug": "greene_ny",
+  "framework_version": "v5.3.0",
+  "fingerprinted_at": "2026-05-19T00:00:00Z",
+  "url": "https://iapps.courts.state.ny.us/webcivil/FCASMain",
+  "portal_family": "NYSCEF_iApps",
+  "access_pattern": "static_html",
+  "access_method": "SEARCHABLE_PUBLIC_PORTAL",
+  "fingerprint_confidence": "HIGH",
+  "fingerprint_summary": "NYS Unified Court System WebCivil Supreme; public statewide civil case search (active + disposed), no document images; automated fetch returned HTTP 403.",
+  "recommended_adapter": "webcivil_supreme_search (headless browser, county=Greene)",
+  "records_available": [
+    "civil_case_status",
+    "parties",
+    "appearance_calendars",
+    "case_disposition"
+  ],
+  "search_fields": [
+    "index_number",
+    "party_name",
+    "attorney_firm",
+    "judge",
+    "county"
+  ],
+  "known_limitations": [
+    "No document images \u2014 status/parties metadata only",
+    "Automated fetch HTTP 403 \u2014 headless browser adapter required"
+  ]
+}

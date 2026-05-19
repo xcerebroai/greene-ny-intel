@@ -1,0 +1,36 @@
+{
+  "source_id": "clerk_land_records",
+  "county_slug": "greene_ny",
+  "framework_version": "v5.3.0",
+  "fingerprinted_at": "2026-05-19T00:00:00Z",
+  "url": "https://www.searchiqs.com/nygre/",
+  "portal_family": "IQS_SearchIQS",
+  "access_pattern": "spa_with_api",
+  "access_method": "SEARCHABLE_PUBLIC_PORTAL",
+  "fingerprint_confidence": "HIGH",
+  "fingerprint_summary": "Info Quick Solutions (SearchIQS) ASP.NET land-records portal at searchiqs.com/nygre; guest-session search; automated fetch returned HTTP 403 (bot gating) \u2014 headless browser adapter required.",
+  "recommended_adapter": "searchiqs_recordings (headless browser + guest session)",
+  "records_available": [
+    "deeds",
+    "mortgages",
+    "federal_tax_liens",
+    "mechanics_liens",
+    "state_tax_liens",
+    "welfare_liens",
+    "judgments",
+    "lis_pendens",
+    "ucc",
+    "military_discharges",
+    "divorce_records"
+  ],
+  "search_fields": [
+    "party_name",
+    "date_range",
+    "document_type"
+  ],
+  "known_limitations": [
+    "Automated fetch HTTP 403 \u2014 headless browser + guest session required for scraping",
+    "Document images print-fee gated ($5/doc non-commercial); index search is free",
+    "County Clerk's published note references a Lis Pendens index covering 1924-2004 separately \u2014 modern lis pendens coverage to be confirmed"
+  ]
+}

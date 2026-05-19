@@ -1,0 +1,23 @@
+{
+  "source_id": "tax_foreclosure",
+  "county_slug": "greene_ny",
+  "framework_version": "v5.3.0",
+  "fingerprinted_at": "2026-05-19T00:00:00Z",
+  "url": "https://greenecountyny.gov/departments/treasurer/",
+  "portal_family": "custom_county",
+  "access_pattern": "static_html",
+  "access_method": "PDF_PUBLICATION",
+  "fingerprint_confidence": "MEDIUM",
+  "fingerprint_summary": "Annual 'Petition & Notice of Foreclosure' published as a PDF on the WordPress county Treasurer page. The 2025 petition is a scanned, CCITT-fax-encoded image PDF (~2.7 MB) with no text layer \u2014 OCR required.",
+  "recommended_adapter": "pdf_ocr_static_list (download annual petition PDF, OCR, parse parcel rows)",
+  "records_available": [
+    "tax_foreclosure_petition",
+    "delinquent_parcels"
+  ],
+  "search_fields": [],
+  "known_limitations": [
+    "Annual publication cadence only \u2014 no rolling/searchable delinquent-tax list is published online",
+    "2025 petition PDF is scanned (CCITT fax) \u2014 OCR required to read SBL, owner, address, amount, redemption date",
+    "Treasurer publishes only the annual petition, not interim delinquency"
+  ]
+}
