@@ -2,7 +2,7 @@
   "county_slug": "greene_ny",
   "county_name": "Greene County",
   "state": "NY",
-  "framework_version": "v5.3.0",
+  "framework_version": "v5.3.1",
   "generated_at": "2026-05-19T00:00:00Z",
   "county_build_status": "READY_TO_BUILD",
   "lead_types": [

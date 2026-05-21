@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.join(REPO, "scaffold", "ops"))
 from write_county_config import write_county_config  # noqa: E402
 
 NOW = "2026-05-19T00:00:00Z"
-FW = "v5.3.0"
+FW = "v5.3.1"
 
 # ---------------------------------------------------------------- sources ---
 

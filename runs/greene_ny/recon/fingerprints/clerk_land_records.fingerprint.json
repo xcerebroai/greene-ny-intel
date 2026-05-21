@@ -1,7 +1,7 @@
 {
   "source_id": "clerk_land_records",
   "county_slug": "greene_ny",
-  "framework_version": "v5.3.0",
+  "framework_version": "v5.3.1",
   "fingerprinted_at": "2026-05-19T00:00:00Z",
   "url": "https://www.searchiqs.com/nygre/",
   "portal_family": "IQS_SearchIQS",

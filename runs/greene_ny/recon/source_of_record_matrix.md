@@ -1,7 +1,8 @@
 # Source-of-Record Matrix — Greene County, New York
 
 County: Greene County, New York (slug greene_ny)
-Framework version: v5.3.0
+Framework version: v5.3.1 (recon ran under v5.3.0; framework_version stamp
+refreshed to v5.3.1 at REVIEW_GATE_2 — schema unchanged between v5.3.0 and v5.3.1)
 Generated: 2026-05-19
 County build status: READY_TO_BUILD
 Machine-readable form: source_of_record_matrix.json (schema-validated against

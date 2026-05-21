@@ -1,7 +1,7 @@
 {
   "source_id": "tax_foreclosure_auction",
   "county_slug": "greene_ny",
-  "framework_version": "v5.3.0",
+  "framework_version": "v5.3.1",
   "fingerprinted_at": "2026-05-19T00:00:00Z",
   "url": "https://aarauctions.com/auctions/tax-foreclosures/",
   "portal_family": "custom_vendor",
