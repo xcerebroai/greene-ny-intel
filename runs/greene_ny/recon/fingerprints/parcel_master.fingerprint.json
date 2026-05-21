@@ -3,29 +3,34 @@
   "county_slug": "greene_ny",
   "framework_version": "v5.3.1",
   "fingerprinted_at": "2026-05-19T00:00:00Z",
-  "url": "https://greenecounty.prosgar.com/",
-  "portal_family": "GAR_PROS",
-  "access_pattern": "spa_with_api",
-  "access_method": "SEARCHABLE_PUBLIC_PORTAL",
+  "url": "https://gisservices.its.ny.gov/arcgis/rest/services/NYS_Tax_Parcels_Public/FeatureServer/1",
+  "portal_family": "ArcGIS",
+  "access_pattern": "open_api",
+  "access_method": "API_ENDPOINT",
   "fingerprint_confidence": "HIGH",
-  "fingerprint_summary": "GAR Associates PROS (Property Record Online System) assessment-data portal at greenecounty.prosgar.com; public property search, no login; quick/advanced/related-parcel search.",
-  "recommended_adapter": "nys_clearinghouse_parcel_bulk (preferred \u2014 ArcGIS bulk) OR gar_pros_parcel (per-parcel web)",
+  "fingerprint_summary": "NYS GIS Clearinghouse statewide public tax-parcel ArcGIS layer (NYS_Tax_Parcels_Public FeatureServer, layer 1). Greene County opted into public sharing \u2014 COUNTY_NAME='Greene' returns 38,418 parcels with full assessment attributes. Open REST query API.",
+  "recommended_adapter": "scrapers/parcel_master.py \u2014 ArcGIS bulk pull via the scaffold/scrapers/_arcgis_featureserver.py helper",
   "records_available": [
-    "parcel_assessment",
-    "property_inventory",
+    "parcel_geometry",
+    "assessment_values",
     "owner_of_record",
-    "comparable_sales",
-    "deed_map_references",
-    "tax_maps"
+    "owner_mailing_address",
+    "property_class",
+    "parcel_inventory",
+    "deed_book_page"
   ],
   "search_fields": [
-    "address",
-    "owner_name",
-    "parcel_id",
-    "municipality"
+    "county_name",
+    "muni_name",
+    "sbl",
+    "print_key",
+    "parcel_addr",
+    "primary_owner"
   ],
   "known_limitations": [
     "Enrichment only \u2014 never originates a lead",
-    "Assessment data lags clerk recordings on ownership/transfer timing"
+    "NYS public layer carries no exemption columns \u2014 exempt_* flags are not populated",
+    "Assessment data lags clerk recordings on ownership/transfer timing",
+    "Layer is refreshed annually by NYS (2024-2025 roll data)"
   ]
 }
