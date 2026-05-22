@@ -1,65 +1,60 @@
 # Source Coverage Map — Greene County, New York
 
 County: Greene County, New York (slug greene_ny)
-Framework version: v5.3.0
-Generated: 2026-05-19
+Framework version: v5.3.1
+Generated: 2026-05-19 · **Corrected: 2026-05-21 (primary-event-source re-recon)**
 Companion to source_of_record_matrix.json (§16.D).
 
 ---
 
-## Live sources (accessible, buildable without operator escalation)
+## Live sources (accessible / buildable now — stdlib-reachable)
 
-    clerk_land_records          PRIMARY  P0  SEARCH_ONLY_PUBLIC  daily
-    supreme_court_foreclosure   PRIMARY  P0  OPEN_PUBLIC         daily
-    surrogate_court_probate     PRIMARY  P0  OPEN_PUBLIC         daily
-    webcivil_supreme            SUPPORT  P0  OPEN_PUBLIC         daily
-    tax_foreclosure             PRIMARY  P1  OPEN_PUBLIC         annual
-    tax_foreclosure_auction     SUPPORT  P1  OPEN_PUBLIC         annual
-    parcel_master               ENRICH   P2  OPEN_PUBLIC         quarterly
-    gis_parcels                 ENRICH   P2  OPEN_PUBLIC         quarterly
+    tax_foreclosure_auction   PRIMARY  P1  OPEN_PUBLIC   server-rendered (AAR)
+    tax_foreclosure           PRIMARY  P1  OPEN_PUBLIC   PDF publication (OCR)
+    parcel_master             ENRICH   P2  OPEN_PUBLIC   ArcGIS API (built P2)
+    gis_parcels               ENRICH   P2  OPEN_PUBLIC   ArcGIS API
+    prosgar_assessment        ENRICH   P2  OPEN_PUBLIC   ASP.NET assessment form
 
-## Blocked sources
+## Blocked / session-required sources (Cloudflare interactive challenge)
 
-    (none) — no source is at access status BLOCKED / CAPTCHA_PROTECTED /
-    LOGIN_REQUIRED / PAID for the lead types selected to build.
+    clerk_land_records        PRIMARY  P0  CAPTCHA_PROTECTED  SearchIQS
+    supreme_court_foreclosure PRIMARY  P0  CAPTCHA_PROTECTED  NYSCEF
+    surrogate_court_probate   PRIMARY  P0  CAPTCHA_PROTECTED  NYSCEF
+    webcivil_supreme          SUPPORT  P0  CAPTCHA_PROTECTED  WebCivil
+
+    These are NOT dead ends. Each is a free public portal reachable in a
+    browser; buildable via an operator-seeded session (cf_clearance + session
+    cookies) or a stealth browser — approved §02.9 / §4.14 access strategies.
 
 ## Limited-coverage sources
 
-    tax_foreclosure             Annual publication cadence only; the 2025
-                                Petition & Notice of Foreclosure PDF is a scanned
-                                image (OCR required). Coverage is the annual
-                                in-rem foreclosure list, not a rolling delinquency
-                                feed — classified P1.
-    tax_foreclosure_auction     Seasonal — catalog exists only during the annual
-                                auction window.
-
-## Per-record-only coverage constraints (§16.G)
-
-    (none) — clerk and court sources support batch/date-range query; the
-    enrichment parcel layer is available as FULL_COUNTY_BULK via the NYS GIS
-    Clearinghouse. No source is PER_RECORD_ONLY.
+    tax_foreclosure        Annual petition only; scanned PDF (OCR required);
+                           the AAR auction is the cleaner primary tax path.
+    legal_notices_column   Next.js SPA; backend API host (api.column.us)
+                           responds but the search endpoint is undiscovered —
+                           stdlib-reachability UNCONFIRMED, needs API discovery
+                           or browser tooling.
 
 ## Lead types with NO source found
 
-    Tax Sale Certificate        Greene County uses RPTL Article 11 in-rem
-                                foreclosure, not tax-lien-certificate sales.
-    Demolition                  Town building/code departments only; no
-                                county-wide online source.
-    Condemnation                Town building/code departments only; no
-                                county-wide online source.
-    Eviction                    Town/village Justice Courts and City Courts —
-                                no public online docket countywide.
+    Tax Sale Certificate   Greene enforces via RPTL Art. 11 in-rem foreclosure.
+    Demolition             Per-town building/code offices; no county portal.
+    Condemnation           Per-town building/code offices; no county portal.
+    Eviction               Town/village justice courts; no online docket.
 
-## Lead types requiring operator review
+## Operator review / decision required
 
-    Divorce                     NY matrimonial records are confidential by
-                                statute (DRL §235); not a publicly extractable
-                                lead source.
-    Bankruptcy                  Federal — PACER (Northern District of NY) charges
-                                access fees; operator must supply credentials to
-                                build.
+    Divorce                NY matrimonial records confidential (DRL §235).
+    Bankruptcy             PACER (NDNY) — paid; operator credentials required.
+    legal_notices_column   Operator decision: invest in Column API discovery
+                           or browser tooling, or rely on court/clerk sources.
+
+## Per-record-only coverage constraints (§16.G)
+
+    None. The tax-foreclosure auction and treasurer petition are full-county
+    bulk; the enrichment parcel layer is FULL_COUNTY_BULK.
 
 ## Not applicable in New York
 
     Trustee Sale, Notice of Trustee Sale, Notice of Substitute Trustee Sale —
-    New York is a judicial-foreclosure state; no non-judicial trustee sales.
+    New York is a judicial-foreclosure state.

@@ -3,15 +3,16 @@
   "county_name": "Greene County",
   "state": "NY",
   "framework_version": "v5.3.1",
-  "generated_at": "2026-05-19T00:00:00Z",
-  "county_build_status": "READY_TO_BUILD",
+  "generated_at": "2026-05-21T00:00:00Z",
+  "county_build_status": "PARTIAL_BUILD_READY",
   "lead_types": [
     {
       "lead_type": "Foreclosure",
       "state_applicability": "APPLICABLE",
       "expected_authorities": [
+        "Supreme Court",
         "County Clerk",
-        "Supreme Court"
+        "Legal-notice publisher"
       ],
       "candidate_sources": [
         {
@@ -19,12 +20,12 @@
           "official_url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch",
           "authority_type": "NYS Supreme Court, Greene County",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "OPEN_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 NYS Unified Court System (courts.state.ny.us)",
             "lead_type_relevance": "PASS \u2014 mortgage foreclosure actions e-filed in Supreme Court",
-            "access": "PASS \u2014 public, no login, free PDF document download",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; public to a browser, no login",
             "extractability": "PASS \u2014 docket exposes parties, index number, dates, documents",
             "refresh_provenance": "PASS \u2014 e-filed continuously; Greene Supreme mandatory e-filing since 2020-10-21"
           },
@@ -37,20 +38,20 @@
             "case_type"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter expected."
+          "notes": "Probed 2026-05-21: Cloudflare challenge. Buildable via operator-seeded session or stealth browser."
         },
         {
           "source_id": "clerk_land_records",
-          "official_url": "https://www.searchiqs.com/nygre/",
+          "official_url": "https://www.searchiqs.com/nygre/SearchResultsMP.aspx",
           "authority_type": "Greene County Clerk",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "SEARCH_ONLY_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 official county clerk vendor portal (SearchIQS) linked from greenecountyny.gov",
             "lead_type_relevance": "PASS \u2014 notice of pendency / lis pendens recorded with clerk",
-            "access": "PASS \u2014 free guest search; document print fee only",
-            "extractability": "PASS \u2014 name/date/doc-type index yields party, date, doc ref",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; operator-confirmed live for public guest browser sessions; buildable via operator-seeded session",
+            "extractability": "PASS \u2014 Document Group dropdown carries LIENS, JUDGMENTS, LIS PENDENS, TAX WARRANTS, MORTGAGE, DEED",
             "refresh_provenance": "PASS \u2014 clerk recordings indexed continuously"
           },
           "sample_record_path_confirmed": true,
@@ -62,12 +63,36 @@
             "document_reference"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter required."
+          "notes": "Probed 2026-05-21: Cloudflare interactive challenge \u2014 not stdlib-reachable. NOT a dead blocker: free public guest portal, operator-confirmed live; build via operator-seeded session / cf_clearance (approved \u00a702.9 / \u00a74.14 strategy)."
+        },
+        {
+          "source_id": "legal_notices_column",
+          "official_url": "https://newyork.column.us/search",
+          "authority_type": "Column \u2014 New York public/legal-notice network",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "UNKNOWN",
+          "bulk_availability": "UNKNOWN",
+          "verification_layers": {
+            "authority": "PASS \u2014 Column is the public-notice publishing network used by NY newspapers for statutory legal notices",
+            "lead_type_relevance": "PASS \u2014 published foreclosure sale notices for NY counties",
+            "access": "UNCONFIRMED \u2014 Next.js SPA, Cloudflare-fronted (serves the app shell, not a challenge); notice data is served by an undiscovered backend API (api.column.us host responds)",
+            "extractability": "UNKNOWN \u2014 depends on locating the search API or using browser tooling to render the SPA",
+            "refresh_provenance": "PASS \u2014 legal notices are published continuously"
+          },
+          "sample_record_path_confirmed": false,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "notice_type",
+            "publication_date",
+            "property_reference"
+          ],
+          "operator_verified": false,
+          "notes": "Probed 2026-05-21: Next.js SPA; stdlib-reachability of the notice data is UNCONFIRMED \u2014 needs documented-API discovery or browser tooling. Carries published foreclosure / tax-sale notices."
         }
       ],
       "selected_source_id": "supreme_court_foreclosure",
-      "status": "LIVE_SOURCE_FOUND",
-      "coverage_notes": "NY judicial foreclosure: actions filed in Supreme Court; full docket + documents on NYSCEF for Greene County (mandatory e-filing since 2020)."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "NY judicial foreclosure: actions in Supreme Court (NYSCEF) \u2014 verified but Cloudflare-gated; buildable via operator-seeded session. Column legal notices are an alternative published-notice path pending API discovery."
     },
     {
       "lead_type": "Trustee Sale",
@@ -101,8 +126,8 @@
       "state_applicability": "APPLICABLE",
       "expected_authorities": [
         "Supreme Court",
-        "Sheriff",
-        "Referee"
+        "Referee",
+        "Legal-notice publisher"
       ],
       "candidate_sources": [
         {
@@ -110,12 +135,12 @@
           "official_url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch",
           "authority_type": "NYS Supreme Court, Greene County",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "OPEN_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 NYS Unified Court System (courts.state.ny.us)",
             "lead_type_relevance": "PASS \u2014 notice of sale / referee sale filed within the Supreme Court foreclosure case",
-            "access": "PASS \u2014 public, no login, free PDF document download",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; public to a browser, no login",
             "extractability": "PASS \u2014 docket exposes parties, index number, dates, documents",
             "refresh_provenance": "PASS \u2014 e-filed continuously; Greene Supreme mandatory e-filing since 2020-10-21"
           },
@@ -128,21 +153,72 @@
             "case_type"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter expected."
+          "notes": "Probed 2026-05-21: Cloudflare challenge. Buildable via operator-seeded session or stealth browser."
+        },
+        {
+          "source_id": "legal_notices_column",
+          "official_url": "https://newyork.column.us/search",
+          "authority_type": "Column \u2014 New York public/legal-notice network",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "UNKNOWN",
+          "bulk_availability": "UNKNOWN",
+          "verification_layers": {
+            "authority": "PASS \u2014 Column is the public-notice publishing network used by NY newspapers for statutory legal notices",
+            "lead_type_relevance": "PASS \u2014 published notices of sale",
+            "access": "UNCONFIRMED \u2014 Next.js SPA, Cloudflare-fronted (serves the app shell, not a challenge); notice data is served by an undiscovered backend API (api.column.us host responds)",
+            "extractability": "UNKNOWN \u2014 depends on locating the search API or using browser tooling to render the SPA",
+            "refresh_provenance": "PASS \u2014 legal notices are published continuously"
+          },
+          "sample_record_path_confirmed": false,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "notice_type",
+            "publication_date",
+            "property_reference"
+          ],
+          "operator_verified": false,
+          "notes": "Probed 2026-05-21: Next.js SPA; stdlib-reachability of the notice data is UNCONFIRMED \u2014 needs documented-API discovery or browser tooling. Carries published foreclosure / tax-sale notices."
         }
       ],
       "selected_source_id": "supreme_court_foreclosure",
-      "status": "LIVE_SOURCE_FOUND_LIMITED_COVERAGE",
-      "coverage_notes": "NY foreclosure sales are referee's sales noticed inside the Supreme Court case; the Greene County Sheriff publishes no standalone online sheriff-sale calendar. Captured via NYSCEF Notice of Sale documents."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "NY foreclosure sales are referee's sales noticed inside the Supreme Court case (NYSCEF, Cloudflare-gated) and published as legal notices (Column). No standalone county sheriff-sale calendar."
     },
     {
       "lead_type": "Tax Lien Foreclosure",
       "state_applicability": "APPLICABLE",
       "expected_authorities": [
         "County Treasurer",
-        "Supreme Court"
+        "Auction vendor"
       ],
       "candidate_sources": [
+        {
+          "source_id": "tax_foreclosure_auction",
+          "official_url": "https://aarauctions.com/servlet/Search.do?auctionId=6892",
+          "authority_type": "Greene County Treasurer / Absolute Auctions & Realty",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "OPEN_PUBLIC",
+          "bulk_availability": "FULL_COUNTY_BULK",
+          "verification_layers": {
+            "authority": "PASS \u2014 county-contracted auctioneer, linked from county news",
+            "lead_type_relevance": "PASS \u2014 RPTL Article 11 in-rem tax-foreclosure disposition auction; STDLIB-REACHABLE",
+            "access": "PASS \u2014 server-rendered WordPress/servlet, stdlib-reachable (HTTP 200), public catalog; bidder registration only to bid",
+            "extractability": "PASS \u2014 lot HTML carries address, municipality, Tax Map # parcel id, property type, full market value, sale date",
+            "refresh_provenance": "PARTIAL \u2014 seasonal; the Greene auction runs annually"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": true,
+          "minimum_lead_fields_available": [
+            "parcel_id",
+            "property_address",
+            "municipality",
+            "auction_date",
+            "full_market_value",
+            "lot_number"
+          ],
+          "operator_verified": false,
+          "notes": "Probed 2026-05-21: auctionId=6892 confirmed Greene County, NY tax-foreclosure auction (Oct 2025) \u2014 51 server-rendered lots. STDLIB-REACHABLE primary event source \u2014 the buildable Phase 3 target. Reclassified SUPPORTING -> PRIMARY: the auction is the RPTL Article 11 in-rem tax-foreclosure disposition event."
+        },
         {
           "source_id": "tax_foreclosure",
           "official_url": "https://greenecountyny.gov/departments/treasurer/",
@@ -168,36 +244,11 @@
           ],
           "operator_verified": false,
           "notes": "2025 Petition & Notice of Foreclosure inspected \u2014 scanned PDF, OCR required."
-        },
-        {
-          "source_id": "supreme_court_foreclosure",
-          "official_url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch",
-          "authority_type": "NYS Supreme Court, Greene County",
-          "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "OPEN_PUBLIC",
-          "bulk_availability": "BATCH_QUERY",
-          "verification_layers": {
-            "authority": "PASS \u2014 NYS Unified Court System (courts.state.ny.us)",
-            "lead_type_relevance": "PASS \u2014 the tax-foreclosure petition is filed in Supreme Court",
-            "access": "PASS \u2014 public, no login, free PDF document download",
-            "extractability": "PASS \u2014 docket exposes parties, index number, dates, documents",
-            "refresh_provenance": "PASS \u2014 e-filed continuously; Greene Supreme mandatory e-filing since 2020-10-21"
-          },
-          "sample_record_path_confirmed": true,
-          "sample_document_view_possible": true,
-          "minimum_lead_fields_available": [
-            "party_name",
-            "index_number",
-            "filing_date",
-            "case_type"
-          ],
-          "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter expected."
         }
       ],
-      "selected_source_id": "tax_foreclosure",
-      "status": "LIVE_SOURCE_FOUND_LIMITED_COVERAGE",
-      "coverage_notes": "Greene County enforces delinquent taxes via RPTL Article 11 in-rem foreclosure. The Treasurer's annual Petition & Notice of Foreclosure is the list; annual cadence; 2025 petition is a scanned PDF (OCR required)."
+      "selected_source_id": "tax_foreclosure_auction",
+      "status": "LIVE_SOURCE_FOUND",
+      "coverage_notes": "Greene County enforces delinquent taxes via RPTL Article 11 in-rem foreclosure. The AAR/NYSauctions auction (auctionId=6892, 51 lots) is server-rendered and stdlib-reachable \u2014 a live primary event source. The Treasurer's annual petition PDF (scanned, OCR) is a second path."
     },
     {
       "lead_type": "Tax Sale",
@@ -209,33 +260,35 @@
       "candidate_sources": [
         {
           "source_id": "tax_foreclosure_auction",
-          "official_url": "https://aarauctions.com/auctions/tax-foreclosures/",
+          "official_url": "https://aarauctions.com/servlet/Search.do?auctionId=6892",
           "authority_type": "Greene County Treasurer / Absolute Auctions & Realty",
-          "source_role": "SUPPORTING_EVENT_SOURCE",
+          "source_role": "PRIMARY_EVENT_SOURCE",
           "access_status": "OPEN_PUBLIC",
           "bulk_availability": "FULL_COUNTY_BULK",
           "verification_layers": {
             "authority": "PASS \u2014 county-contracted auctioneer, linked from county news",
-            "lead_type_relevance": "PASS \u2014 annual tax-foreclosure auction of county-owned parcels",
-            "access": "PASS \u2014 public catalog; registration only to bid",
-            "extractability": "PASS \u2014 lot records expose parcel, former owner, sale date",
-            "refresh_provenance": "PARTIAL \u2014 seasonal; catalog exists only during auction window"
+            "lead_type_relevance": "PASS \u2014 annual tax-foreclosure auction of county-owned parcels; STDLIB-REACHABLE server-rendered catalog",
+            "access": "PASS \u2014 server-rendered WordPress/servlet, stdlib-reachable (HTTP 200), public catalog; bidder registration only to bid",
+            "extractability": "PASS \u2014 lot HTML carries address, municipality, Tax Map # parcel id, property type, full market value, sale date",
+            "refresh_provenance": "PARTIAL \u2014 seasonal; the Greene auction runs annually"
           },
           "sample_record_path_confirmed": true,
           "sample_document_view_possible": true,
           "minimum_lead_fields_available": [
             "parcel_id",
-            "former_owner",
+            "property_address",
+            "municipality",
             "auction_date",
+            "full_market_value",
             "lot_number"
           ],
           "operator_verified": false,
-          "notes": "Seasonal auction catalog."
+          "notes": "Probed 2026-05-21: auctionId=6892 confirmed Greene County, NY tax-foreclosure auction (Oct 2025) \u2014 51 server-rendered lots. STDLIB-REACHABLE primary event source \u2014 the buildable Phase 3 target. Reclassified SUPPORTING -> PRIMARY: the auction is the RPTL Article 11 in-rem tax-foreclosure disposition event."
         }
       ],
       "selected_source_id": "tax_foreclosure_auction",
       "status": "LIVE_SOURCE_FOUND",
-      "coverage_notes": "Tax-foreclosed parcels are sold at the annual online auction via Absolute Auctions & Realty (NYSauctions.com)."
+      "coverage_notes": "Tax-foreclosed parcels are sold at the annual online auction via Absolute Auctions & Realty (NYSauctions.com). Confirmed Greene auction 6892 \u2014 51 lots, server-rendered, stdlib-reachable. THE buildable Phase 3 source."
     },
     {
       "lead_type": "Tax Sale Certificate",
@@ -280,11 +333,60 @@
           ],
           "operator_verified": false,
           "notes": "2025 Petition & Notice of Foreclosure inspected \u2014 scanned PDF, OCR required."
+        },
+        {
+          "source_id": "prosgar_assessment",
+          "official_url": "https://greenecounty.prosgar.com/PROSSearch/AdvancedSearchFilters",
+          "authority_type": "Greene County RPTS / GAR Associates PROS",
+          "source_role": "ENRICHMENT_SOURCE",
+          "access_status": "OPEN_PUBLIC",
+          "bulk_availability": "BATCH_QUERY",
+          "verification_layers": {
+            "authority": "PASS \u2014 RPTS partner assessment portal",
+            "lead_type_relevance": "ENRICHMENT \u2014 assessment portal; probed, no delinquency filter; cannot originate a tax-delinquency lead",
+            "access": "PASS \u2014 server-rendered ASP.NET form, stdlib-reachable, no login",
+            "extractability": "ENRICHMENT \u2014 owner, value, class, inventory only",
+            "refresh_provenance": "PASS \u2014 refreshed per assessment cycle"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "owner_name",
+            "assessed_value",
+            "property_class"
+          ],
+          "operator_verified": false,
+          "notes": "Probed 2026-05-21: server-rendered ASP.NET assessment search. Empirically NO delinquency / arrears / years-due / tax-sale filter \u2014 purely assessment. Confirmed ENRICHMENT, not a tax-distress lead source; cannot originate a lead (\u00a713)."
+        },
+        {
+          "source_id": "tentative_assessment_roll",
+          "official_url": "",
+          "authority_type": "Greene County Real Property Tax Service",
+          "source_role": "ENRICHMENT_SOURCE",
+          "access_status": "UNKNOWN",
+          "bulk_availability": "FULL_COUNTY_BULK",
+          "verification_layers": {
+            "authority": "PASS \u2014 official county tentative assessment roll",
+            "lead_type_relevance": "ENRICHMENT \u2014 owner/AV/exemption roll; no arrears column; cannot originate a tax-delinquency lead",
+            "access": "OPERATOR-SUPPLIED FILE \u2014 bulk RPS-format flat file; no portal; not present in the repo as of 2026-05-21",
+            "extractability": "ENRICHMENT \u2014 owner-of-record, assessed value, exemptions, property class",
+            "refresh_provenance": "PARTIAL \u2014 annual roll; tentative-roll cycle"
+          },
+          "sample_record_path_confirmed": false,
+          "sample_document_view_possible": false,
+          "minimum_lead_fields_available": [
+            "owner_name",
+            "assessed_value",
+            "exemptions",
+            "property_class"
+          ],
+          "operator_verified": false,
+          "notes": "Operator-supplied bulk tax roll (1932_26T_Tentative-Roll-150P1-Greenville.pdf). ENRICHMENT \u2014 cannot originate a lead (\u00a713). An 'EST OF' owner string is a \u00a718 scoring input, never a row event. Standard tentative rolls carry no arrears/prior-years-due column \u2014 tax-delinquency origination does not come from this file."
         }
       ],
       "selected_source_id": "tax_foreclosure",
       "status": "LIVE_SOURCE_FOUND_LIMITED_COVERAGE",
-      "coverage_notes": "The Treasurer publishes no rolling/searchable delinquent-tax list online \u2014 only the annual Petition & Notice of Foreclosure. Tax-delinquency signal is therefore annual-cadence (P1)."
+      "coverage_notes": "Origination is the Treasurer's annual Petition & Notice of Foreclosure (stdlib-reachable, scanned PDF, OCR; annual cadence). ProsGar and the tentative roll were probed and are ENRICHMENT only \u2014 neither exposes arrears/years-delinquent, so neither originates a tax-delinquency lead."
     },
     {
       "lead_type": "Lis Pendens",
@@ -296,16 +398,16 @@
       "candidate_sources": [
         {
           "source_id": "clerk_land_records",
-          "official_url": "https://www.searchiqs.com/nygre/",
+          "official_url": "https://www.searchiqs.com/nygre/SearchResultsMP.aspx",
           "authority_type": "Greene County Clerk",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "SEARCH_ONLY_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 official county clerk vendor portal (SearchIQS) linked from greenecountyny.gov",
-            "lead_type_relevance": "PASS \u2014 notice of pendency recorded with the County Clerk",
-            "access": "PASS \u2014 free guest search; document print fee only",
-            "extractability": "PASS \u2014 name/date/doc-type index yields party, date, doc ref",
+            "lead_type_relevance": "PASS \u2014 notice of pendency recorded with the County Clerk; Document Group dropdown includes LIS PENDENS",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; operator-confirmed live for public guest browser sessions; buildable via operator-seeded session",
+            "extractability": "PASS \u2014 Document Group dropdown carries LIENS, JUDGMENTS, LIS PENDENS, TAX WARRANTS, MORTGAGE, DEED",
             "refresh_provenance": "PASS \u2014 clerk recordings indexed continuously"
           },
           "sample_record_path_confirmed": true,
@@ -317,19 +419,19 @@
             "document_reference"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter required."
+          "notes": "Probed 2026-05-21: Cloudflare interactive challenge \u2014 not stdlib-reachable. NOT a dead blocker: free public guest portal, operator-confirmed live; build via operator-seeded session / cf_clearance (approved \u00a702.9 / \u00a74.14 strategy)."
         },
         {
           "source_id": "supreme_court_foreclosure",
           "official_url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch",
           "authority_type": "NYS Supreme Court, Greene County",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "OPEN_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 NYS Unified Court System (courts.state.ny.us)",
             "lead_type_relevance": "PASS \u2014 notice of pendency also filed in the Supreme Court case",
-            "access": "PASS \u2014 public, no login, free PDF document download",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; public to a browser, no login",
             "extractability": "PASS \u2014 docket exposes parties, index number, dates, documents",
             "refresh_provenance": "PASS \u2014 e-filed continuously; Greene Supreme mandatory e-filing since 2020-10-21"
           },
@@ -342,12 +444,12 @@
             "case_type"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter expected."
+          "notes": "Probed 2026-05-21: Cloudflare challenge. Buildable via operator-seeded session or stealth browser."
         }
       ],
       "selected_source_id": "clerk_land_records",
-      "status": "LIVE_SOURCE_FOUND",
-      "coverage_notes": "Notices of pendency are recorded with the County Clerk (SearchIQS) and filed in the Supreme Court case. Note: clerk's published LP index covers 1924-2004 separately \u2014 modern coverage to be confirmed in Build Mode."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "Notices of pendency are recorded with the County Clerk (SearchIQS) \u2014 verified live (operator-confirmed) but Cloudflare-gated; buildable via operator-seeded session."
     },
     {
       "lead_type": "Civil Judgment",
@@ -362,12 +464,12 @@
           "official_url": "https://iapps.courts.state.ny.us/webcivil/FCASMain",
           "authority_type": "NYS Unified Court System",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "OPEN_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 NYS Unified Court System",
             "lead_type_relevance": "PASS \u2014 disposed civil cases with money judgments",
-            "access": "PASS \u2014 public search, no login",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients",
             "extractability": "PARTIAL \u2014 case status / parties only; no document images",
             "refresh_provenance": "PASS \u2014 active + disposed civil cases statewide"
           },
@@ -379,20 +481,20 @@
             "case_status"
           ],
           "operator_verified": false,
-          "notes": "Status-confirmation source; no document images."
+          "notes": "Probed 2026-05-21: Cloudflare challenge. Status-confirmation source; buildable via operator-seeded session."
         },
         {
           "source_id": "clerk_land_records",
-          "official_url": "https://www.searchiqs.com/nygre/",
+          "official_url": "https://www.searchiqs.com/nygre/SearchResultsMP.aspx",
           "authority_type": "Greene County Clerk",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "SEARCH_ONLY_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 official county clerk vendor portal (SearchIQS) linked from greenecountyny.gov",
             "lead_type_relevance": "PASS \u2014 judgment transcripts docketed with the County Clerk",
-            "access": "PASS \u2014 free guest search; document print fee only",
-            "extractability": "PASS \u2014 name/date/doc-type index yields party, date, doc ref",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; operator-confirmed live for public guest browser sessions; buildable via operator-seeded session",
+            "extractability": "PASS \u2014 Document Group dropdown carries LIENS, JUDGMENTS, LIS PENDENS, TAX WARRANTS, MORTGAGE, DEED",
             "refresh_provenance": "PASS \u2014 clerk recordings indexed continuously"
           },
           "sample_record_path_confirmed": true,
@@ -404,12 +506,12 @@
             "document_reference"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter required."
+          "notes": "Probed 2026-05-21: Cloudflare interactive challenge \u2014 not stdlib-reachable. NOT a dead blocker: free public guest portal, operator-confirmed live; build via operator-seeded session / cf_clearance (approved \u00a702.9 / \u00a74.14 strategy)."
         }
       ],
-      "selected_source_id": "webcivil_supreme",
-      "status": "LIVE_SOURCE_FOUND",
-      "coverage_notes": "Civil judgments are entered in Supreme Court (WebCivil shows disposition) and docketed with the County Clerk as judgment liens."
+      "selected_source_id": "clerk_land_records",
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "Civil judgments entered in Supreme Court (WebCivil) and docketed with the County Clerk as judgment liens \u2014 both Cloudflare-gated, buildable via operator-seeded session."
     },
     {
       "lead_type": "Abstract of Judgment",
@@ -420,16 +522,16 @@
       "candidate_sources": [
         {
           "source_id": "clerk_land_records",
-          "official_url": "https://www.searchiqs.com/nygre/",
+          "official_url": "https://www.searchiqs.com/nygre/SearchResultsMP.aspx",
           "authority_type": "Greene County Clerk",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "SEARCH_ONLY_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 official county clerk vendor portal (SearchIQS) linked from greenecountyny.gov",
-            "lead_type_relevance": "PASS \u2014 transcripts of judgment docketed with the clerk create judgment liens",
-            "access": "PASS \u2014 free guest search; document print fee only",
-            "extractability": "PASS \u2014 name/date/doc-type index yields party, date, doc ref",
+            "lead_type_relevance": "PASS \u2014 transcripts of judgment docketed with the clerk create judgment liens; Document Group includes JUDGMENTS",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; operator-confirmed live for public guest browser sessions; buildable via operator-seeded session",
+            "extractability": "PASS \u2014 Document Group dropdown carries LIENS, JUDGMENTS, LIS PENDENS, TAX WARRANTS, MORTGAGE, DEED",
             "refresh_provenance": "PASS \u2014 clerk recordings indexed continuously"
           },
           "sample_record_path_confirmed": true,
@@ -441,12 +543,12 @@
             "document_reference"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter required."
+          "notes": "Probed 2026-05-21: Cloudflare interactive challenge \u2014 not stdlib-reachable. NOT a dead blocker: free public guest portal, operator-confirmed live; build via operator-seeded session / cf_clearance (approved \u00a702.9 / \u00a74.14 strategy)."
         }
       ],
       "selected_source_id": "clerk_land_records",
-      "status": "LIVE_SOURCE_FOUND",
-      "coverage_notes": "In NY a transcript of judgment docketed with the County Clerk creates a judgment lien on real property; visible in clerk judgment records."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "A transcript of judgment docketed with the County Clerk creates a judgment lien. Verified on SearchIQS; Cloudflare-gated, seeded-session buildable."
     },
     {
       "lead_type": "Mechanic Lien",
@@ -457,16 +559,16 @@
       "candidate_sources": [
         {
           "source_id": "clerk_land_records",
-          "official_url": "https://www.searchiqs.com/nygre/",
+          "official_url": "https://www.searchiqs.com/nygre/SearchResultsMP.aspx",
           "authority_type": "Greene County Clerk",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "SEARCH_ONLY_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 official county clerk vendor portal (SearchIQS) linked from greenecountyny.gov",
-            "lead_type_relevance": "PASS \u2014 mechanic's liens filed with the County Clerk",
-            "access": "PASS \u2014 free guest search; document print fee only",
-            "extractability": "PASS \u2014 name/date/doc-type index yields party, date, doc ref",
+            "lead_type_relevance": "PASS \u2014 mechanic's liens filed with the County Clerk; Document Group includes LIENS",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; operator-confirmed live for public guest browser sessions; buildable via operator-seeded session",
+            "extractability": "PASS \u2014 Document Group dropdown carries LIENS, JUDGMENTS, LIS PENDENS, TAX WARRANTS, MORTGAGE, DEED",
             "refresh_provenance": "PASS \u2014 clerk recordings indexed continuously"
           },
           "sample_record_path_confirmed": true,
@@ -478,12 +580,12 @@
             "document_reference"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter required."
+          "notes": "Probed 2026-05-21: Cloudflare interactive challenge \u2014 not stdlib-reachable. NOT a dead blocker: free public guest portal, operator-confirmed live; build via operator-seeded session / cf_clearance (approved \u00a702.9 / \u00a74.14 strategy)."
         }
       ],
       "selected_source_id": "clerk_land_records",
-      "status": "LIVE_SOURCE_FOUND",
-      "coverage_notes": "NY Lien Law mechanic's liens are filed with the County Clerk; the clerk's record list explicitly includes mechanic liens."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "NY Lien Law mechanic's liens filed with the County Clerk. Verified on SearchIQS; Cloudflare-gated, seeded-session buildable."
     },
     {
       "lead_type": "Construction Lien",
@@ -494,16 +596,16 @@
       "candidate_sources": [
         {
           "source_id": "clerk_land_records",
-          "official_url": "https://www.searchiqs.com/nygre/",
+          "official_url": "https://www.searchiqs.com/nygre/SearchResultsMP.aspx",
           "authority_type": "Greene County Clerk",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "SEARCH_ONLY_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 official county clerk vendor portal (SearchIQS) linked from greenecountyny.gov",
             "lead_type_relevance": "PASS \u2014 NY construction liens are filed as mechanic's liens with the County Clerk",
-            "access": "PASS \u2014 free guest search; document print fee only",
-            "extractability": "PASS \u2014 name/date/doc-type index yields party, date, doc ref",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; operator-confirmed live for public guest browser sessions; buildable via operator-seeded session",
+            "extractability": "PASS \u2014 Document Group dropdown carries LIENS, JUDGMENTS, LIS PENDENS, TAX WARRANTS, MORTGAGE, DEED",
             "refresh_provenance": "PASS \u2014 clerk recordings indexed continuously"
           },
           "sample_record_path_confirmed": true,
@@ -515,12 +617,12 @@
             "document_reference"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter required."
+          "notes": "Probed 2026-05-21: Cloudflare interactive challenge \u2014 not stdlib-reachable. NOT a dead blocker: free public guest portal, operator-confirmed live; build via operator-seeded session / cf_clearance (approved \u00a702.9 / \u00a74.14 strategy)."
         }
       ],
       "selected_source_id": "clerk_land_records",
-      "status": "LIVE_SOURCE_FOUND",
-      "coverage_notes": "New York uses the term 'mechanic's lien' (Lien Law Art. 2) for construction liens; same County Clerk filing."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "New York files construction liens as mechanic's liens (Lien Law Art. 2) with the County Clerk. Cloudflare-gated, seeded-session buildable."
     },
     {
       "lead_type": "Federal Tax Lien",
@@ -531,16 +633,16 @@
       "candidate_sources": [
         {
           "source_id": "clerk_land_records",
-          "official_url": "https://www.searchiqs.com/nygre/",
+          "official_url": "https://www.searchiqs.com/nygre/SearchResultsMP.aspx",
           "authority_type": "Greene County Clerk",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "SEARCH_ONLY_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 official county clerk vendor portal (SearchIQS) linked from greenecountyny.gov",
-            "lead_type_relevance": "PASS \u2014 federal tax liens filed with the County Clerk",
-            "access": "PASS \u2014 free guest search; document print fee only",
-            "extractability": "PASS \u2014 name/date/doc-type index yields party, date, doc ref",
+            "lead_type_relevance": "PASS \u2014 federal tax liens filed with the County Clerk; Document Group includes LIENS",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; operator-confirmed live for public guest browser sessions; buildable via operator-seeded session",
+            "extractability": "PASS \u2014 Document Group dropdown carries LIENS, JUDGMENTS, LIS PENDENS, TAX WARRANTS, MORTGAGE, DEED",
             "refresh_provenance": "PASS \u2014 clerk recordings indexed continuously"
           },
           "sample_record_path_confirmed": true,
@@ -552,12 +654,12 @@
             "document_reference"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter required."
+          "notes": "Probed 2026-05-21: Cloudflare interactive challenge \u2014 not stdlib-reachable. NOT a dead blocker: free public guest portal, operator-confirmed live; build via operator-seeded session / cf_clearance (approved \u00a702.9 / \u00a74.14 strategy)."
         }
       ],
       "selected_source_id": "clerk_land_records",
-      "status": "LIVE_SOURCE_FOUND",
-      "coverage_notes": "IRS federal tax liens are filed with the County Clerk; clerk record list includes federal liens."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "IRS federal tax liens filed with the County Clerk. Verified on SearchIQS; Cloudflare-gated, seeded-session buildable."
     },
     {
       "lead_type": "State Tax Lien",
@@ -569,16 +671,16 @@
       "candidate_sources": [
         {
           "source_id": "clerk_land_records",
-          "official_url": "https://www.searchiqs.com/nygre/",
+          "official_url": "https://www.searchiqs.com/nygre/SearchResultsMP.aspx",
           "authority_type": "Greene County Clerk",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "SEARCH_ONLY_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 official county clerk vendor portal (SearchIQS) linked from greenecountyny.gov",
-            "lead_type_relevance": "PASS \u2014 NYS tax warrants filed with the County Clerk",
-            "access": "PASS \u2014 free guest search; document print fee only",
-            "extractability": "PASS \u2014 name/date/doc-type index yields party, date, doc ref",
+            "lead_type_relevance": "PASS \u2014 NYS tax warrants filed with the County Clerk; Document Group includes TAX WARRANTS",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; operator-confirmed live for public guest browser sessions; buildable via operator-seeded session",
+            "extractability": "PASS \u2014 Document Group dropdown carries LIENS, JUDGMENTS, LIS PENDENS, TAX WARRANTS, MORTGAGE, DEED",
             "refresh_provenance": "PASS \u2014 clerk recordings indexed continuously"
           },
           "sample_record_path_confirmed": true,
@@ -590,12 +692,12 @@
             "document_reference"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter required."
+          "notes": "Probed 2026-05-21: Cloudflare interactive challenge \u2014 not stdlib-reachable. NOT a dead blocker: free public guest portal, operator-confirmed live; build via operator-seeded session / cf_clearance (approved \u00a702.9 / \u00a74.14 strategy)."
         }
       ],
       "selected_source_id": "clerk_land_records",
-      "status": "LIVE_SOURCE_FOUND",
-      "coverage_notes": "NYS tax warrants are filed with the County Clerk (clerk record list includes state tax liens). NYS also runs a statewide Tax Warrant Notice System as a secondary index."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "NYS tax warrants filed with the County Clerk (SearchIQS Document Group carries TAX WARRANTS). Cloudflare-gated, seeded-session buildable."
     },
     {
       "lead_type": "Probate",
@@ -609,12 +711,12 @@
           "official_url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch",
           "authority_type": "Greene County Surrogate's Court",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "OPEN_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 NYS Unified Court System Surrogate's Court",
             "lead_type_relevance": "PASS \u2014 probate proceedings e-filed in Surrogate's Court",
-            "access": "PASS \u2014 public NYSCEF access, free PDF downloads",
+            "access": "SESSION-REQUIRED \u2014 NYSCEF Cloudflare challenge; the alternate WebSurrogate portal is authentication-gated",
             "extractability": "PASS \u2014 proceeding exposes decedent, fiduciary, dates",
             "refresh_provenance": "PASS \u2014 Greene Surrogate mandatory e-filing since 2021-02-16"
           },
@@ -627,12 +729,12 @@
             "proceeding_type"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter expected."
+          "notes": "Probed 2026-05-21: NYSCEF Cloudflare challenge; WebSurrogate needs an account. Buildable via operator-seeded session."
         }
       ],
       "selected_source_id": "surrogate_court_probate",
-      "status": "LIVE_SOURCE_FOUND",
-      "coverage_notes": "Greene County Surrogate's Court probate proceedings on NYSCEF (mandatory e-filing since 2021-02-16)."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "Greene County Surrogate's Court probate on NYSCEF (mandatory e-filing since 2021-02-16) \u2014 Cloudflare-gated; WebSurrogate is account-gated. Buildable via operator-seeded session."
     },
     {
       "lead_type": "Affidavit of Heirship",
@@ -647,12 +749,12 @@
           "official_url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch",
           "authority_type": "Greene County Surrogate's Court",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "OPEN_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 NYS Unified Court System Surrogate's Court",
             "lead_type_relevance": "PASS \u2014 NY resolves intestate succession via Surrogate's Court administration proceedings",
-            "access": "PASS \u2014 public NYSCEF access, free PDF downloads",
+            "access": "SESSION-REQUIRED \u2014 NYSCEF Cloudflare challenge; the alternate WebSurrogate portal is authentication-gated",
             "extractability": "PASS \u2014 proceeding exposes decedent, fiduciary, dates",
             "refresh_provenance": "PASS \u2014 Greene Surrogate mandatory e-filing since 2021-02-16"
           },
@@ -665,12 +767,12 @@
             "proceeding_type"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter expected."
+          "notes": "Probed 2026-05-21: NYSCEF Cloudflare challenge; WebSurrogate needs an account. Buildable via operator-seeded session."
         }
       ],
       "selected_source_id": "surrogate_court_probate",
-      "status": "LIVE_SOURCE_FOUND_LIMITED_COVERAGE",
-      "coverage_notes": "NY resolves heirship through Surrogate's Court administration proceedings rather than recorded affidavits of heirship; heirship signal captured via Letters of Administration in Surrogate's Court."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "NY resolves heirship through Surrogate's Court administration proceedings (NYSCEF, Cloudflare-gated) rather than recorded heirship affidavits."
     },
     {
       "lead_type": "Executor Deed",
@@ -681,16 +783,16 @@
       "candidate_sources": [
         {
           "source_id": "clerk_land_records",
-          "official_url": "https://www.searchiqs.com/nygre/",
+          "official_url": "https://www.searchiqs.com/nygre/SearchResultsMP.aspx",
           "authority_type": "Greene County Clerk",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "SEARCH_ONLY_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 official county clerk vendor portal (SearchIQS) linked from greenecountyny.gov",
-            "lead_type_relevance": "PASS \u2014 executor's deeds recorded with the County Clerk",
-            "access": "PASS \u2014 free guest search; document print fee only",
-            "extractability": "PASS \u2014 name/date/doc-type index yields party, date, doc ref",
+            "lead_type_relevance": "PASS \u2014 executor's deeds recorded with the County Clerk; Document Group includes DEED",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; operator-confirmed live for public guest browser sessions; buildable via operator-seeded session",
+            "extractability": "PASS \u2014 Document Group dropdown carries LIENS, JUDGMENTS, LIS PENDENS, TAX WARRANTS, MORTGAGE, DEED",
             "refresh_provenance": "PASS \u2014 clerk recordings indexed continuously"
           },
           "sample_record_path_confirmed": true,
@@ -702,12 +804,12 @@
             "document_reference"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter required."
+          "notes": "Probed 2026-05-21: Cloudflare interactive challenge \u2014 not stdlib-reachable. NOT a dead blocker: free public guest portal, operator-confirmed live; build via operator-seeded session / cf_clearance (approved \u00a702.9 / \u00a74.14 strategy)."
         }
       ],
       "selected_source_id": "clerk_land_records",
-      "status": "LIVE_SOURCE_FOUND",
-      "coverage_notes": "Estate deeds by an executor are recorded with the County Clerk land records."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "Executor's deeds recorded with the County Clerk land records. Cloudflare-gated, seeded-session buildable."
     },
     {
       "lead_type": "Administrator Deed",
@@ -718,16 +820,16 @@
       "candidate_sources": [
         {
           "source_id": "clerk_land_records",
-          "official_url": "https://www.searchiqs.com/nygre/",
+          "official_url": "https://www.searchiqs.com/nygre/SearchResultsMP.aspx",
           "authority_type": "Greene County Clerk",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "SEARCH_ONLY_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 official county clerk vendor portal (SearchIQS) linked from greenecountyny.gov",
             "lead_type_relevance": "PASS \u2014 administrator's deeds recorded with the County Clerk",
-            "access": "PASS \u2014 free guest search; document print fee only",
-            "extractability": "PASS \u2014 name/date/doc-type index yields party, date, doc ref",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; operator-confirmed live for public guest browser sessions; buildable via operator-seeded session",
+            "extractability": "PASS \u2014 Document Group dropdown carries LIENS, JUDGMENTS, LIS PENDENS, TAX WARRANTS, MORTGAGE, DEED",
             "refresh_provenance": "PASS \u2014 clerk recordings indexed continuously"
           },
           "sample_record_path_confirmed": true,
@@ -739,12 +841,12 @@
             "document_reference"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter required."
+          "notes": "Probed 2026-05-21: Cloudflare interactive challenge \u2014 not stdlib-reachable. NOT a dead blocker: free public guest portal, operator-confirmed live; build via operator-seeded session / cf_clearance (approved \u00a702.9 / \u00a74.14 strategy)."
         }
       ],
       "selected_source_id": "clerk_land_records",
-      "status": "LIVE_SOURCE_FOUND",
-      "coverage_notes": "Estate deeds by an administrator are recorded with the County Clerk land records."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "Administrator's deeds recorded with the County Clerk land records. Cloudflare-gated, seeded-session buildable."
     },
     {
       "lead_type": "Code Lien",
@@ -756,16 +858,16 @@
       "candidate_sources": [
         {
           "source_id": "clerk_land_records",
-          "official_url": "https://www.searchiqs.com/nygre/",
+          "official_url": "https://www.searchiqs.com/nygre/SearchResultsMP.aspx",
           "authority_type": "Greene County Clerk",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "SEARCH_ONLY_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 official county clerk vendor portal (SearchIQS) linked from greenecountyny.gov",
             "lead_type_relevance": "PARTIAL \u2014 municipal/code liens appear in clerk records when a town records them",
-            "access": "PASS \u2014 free guest search; document print fee only",
-            "extractability": "PASS \u2014 name/date/doc-type index yields party, date, doc ref",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; operator-confirmed live for public guest browser sessions; buildable via operator-seeded session",
+            "extractability": "PASS \u2014 Document Group dropdown carries LIENS, JUDGMENTS, LIS PENDENS, TAX WARRANTS, MORTGAGE, DEED",
             "refresh_provenance": "PASS \u2014 clerk recordings indexed continuously"
           },
           "sample_record_path_confirmed": true,
@@ -777,12 +879,12 @@
             "document_reference"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter required."
+          "notes": "Probed 2026-05-21: Cloudflare interactive challenge \u2014 not stdlib-reachable. NOT a dead blocker: free public guest portal, operator-confirmed live; build via operator-seeded session / cf_clearance (approved \u00a702.9 / \u00a74.14 strategy)."
         }
       ],
       "selected_source_id": "clerk_land_records",
-      "status": "LIVE_SOURCE_FOUND_LIMITED_COVERAGE",
-      "coverage_notes": "Greene County's 14 towns each run their own code enforcement; there is no county-wide portal. Recorded municipal/code liens are visible in clerk land records, but un-recorded code activity is not captured."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "Greene County's 14 towns each run their own code enforcement; no county-wide portal. Recorded municipal/code liens are visible in clerk land records (Cloudflare-gated)."
     },
     {
       "lead_type": "Demolition",
@@ -830,12 +932,12 @@
           "official_url": "https://iapps.courts.state.ny.us/webcivil/FCASMain",
           "authority_type": "NYS Unified Court System",
           "source_role": "SUPPORTING_EVENT_SOURCE",
-          "access_status": "OPEN_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 NYS Unified Court System",
             "lead_type_relevance": "PARTIAL \u2014 matrimonial case existence may show in WebCivil but documents are confidential",
-            "access": "PASS \u2014 public search, no login",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients",
             "extractability": "PARTIAL \u2014 case status / parties only; no document images",
             "refresh_provenance": "PASS \u2014 active + disposed civil cases statewide"
           },
@@ -847,12 +949,12 @@
             "case_status"
           ],
           "operator_verified": false,
-          "notes": "Status-confirmation source; no document images."
+          "notes": "Probed 2026-05-21: Cloudflare challenge. Status-confirmation source; buildable via operator-seeded session."
         }
       ],
       "selected_source_id": "",
       "status": "NEEDS_OPERATOR_REVIEW",
-      "coverage_notes": "NY matrimonial records are confidential by statute (DRL \u00a7235); divorce filings are not a publicly extractable lead source. The real-property signal surfaces instead as recorded deeds in clerk records."
+      "coverage_notes": "NY matrimonial records are confidential by statute (DRL \u00a7235); divorce filings are not a publicly extractable lead source."
     },
     {
       "lead_type": "Bankruptcy",
@@ -895,7 +997,8 @@
       "lead_type": "Surplus",
       "state_applicability": "APPLICABLE",
       "expected_authorities": [
-        "Supreme Court"
+        "Supreme Court",
+        "Auction vendor"
       ],
       "candidate_sources": [
         {
@@ -903,12 +1006,12 @@
           "official_url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch",
           "authority_type": "NYS Supreme Court, Greene County",
           "source_role": "PRIMARY_EVENT_SOURCE",
-          "access_status": "OPEN_PUBLIC",
+          "access_status": "CAPTCHA_PROTECTED",
           "bulk_availability": "BATCH_QUERY",
           "verification_layers": {
             "authority": "PASS \u2014 NYS Unified Court System (courts.state.ny.us)",
             "lead_type_relevance": "PASS \u2014 surplus money proceedings filed within the Supreme Court foreclosure case",
-            "access": "PASS \u2014 public, no login, free PDF document download",
+            "access": "SESSION-REQUIRED \u2014 Cloudflare cf-mitigated:challenge, HTTP 403 to stdlib clients; public to a browser, no login",
             "extractability": "PASS \u2014 docket exposes parties, index number, dates, documents",
             "refresh_provenance": "PASS \u2014 e-filed continuously; Greene Supreme mandatory e-filing since 2020-10-21"
           },
@@ -921,12 +1024,39 @@
             "case_type"
           ],
           "operator_verified": false,
-          "notes": "Automated fetch HTTP 403 \u2014 headless browser adapter expected."
+          "notes": "Probed 2026-05-21: Cloudflare challenge. Buildable via operator-seeded session or stealth browser."
+        },
+        {
+          "source_id": "tax_foreclosure_auction",
+          "official_url": "https://aarauctions.com/servlet/Search.do?auctionId=6892",
+          "authority_type": "Greene County Treasurer / Absolute Auctions & Realty",
+          "source_role": "PRIMARY_EVENT_SOURCE",
+          "access_status": "OPEN_PUBLIC",
+          "bulk_availability": "FULL_COUNTY_BULK",
+          "verification_layers": {
+            "authority": "PASS \u2014 county-contracted auctioneer, linked from county news",
+            "lead_type_relevance": "PASS \u2014 tax-foreclosure auction results expose surplus over the tax debt",
+            "access": "PASS \u2014 server-rendered WordPress/servlet, stdlib-reachable (HTTP 200), public catalog; bidder registration only to bid",
+            "extractability": "PASS \u2014 lot HTML carries address, municipality, Tax Map # parcel id, property type, full market value, sale date",
+            "refresh_provenance": "PARTIAL \u2014 seasonal; the Greene auction runs annually"
+          },
+          "sample_record_path_confirmed": true,
+          "sample_document_view_possible": true,
+          "minimum_lead_fields_available": [
+            "parcel_id",
+            "property_address",
+            "municipality",
+            "auction_date",
+            "full_market_value",
+            "lot_number"
+          ],
+          "operator_verified": false,
+          "notes": "Probed 2026-05-21: auctionId=6892 confirmed Greene County, NY tax-foreclosure auction (Oct 2025) \u2014 51 server-rendered lots. STDLIB-REACHABLE primary event source \u2014 the buildable Phase 3 target. Reclassified SUPPORTING -> PRIMARY: the auction is the RPTL Article 11 in-rem tax-foreclosure disposition event."
         }
       ],
       "selected_source_id": "supreme_court_foreclosure",
-      "status": "LIVE_SOURCE_FOUND_LIMITED_COVERAGE",
-      "coverage_notes": "Foreclosure-sale surplus money proceedings are post-sale filings within the Supreme Court foreclosure case file on NYSCEF."
+      "status": "SOURCE_FOUND_CAPTCHA",
+      "coverage_notes": "Foreclosure-sale surplus money proceedings are post-sale filings in the Supreme Court case (NYSCEF, Cloudflare-gated). Tax-auction overage is visible in the stdlib-reachable AAR results."
     }
   ]
 }

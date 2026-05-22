@@ -3,13 +3,13 @@
   "county_slug": "greene_ny",
   "framework_version": "v5.3.1",
   "fingerprinted_at": "2026-05-19T00:00:00Z",
-  "url": "https://www.searchiqs.com/nygre/",
+  "url": "https://www.searchiqs.com/nygre/SearchResultsMP.aspx",
   "portal_family": "IQS_SearchIQS",
-  "access_pattern": "spa_with_api",
-  "access_method": "SEARCHABLE_PUBLIC_PORTAL",
+  "access_pattern": "spa_recaptcha",
+  "access_method": "PUBLIC_BUT_SESSION_REQUIRED",
   "fingerprint_confidence": "HIGH",
-  "fingerprint_summary": "Info Quick Solutions (SearchIQS) ASP.NET land-records portal at searchiqs.com/nygre; guest-session search; automated fetch returned HTTP 403 (bot gating) \u2014 headless browser adapter required.",
-  "recommended_adapter": "searchiqs_recordings (headless browser + guest session)",
+  "fingerprint_summary": "Info Quick Solutions (SearchIQS) ASP.NET land-records portal at searchiqs.com/nygre. Re-probed 2026-05-21: fronted by a Cloudflare interactive challenge (cf-mitigated:challenge, HTTP 403 to stdlib clients). Operator-confirmed fully functional in a public guest browser session. Document Group dropdown: LIENS, JUDGMENTS, LIS PENDENS, TAX WARRANTS, MORTGAGE, DEED.",
+  "recommended_adapter": "searchiqs_recordings \u2014 operator-seeded session (cf_clearance + ASP.NET cookies) or stealth browser",
   "records_available": [
     "deeds",
     "mortgages",
@@ -19,6 +19,7 @@
     "welfare_liens",
     "judgments",
     "lis_pendens",
+    "tax_warrants",
     "ucc",
     "military_discharges",
     "divorce_records"
@@ -26,11 +27,12 @@
   "search_fields": [
     "party_name",
     "date_range",
+    "document_group",
     "document_type"
   ],
   "known_limitations": [
-    "Automated fetch HTTP 403 \u2014 headless browser + guest session required for scraping",
-    "Document images print-fee gated ($5/doc non-commercial); index search is free",
-    "County Clerk's published note references a Lis Pendens index covering 1924-2004 separately \u2014 modern lis pendens coverage to be confirmed"
+    "Cloudflare interactive challenge \u2014 stdlib HTTP returns 403; needs an operator-seeded session or stealth browser",
+    "Document images print-fee gated ($5/doc non-commercial); index search is free in a guest session",
+    "Modern (post-2004) lis pendens index coverage to be confirmed in-session"
   ]
 }
