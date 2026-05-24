@@ -731,12 +731,15 @@
         "Auction vendor is a mirror of county data (grade C)",
         "Owner-of-record is not prominently shown per lot — address + Tax Map # are the join keys to parcel_master enrichment"
       ],
-      "last_verified_at": "2026-05-21T00:00:00Z",
+      "last_verified_at": "2026-05-23T00:00:00Z",
       "auth_required": false,
       "rate_limit_rpm": null,
       "scraper_module": "scrapers/tax_foreclosure_auction.py",
       "fields": {},
-      "doc_type_synonyms": {},
+      "doc_type_synonyms": {
+        "TAX_SALE_AUCTION_LOT": "TAX_FORECLOSURE_NOTICE",
+        "Tax Foreclosure Auction Lot": "TAX_FORECLOSURE_NOTICE"
+      },
       "refresh_cadence": "on_demand",
       "ttl_days": 200,
       "blocked_unblock_paths": [],
@@ -801,7 +804,18 @@
       "credentials_required_kind": "",
       "credentials_declared": false,
       "manual_upload_path": "",
-      "manual_upload_received_at": ""
+      "manual_upload_received_at": "",
+      "translator": "foreclosure_notices",
+      "translator_config": {
+        "layer_doc_type_map": {
+          "0": {
+            "canonical": "TAX_FORECLOSURE_NOTICE",
+            "subtype_label": "Tax Foreclosure Notice",
+            "pattern": "tax"
+          }
+        }
+      },
+      "parcel_id_prefix": "GRN-AAR-"
     },
     "parcel_master": {
       "category": "enrichment",

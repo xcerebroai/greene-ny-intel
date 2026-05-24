@@ -1,0 +1,3102 @@
+[
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_9427474c9eceb2ed"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-101",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_9427474c9eceb2ed"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-101"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_a2f291fc54194d36"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-102",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_a2f291fc54194d36"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-102"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_7f0f41d1c2569c36"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-105",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_7f0f41d1c2569c36"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-105"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_181041be5aa84f3d"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-107",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_181041be5aa84f3d"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-107"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_bb98a6e2f4286eec"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-11",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_bb98a6e2f4286eec"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-11"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_cdca1e15e534c38e"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-112",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_cdca1e15e534c38e"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-112"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_002eb1426a7b0546"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-115",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_002eb1426a7b0546"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-115"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_df32eb57c5fb2e51"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-119",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_df32eb57c5fb2e51"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-119"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_aaff359676ba9a38"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-12",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_aaff359676ba9a38"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-12"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_40efc146e8fcd18d"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-125",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_40efc146e8fcd18d"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-125"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_23b2bb730a90b912"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-126",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_23b2bb730a90b912"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-126"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_ddebf6a6110834e8"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-13",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_ddebf6a6110834e8"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-13"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_6dba34f08e077ed2"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-16",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_6dba34f08e077ed2"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-16"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_b82a1158d6abdfef"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-17",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_b82a1158d6abdfef"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-17"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_0ec654270778688c"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-18",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_0ec654270778688c"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-18"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_fb05ee2a1b2851a6"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-19",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_fb05ee2a1b2851a6"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-19"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_94547b3f0d9e0318"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-20",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_94547b3f0d9e0318"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-20"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_9fac0c2a0eb2a928"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-24",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_9fac0c2a0eb2a928"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-24"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_03ec450e8129922e"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-25",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_03ec450e8129922e"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-25"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_21e2be98fcecbfa3"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-26",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_21e2be98fcecbfa3"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-26"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_fb5a311185d8ae1a"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-28",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_fb5a311185d8ae1a"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-28"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_7caa4dadce01b1fa"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-36",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_7caa4dadce01b1fa"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-36"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_32911f29283f0b58"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-38",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_32911f29283f0b58"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-38"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_78cc52bea11d85f4"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-41",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_78cc52bea11d85f4"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-41"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_29a25859dbd8791e"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-42",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_29a25859dbd8791e"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-42"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_5c5ae7c48f7c7e19"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-43",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_5c5ae7c48f7c7e19"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-43"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_f61a557963339cf5"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-49",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_f61a557963339cf5"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-49"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_42578fb25202f076"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-5",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_42578fb25202f076"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-5"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_7a5e01558b9a9983"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-54",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_7a5e01558b9a9983"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-54"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_103500aee7ea8ebe"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-56",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_103500aee7ea8ebe"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-56"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_b5705a0266211da2"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-59",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_b5705a0266211da2"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-59"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_e3946aec86a0b330"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-6",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_e3946aec86a0b330"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-6"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_d1a6b59a5030b26d"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-60",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_d1a6b59a5030b26d"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-60"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_ca335ac4e2b0ca6d"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-62",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_ca335ac4e2b0ca6d"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-62"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_e90b4bf00b0e6c82"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-63",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_e90b4bf00b0e6c82"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-63"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_af3a6a38567d21f2"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-65",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_af3a6a38567d21f2"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-65"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_4d0114a8bab83657"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-66",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_4d0114a8bab83657"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-66"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_6eb36ff84683d12e"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-71",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_6eb36ff84683d12e"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-71"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_24884f6e7e31a607"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-72",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_24884f6e7e31a607"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-72"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_a27bd64b2e70ca76"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-73",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_a27bd64b2e70ca76"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-73"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_8e9cfe5944d12dc3"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-74",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_8e9cfe5944d12dc3"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-74"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_3e05e90cad8aa341"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-75",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_3e05e90cad8aa341"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-75"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_b7d2dd7afb220a06"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-8",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_b7d2dd7afb220a06"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-8"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_936bfa32ad13ffc5"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-9",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_936bfa32ad13ffc5"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-9"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_1d8e952c40708b0c"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-90",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_1d8e952c40708b0c"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-90"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_b6f48a89f68f0213"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-91",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_b6f48a89f68f0213"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-91"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_971dfe7d9360d77f"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-93",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_971dfe7d9360d77f"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-93"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_68b1c9114e566007"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-96",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_68b1c9114e566007"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-96"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_a2328d7fa7aa200d"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-98",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_a2328d7fa7aa200d"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-98"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_0f810eeeffcd400c"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_AAR-6892-99",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "tax_foreclosure_notice against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "tax_foreclosure_notice against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "tax_foreclosure_notice against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "owner_not_on_document",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "tax_foreclosure_notice",
+          "parcel_id": null,
+          "signal_type": "tax_foreclosure_notice"
+        },
+        "canonical_doc_type": "tax_foreclosure_notice",
+        "count": 1,
+        "earliest_recorded_date": "2025-10-01",
+        "evidence_ids": [
+          "ev_0f810eeeffcd400c"
+        ],
+        "instrument_numbers": [
+          "AAR-6892-99"
+        ],
+        "latest_recorded_date": "2025-10-01",
+        "recorded_date_range": [
+          "2025-10-01",
+          "2025-10-01"
+        ],
+        "signal_type": "tax_foreclosure_notice",
+        "source_ids": [
+          "tax_foreclosure_auction"
+        ],
+        "source_urls": [
+          "https://aarauctions.com/servlet/Search.do?auctionId=6892&page=1&perPage=20&orderBy="
+        ]
+      }
+    ],
+    "source_ids": [
+      "tax_foreclosure_auction"
+    ]
+  }
+]
