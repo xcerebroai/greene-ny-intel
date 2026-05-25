@@ -85,29 +85,78 @@ jobs:
           python -m pip install -r requirements-refresh.txt
           python -c "import jsonschema; print('jsonschema', jsonschema.__version__)"
 
-      - name: AAR tax-foreclosure auction
-        id: aar
+      # AAR auction pulls — historical 3738 (2022, 87 lots) + current
+      # discovery (or operator-supplied auctionId). `--append` merges
+      # by raw_record_id so both auctions coexist in the JSONL.
+      - name: AAR tax-foreclosure auction — historical 3738
         run: |
           set +e
-          if [ -n "${{ inputs.auction_id }}" ]; then
-            python scrapers/tax_foreclosure_auction.py --auction-id "${{ inputs.auction_id }}"
-          else
-            python scrapers/tax_foreclosure_auction.py
-          fi
+          python scrapers/tax_foreclosure_auction.py --auction-id 3738 --append
           rc=$?
-          # 0 = pulled; 2 = seasonal-zero (existing JSONL preserved); 4 = blocked
           echo "rc=$rc"
           if [ $rc -eq 4 ]; then exit 4; fi
           exit 0
 
-      - name: Treasurer Annual Petition (PDF → OCR)
+      - name: AAR tax-foreclosure auction — current (discovery or override)
+        id: aar
+        run: |
+          set +e
+          if [ -n "${{ inputs.auction_id }}" ]; then
+            python scrapers/tax_foreclosure_auction.py --auction-id "${{ inputs.auction_id }}" --append
+          else
+            python scrapers/tax_foreclosure_auction.py --auction-id 6892 --append
+            # Plus seasonal-discovery for an active/upcoming Greene auction.
+            python scrapers/tax_foreclosure_auction.py --append
+          fi
+          rc=$?
+          echo "rc=$rc"
+          if [ $rc -eq 4 ]; then exit 4; fi
+          exit 0
+
+      # Treasurer petition pulls — historical text-layer years (2019,
+      # 2020, 2022) via Wayback + current 2025 via the live county
+      # site. `--append` keeps all years in the JSONL; auto text-layer
+      # detection means tesseract only runs on the OCR-only years.
+      - name: Treasurer petition — 2019 (text-layer, Wayback)
+        run: |
+          set +e
+          python scrapers/tax_foreclosure_petition.py --petition-year 2019 \
+            --petition-url "https://web.archive.org/web/2024id_/https://www.greenegovernment.com/wp-content/uploads/2019/04/2019-Petition-Notice-of-Foreclosure.pdf" \
+            --append
+          rc=$?
+          echo "rc=$rc"
+          if [ $rc -eq 4 ]; then exit 4; fi
+          exit 0
+
+      - name: Treasurer petition — 2020 (text-layer, Wayback)
+        run: |
+          set +e
+          python scrapers/tax_foreclosure_petition.py --petition-year 2020 \
+            --petition-url "https://web.archive.org/web/2024id_/https://www.greenegovernment.com/wp-content/uploads/2020/02/Petition-Notice-of-Foreclosure-2.20.2020.pdf" \
+            --append
+          rc=$?
+          echo "rc=$rc"
+          if [ $rc -eq 4 ]; then exit 4; fi
+          exit 0
+
+      - name: Treasurer petition — 2022 (text-layer, Wayback)
+        run: |
+          set +e
+          python scrapers/tax_foreclosure_petition.py --petition-year 2022 \
+            --petition-url "https://web.archive.org/web/2024id_/https://www.greenegovernment.com/wp-content/uploads/2022/05/Petition-Notice-of-Foreclosure-4.21.2022.pdf" \
+            --append
+          rc=$?
+          echo "rc=$rc"
+          if [ $rc -eq 4 ]; then exit 4; fi
+          exit 0
+
+      - name: Treasurer petition — 2025 (current, PDF + OCR)
         id: petition
         run: |
           set +e
-          python scrapers/tax_foreclosure_petition.py --petition-year 2025
+          python scrapers/tax_foreclosure_petition.py --petition-year 2025 --append
           rc=$?
           echo "rc=$rc"
-          # 4 = network blocked. 2 = no rows written (don't fail run).
           if [ $rc -eq 4 ]; then exit 4; fi
           exit 0
 
@@ -185,9 +234,11 @@ jobs:
             "https://xcerebroai.github.io/greene-ny-intel/dashboard/data.json")
           echo "data.json HTTP status: $status"
           test "$status" = "200" || (echo "Live dashboard fetch failed"; exit 1)
-          # Lead-total sanity — must be > 100 (the AAR-only baseline)
+          # Lead-total sanity — full backfill should yield > 1000.
+          # If we ever drop below 800, something silently broke a
+          # historical pull and the run should fail.
           live_total=$(curl -sS \
             "https://xcerebroai.github.io/greene-ny-intel/dashboard/data.json" \
             | python -c "import json,sys; print(json.load(sys.stdin)['lead_total'])")
           echo "Live lead_total: $live_total"
-          test "$live_total" -gt 100
+          test "$live_total" -gt 800
