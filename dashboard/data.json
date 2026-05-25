@@ -1,0 +1,2927 @@
+{
+  "generated_at": "2026-05-25T13:01:44Z",
+  "county": "Greene County",
+  "state": "NY",
+  "build_label": "SOURCE_LIMITED",
+  "build_label_reason": "Only one primary event source is live (AAR tax-foreclosure auction). Clerk + court primaries remain Cloudflare-gated and require an operator-seeded session to ingest.",
+  "semantic_verdict": "DEPLOY_OK",
+  "sources_active": [
+    "tax_foreclosure_auction"
+  ],
+  "lead_total": 50,
+  "actionable_leads": 50,
+  "review_required": 50,
+  "epcad_enrichment_resolved": 50,
+  "epcad_enrichment_unresolved": 0,
+  "parcel_master_enrichment_resolved": 50,
+  "parcel_master_enrichment_unresolved": 0,
+  "owner_source_counts": {
+    "parcel_master": 50
+  },
+  "enrichment_join_method_counts": {
+    "print_key": 50
+  },
+  "owner_source_policy": "Owner is ATTACHED downstream as enrichment from parcel_master via the v5.4.0 seam (R3-iii / §13.14). §17 keeps its honest owner-unresolved routing when the AAR event document did not name the owner; that routing is NEVER relabeled. The dashboard row carries display_owner_source per lead so the provenance is always visible.",
+  "records": [
+    {
+      "lead_id": "lead_unresolved_AAR-6892-101",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19400014400000020200000000",
+      "tax_map": "144.00-2-20",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Ajlyakin, Mustafa",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "ROUTE 42, Lexington, NY",
+      "property_street": "ROUTE 42",
+      "property_city": "Lexington",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "683 Tumbleweed Ranch RD, West Kill, NY, 12492",
+      "mailing_city": "West Kill",
+      "mailing_state": "NY",
+      "mailing_zip": "12492",
+      "assessed_value": 37000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_f5cf66e35b5c3dcd"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-101"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-102",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19400014400000020240000000",
+      "tax_map": "144.00-2-24",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Ajlyakin, Mustafa",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "30 & 33 HARTER RD, Lexington, NY",
+      "property_street": "30 & 33 HARTER RD",
+      "property_city": "Lexington",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "683 Tumbleweed Ranch RD, West Kill, NY, 12492",
+      "mailing_city": "West Kill",
+      "mailing_state": "NY",
+      "mailing_zip": "12492",
+      "assessed_value": 135300,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_36084e54526d6084"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-102"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-105",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19400016000000010260000000",
+      "tax_map": "160.00-1-26",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Count of Greene",
+      "owner_type": "ENTITY",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "2134 ROUTE 42, Lexington, NY",
+      "property_street": "2134 ROUTE 42",
+      "property_city": "Lexington",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "County Bluilding Dr, Catskill, NY",
+      "mailing_city": "Catskill",
+      "mailing_state": "NY",
+      "mailing_zip": "",
+      "assessed_value": 78300,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_49d1c7fe29e34129"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-105"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-107",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19420000100000010060000000",
+      "tax_map": "1.00-1-6",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Blakesley, Rudolph & Blakesley, Marie P",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "1131 OLD STATE RD, New Baltimore, NY",
+      "property_street": "1131 OLD STATE RD",
+      "property_city": "New Baltimore",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "917 Spring Branch Rd, Wilmington, NC, 28405",
+      "mailing_city": "Wilmington",
+      "mailing_state": "NC",
+      "mailing_zip": "28405",
+      "assessed_value": 10400,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_07abdc24bfe54971"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-107"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-11",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19228913800000040270000000",
+      "tax_map": "138.00-4-27",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Maxwell, John",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "FOREST HILLS AVE, Athens, NY",
+      "property_street": "FOREST HILLS AVE",
+      "property_city": "Athens",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "107 Stoneybrook Rd, Fishkill, NY, 12524",
+      "mailing_city": "Fishkill",
+      "mailing_state": "NY",
+      "mailing_zip": "12524",
+      "assessed_value": 13000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_89133ee9dc64ffa2"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-11"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-112",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19440007401400020180000000",
+      "tax_map": "74.14-2-18",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Sherman, Everett J",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "5546 WASHINGTON ST, Prattsville, NY",
+      "property_street": "5546 WASHINGTON ST",
+      "property_city": "Prattsville",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "5546 Washington St, Prattsville, NY, 12468",
+      "mailing_city": "Prattsville",
+      "mailing_state": "NY",
+      "mailing_zip": "12468",
+      "assessed_value": 148400,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_ba3e695850f7edf5"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-112"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-115",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19440007500300030130000000",
+      "tax_map": "75.03-3-13",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Mongelli, Matteo & Mongelli, Nicola",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "ROUTE 23, Prattsville, NY",
+      "property_street": "ROUTE 23",
+      "property_city": "Prattsville",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "52 Palmetto Dr, Ormond Beach, FL, 32176",
+      "mailing_city": "Ormond Beach",
+      "mailing_state": "FL",
+      "mailing_zip": "32176",
+      "assessed_value": 600,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_06899624ff8fcf3e"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-115"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-119",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19460007801900020430000000",
+      "tax_map": "78.19-2-43",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Wicht, James A & Haggerty, Maxine E",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "46 MILL ST, Windham, NY",
+      "property_street": "46 MILL ST",
+      "property_city": "Windham",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "149 Jefferson Heights  17, Catskill, NY, 12414",
+      "mailing_city": "Catskill",
+      "mailing_state": "NY",
+      "mailing_zip": "12414",
+      "assessed_value": 21500,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_5427f2af2f616b14"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-119"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-12",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19240006600000020010000000",
+      "tax_map": "66.00-2-1",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "County of Greene",
+      "owner_type": "ENTITY",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "OFF ROUTE 32, Cairo, NY",
+      "property_street": "OFF ROUTE 32",
+      "property_city": "Cairo",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "411 Main St, 4th FL Treasury, Catskill, NY, 12414",
+      "mailing_city": "Catskill",
+      "mailing_state": "NY",
+      "mailing_zip": "12414",
+      "assessed_value": 3800,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_ac5ae67cd94433bf"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-12"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-125",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19460009601800020240000000",
+      "tax_map": "96.18-2-24",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Royal Christie Prop Inc",
+      "owner_type": "ENTITY",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "ROUTE 40, Windham, NY",
+      "property_street": "ROUTE 40",
+      "property_city": "Windham",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "3781 Lincoln St, Seaford, NY, 11783",
+      "mailing_city": "Seaford",
+      "mailing_state": "NY",
+      "mailing_zip": "11783",
+      "assessed_value": 2000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_5490da748d941663"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-125"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-126",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19460011400100020130000000",
+      "tax_map": "114.01-2-13",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Sirel, Janet",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "96 ROUTE 56, Windham, NY",
+      "property_street": "96 ROUTE 56",
+      "property_city": "Windham",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "96 County Route 56, Maplecrest, NY, 12454",
+      "mailing_city": "Maplecrest",
+      "mailing_state": "NY",
+      "mailing_zip": "12454",
+      "assessed_value": 185000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_93c4d12411ffcbe1"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-126"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-13",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19240006700000010230000000",
+      "tax_map": "67.00-1-23",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Piszel, Bonnie",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "DOMAN RD, Cairo, NY",
+      "property_street": "DOMAN RD",
+      "property_city": "Cairo",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "2866 Watkins Dr, Melbourne, FL, 32901",
+      "mailing_city": "Melbourne",
+      "mailing_state": "FL",
+      "mailing_zip": "32901",
+      "assessed_value": 15500,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_d0df11ebfe6d8718"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-13"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-16",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19240008200400020130000000",
+      "tax_map": "82.04-2-13",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Executive Park Partners LLC",
+      "owner_type": "ENTITY",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "572 OLD ROUTE 23, Cairo, NY",
+      "property_street": "572 OLD ROUTE 23",
+      "property_city": "Cairo",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "PO BOX 1071, Newburgh, NY, 12551",
+      "mailing_city": "Newburgh",
+      "mailing_state": "NY",
+      "mailing_zip": "12551",
+      "assessed_value": 83750,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_4f9586a3a0e40a97"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-16"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-17",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19240008200400030030000000",
+      "tax_map": "82.04-3-3",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Fede, Vj & Valentine, Jf Fam",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "OFF ROOSEVELT AVE, Cairo, NY",
+      "property_street": "OFF ROOSEVELT AVE",
+      "property_city": "Cairo",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "Box 156, Acra, NY, 12405",
+      "mailing_city": "Acra",
+      "mailing_state": "NY",
+      "mailing_zip": "12405",
+      "assessed_value": 7900,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_4097294d0ab61a4e"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-17"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-18",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19240008300000060100000000",
+      "tax_map": "83.00-6-10",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Monzidelis-Viani, Kathleen & Viani, Aqualina",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "OLD ROUTE 23, Cairo, NY",
+      "property_street": "OLD ROUTE 23",
+      "property_city": "Cairo",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "8523 Chase Preserve  Apt B, Naples, FL, 34113",
+      "mailing_city": "Naples",
+      "mailing_state": "FL",
+      "mailing_zip": "34113",
+      "assessed_value": 1000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_91bd13d6be194590"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-18"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-19",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19240008500000020190000000",
+      "tax_map": "85.00-2-19",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Piszel, Bonnie",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "OFF RUDOLPH WEIR JUNIOR RD, Cairo, NY",
+      "property_street": "OFF RUDOLPH WEIR JUNIOR RD",
+      "property_city": "Cairo",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "2866 Watkins Dr, Melbourne, FL, 32901",
+      "mailing_city": "Melbourne",
+      "mailing_state": "FL",
+      "mailing_zip": "32901",
+      "assessed_value": 13700,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_e796f0a224bd2706"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-19"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-20",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19240008500000030080000000",
+      "tax_map": "85.00-3-8",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Ballard James & Casper, Monica I",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "142 MIDDLEFIELD RD, Cairo, NY",
+      "property_street": "142 MIDDLEFIELD RD",
+      "property_city": "Cairo",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "142 Middlefield Rd, Earlton, NY, 12058",
+      "mailing_city": "Earlton",
+      "mailing_state": "NY",
+      "mailing_zip": "12058",
+      "assessed_value": 88000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_b21ed4b1affef951"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-20"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-24",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19240010100500030012000000",
+      "tax_map": "101.05-3-1.2",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Lewis Steve H",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "560 MAIN ST, Cairo, NY",
+      "property_street": "560 MAIN ST",
+      "property_city": "Cairo",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "114-15 August Court, Queens, NY, 11434",
+      "mailing_city": "Queens",
+      "mailing_state": "NY",
+      "mailing_zip": "11434",
+      "assessed_value": 67200,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_eca25902bf4096ac"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-24"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-25",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19240010200000020040000000",
+      "tax_map": "102.00-2-4",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Sieburg, Estate of, Otto & Sieburg, Estate of, Anne",
+      "owner_type": "ESTATE",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "735 ROUTE 67, Cairo, NY",
+      "property_street": "735 ROUTE 67",
+      "property_city": "Cairo",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "21 Ruthenbeck Rd, Shandaken, NY, 12480",
+      "mailing_city": "Shandaken",
+      "mailing_state": "NY",
+      "mailing_zip": "12480",
+      "assessed_value": 26600,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_421b9d9aa96bb52e"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-25"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-26",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19240010200300010340000000",
+      "tax_map": "102.03-1-34",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "County of Greene",
+      "owner_type": "ENTITY",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "IRA VAIL RD, Cairo, NY",
+      "property_street": "IRA VAIL RD",
+      "property_city": "Cairo",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "411 Main St 4th FL Treasury, Catskill, NY, 12414",
+      "mailing_city": "Catskill",
+      "mailing_state": "NY",
+      "mailing_zip": "12414",
+      "assessed_value": 9900,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_1d7c185c85afbd6e"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-26"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-28",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19240013500000030190000000",
+      "tax_map": "135.00-3-19",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Pesco, Estate of, Nicholas",
+      "owner_type": "ESTATE",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "POLLYS ROCK RD, Cairo, NY",
+      "property_street": "POLLYS ROCK RD",
+      "property_city": "Cairo",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "PO BOX 84, New Rochelle, NY, 10802",
+      "mailing_city": "New Rochelle",
+      "mailing_state": "NY",
+      "mailing_zip": "10802",
+      "assessed_value": 8400,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_d7abaf4762a4760e"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-28"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-36",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19268913700000010090020000",
+      "tax_map": "137.00-1-9.2",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Ronk, James & Ronk, Rebecca",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "103 PORTO RD, Catskill, NY",
+      "property_street": "103 PORTO RD",
+      "property_city": "Catskill",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "PO BOX 477, Leeds, NY, 12451",
+      "mailing_city": "Leeds",
+      "mailing_state": "NY",
+      "mailing_zip": "12451",
+      "assessed_value": 42200,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_cc9480e6f70b04a3"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-36"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-38",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19268913700200020140000000",
+      "tax_map": "137.02-2-14",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Tomkins, Alexander C & Tomkins, Delores",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "OFF CAIRO JUNCTION RD, Catskill, NY",
+      "property_street": "OFF CAIRO JUNCTION RD",
+      "property_city": "Catskill",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "47 Washburn, Caldwell, NJ, 07006",
+      "mailing_city": "Caldwell",
+      "mailing_state": "NJ",
+      "mailing_zip": "07006",
+      "assessed_value": 1600,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_fd88d3bcd0ac2cdc"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-38"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-41",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19268915400000010500000000",
+      "tax_map": "154.00-1-50",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Lacek, Debra",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "PARADISE LAKE RD, Catskill, NY",
+      "property_street": "PARADISE LAKE RD",
+      "property_city": "Catskill",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "7 Hoose Blvd, Fishkill, NY, 12524",
+      "mailing_city": "Fishkill",
+      "mailing_state": "NY",
+      "mailing_zip": "12524",
+      "assessed_value": 12900,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_fe2dfb3513afd8bc"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-41"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-42",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19268915400000040270000000",
+      "tax_map": "154.00-4-27",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Palmer, Steven & Bickford, John H",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "OFF VEDDER MOUNTAIN RD, Catskill, NY",
+      "property_street": "OFF VEDDER MOUNTAIN RD",
+      "property_city": "Catskill",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "149 Jefferson Hts Apt 18, Catskill, NY, 12414",
+      "mailing_city": "Catskill",
+      "mailing_state": "NY",
+      "mailing_zip": "12414",
+      "assessed_value": 500,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_cbf39065ada4c6cf"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-42"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-43",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19268915500000010080000000",
+      "tax_map": "155.00-1-8",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Littell, Stephen T Jr.",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "PAUL HORN RD, Catskill, NY",
+      "property_street": "PAUL HORN RD",
+      "property_city": "Catskill",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "571 Hinson Dr Apt 73B, Myrtle Beach, SC, 29579",
+      "mailing_city": "Myrtle Beach",
+      "mailing_state": "SC",
+      "mailing_zip": "29579",
+      "assessed_value": 4000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_81270013fa1c3286"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-43"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-49",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19268919900800020250000000",
+      "tax_map": "199.08-2-25",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Moore, Antonette",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "OFF CEMETERY RD, Catskill, NY",
+      "property_street": "OFF CEMETERY RD",
+      "property_city": "Catskill",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "103-60 105th St, Ozone Park 17, NY, 11417",
+      "mailing_city": "Ozone Park 17",
+      "mailing_state": "NY",
+      "mailing_zip": "11417",
+      "assessed_value": 2800,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_e51203758b3738a9"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-49"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-5",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19220112201500020160000000",
+      "tax_map": "122.15-2-16",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Del Vecchio, Teresa M & Whiteman, Brian G Jr",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "113/115 N WASHINGTON ST, Athens, Village, NY",
+      "property_street": "113/115 N WASHINGTON ST",
+      "property_city": "Athens",
+      "property_state": "Village",
+      "property_zip": "",
+      "mailing_full_address": "115 N Washington St, Athens, NY, 120151116",
+      "mailing_city": "Athens",
+      "mailing_state": "NY",
+      "mailing_zip": "120151116",
+      "assessed_value": 326000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_f0362828e6d5a3f1"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-5"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-54",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19288903800000030300000000",
+      "tax_map": "38.00-3-30",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Terrell, Derek & Terrell, Randall D",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "416 HONEY HOLLOW RD, Coxsackie, NY",
+      "property_street": "416 HONEY HOLLOW RD",
+      "property_city": "Coxsackie",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "788 Riverside Dr Apt 3AA, New York, NY, 10032",
+      "mailing_city": "New York",
+      "mailing_state": "NY",
+      "mailing_zip": "10032",
+      "assessed_value": 127500,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_e3ed314fcb57d0b4"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-54"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-56",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19288905300000040120000000",
+      "tax_map": "53.00-4-12",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Lapinski, Gabriella",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "738 & 758 CR 45, Coxsackie, NY",
+      "property_street": "738 & 758 CR 45",
+      "property_city": "Coxsackie",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "781 Route 45, Earlton, NY, 12058",
+      "mailing_city": "Earlton",
+      "mailing_state": "NY",
+      "mailing_zip": "12058",
+      "assessed_value": 26000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_fb222cb9f83a244a"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-56"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-59",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19288908800000020040000000",
+      "tax_map": "88.00-2-4",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Tryon, Henry L",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "2463 SR 385, Coxsackie, NY",
+      "property_street": "2463 SR 385",
+      "property_city": "Coxsackie",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "19 Candie Dr, Poughkeepsie, NY, 12603",
+      "mailing_city": "Poughkeepsie",
+      "mailing_state": "NY",
+      "mailing_zip": "12603",
+      "assessed_value": 33500,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_42c83a1c34ee4d6f"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-59"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-6",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19228908600000020550000000",
+      "tax_map": "86.00-2-55",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Wohlmaker, Mark D & Wohlmaker, Arlene  (Etal)",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "POTIC MOUNTAIN RD, Athens, NY",
+      "property_street": "POTIC MOUNTAIN RD",
+      "property_city": "Athens",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "878 Potic Mtn Rd, Catskill, NY, 12414",
+      "mailing_city": "Catskill",
+      "mailing_state": "NY",
+      "mailing_zip": "12414",
+      "assessed_value": 12300,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_98739eca76200b2c"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-6"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-60",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19300002100000030110000000",
+      "tax_map": "21.00-3-11",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Scourakis, John",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "7497 ROUTE 81, Durham, NY",
+      "property_street": "7497 ROUTE 81",
+      "property_city": "Durham",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "955 Soundview Ave Ext, Southold, NY, 11971",
+      "mailing_city": "Southold",
+      "mailing_state": "NY",
+      "mailing_zip": "11971",
+      "assessed_value": 16000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_03bf6e5f0747d7a7"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-60"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-62",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19300003400000050131000000",
+      "tax_map": "34.00-5-13.1",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Lowry, Robert",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "ROUTE 20B, Durham, NY",
+      "property_street": "ROUTE 20B",
+      "property_city": "Durham",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "15 Canoe Brook Dr, Princeton Jct, NJ, 08550",
+      "mailing_city": "Princeton Jct",
+      "mailing_state": "NJ",
+      "mailing_zip": "08550",
+      "assessed_value": 24500,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_2ac881501864be35"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-62"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-63",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19300003400300010150000000",
+      "tax_map": "34.03-1-15",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Keriazis, Harry",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "105 ENCHANTED VALLEY RD, Durham, NY",
+      "property_street": "105 ENCHANTED VALLEY RD",
+      "property_city": "Durham",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "74 Lawrence Ct Apt A, White Plains, NY, 10603",
+      "mailing_city": "White Plains",
+      "mailing_state": "NY",
+      "mailing_zip": "10603",
+      "assessed_value": 31500,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_3c70910a0f9fd24d"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-63"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-65",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19300004900000030130000000",
+      "tax_map": "49.00-3-13",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Van Hove, Johannes",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "HYLAND RD, Durham, NY",
+      "property_street": "HYLAND RD",
+      "property_city": "Durham",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "145 Hillyer Cir, Middletown, NJ, 07748",
+      "mailing_city": "Middletown",
+      "mailing_state": "NJ",
+      "mailing_zip": "07748",
+      "assessed_value": 27000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_e87e69e7592e5a7b"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-65"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-66",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19300004900000030140000000",
+      "tax_map": "49.00-3-14",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Van Hove, Johannes",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "88 HYLAND RD, Durham, NY",
+      "property_street": "88 HYLAND RD",
+      "property_city": "Durham",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "145 Hillyer Cir, Middletown, NJ, 07748",
+      "mailing_city": "Middletown",
+      "mailing_state": "NJ",
+      "mailing_zip": "07748",
+      "assessed_value": 224800,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_bd2b122aec53ae0d"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-66"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-71",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19320002300000020130000000",
+      "tax_map": "23.00-2-13",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "County of Greene",
+      "owner_type": "ENTITY",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "6067 ROUTE 81, Greenville, NY",
+      "property_street": "6067 ROUTE 81",
+      "property_city": "Greenville",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "411 Main St, Catskill, NY, 12414",
+      "mailing_city": "Catskill",
+      "mailing_state": "NY",
+      "mailing_zip": "12414",
+      "assessed_value": 60000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_7ecdac82f4745501"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-71"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-72",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19320002300000020290000000",
+      "tax_map": "23.00-2-29",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "County of Greene",
+      "owner_type": "ENTITY",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "ROUTE 81, Greenville, NY",
+      "property_street": "ROUTE 81",
+      "property_city": "Greenville",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "411 Main St, Catskill, NY, 12414",
+      "mailing_city": "Catskill",
+      "mailing_state": "NY",
+      "mailing_zip": "12414",
+      "assessed_value": 6000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_e33949e19a7e9605"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-72"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-73",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19320002300200010010000000",
+      "tax_map": "23.02-1-1",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Bier, Horst Otto",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "5956 ROUTE 81, Greenville, NY",
+      "property_street": "5956 ROUTE 81",
+      "property_city": "Greenville",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "5956 State Route 81, Greenville, NY, 12083",
+      "mailing_city": "Greenville",
+      "mailing_state": "NY",
+      "mailing_zip": "12083",
+      "assessed_value": 69000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": false,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_5a49ef728972a060"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-73"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-74",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19320003500000020260000000",
+      "tax_map": "35.00-2-26",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Pena, Emily",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "753 BIG WOODS RD, Greenville, NY",
+      "property_street": "753 BIG WOODS RD",
+      "property_city": "Greenville",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "921 Divisin St, Peekskill, NY, 10566",
+      "mailing_city": "Peekskill",
+      "mailing_state": "NY",
+      "mailing_zip": "10566",
+      "assessed_value": 14000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_ca62a3506a82c4e8"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-74"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-75",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19320003600000040300000000",
+      "tax_map": "36.00-4-30",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Fulton, John David",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "PLATTEKILL RD, Greenville, NY",
+      "property_street": "PLATTEKILL RD",
+      "property_city": "Greenville",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "PO BOX 67, Valatie, NY, 12184",
+      "mailing_city": "Valatie",
+      "mailing_state": "NY",
+      "mailing_zip": "12184",
+      "assessed_value": 40000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_379381ccb8c44242"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-75"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-8",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19228910300000060181000000",
+      "tax_map": "103.00-6-18.1",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Brown, Violet G -Estate",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "249 BUTTERMILK FALLS RD, Athens, NY",
+      "property_street": "249 BUTTERMILK FALLS RD",
+      "property_city": "Athens",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "249 Buttermilk Falls Rd, Catskill, NY, 12414",
+      "mailing_city": "Catskill",
+      "mailing_state": "NY",
+      "mailing_zip": "12414",
+      "assessed_value": 152000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_924eeb1b915c13b1"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-8"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-9",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19228910400000010190000000",
+      "tax_map": "104.00-1-19",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Piccirillo, Ignatius & Piccirillo, Carole",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "7 ROUTE 49, Athens, NY",
+      "property_street": "7 ROUTE 49",
+      "property_city": "Athens",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "3610 Yacht Club Dr Unit 209, Aventura, FL, 33180",
+      "mailing_city": "Aventura",
+      "mailing_state": "FL",
+      "mailing_zip": "33180",
+      "assessed_value": 11700,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_26740ef0b37b8477"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-9"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-90",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19368920800000010241000000",
+      "tax_map": "208.00-1-24.1",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Mink Hollow Estates INC",
+      "owner_type": "ENTITY",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "241 MINK HOLLOW RD, Hunter, NY",
+      "property_street": "241 MINK HOLLOW RD",
+      "property_city": "Hunter",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "2290 W County Line Rd STE 305, Jackson, NJ, 08527",
+      "mailing_city": "Jackson",
+      "mailing_state": "NJ",
+      "mailing_zip": "08527",
+      "assessed_value": 76400,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_a4628c8b9cf48ccc"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-90"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-91",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19368920800000010242000000",
+      "tax_map": "208.00-1-24.2",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Mink Hollow Estates Inc",
+      "owner_type": "ENTITY",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "MINK HOLLOW RD, Hunter, NY",
+      "property_street": "MINK HOLLOW RD",
+      "property_city": "Hunter",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "2290 W County Iine Rd STE 305, Jackson, NJ, 08527",
+      "mailing_city": "Jackson",
+      "mailing_state": "NJ",
+      "mailing_zip": "08527",
+      "assessed_value": 13000,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_f21f866baf08a446"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-91"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-93",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19380011100000020950000000",
+      "tax_map": "111.00-2-95",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Friel, John & Regenstreif, Ellen",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "WINDY LN, Jewett, NY",
+      "property_street": "WINDY LN",
+      "property_city": "Jewett",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "26 Cedar St, Cedar Grove, NJ, 07009",
+      "mailing_city": "Cedar Grove",
+      "mailing_state": "NJ",
+      "mailing_zip": "07009",
+      "assessed_value": 42400,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": true,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_761cec467da3a790"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-93"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-96",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19380013200000030110000000",
+      "tax_map": "132.00-3-11",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Magee Robert C Jr & Magee, Laura",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "68 SUN VALLEY LN, Jewett, NY",
+      "property_street": "68 SUN VALLEY LN",
+      "property_city": "Jewett",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "65 Parkway Dr, Westbury, NY, 115901015",
+      "mailing_city": "Westbury",
+      "mailing_state": "NY",
+      "mailing_zip": "115901015",
+      "assessed_value": 9900,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_236bc52d12586d67"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-96"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-98",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19400010900000010230000000",
+      "tax_map": "109.00-1-23",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Thomson Barbara G",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "51 CARTWRIGHT RD, Lexington, NY",
+      "property_street": "51 CARTWRIGHT RD",
+      "property_city": "Lexington",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "4 Sterley Ave, Saugerties, NY, 12477",
+      "mailing_city": "Saugerties",
+      "mailing_state": "NY",
+      "mailing_zip": "12477",
+      "assessed_value": 47400,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_12c5346b03bd89af"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-98"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    },
+    {
+      "lead_id": "lead_unresolved_AAR-6892-99",
+      "parcel_resolution_status": "RESOLVED",
+      "parcel_id": "19400012700000030460000000",
+      "tax_map": "127.00-3-46",
+      "epcad_enrichment_status": "ENRICHED",
+      "enrichment_status": "ENRICHED",
+      "filer_entity": "",
+      "owner_name": "Mancino Giuseppe",
+      "owner_type": "INDIVIDUAL",
+      "owner_source": "parcel_master",
+      "owner_source_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "property_full_address": "VALLEY VIEW RD, Lexington, NY",
+      "property_street": "VALLEY VIEW RD",
+      "property_city": "Lexington",
+      "property_state": "NY",
+      "property_zip": "",
+      "mailing_full_address": "76 Drake Ave, New Rochelle, NY, 10805",
+      "mailing_city": "New Rochelle",
+      "mailing_state": "NY",
+      "mailing_zip": "10805",
+      "assessed_value": 46100,
+      "appraised_value": null,
+      "homestead": null,
+      "absentee_owner_flag": true,
+      "out_of_state_owner_flag": false,
+      "legal_description": "",
+      "signals": [
+        {
+          "signal_type": "foreclosure_notice",
+          "signal_label": "Tax Foreclosure Auction",
+          "signal_confidence": "HIGH",
+          "source_id": "tax_foreclosure_auction",
+          "count": 1,
+          "source_urls": [
+            "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+          ],
+          "evidence_ids": [
+            "ev_779a69da5e499d11"
+          ],
+          "instrument_numbers": [
+            "AAR-6892-99"
+          ],
+          "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+          "recorded_date": "2025-10-29",
+          "sale_date": "2025-10-29"
+        }
+      ],
+      "signal_types": [
+        "foreclosure_notice"
+      ],
+      "source_urls": [
+        "https://aarauctions.com/servlet/Search.do?auctionId=6892"
+      ],
+      "latest_event_date": "2025-10-29",
+      "review_required": true,
+      "review_reason": "owner_not_on_document — AAR exposes no owner per lot; owner attached downstream from parcel_master."
+    }
+  ]
+}
