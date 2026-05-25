@@ -76,6 +76,12 @@ jobs:
           tesseract --version
           pdftoppm -v 2>&1 | head -1
 
+      - name: Python deps (jsonschema for §4.32 contract validation)
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-refresh.txt
+          python -c "import jsonschema; print('jsonschema', jsonschema.__version__)"
+
       - name: AAR tax-foreclosure auction
         id: aar
         run: |

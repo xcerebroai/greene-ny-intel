@@ -1,0 +1,19 @@
+# Python pip dependencies for the Greene NY daily-refresh GitHub
+# Actions workflow (.github/workflows/greene-daily-refresh.yml).
+#
+# AST-audit of every .py under scaffold/, scrapers/, and
+# runs/greene_ny/build/ shows exactly one non-stdlib package the
+# refresh pipeline actually imports:
+#
+#   jsonschema   — used by scaffold/pipeline/{aggregator,
+#                  debtor_party_engine, scoring_seam}.py for
+#                  Draft202012Validator (§4.32 contract validation).
+#
+# `playwright` is also imported, but ONLY by the smoke-test scripts
+# (runs/greene_ny/build/{browser,banner,filter_sim}.py + the
+# stealth-recon probes) which the daily-refresh workflow does NOT
+# invoke. `ops` is a local scaffold/ops/ package, not a pip dep.
+#
+# Pin the major to keep behaviour stable across runs; allow patch
+# floats so security fixes flow in.
+jsonschema>=4.20,<5
