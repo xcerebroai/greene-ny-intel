@@ -47,7 +47,8 @@
     search: "", saleWindow: "any", recordedWindow: "any",
     valMin: null, valMax: null,
     signals: {}, owners: {}, absentee: false, oos: false, review: false,
-    multiOnly: false, newOnly: false, sort: "urgency",
+    multiOnly: false, newOnly: false, currentOnly: false,
+    historicalOnly: false, sort: "urgency",
     shown: 0, preset: "all"
   };
   var PAGE = 60;
@@ -73,9 +74,51 @@
   }
 
   // ---------- preprocessing ----------
+  // Canonical doc types that count as "foreclosure-flavored" for the
+  // chip color + sale-window filter + urgency tiers.
+  var FCL_TYPES = {
+    "foreclosure_notice": true,         // legacy umbrella value
+    "tax_foreclosure_notice": true,
+    "notice_of_sale": true,
+    "final_judgment_of_foreclosure": true,
+    "lis_pendens": true,
+    "mechanics_lien": true,
+  };
+  var ESTATE_TYPES = {
+    "estate_titled_property": true,     // legacy umbrella value
+    "letters_testamentary": true,
+    "letters_of_administration": true,
+    "estate_notice": true,
+  };
+  var TAX_LIEN_TYPES = {
+    "state_tax_lien": true,
+    "federal_tax_lien": true,
+  };
+  // Pretty labels for the filter sidebar (signal_type → label).
+  var SIGNAL_TYPE_LABELS = {
+    "tax_foreclosure_notice":      "Tax foreclosure",
+    "notice_of_sale":              "Foreclosure — Notice of Sale",
+    "final_judgment_of_foreclosure": "Final Judgment of Foreclosure",
+    "lis_pendens":                 "Lis pendens / Foreclosure summons",
+    "mechanics_lien":              "Mechanic's lien",
+    "letters_testamentary":        "Probate — Letters Testamentary",
+    "letters_of_administration":   "Probate — Letters of Administration",
+    "estate_notice":               "Probate — Estate Notice",
+    "state_tax_lien":              "State tax lien",
+    "federal_tax_lien":            "Federal tax lien",
+    // Legacy umbrellas (in case any old data still uses them)
+    "foreclosure_notice":          "Foreclosure",
+    "estate_titled_property":      "Estate / probate",
+  };
+  function chipClass(signal_type) {
+    if (FCL_TYPES[signal_type]) return "fcl";
+    if (ESTATE_TYPES[signal_type]) return "estate";
+    if (TAX_LIEN_TYPES[signal_type]) return "tax";
+    return "";
+  }
   function fclSignal(r) {
     var s = (r.signals || []).filter(function (x) {
-      return x.signal_type === "foreclosure_notice";
+      return FCL_TYPES[x.signal_type];
     });
     return s.length ? s[0] : null;
   }
@@ -97,9 +140,12 @@
     r._daysSince = (typeof r.days_since_event === "number")
       ? r.days_since_event : null;
     r._last30 = !!r.last_30_days;
+    r._isHistorical = !!r.is_historical;
+    r._stackDepth = Number(r.stack_depth || r.signal_count || 1);
     r._tier = urgencyTier(r);
-    var taxd = r.signal_types.indexOf("state_tax_lien") >= 0 ||
-      r.signal_types.indexOf("federal_tax_lien") >= 0;
+    var taxd = false;
+    for (var i = 0; i < r.signal_types.length; i++)
+      if (TAX_LIEN_TYPES[r.signal_types[i]]) { taxd = true; break; }
     r._taxDelinquent = taxd;
     r._blob = [r.owner_name, r.property_full_address, r.mailing_full_address,
       r.legal_description, r.filer_entity,
@@ -107,20 +153,28 @@
         return (s.instrument_numbers || []).join(" ");
       }).join(" ")].join(" ").toLowerCase();
   }
+  // urgencyTier — neutral default, NOT estate-first:
+  //   1 = upcoming foreclosure sale ≤ 21 days
+  //   2 = upcoming foreclosure sale 22–60 days
+  //   3 = current-cycle (≤365 d) with multi-year stack (stack_depth ≥ 2)
+  //   4 = current-cycle, any other distress
+  //   5 = historical (> 365 d), multi-year stack
+  //   6 = historical, single-year stack
+  //   7 = everything else (no recency info)
+  // Estate-titled is just one signal_type users filter for — it does NOT
+  // promote into a tier on its own. Multi-year stack is the meaningful
+  // distress booster.
   function urgencyTier(r) {
     var d = r._days;
     if (r._isFcl && d != null && d >= 0 && d <= 21) return 1;
     if (r._isFcl && d != null && d > 21 && d <= 60) return 2;
-    // tier 3: estate-titled property. The v5 spec floored this at a high
-    // assessed value, but EPCAD resolves ~0 estate-named owners, so a
-    // value floor would empty the tier — estate-titled property is itself
-    // a strong probate / motivated-heir lead signal, so it ranks here.
-    if (r.owner_type === "ESTATE") return 3;
-    if ((r.signal_count || 0) >= 2) return 4;
-    var tax = (r.signal_types || []).indexOf("state_tax_lien") >= 0 ||
-      (r.signal_types || []).indexOf("federal_tax_lien") >= 0;
-    if (tax && r.out_of_state_owner_flag) return 5;
-    return 6;
+    if (!r._isHistorical) {
+      if (r._stackDepth >= 2) return 3;
+      return 4;
+    }
+    if (r._stackDepth >= 2) return 5;
+    if (r._daysSince != null) return 6;
+    return 7;
   }
 
   // ---------- boot ----------
@@ -152,12 +206,12 @@
     var last30 = (typeof p.last_30_days_count === "number")
       ? p.last_30_days_count
       : records.filter(function (r) { return r._last30; }).length;
-    var fclAddr = records.filter(function (r) {
-      return r._isFcl && r.property_full_address;
-    }).length;
-    var soon = records.filter(function (r) {
-      return r._isFcl && r._days != null && r._days >= 0 && r._days <= 21;
-    }).length;
+    var current = (typeof p.current_cycle_count === "number")
+      ? p.current_cycle_count
+      : records.filter(function (r) { return !r._isHistorical; }).length;
+    var historical = (typeof p.historical_count === "number")
+      ? p.historical_count
+      : records.filter(function (r) { return r._isHistorical; }).length;
     var estates = records.filter(function (r) {
       return r.owner_type === "ESTATE";
     }).length;
@@ -171,22 +225,26 @@
          'NEW today &middot; ' + esc(p.refresh_date || ""),
          "new") +
       st(last30.toLocaleString(), "last 30 days", "recent") +
+      st(current.toLocaleString(), "current cycle", "current") +
+      st(historical.toLocaleString(), "historical", "historical") +
       st(act.toLocaleString(), "actionable") +
-      st(fclAddr, "foreclosures w/ addr") +
-      st(soon, "sale &le;21 days", "urgent") +
-      st(estates, "estate-titled leads", "estate");
+      st(estates, "estate / probate", "estate");
   }
 
   // ---------- sidebar ----------
+  // "All records" leads the list — that is the LANDING view. Every
+  // other preset is a click-to-narrow option. Estate is one preset
+  // among many, NOT the default.
   var PRESETS = [
+    { id: "all",     label: "All records (default)" },
+    { id: "current", label: "Current cycle only" },
     { id: "new",     label: "NEW today" },
     { id: "last30",  label: "Last 30 days" },
-    { id: "fcl21",   label: "Foreclosures — next 21 days" },
-    { id: "estates", label: "Estate-titled properties" },
+    { id: "fcl21",   label: "Foreclosures — sale ≤ 21 days" },
+    { id: "multi",   label: "Multi-year stacked" },
+    { id: "estates", label: "Estate / probate" },
     { id: "oos",     label: "Out-of-state absentees" },
-    { id: "multi",   label: "Multi-signal stacked" },
     { id: "tax",     label: "Tax delinquent" },
-    { id: "all",     label: "Show all" }
   ];
   function buildPresets() {
     var box = $("presets");
@@ -204,22 +262,27 @@
     });
   }
 
+  // Click-to-select filter UX: every checkbox starts UNCHECKED. With
+  // an empty selection set, the filter is a no-op (= show all). Once
+  // the user clicks a box, only that type (or stacked types) are
+  // shown. Two-state semantics: any() selection = strict include-only;
+  // zero selections = no filter (show all).
   function buildSignalFilter() {
-    var counts = {}, labels = {};
+    var counts = {};
     records.forEach(function (r) {
       (r.signals || []).forEach(function (s) {
         counts[s.signal_type] = (counts[s.signal_type] || 0) + 1;
-        labels[s.signal_type] = s.signal_label || s.signal_type;
       });
     });
     var box = $("signalFilter");
     Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; })
       .forEach(function (t) {
-        state.signals[t] = true;
+        state.signals[t] = false;                  // start UNCHECKED
+        var displayLabel = SIGNAL_TYPE_LABELS[t] || t;
         var l = document.createElement("label");
         l.className = "chk";
-        l.innerHTML = '<input type="checkbox" checked data-sig="' + esc(t) +
-          '"> ' + esc(labels[t]) + '<span class="cnt">' + counts[t] + "</span>";
+        l.innerHTML = '<input type="checkbox" data-sig="' + esc(t) +
+          '"> ' + esc(displayLabel) + '<span class="cnt">' + counts[t] + "</span>";
         l.querySelector("input").addEventListener("change", function (e) {
           state.signals[t] = e.target.checked; markPresetActive("");
           render();
@@ -234,17 +297,18 @@
       counts[o] = (counts[o] || 0) + 1;
     });
     var box = $("ownerFilter");
-    Object.keys(counts).sort().forEach(function (o) {
-      state.owners[o] = true;
-      var l = document.createElement("label");
-      l.className = "chk";
-      l.innerHTML = '<input type="checkbox" checked data-own="' + esc(o) +
-        '"> ' + esc(o) + '<span class="cnt">' + counts[o] + "</span>";
-      l.querySelector("input").addEventListener("change", function (e) {
-        state.owners[o] = e.target.checked; markPresetActive(""); render();
+    Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; })
+      .forEach(function (o) {
+        state.owners[o] = false;                   // start UNCHECKED
+        var l = document.createElement("label");
+        l.className = "chk";
+        l.innerHTML = '<input type="checkbox" data-own="' + esc(o) +
+          '"> ' + esc(o) + '<span class="cnt">' + counts[o] + "</span>";
+        l.querySelector("input").addEventListener("change", function (e) {
+          state.owners[o] = e.target.checked; markPresetActive(""); render();
+        });
+        box.appendChild(l);
       });
-      box.appendChild(l);
-    });
   }
 
   function wireControls() {
@@ -284,17 +348,18 @@
     });
     $("resetBtn").addEventListener("click", function () { applyPreset("all"); });
     $("exportFiltered").addEventListener("click", function () {
-      exportCsv(filtered, "el_paso_leads_filtered.csv");
+      exportCsv(filtered, "greene_ny_leads_filtered.csv");
     });
     $("exportMarked").addEventListener("click", function () {
       var rows = records.filter(function (r) { return marked[r.lead_id]; });
       if (!rows.length) { alert("No leads marked for review yet."); return; }
-      exportCsv(rows, "el_paso_leads_marked.csv");
+      exportCsv(rows, "greene_ny_leads_marked.csv");
     });
   }
 
   function applyPreset(id) {
-    // reset everything to defaults first
+    // Reset every filter to OFF / unselected first (click-to-select
+    // default — empty selections = show all).
     state.search = ""; $("search").value = "";
     state.saleWindow = "any"; $("saleWindow").value = "any";
     state.recordedWindow = "any";
@@ -305,13 +370,20 @@
     state.oos = false; $("togOos").checked = false;
     state.review = false; $("togReview").checked = false;
     state.multiOnly = false; state.newOnly = false;
-    setAllChecks("signalFilter", "sig", state.signals, true);
-    setAllChecks("ownerFilter", "own", state.owners, true);
+    state.currentOnly = false; state.historicalOnly = false;
+    setAllChecks("signalFilter", "sig", state.signals, false);
+    setAllChecks("ownerFilter", "own", state.owners, false);
 
     if (id === "fcl21") {
       state.saleWindow = "21"; $("saleWindow").value = "21";
-      onlyChecks("signalFilter", "sig", state.signals, ["foreclosure_notice"]);
+      onlyChecks("signalFilter", "sig", state.signals,
+        ["tax_foreclosure_notice", "notice_of_sale",
+         "final_judgment_of_foreclosure", "lis_pendens",
+         "foreclosure_notice"]);
     } else if (id === "estates") {
+      onlyChecks("signalFilter", "sig", state.signals,
+        ["letters_testamentary", "letters_of_administration",
+         "estate_notice", "estate_titled_property"]);
       onlyChecks("ownerFilter", "own", state.owners, ["ESTATE"]);
     } else if (id === "oos") {
       state.absentee = true; $("togAbsentee").checked = true;
@@ -320,7 +392,7 @@
       state.multiOnly = true;
     } else if (id === "tax") {
       onlyChecks("signalFilter", "sig", state.signals,
-        ["state_tax_lien", "federal_tax_lien"]);
+        ["tax_foreclosure_notice", "state_tax_lien", "federal_tax_lien"]);
     } else if (id === "new") {
       state.recordedWindow = "0";
       if (rw) rw.value = "0";
@@ -328,7 +400,10 @@
     } else if (id === "last30") {
       state.recordedWindow = "30";
       if (rw) rw.value = "30";
+    } else if (id === "current") {
+      state.currentOnly = true;
     }
+    // id === "all" or anything unrecognized → full reset, show every record
     markPresetActive(id);
     render();
   }
@@ -345,11 +420,18 @@
   }
 
   // ---------- filtering + sorting ----------
+  // Click-to-select semantics: filter is active ONLY when at least one
+  // checkbox is checked. Zero checked → filter is a no-op (show all of
+  // that dimension). Stack multiple checkboxes to OR within a dimension.
   function applyFilters() {
-    var sigKeys = Object.keys(state.signals);
-    var allSig = sigKeys.every(function (k) { return state.signals[k]; });
-    var ownKeys = Object.keys(state.owners);
-    var allOwn = ownKeys.every(function (k) { return state.owners[k]; });
+    var sigSelected = [];
+    for (var sk in state.signals)
+      if (state.signals[sk]) sigSelected.push(sk);
+    var ownSelected = [];
+    for (var ok in state.owners)
+      if (state.owners[ok]) ownSelected.push(ok);
+    var anySig = sigSelected.length > 0;
+    var anyOwn = ownSelected.length > 0;
     var win = state.saleWindow === "any" ? null : Number(state.saleWindow);
     var rwin = state.recordedWindow === "any"
       ? null : Number(state.recordedWindow);
@@ -357,17 +439,20 @@
     return records.filter(function (r) {
       if (skipped[r.lead_id]) return false;
       if (state.review && !r._review) return false;
-      if (!allSig) {
+      if (anySig) {
         var hit = (r.signal_types || []).some(function (t) {
           return state.signals[t];
         });
         if (!hit) return false;
       }
-      if (!allOwn && !state.owners[r.owner_type || "UNKNOWN"]) return false;
+      if (anyOwn) {
+        if (!state.owners[r.owner_type || "UNKNOWN"]) return false;
+      }
       if (state.absentee && !r.absentee_owner_flag) return false;
       if (state.oos && !r.out_of_state_owner_flag) return false;
-      if (state.multiOnly && (r.signal_count || 0) < 2) return false;
+      if (state.multiOnly && r._stackDepth < 2) return false;
       if (state.newOnly && !r._isNew) return false;
+      if (state.currentOnly && r._isHistorical) return false;
       if (win != null) {
         if (!r._isFcl || r._days == null || r._days < 0 || r._days > win)
           return false;
@@ -405,17 +490,22 @@
         var bf = b._filed ? b._filed.getTime() : 0;
         return bf - af;
       }
-      if (by === "signals")
-        return (b.signal_count || 0) - (a.signal_count || 0);
-      // urgency (default): tier asc, then within-tier secondary
+      if (by === "signals") return b._stackDepth - a._stackDepth;
+      // urgency (default, NEUTRAL — not estate-first):
+      //   tier asc → within-tier soonest-sale-first for foreclosure
+      //   tiers, otherwise most-recent recorded_date first, then
+      //   higher stack_depth, then higher assessed_value.
       if (a._tier !== b._tier) return a._tier - b._tier;
-      if (a._tier <= 2) {            // foreclosure tiers: soonest sale first
+      if (a._tier <= 2) {
         var as = a._saleDate ? a._saleDate.getTime() : 8e15;
         var bs = b._saleDate ? b._saleDate.getTime() : 8e15;
         return as - bs;
       }
-      if ((b.signal_count || 0) !== (a.signal_count || 0))
-        return (b.signal_count || 0) - (a.signal_count || 0);
+      // Within current-cycle and historical tiers, more recent first.
+      var ad = a._daysSince == null ? 1e9 : a._daysSince;
+      var bd = b._daysSince == null ? 1e9 : b._daysSince;
+      if (ad !== bd) return ad - bd;
+      if (a._stackDepth !== b._stackDepth) return b._stackDepth - a._stackDepth;
       return b._assessed - a._assessed;
     });
     return c;
@@ -444,9 +534,8 @@
     if (!filtered.length) {
       empty.hidden = false;
       empty.innerHTML = "<b>No leads match the current filters.</b>" +
-        "Try widening the foreclosure sale window, clearing the assessed-" +
-        "value range, or re-checking signal/owner types — or hit " +
-        "<em>Show all</em>.";
+        " Click an additional signal/owner checkbox to widen, clear the " +
+        "assessed-value range, or hit <em>All records</em>.";
       return;
     }
     empty.hidden = true;
@@ -469,20 +558,29 @@
       var n = s.count || 1;
       var cb = n > 1 ? '<span class="cb">' + n + "</span>" : "";
       var cls = "chip", label = esc(s.signal_label || s.signal_type);
-      if (s.signal_type === "foreclosure_notice") {
+      // Color the chip by canonical-doc-type family. signal_chip_class
+      // is pre-baked by the adapter when present; otherwise derive.
+      var family = s.chip_class || r.signal_chip_class
+        || chipClass(s.signal_type) || "";
+      if (family === "foreclosure") {
         cls += " fcl";
         var d = r._days;
         if (d != null && d >= 0 && d <= 21) cls += " soon";
         if (s.sale_date) {
-          label = "Foreclosure — Sale " + esc(s.sale_date);
-          if (d != null) label += d < 0 ? " (past)"
-            : d === 0 ? " (today)" : " (in " + d + "d)";
+          var saleLabel = s.signal_type === "lis_pendens"
+            ? "Filed " : "Filed/Sale ";
+          label = esc(s.signal_label || "Foreclosure") +
+            " — " + saleLabel + esc(s.sale_date);
+          if (d != null) {
+            label += d < -365 ? " (historical)"
+              : d < 0       ? " (past)"
+              : d === 0     ? " (today)"
+              : " (in " + d + "d)";
+          }
         }
-      } else if (s.signal_type === "estate_titled_property" ||
-        s.signal_type === "trust_titled_property") {
+      } else if (family === "estate") {
         cls += " estate";
-      } else if (s.signal_type === "state_tax_lien" ||
-        s.signal_type === "federal_tax_lien") {
+      } else if (family === "tax") {
         cls += " tax";
       }
       return '<span class="' + cls + '">' + label + cb + "</span>";
@@ -492,6 +590,7 @@
     var el = document.createElement("div");
     el.className = "lead u-" + r._tier +
       (r._isNew ? " is-new" : "") +
+      (r._isHistorical ? " historical" : "") +
       (r._review ? " review" : "") + (marked[r.lead_id] ? " marked" : "");
     el.dataset.id = r.lead_id;
 
@@ -547,17 +646,20 @@
       b.push('<span class="badge badge-new">NEW</span>');
     else if (r._daysSince != null && r._daysSince > 0 && r._daysSince <= 30)
       b.push('<span class="badge badge-recent">' + r._daysSince + "d ago</span>");
+    if (r._isHistorical)
+      b.push('<span class="badge badge-historical">HISTORICAL</span>');
+    if (r._stackDepth >= 2)
+      b.push('<span class="badge badge-stack">stack ×' + r._stackDepth + "</span>");
     if (r._review)
       b.push('<span class="badge warn">REVIEW REQUIRED</span>');
     if (r.absentee_owner_flag)
       b.push('<span class="badge warn">Absentee</span>');
     if (r.out_of_state_owner_flag)
       b.push('<span class="badge warn">Out-of-state</span>');
-    if (r.homestead === "HOMESTEAD")
-      b.push('<span class="badge good">Homestead</span>');
-    if (r.epcad_enrichment_status === "ENRICHED" ||
-      r.parcel_resolution_status === "RESOLVED" && r.parcel_id)
-      b.push('<span class="badge">EPCAD enriched</span>');
+    var enriched = r.parcel_master_enrichment_status === "ENRICHED" ||
+      (r.parcel_resolution_status === "RESOLVED" && r.parcel_id);
+    if (enriched)
+      b.push('<span class="badge">Parcel enriched</span>');
     return b.join("");
   }
 
@@ -575,8 +677,10 @@
     var fs = r._fcl;
     var rows = [];
     function add(k, v) { if (v) rows.push([k, v]); }
+    var enrichLabel = r.parcel_master_enrichment_status
+                       || r.enrichment_status;
     add("Resolution", r.parcel_resolution_status +
-      (r.epcad_enrichment_status ? " · EPCAD " + r.epcad_enrichment_status : ""));
+      (enrichLabel ? " · Parcel " + enrichLabel : ""));
     if (r.filer_entity) add("Filer entity", esc(r.filer_entity));
     add("Parcel ID", r.parcel_id);
     add("Legal description", esc(r.legal_description));
@@ -632,7 +736,7 @@
       skipped[r.lead_id] = true; render();
     };
     d.querySelector(".act-export").onclick = function () {
-      exportCsv([r], "el_paso_lead_" + (r.lead_id || "row") + ".csv");
+      exportCsv([r], "greene_ny_lead_" + (r.lead_id || "row") + ".csv");
     };
   }
 
@@ -677,12 +781,13 @@
 
   // ---------- CSV (UI-8) ----------
   var CSV_COLS = ["lead_id", "owner_name", "owner_type",
-    "parcel_resolution_status", "epcad_enrichment_status", "filer_entity",
+    "parcel_resolution_status", "parcel_master_enrichment_status", "filer_entity",
     "property_full_address", "property_city", "property_zip",
     "mailing_full_address", "mailing_state", "assessed_value",
     "appraised_value", "homestead", "absentee_owner_flag",
-    "out_of_state_owner_flag", "signal_count", "primary_signal",
-    "latest_event_date", "legal_description", "parcel_id"];
+    "out_of_state_owner_flag", "signal_count", "stack_depth",
+    "is_historical", "primary_signal",
+    "recorded_date", "latest_event_date", "legal_description", "parcel_id"];
   function exportCsv(rows, fname) {
     var head = CSV_COLS.concat(["sale_date", "signal_types", "source_urls"]);
     var lines = [head.join(",")];

@@ -1,4 +1,5 @@
-/* El Paso County Distress Intelligence — operator lead board (v5).
+/* Greene County, NY Distress Intelligence — operator lead board (v5).
+   Originally ported from El Paso (CSS variables / chip palette intact);
    Desktop-first; dense, high-contrast, fast to scan. */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
@@ -33,6 +34,8 @@ body {
 .topstat.estate .n { color: var(--green); }
 .topstat.new .n { color: #59c87a; }
 .topstat.recent .n { color: var(--accent); }
+.topstat.current .n { color: var(--accent); }
+.topstat.historical .n { color: var(--ink3); }
 .topactions { display: flex; gap: 8px; }
 
 .btn {
@@ -120,10 +123,13 @@ main { display: flex; flex: 1; min-height: 0; }
   margin-bottom: 7px; padding: 9px 12px 9px 13px; cursor: pointer;
 }
 .lead:hover { border-color: var(--accent); }
-.lead.u-1 { border-left-color: var(--red); }
-.lead.u-2 { border-left-color: var(--orange); }
-.lead.u-3 { border-left-color: var(--green); }
-.lead.u-4 { border-left-color: var(--yellow); }
+.lead.u-1 { border-left-color: var(--red); }       /* sale ≤21d */
+.lead.u-2 { border-left-color: var(--orange); }    /* sale 22-60d */
+.lead.u-3 { border-left-color: var(--green); }     /* current + multi-year stack */
+.lead.u-4 { border-left-color: var(--accent); }    /* current single */
+.lead.u-5 { border-left-color: var(--yellow); }    /* historical + multi-year stack */
+.lead.u-6 { border-left-color: var(--ink3); }      /* historical single */
+.lead.u-7 { border-left-color: var(--ink3); }      /* no recency info */
 .lead.review { border-left-color: var(--violet);
   background: repeating-linear-gradient(135deg, var(--panel),
     var(--panel) 11px, #1c1822 11px, #1c1822 22px); }
@@ -140,6 +146,13 @@ main { display: flex; flex: 1; min-height: 0; }
     rgba(89, 200, 122, 0.10), rgba(89, 200, 122, 0.10) 11px,
     rgba(28, 24, 34, 0.95) 11px, rgba(28, 24, 34, 0.95) 22px);
 }
+/* Historical rows (primary event > 365 d ago) — same data, muted UI. */
+.lead.historical { opacity: 0.78; }
+.lead.historical:hover { opacity: 1; }
+.lead.historical .owner { color: var(--ink); }
+.lead.historical.is-new,
+.lead.historical.u-1,
+.lead.historical.u-2 { opacity: 1; }   /* never dim genuinely urgent rows */
 
 .lead-main { display: flex; gap: 14px; align-items: flex-start; }
 .lead-id { flex: 1; min-width: 0; }
@@ -182,6 +195,13 @@ main { display: flex; flex: 1; min-height: 0; }
   animation: badge-new-pulse 1.8s ease-in-out infinite;
 }
 .badge.badge-recent { background: #1d2a3a; color: #9bd1ff; }
+.badge.badge-historical {
+  background: #2a2630; color: #9b94aa; font-size: 10px;
+  letter-spacing: 0.5px;
+}
+.badge.badge-stack {
+  background: #2a1f33; color: #d4a3ff; font-weight: 700;
+}
 @keyframes badge-new-pulse {
   0%, 100% { box-shadow: 0 0 0 1px rgba(89,200,122,0.55), 0 0 4px rgba(89,200,122,0.45); }
   50%      { box-shadow: 0 0 0 1px rgba(89,200,122,0.75), 0 0 7px rgba(89,200,122,0.65); }
