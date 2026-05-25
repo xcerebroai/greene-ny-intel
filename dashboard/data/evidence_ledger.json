@@ -1,6 +1,6 @@
 [
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_00c69df265f41c93",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e40ba52d104340cc",
@@ -11,7 +11,7 @@
     "value": "TX-PETITION-185.01-3-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_00e285451af75ec6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9a57d4626c58bfc1",
@@ -22,7 +22,7 @@
     "value": "TX-PETITION-105.07-4-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_01119eb32e0cf8e0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a49640b39acf5f47",
@@ -33,7 +33,7 @@
     "value": "TX-PETITION-11.00-2-22"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_037427835780040b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_64851fb386900de8",
@@ -44,7 +44,7 @@
     "value": "TX-PETITION-102.03-1-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_04a7052494949f3c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_8b0d676ba9d03794",
@@ -55,7 +55,7 @@
     "value": "TX-PETITION-63.00-3-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_04f9c2f4b36bd657",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a6def4ebcc0a83ea",
@@ -66,7 +66,7 @@
     "value": "TX-PETITION-34.00-5-23.11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_054ab3bd697e53f5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_fcbf4a2f48752411",
@@ -77,7 +77,7 @@
     "value": "TX-PETITION-182.00-4-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_069cb26cb18d01c0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9df95eacd75e7e6e",
@@ -88,7 +88,7 @@
     "value": "TX-PETITION-7.00-3-47"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_071847801b06536a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f69bf0a7b63f0630",
@@ -99,7 +99,7 @@
     "value": "TX-PETITION-86.00-8-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_072e8d1007d2b1a6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3fb4507131db606b",
@@ -110,7 +110,7 @@
     "value": "TX-PETITION-63.00-3-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0743295781cf55c6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_56fbbdc7bc4573bb",
@@ -121,7 +121,7 @@
     "value": "TX-PETITION-7.16-2-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0750778f71bfbfa2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a77eed0b7779c382",
@@ -132,7 +132,7 @@
     "value": "TX-PETITION-117.00-2-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_076aed2926ad6580",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ce62fbfd9246a2aa",
@@ -143,7 +143,7 @@
     "value": "TX-PETITION-48.00-2-43"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_07b5764331451f14",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4f21199a86ed1d3d",
@@ -154,7 +154,7 @@
     "value": "TX-PETITION-120.00-2-11.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_08a119468c96a39b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_61bc2867c04ebc19",
@@ -165,7 +165,7 @@
     "value": "TX-PETITION-56.13-2-2.111"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_08e17b320cfc5aaa",
     "field": "tax_foreclosure_event",
     "record_id": "raw_54e0d6a82a5bd807",
@@ -176,7 +176,7 @@
     "value": "TX-PETITION-74.14-1-34"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_093536fc941f38e1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ac01d2b6f3a0a6f3",
@@ -187,7 +187,7 @@
     "value": "TX-PETITION-98.00-1-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_096d4d11e30a125a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_42dc5c32e88f115a",
@@ -198,7 +198,7 @@
     "value": "TX-PETITION-169.00-4-22"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_09a81a3c86fbaed0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_8581b27a3c21227c",
@@ -209,7 +209,7 @@
     "value": "TX-PETITION-127.00-3-46"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_09bc8a8e19d93127",
     "field": "tax_foreclosure_event",
     "record_id": "raw_088929f0a70de4a2",
@@ -220,7 +220,7 @@
     "value": "TX-PETITION-96.00-4-17"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0a27b617f5cc5ffa",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3df014fcc98b6e29",
@@ -231,7 +231,7 @@
     "value": "TX-PETITION-164.11-1-19"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0a3729b5b913f311",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e8262ec8724af16b",
@@ -242,7 +242,7 @@
     "value": "TX-PETITION-186.00-4-9"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0a4308a1e963982f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_38d959bedb382db2",
@@ -253,7 +253,7 @@
     "value": "TX-PETITION-67.00-1-23"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0a5699555f1e9735",
     "field": "tax_foreclosure_event",
     "record_id": "raw_62513e72d9f77655",
@@ -264,7 +264,7 @@
     "value": "TX-PETITION-88.09-1-10"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0a80173b2340340a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ccda8fe412f8a418",
@@ -275,7 +275,7 @@
     "value": "TX-PETITION-79.00-4-41"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0bed87c31ca6e979",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2b8da32661f829cc",
@@ -286,7 +286,7 @@
     "value": "TX-PETITION-164.05-8-26"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0c1dab1cd68742c9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c2575d9931c59087",
@@ -297,7 +297,7 @@
     "value": "TX-PETITION-182.05-3-12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0ca5c8288d092922",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6436bf87cf5f6f66",
@@ -308,7 +308,7 @@
     "value": "TX-PETITION-113.00-3-23"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0cd01602eb6c681d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_57523d35dea6f950",
@@ -319,7 +319,7 @@
     "value": "TX-PETITION-142.00-1-6.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0cee9712622cadfd",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1952207d5e1ff26e",
@@ -330,7 +330,7 @@
     "value": "TX-PETITION-105.19-4-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0d8a2e8037a9b3a9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_afc35277e44a1665",
@@ -341,7 +341,7 @@
     "value": "TX-PETITION-23.02-1-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0dd4fc0a54cd2eaf",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d236043b2f335190",
@@ -352,7 +352,7 @@
     "value": "TX-PETITION-27.00-1-21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0f28edb48bd86c52",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b079bb248bda0d23",
@@ -363,7 +363,7 @@
     "value": "TX-PETITION-178.00-1-24.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0f2db5c7b07d020e",
     "field": "letters_testamentary",
     "record_id": "raw_be58377f00fa9e80",
@@ -374,7 +374,7 @@
     "value": "gULA9HEtWpKqOUm2k0N7-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0f2e2afe471435db",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ce9966e1f82ec69f",
@@ -385,7 +385,7 @@
     "value": "TX-PETITION-66.00-6-47.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0f5e6f94a3d17c31",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ee7d8178cd6defa6",
@@ -396,7 +396,7 @@
     "value": "TX-PETITION-103.00-3-22"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0f6071b0d7f66a77",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e4392c7699357f6a",
@@ -407,7 +407,7 @@
     "value": "TX-PETITION-6.00-2-39.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_0fa58d469ab901de",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7e7e507817d619d7",
@@ -418,7 +418,7 @@
     "value": "TX-PETITION-113.00-1-22.11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1062a58642ef8ad6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_da69e27d84e6ca40",
@@ -429,7 +429,7 @@
     "value": "TX-PETITION-88.18-1-17"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1062aacb58ae6c25",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e8285b5fd5909cfd",
@@ -440,7 +440,7 @@
     "value": "TX-PETITION-105.18-6-33"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1098168491795a6d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_93eede504470a855",
@@ -451,7 +451,7 @@
     "value": "TX-PETITION-46.00-1-48"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_10f7719ce1b292f4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_09ca945c89329818",
@@ -462,7 +462,7 @@
     "value": "TX-PETITION-29.00-3-20"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_12fab7ff8b846759",
     "field": "notice_of_sale",
     "record_id": "raw_23da74cad4db0947",
@@ -473,7 +473,7 @@
     "value": "kIAUtteRI1ZBzTCFaVyz-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_13ec6fa280b8a8ef",
     "field": "tax_foreclosure_event",
     "record_id": "raw_68ba3e6a5b50bd7b",
@@ -484,7 +484,7 @@
     "value": "TX-PETITION-180.00-2-41.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_13f38135942d332d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d661fb0f779d06b6",
@@ -495,7 +495,7 @@
     "value": "TX-PETITION-95.08-2-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1406280ee09fd4d9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_df5da6f38a41ab64",
@@ -506,7 +506,7 @@
     "value": "TX-PETITION-199.08-4-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_141009b442288d55",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9b404c36d99396ef",
@@ -517,7 +517,7 @@
     "value": "TX-PETITION-130.00-4-22"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_144de2a51f15d22e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_297af4afe15dede2",
@@ -528,7 +528,7 @@
     "value": "TX-PETITION-156.13-10-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_14d4d77bf8e1b6f2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f8af18c7b812aa16",
@@ -539,7 +539,7 @@
     "value": "TX-PETITION-88.19-1-25"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_15a048960254d514",
     "field": "tax_foreclosure_event",
     "record_id": "raw_97b0994bfbfcab52",
@@ -550,7 +550,7 @@
     "value": "TX-PETITION-20.00-1-33.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_15b5466e7c642705",
     "field": "tax_foreclosure_event",
     "record_id": "raw_929b64ca7dd2eebc",
@@ -561,7 +561,7 @@
     "value": "TX-PETITION-182.00-4-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_15ba8a3677e751e4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a30005754bfbf443",
@@ -572,7 +572,7 @@
     "value": "TX-PETITION-78.00-2-32"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_15be8fbbfcc9bbe3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9d4582f067748076",
@@ -583,7 +583,7 @@
     "value": "TX-PETITION-155.00-4-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_15f3f3e32d49e40f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d5caf39a8fc6f4c9",
@@ -594,7 +594,7 @@
     "value": "TX-PETITION-57.00-3-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_164c8dd03d163e06",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6d4828d2e5330459",
@@ -605,7 +605,7 @@
     "value": "TX-PETITION-102.00-5-18.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_164ed6133a0749d9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f7e78d5575f4057e",
@@ -616,7 +616,7 @@
     "value": "TX-PETITION-15.00-2-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_17ecd90eb37b3d05",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d0ddb072ea5a31cd",
@@ -627,7 +627,7 @@
     "value": "TX-PETITION-53.00-4-12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_18def3536646f823",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3ab71cd64c069eb0",
@@ -638,7 +638,7 @@
     "value": "TX-PETITION-96.14-2-12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1908d8b5615ca10b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_508fd23a97db3257",
@@ -649,7 +649,7 @@
     "value": "TX-PETITION-64.00-6-43"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_193ee69e47ec554f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1a3a3c7b5a550d01",
@@ -660,7 +660,7 @@
     "value": "TX-PETITION-95.01-1-11.21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1970f4fe5745b6d2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9cf17624fa750e84",
@@ -671,7 +671,7 @@
     "value": "TX-PETITION-171.12-2-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1ac150ff10a62777",
     "field": "tax_foreclosure_event",
     "record_id": "raw_dc9a1aafa33949b4",
@@ -682,7 +682,7 @@
     "value": "TX-PETITION-88.18-4-39"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1b9c4fdc536177db",
     "field": "tax_foreclosure_event",
     "record_id": "raw_001f130e5d7ad9f5",
@@ -693,7 +693,7 @@
     "value": "TX-PETITION-88.19-4-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1ba53937592c271b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_5c768bb8ce0a8881",
@@ -704,7 +704,7 @@
     "value": "TX-PETITION-171.08-3-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1beaa02734a9bf6d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0d48a0b93fca21d9",
@@ -715,7 +715,7 @@
     "value": "TX-PETITION-15.00-2-46"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1bf22a333ffbb2de",
     "field": "tax_foreclosure_event",
     "record_id": "raw_14ab6706f83e5e4b",
@@ -726,7 +726,7 @@
     "value": "TX-PETITION-119.01-2-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1bf90277d36a41e0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c6cc5a1494be03f2",
@@ -737,7 +737,7 @@
     "value": "TX-PETITION-181.16-2-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1c9cace19793713b",
     "field": "notice_of_sale",
     "record_id": "raw_6518cff2e6721c3a",
@@ -748,7 +748,7 @@
     "value": "hWv4jhmnTxZyoXj5Q0wT-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1d5b3ffe569aa852",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2fa5c8564cdb1748",
@@ -759,7 +759,7 @@
     "value": "TX-PETITION-137.00-5-13.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1d7029b9a353f848",
     "field": "tax_foreclosure_event",
     "record_id": "raw_26786b5bdde23728",
@@ -770,7 +770,7 @@
     "value": "TX-PETITION-190.00-2-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1db352a3b960832c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c267167472531726",
@@ -781,7 +781,7 @@
     "value": "TX-PETITION-169.00-4-7.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1dc858e97473197c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3058c778092d7b4b",
@@ -792,7 +792,7 @@
     "value": "TX-PETITION-29.00-4-11.11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1de051ca3bc91ae9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_bf62e149338b982e",
@@ -803,7 +803,7 @@
     "value": "TX-PETITION-85.00-2-19"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1e5bf7acda22e5b5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_39acd36a8db7c5b8",
@@ -814,7 +814,7 @@
     "value": "TX-PETITION-156.13-8-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1e92b6bdf62a1e55",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0e624652f89a7ebb",
@@ -825,7 +825,7 @@
     "value": "TX-PETITION-96.13-1-25"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1e957108a8d6b7e8",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d742d0d8fe87e4d8",
@@ -836,7 +836,7 @@
     "value": "TX-PETITION-68.00-3-23.12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1ee95c5c7ec16d07",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4e4de35e137abaa4",
@@ -847,7 +847,7 @@
     "value": "TX-PETITION-216.00-3-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1f0c80bc791d2da8",
     "field": "tax_foreclosure_event",
     "record_id": "raw_46c1f26bf7b010cd",
@@ -858,7 +858,7 @@
     "value": "TX-PETITION-144.08-1-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1f1d476687b2ccba",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0c29184d324c3730",
@@ -869,7 +869,7 @@
     "value": "TX-PETITION-137.00-4-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1f97d8579e26ef47",
     "field": "tax_foreclosure_event",
     "record_id": "raw_03f1af97c8c0c64e",
@@ -880,7 +880,7 @@
     "value": "TX-PETITION-156.18-8-20.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_1ffd0e97f8394163",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3529405cea820625",
@@ -891,7 +891,7 @@
     "value": "TX-PETITION-15.00-1-4.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_20093828bdfc361c",
     "field": "letters_of_administration",
     "record_id": "raw_6e3b856e88113bfe",
@@ -902,7 +902,7 @@
     "value": "UP2YfYOIR8OgHm7Mk8lq-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_20cc82dfbe2e7e45",
     "field": "tax_foreclosure_event",
     "record_id": "raw_032f71310bb750fe",
@@ -913,7 +913,7 @@
     "value": "TX-PETITION-77.00-2-21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_21c895c0916c6070",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3f10d625d81ddc35",
@@ -924,7 +924,7 @@
     "value": "TX-PETITION-96.00-2-21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_222b814c4e3b6f35",
     "field": "tax_foreclosure_event",
     "record_id": "raw_47c3021a57998b71",
@@ -935,7 +935,7 @@
     "value": "TX-PETITION-12.00-1-38"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_225fb7b6d8364cc6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0f85176bacb40ac3",
@@ -946,7 +946,7 @@
     "value": "TX-PETITION-164.11-1-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_22bcd6b0d34e290b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f7e906720b976da3",
@@ -957,7 +957,7 @@
     "value": "TX-PETITION-88.10-5-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_239e4c2a117ccbdc",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ae2b78e8f923fb8d",
@@ -968,7 +968,7 @@
     "value": "TX-PETITION-129.00-4-55"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_23c023ac266b77f6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_01a903d0c5e58b1f",
@@ -979,7 +979,7 @@
     "value": "TX-PETITION-79.00-4-40.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_2422878b82d94499",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2f226bc10bfc13e6",
@@ -990,7 +990,7 @@
     "value": "TX-PETITION-88.18-4-38"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_24ac277ae58623d3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ab866ff626bed416",
@@ -1001,7 +1001,7 @@
     "value": "TX-PETITION-50.00-4-53"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_24b04758e4a9100e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ea2e6b1a72c815e8",
@@ -1012,7 +1012,7 @@
     "value": "TX-PETITION-46.00-1-47"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_24bc1e001aeae12e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_686079c91e79bb04",
@@ -1023,7 +1023,7 @@
     "value": "TX-PETITION-96.13-1-12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_24f6368bec361683",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4ea988b70af52bfa",
@@ -1034,7 +1034,7 @@
     "value": "TX-PETITION-35.00-2-26"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_255ccc9671b1d430",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7680c2bce5e0210a",
@@ -1045,7 +1045,7 @@
     "value": "TX-PETITION-156.13-3-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_26aa9c1d7a3ee273",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9a5dca4e5dae8e0e",
@@ -1056,7 +1056,7 @@
     "value": "TX-PETITION-83.00-6-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_271266e7fc744ad1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b84f4e4c27224d30",
@@ -1067,7 +1067,7 @@
     "value": "TX-PETITION-97.00-1-55"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_2893ebc277bb60b0",
     "field": "letters_testamentary",
     "record_id": "raw_54a75b9494c0984f",
@@ -1078,7 +1078,7 @@
     "value": "gULA9HEtWpKqOUm2k0N7-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_28a89cea62adb166",
     "field": "tax_foreclosure_event",
     "record_id": "raw_65d4ee752dbc9cdb",
@@ -1089,7 +1089,7 @@
     "value": "TX-PETITION-56.19-4-60"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_28cdb5e13278792e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_49266458b4bf378c",
@@ -1100,7 +1100,7 @@
     "value": "TX-PETITION-154.00-4-27"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_294ccfc36a340645",
     "field": "tax_foreclosure_event",
     "record_id": "raw_63f24f2ac0814eae",
@@ -1111,7 +1111,7 @@
     "value": "TX-PETITION-109.00-2-63"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_294d90defd47d699",
     "field": "tax_foreclosure_event",
     "record_id": "raw_22491c8adbf8310b",
@@ -1122,7 +1122,7 @@
     "value": "TX-PETITION-158.00-3-19"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_29e6358a192a6242",
     "field": "tax_foreclosure_event",
     "record_id": "raw_29008cddeb377275",
@@ -1133,7 +1133,7 @@
     "value": "TX-PETITION-36.01-1-9"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_2a7973c5d44b1574",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a8ea73cb90ab7111",
@@ -1144,7 +1144,7 @@
     "value": "TX-PETITION-58.00-4-38"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_2b378ab6ec22cc63",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d8bab4b51442d1a0",
@@ -1155,7 +1155,7 @@
     "value": "TX-PETITION-65.00-1-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_2c7be9b616d617a6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9cdb79febc9ef2b8",
@@ -1166,7 +1166,7 @@
     "value": "TX-PETITION-199.08-2-25"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_2cbbb066abdcfa62",
     "field": "tax_foreclosure_event",
     "record_id": "raw_544d32d20d81777c",
@@ -1177,7 +1177,7 @@
     "value": "TX-PETITION-157.00-1-37"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_2ce1166e4c03401e",
     "field": "letters_testamentary",
     "record_id": "raw_ca2a07111163ef59",
@@ -1188,7 +1188,7 @@
     "value": "gULA9HEtWpKqOUm2k0N7-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_2d5c577a416e77b1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_42a326f216886cc3",
@@ -1199,7 +1199,7 @@
     "value": "TX-PETITION-88.18-4-30"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_2db778c0860c2fb4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_37a62894f1f01f80",
@@ -1210,7 +1210,7 @@
     "value": "TX-PETITION-79.00-4-59.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_2e54e07ca2cb5857",
     "field": "tax_foreclosure_event",
     "record_id": "raw_225d8f629d797b0e",
@@ -1221,7 +1221,7 @@
     "value": "TX-PETITION-157.00-1-25"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_2f700790c387fe7f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_02bccab8171a0631",
@@ -1232,7 +1232,7 @@
     "value": "TX-PETITION-22.00-1-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_2f9a1b664bb50eb1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2e4e72b7588f6204",
@@ -1243,7 +1243,7 @@
     "value": "TX-PETITION-14.00-3-50"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3034db3b79c20e89",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f3b012670724c010",
@@ -1254,7 +1254,7 @@
     "value": "TX-PETITION-206.04-1-4.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_307c2ea1aa4803d6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f4ce95f27f949ffa",
@@ -1265,7 +1265,7 @@
     "value": "TX-PETITION-209.00-2-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3203eb3213d34a53",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f46e51608f6b88ac",
@@ -1276,7 +1276,7 @@
     "value": "TX-PETITION-105.11-1-37"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_320a05c4b670b9fb",
     "field": "tax_foreclosure_event",
     "record_id": "raw_482ff2491c12d428",
@@ -1287,7 +1287,7 @@
     "value": "TX-PETITION-156.09-3-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_339039101e09e93b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_eb54e678e578ee93",
@@ -1298,7 +1298,7 @@
     "value": "TX-PETITION-28.00-3-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_33b22aa08bd416b8",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a562a718d0382760",
@@ -1309,7 +1309,7 @@
     "value": "TX-PETITION-83.00-2-23"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_33b48b569422e8cb",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2820771aaad9f2da",
@@ -1320,7 +1320,7 @@
     "value": "TX-PETITION-139.00-4-22"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_33f15ab2f3a213dc",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e05fdb2714a289ef",
@@ -1331,7 +1331,7 @@
     "value": "TX-PETITION-51.01-1-20"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_34866692cdcaf792",
     "field": "tax_foreclosure_event",
     "record_id": "raw_bf7dba0afe768923",
@@ -1342,7 +1342,7 @@
     "value": "TX-PETITION-144.08-1-10"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_34e3c4e5dc5ad838",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1d23ec5c8f209069",
@@ -1353,7 +1353,7 @@
     "value": "TX-PETITION-207.00-3-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3578097c37ee219e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_de8b0dc513fa539b",
@@ -1364,7 +1364,7 @@
     "value": "TX-PETITION-199.07-5-6.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_35a10d9179b0681c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1766066a9ee21ecf",
@@ -1375,7 +1375,7 @@
     "value": "TX-PETITION-79.00-4-74"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_35c6354b7cb76f3f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a4e10c5bed49b7f9",
@@ -1386,7 +1386,7 @@
     "value": "TX-PETITION-11.00-5-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_360749ac65c5607c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_54e347c1c9db7e03",
@@ -1397,7 +1397,7 @@
     "value": "TX-PETITION-88.15-3-40"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3625ef65b2c8a593",
     "field": "tax_foreclosure_event",
     "record_id": "raw_81100ff924b986c6",
@@ -1408,7 +1408,7 @@
     "value": "TX-PETITION-109.00-1-23"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_365a8d6d2fb53c44",
     "field": "tax_foreclosure_event",
     "record_id": "raw_38438ffbb138d6b3",
@@ -1419,7 +1419,7 @@
     "value": "TX-PETITION-146.00-1-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_369716ada9b41c74",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2514b273edf42586",
@@ -1430,7 +1430,7 @@
     "value": "TX-PETITION-47.00-1-12.12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_36bb6dd4c24a907e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_cc4a922c3cf9a8b5",
@@ -1441,7 +1441,7 @@
     "value": "TX-PETITION-172.06-5-72"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_36f1ee80a0c6663a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_10abc648b0f15373",
@@ -1452,7 +1452,7 @@
     "value": "TX-PETITION-88.00-4-44"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_37acf48051bb3f48",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a25b7bcec96b919a",
@@ -1463,7 +1463,7 @@
     "value": "TX-PETITION-170.00-4-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_37fbce9b38b4bb69",
     "field": "tax_foreclosure_event",
     "record_id": "raw_80d4b233b575ddfd",
@@ -1474,7 +1474,7 @@
     "value": "TX-PETITION-208.00-1-24.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_38638b92d88682af",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b963c6ee3e8e9d9a",
@@ -1485,7 +1485,7 @@
     "value": "TX-PETITION-4.00-1-4.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_38b7bd2260746a6c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_11ff38ab9de99b00",
@@ -1496,7 +1496,7 @@
     "value": "TX-PETITION-83.00-2-8.112"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_392b36ef1ea66b0e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1d85d7eef40bc430",
@@ -1507,7 +1507,7 @@
     "value": "TX-PETITION-88.19-4-38"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3936a65b954368b5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a5356edb6b26fd0f",
@@ -1518,7 +1518,7 @@
     "value": "TX-PETITION-135.02-1-40"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3a23e3872df0ced5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_84c1e7b7facda3da",
@@ -1529,7 +1529,7 @@
     "value": "TX-PETITION-56.14-3-9"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3a2a68ac9d6880eb",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0562d05d3efb06a3",
@@ -1540,7 +1540,7 @@
     "value": "TX-PETITION-82.00-1-40"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3a3bf16bc3111f7a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_36dca6f3cfc02454",
@@ -1551,7 +1551,7 @@
     "value": "TX-PETITION-88.18-6-27"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3b203a5f7d505b58",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3f529ee2d15fb42c",
@@ -1562,7 +1562,7 @@
     "value": "TX-PETITION-88.14-1-36"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3b28bee1214eeb04",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a0a5de18cd70afc7",
@@ -1573,7 +1573,7 @@
     "value": "TX-PETITION-88.15-6-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3b33ea72d80f9cbb",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b5882b6896550c44",
@@ -1584,7 +1584,7 @@
     "value": "TX-PETITION-32.00-1-17"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3b7869c7ad7e3f58",
     "field": "tax_foreclosure_event",
     "record_id": "raw_dd934167357bbd66",
@@ -1595,7 +1595,7 @@
     "value": "TX-PETITION-118.00-1-57"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3b935ae32bbcc5ca",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7f9ae4e4e0f61b65",
@@ -1606,7 +1606,7 @@
     "value": "TX-PETITION-105.07-4-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3c0ef095a86272e2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_5545355a9e822715",
@@ -1617,7 +1617,7 @@
     "value": "TX-PETITION-67.00-7-12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3c153cd06199240c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f8f3b5671006ef39",
@@ -1628,7 +1628,7 @@
     "value": "TX-PETITION-164.11-1-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3c477f86da2ce0f4",
     "field": "lis_pendens",
     "record_id": "raw_640a96b46b7d65ab",
@@ -1639,7 +1639,7 @@
     "value": "Hb3pSgNriemS0HKdhjlC-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3cb332160c54aa33",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ac1af30473a51571",
@@ -1650,7 +1650,7 @@
     "value": "TX-PETITION-171.08-1-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3d6cd37c7a1afd51",
     "field": "tax_foreclosure_event",
     "record_id": "raw_41e2275ad17a3698",
@@ -1661,7 +1661,7 @@
     "value": "TX-PETITION-1.00-1-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3d97662d74e3c5c7",
     "field": "tax_foreclosure_event",
     "record_id": "raw_37e4a6e052c57dce",
@@ -1672,7 +1672,7 @@
     "value": "TX-PETITION-65.00-1-46"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3ef46527ce2e1c02",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b9eafe48ccf96e26",
@@ -1683,7 +1683,7 @@
     "value": "TX-PETITION-182.06-1-19"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3f2bced722729249",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1e9bddcfd4a604e1",
@@ -1694,7 +1694,7 @@
     "value": "TX-PETITION-103.00-4-34"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3fbc68b9702472fd",
     "field": "tax_foreclosure_event",
     "record_id": "raw_bf67e5673d127ce7",
@@ -1705,7 +1705,7 @@
     "value": "TX-PETITION-88.10-6-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_3fcc2b259341c5d1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_978cd16274191d5e",
@@ -1716,7 +1716,7 @@
     "value": "TX-PETITION-22.00-4-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_40070d7ef95e0e43",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9589239de38db051",
@@ -1727,7 +1727,7 @@
     "value": "TX-PETITION-88.10-5-25"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_401a18f99919ade3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4701400a3c8e3f1d",
@@ -1738,7 +1738,7 @@
     "value": "TX-PETITION-74.14-1-31"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_40598031a130da59",
     "field": "tax_foreclosure_event",
     "record_id": "raw_5a3854f5d8d95ad5",
@@ -1749,7 +1749,7 @@
     "value": "TX-PETITION-144.00-1-62"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4080a7ac227ba5b7",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c91c51f9761408ea",
@@ -1760,7 +1760,7 @@
     "value": "TX-PETITION-88.18-5-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_40ad5d7f2e0ca344",
     "field": "tax_foreclosure_event",
     "record_id": "raw_bab6a969f0ab154d",
@@ -1771,7 +1771,7 @@
     "value": "TX-PETITION-156.13-9-12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_40c77324e5a50fd7",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c4af94ef983b400c",
@@ -1782,7 +1782,7 @@
     "value": "TX-PETITION-105.00-1-10.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_40e15243769ada85",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e1f13398b78289c6",
@@ -1793,7 +1793,7 @@
     "value": "TX-PETITION-172.05-4-26"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_40e4b3405c441912",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ecdac2e55e6c5596",
@@ -1804,7 +1804,7 @@
     "value": "TX-PETITION-101.05-2-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_41142807264e1417",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b8cf9e27c82fb121",
@@ -1815,7 +1815,7 @@
     "value": "TX-PETITION-128.00-1-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_413b7aa42df051a5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2edcb0f8f0dfa172",
@@ -1826,7 +1826,7 @@
     "value": "TX-PETITION-83.00-2-44"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_41689a6c12490ebf",
     "field": "tax_foreclosure_event",
     "record_id": "raw_05cd742a25f01c89",
@@ -1837,7 +1837,7 @@
     "value": "TX-PETITION-85.00-3-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4193092e56c21a03",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f1ee9709413bdeec",
@@ -1848,7 +1848,7 @@
     "value": "TX-PETITION-33.00-5-5"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_41fff374a0dad7ef",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3c18afa1896ce5ac",
@@ -1859,7 +1859,7 @@
     "value": "TX-PETITION-66.00-6-47.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_422f6a5bfde51b46",
     "field": "tax_foreclosure_event",
     "record_id": "raw_067c601cd14c8a0f",
@@ -1870,7 +1870,7 @@
     "value": "TX-PETITION-64.00-8-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4230cf9784c1f3ad",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f184393eb854561d",
@@ -1881,7 +1881,7 @@
     "value": "TX-PETITION-119.00-5-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_432a985cabad61e5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_089eccf61e505847",
@@ -1892,7 +1892,7 @@
     "value": "TX-PETITION-27.00-4-22.112"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_438750d1cd6145bb",
     "field": "tax_foreclosure_event",
     "record_id": "raw_5f6f67c4e335b599",
@@ -1903,7 +1903,7 @@
     "value": "TX-PETITION-52.00-3-28"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_43d410b9700c652d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7b89c84ffaacfe76",
@@ -1914,7 +1914,7 @@
     "value": "TX-PETITION-185.00-1-43.11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_43fb2ffdfcb1d763",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c500455255a270c2",
@@ -1925,7 +1925,7 @@
     "value": "TX-PETITION-166.20-2-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_44645ae281163f97",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b397b210e53cc82b",
@@ -1936,7 +1936,7 @@
     "value": "TX-PETITION-172.05-7-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_448bc3ea7f70fede",
     "field": "tax_foreclosure_event",
     "record_id": "raw_13a67b6c32bb43da",
@@ -1947,7 +1947,7 @@
     "value": "TX-PETITION-105.07-2-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_44903c3d7acb750a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_42f80e77b4b4c6f8",
@@ -1958,7 +1958,7 @@
     "value": "TX-PETITION-41.00-5-33.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_44967cb73c029ede",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d9697a2300e812c8",
@@ -1969,7 +1969,7 @@
     "value": "TX-PETITION-182.07-2-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_45339ec7bfa242f0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ac228ca38975eafa",
@@ -1980,7 +1980,7 @@
     "value": "TX-PETITION-15.00-1-22.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_45f70f65eb4b3183",
     "field": "tax_foreclosure_event",
     "record_id": "raw_429fbb45578e8f03",
@@ -1991,7 +1991,7 @@
     "value": "TX-PETITION-105.19-3-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_46541b6dc0e54733",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9c0ae48ab4135551",
@@ -2002,7 +2002,7 @@
     "value": "TX-PETITION-217.00-1-9.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4657afe738b778e0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2fdbffaa71c1ccff",
@@ -2013,7 +2013,7 @@
     "value": "TX-PETITION-212.16-2-21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_469a4c3dc6509846",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7a54875acf10438c",
@@ -2024,7 +2024,7 @@
     "value": "TX-PETITION-69.00-2-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_471904189a78fc74",
     "field": "tax_foreclosure_event",
     "record_id": "raw_efea91c83fc0a72a",
@@ -2035,7 +2035,7 @@
     "value": "TX-PETITION-127.00-3-15.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_47989b3a2c7d0245",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2aac7b9f17e4a1e3",
@@ -2046,7 +2046,7 @@
     "value": "TX-PETITION-23.00-5-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_47cb0687a1eb5135",
     "field": "tax_foreclosure_event",
     "record_id": "raw_aac7bbc9889a350c",
@@ -2057,7 +2057,7 @@
     "value": "TX-PETITION-95.01-1-11.22"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_47dbb7a8b4b6afd8",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0bc3bc98e7ae6d7e",
@@ -2068,7 +2068,7 @@
     "value": "TX-PETITION-95.00-7-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_485133d173d364e2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1fac092971e80c69",
@@ -2079,7 +2079,7 @@
     "value": "TX-PETITION-155.12-4-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_48f2baa0cb25ddaf",
     "field": "letters_of_administration",
     "record_id": "raw_1e90d6410f82986e",
@@ -2090,7 +2090,7 @@
     "value": "UP2YfYOIR8OgHm7Mk8lq-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_49070ff30609121a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e57f9cb8a40e65ce",
@@ -2101,7 +2101,7 @@
     "value": "TX-PETITION-68.00-2-38"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4b9127d818d6fa2c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_af8980c787851c89",
@@ -2112,7 +2112,7 @@
     "value": "TX-PETITION-77.00-1-50"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4bc015675b98da59",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3b3654908597c869",
@@ -2123,7 +2123,7 @@
     "value": "TX-PETITION-76.00-3-41"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4c140ac2fefdd775",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d859714243149c84",
@@ -2134,7 +2134,7 @@
     "value": "TX-PETITION-105.06-4-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4c39bb38ca6edf12",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c3a43b54f9b3a246",
@@ -2145,7 +2145,7 @@
     "value": "TX-PETITION-105.15-3-5"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4d859cecd179283c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_20cc8bf7a8ae2c51",
@@ -2156,7 +2156,7 @@
     "value": "TX-PETITION-182.00-2-36"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4f1c69df9d819d8a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b8cfb92a28b05377",
@@ -2167,7 +2167,7 @@
     "value": "TX-PETITION-199.08-6-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4f8523da722091a3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_fd4f0dde3053bf3d",
@@ -2178,7 +2178,7 @@
     "value": "TX-PETITION-96.13-1-20.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4f99e96c97465556",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6702e2845ff353d1",
@@ -2189,7 +2189,7 @@
     "value": "TX-PETITION-78.00-6-46.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4fa9fc3e9aba32f9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d0163f5c90ddbe77",
@@ -2200,7 +2200,7 @@
     "value": "TX-PETITION-146.00-1-17"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4fb5ac873b747e89",
     "field": "tax_foreclosure_event",
     "record_id": "raw_df056732390d6697",
@@ -2211,7 +2211,7 @@
     "value": "TX-PETITION-58.00-5-25"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4fe0fc243ab421b3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_673c63b558a07a28",
@@ -2222,7 +2222,7 @@
     "value": "TX-PETITION-185.00-1-50"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4fe8095754a97a25",
     "field": "tax_foreclosure_event",
     "record_id": "raw_25630a09428b7240",
@@ -2233,7 +2233,7 @@
     "value": "TX-PETITION-85.00-4-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_4ff18d37eff83f1d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3ce76ce2a4f95156",
@@ -2244,7 +2244,7 @@
     "value": "TX-PETITION-29.01-2-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5030817e9de81ecb",
     "field": "lis_pendens",
     "record_id": "raw_3903c1eb8790d80f",
@@ -2255,7 +2255,7 @@
     "value": "4Sw2nTZmCvgy0vgNxpjV-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_50942210991266d3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_877d68b69a389284",
@@ -2266,7 +2266,7 @@
     "value": "TX-PETITION-145.00-2-19"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_50dab1149f6024d0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b740c0dd9132f99d",
@@ -2277,7 +2277,7 @@
     "value": "TX-PETITION-167.17-1-35"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_512befb05201c5fb",
     "field": "tax_foreclosure_event",
     "record_id": "raw_94acd7482d6e7b2d",
@@ -2288,7 +2288,7 @@
     "value": "TX-PETITION-53.00-4-30"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_514d29890f27f9b3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ce5e309a1b327817",
@@ -2299,7 +2299,7 @@
     "value": "TX-PETITION-96.33-7-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5154ded74834976e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d73d28a9e6790f6f",
@@ -2310,7 +2310,7 @@
     "value": "TX-PETITION-95.00-7-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_51661090d287b404",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ad2245900beb4a39",
@@ -2321,7 +2321,7 @@
     "value": "TX-PETITION-109.00-2-75"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5272592405b682f2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_148ad85f299488d5",
@@ -2332,7 +2332,7 @@
     "value": "TX-PETITION-83.04-2-34"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_529c9d2af1413aa9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0e721eaa0f27f7e4",
@@ -2343,7 +2343,7 @@
     "value": "TX-PETITION-83.00-6-10"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_52f12510d8950c98",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0e6e63452cf36a11",
@@ -2354,7 +2354,7 @@
     "value": "TX-PETITION-88.15-2-23"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_54121927f879b9ef",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b409947d1f89b2ae",
@@ -2365,7 +2365,7 @@
     "value": "TX-PETITION-52.00-2-35"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5412706d9c4499d2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0763ff76b02eab3c",
@@ -2376,7 +2376,7 @@
     "value": "TX-PETITION-90.00-1-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_54267f14b68bd665",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7b55e9ff1abf8969",
@@ -2387,7 +2387,7 @@
     "value": "TX-PETITION-105.19-6-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5456f9039ccd0b2a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b4774c45814917e5",
@@ -2398,7 +2398,7 @@
     "value": "TX-PETITION-101.05-3-1.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_54597aaf0aee3af9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e6e6f13cc138c623",
@@ -2409,7 +2409,7 @@
     "value": "TX-PETITION-171.00-2-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_547b4760e9749a9b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_fe96012c224f3e99",
@@ -2420,7 +2420,7 @@
     "value": "TX-PETITION-82.02-1-29"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_55a3297b32b04560",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ab402844db034ad8",
@@ -2431,7 +2431,7 @@
     "value": "TX-PETITION-120.00-2-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_568812d8fd4f0398",
     "field": "notice_of_sale",
     "record_id": "raw_6a89cd9724885340",
@@ -2442,7 +2442,7 @@
     "value": "wmacXKsWO2yC12a9Bh31-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_56a871663ee74679",
     "field": "tax_foreclosure_event",
     "record_id": "raw_de33611d988bb205",
@@ -2453,7 +2453,7 @@
     "value": "TX-PETITION-156.70-4-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5715ae8d7ddf635a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_326d05a32a88cbc8",
@@ -2464,7 +2464,7 @@
     "value": "TX-PETITION-47.00-4-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_571edfa87febd89e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_684c15396fc23802",
@@ -2475,7 +2475,7 @@
     "value": "TX-PETITION-51.03-3-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_57673872d6717be9",
     "field": "notice_of_sale",
     "record_id": "raw_91c9cf9fb10fa136",
@@ -2486,7 +2486,7 @@
     "value": "VHrrhD5tkF7cU4bSbDYO-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_577ea5457cc57f05",
     "field": "tax_foreclosure_event",
     "record_id": "raw_832fb7a6f4bb952c",
@@ -2497,7 +2497,7 @@
     "value": "TX-PETITION-51.00-4-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_57ffd88d4ae28412",
     "field": "tax_foreclosure_event",
     "record_id": "raw_8e5ee5c33da2e66a",
@@ -2508,7 +2508,7 @@
     "value": "TX-PETITION-24.02-1-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5813c02b1dc0f9b4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a7007ef0552301d8",
@@ -2519,7 +2519,7 @@
     "value": "TX-PETITION-206.03-3-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5833bfd12097febd",
     "field": "tax_foreclosure_event",
     "record_id": "raw_154edb80741dff20",
@@ -2530,7 +2530,7 @@
     "value": "TX-PETITION-112.00-3-62"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_58d558aa39600f6d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0712ba953174242c",
@@ -2541,7 +2541,7 @@
     "value": "TX-PETITION-200.01-1-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5966e9833470d2e0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b53e38262bfaeb8e",
@@ -2552,7 +2552,7 @@
     "value": "TX-PETITION-161.00-2-59"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_59cc26984a4932f1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_20e8b3838cdf219c",
@@ -2563,7 +2563,7 @@
     "value": "TX-PETITION-49.00-3-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5b384ac4bac03269",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d1fc7dfd1b940ce4",
@@ -2574,7 +2574,7 @@
     "value": "TX-PETITION-16.00-3-30"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5b9789dc47909a54",
     "field": "tax_foreclosure_event",
     "record_id": "raw_99c7b4e6096ea479",
@@ -2585,7 +2585,7 @@
     "value": "TX-PETITION-217.00-1-16.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5bab60125c5a54c2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_20a6e9b0a9118cbf",
@@ -2596,7 +2596,7 @@
     "value": "TX-PETITION-12.04-3-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5bc441db46e810c2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f6db5da7f6a31dfd",
@@ -2607,7 +2607,7 @@
     "value": "TX-PETITION-139.00-6-23"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5c1b88bd9d88dd12",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a66915a378612bf0",
@@ -2618,7 +2618,7 @@
     "value": "TX-PETITION-29.01-2-10"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5da0bc49681635f4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_476c546e3f120322",
@@ -2629,7 +2629,7 @@
     "value": "TX-PETITION-155.00-1-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5dcc01e8f5272544",
     "field": "tax_foreclosure_event",
     "record_id": "raw_62a56c588117f562",
@@ -2640,7 +2640,7 @@
     "value": "TX-PETITION-208.00-1-24.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5de4fb86c084e939",
     "field": "tax_foreclosure_event",
     "record_id": "raw_eeb9a37906ba017e",
@@ -2651,7 +2651,7 @@
     "value": "TX-PETITION-169.00-4-7.4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5e289345bb907132",
     "field": "notice_of_sale",
     "record_id": "raw_7a7b8bb139096aab",
@@ -2662,7 +2662,7 @@
     "value": "ZYLwf4WeeWFr5Dfhrx11-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5eb9e268617e68d2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ff0ffc8ed792e10c",
@@ -2673,7 +2673,7 @@
     "value": "TX-PETITION-66.01-1-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5f5e6b51b0621859",
     "field": "tax_foreclosure_event",
     "record_id": "raw_8d1000368d50bec0",
@@ -2684,7 +2684,7 @@
     "value": "TX-PETITION-118.00-2-57"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5f8c012aee6e2b53",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f531dda9b220c942",
@@ -2695,7 +2695,7 @@
     "value": "TX-PETITION-212.16-2-32"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_5f9370deacd88b16",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ef59dee7fdd572c6",
@@ -2706,7 +2706,7 @@
     "value": "TX-PETITION-143.00-1-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_601110f00543e35b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_266bab6fce51652c",
@@ -2717,7 +2717,7 @@
     "value": "TX-PETITION-157.00-1-35"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_60cb6a1c9c46fc90",
     "field": "tax_foreclosure_event",
     "record_id": "raw_dcd0c01fb3970ada",
@@ -2728,7 +2728,7 @@
     "value": "TX-PETITION-28.00-3-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_60f908c1164b4e8c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e503303f03e942be",
@@ -2739,7 +2739,7 @@
     "value": "TX-PETITION-86.00-2-20"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_61f77193bde120bf",
     "field": "tax_foreclosure_event",
     "record_id": "raw_90483daa933d3c67",
@@ -2750,7 +2750,7 @@
     "value": "TX-PETITION-129.00-3-46"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_62ca84c3e9c2131b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3ab2c75bd575cff0",
@@ -2761,7 +2761,7 @@
     "value": "TX-PETITION-105.07-2-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_633216ae3ee46811",
     "field": "tax_foreclosure_event",
     "record_id": "raw_422a0f0157232706",
@@ -2772,7 +2772,7 @@
     "value": "TX-PETITION-90.00-1-7.12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_63584b55b8af3b6b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a7d26dbe8619932b",
@@ -2783,7 +2783,7 @@
     "value": "TX-PETITION-96.00-2-47"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6393c91d2bc03f4a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6c6b14feec665c28",
@@ -2794,7 +2794,7 @@
     "value": "TX-PETITION-22.00-1-40"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_63ab8a13030723d3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_82f1b9416b58c959",
@@ -2805,7 +2805,7 @@
     "value": "TX-PETITION-167.18-1-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_642af1b36a9d9a8b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d222b5f821d1101f",
@@ -2816,7 +2816,7 @@
     "value": "TX-PETITION-96.18-2-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_645194aa65edb89f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_696c5289dfef8e6f",
@@ -2827,7 +2827,7 @@
     "value": "TX-PETITION-190.00-1-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_647f0c33ba0c98d0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_8ba5bceae67fb6a8",
@@ -2838,7 +2838,7 @@
     "value": "TX-PETITION-79.00-4-75.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_65353808ecd68d25",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f18b9d46d60f1e57",
@@ -2849,7 +2849,7 @@
     "value": "TX-PETITION-94.00-1-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_654ebfdf2a915507",
     "field": "tax_foreclosure_event",
     "record_id": "raw_08c0882f9db52128",
@@ -2860,7 +2860,7 @@
     "value": "TX-PETITION-55.12-2-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6633c56b429ee7b5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_11a239b4cbc03e84",
@@ -2871,7 +2871,7 @@
     "value": "TX-PETITION-56.19-3-13.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6665bddb5ce45b2d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2af3f1db77c27768",
@@ -2882,7 +2882,7 @@
     "value": "TX-PETITION-10.00-2-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_67f64b2886e037a1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6c24095f63396c15",
@@ -2893,7 +2893,7 @@
     "value": "TX-PETITION-84.00-6-25"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_67f99a806113d4cb",
     "field": "tax_foreclosure_event",
     "record_id": "raw_da5c382eb9887070",
@@ -2904,7 +2904,7 @@
     "value": "TX-PETITION-186.00-5-28"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6816810cd9433f37",
     "field": "tax_foreclosure_event",
     "record_id": "raw_bdd015d7f00be9b3",
@@ -2915,7 +2915,7 @@
     "value": "TX-PETITION-56.19-3-31"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_684845bdd82227b2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_505ec5863a7f3eb3",
@@ -2926,7 +2926,7 @@
     "value": "TX-PETITION-22.00-4-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_68dc0723cbbcce0c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3cf35bcd89bb1ecb",
@@ -2937,7 +2937,7 @@
     "value": "TX-PETITION-88.14-1-37"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_68ea88cecd232224",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7c33a31c11d39d74",
@@ -2948,7 +2948,7 @@
     "value": "TX-PETITION-156.18-7-40"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6960c77a3f8a455d",
     "field": "notice_of_sale",
     "record_id": "raw_f323a0cf57d5bb75",
@@ -2959,7 +2959,7 @@
     "value": "kIAUtteRI1ZBzTCFaVyz-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6aeb869cbcd292b6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4025e32cbf551267",
@@ -2970,7 +2970,7 @@
     "value": "TX-PETITION-28.00-3-26"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6b7597b4fa31eff5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b764a87f98bcde7b",
@@ -2981,7 +2981,7 @@
     "value": "TX-PETITION-111.00-3-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6c0217bc87929d18",
     "field": "tax_foreclosure_event",
     "record_id": "raw_76f515bee816d470",
@@ -2992,7 +2992,7 @@
     "value": "TX-PETITION-5.00-1-1.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6c02f045a329411b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6dacde4da7b5cb46",
@@ -3003,7 +3003,7 @@
     "value": "TX-PETITION-210.00-2-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6c4a8c2578c523af",
     "field": "tax_foreclosure_event",
     "record_id": "raw_13db6de2f1a7ce88",
@@ -3014,7 +3014,7 @@
     "value": "TX-PETITION-6.00-2-41"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6c80711c974d18a2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_06edd2cf1fbb7d1d",
@@ -3025,7 +3025,7 @@
     "value": "TX-PETITION-83.01-2-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6ca0e9d7fbb720f6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b086d27cb16242cf",
@@ -3036,7 +3036,7 @@
     "value": "TX-PETITION-57.00-3-46"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6d15886070afe1f1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_03c6d734b3b3afa8",
@@ -3047,7 +3047,7 @@
     "value": "TX-PETITION-156.70-2-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6d89d392bf1523c6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e356d456dcae1727",
@@ -3058,7 +3058,7 @@
     "value": "TX-PETITION-75.00-1-17"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6e0f75edd4b39f02",
     "field": "tax_foreclosure_event",
     "record_id": "raw_fd71ada604109e87",
@@ -3069,7 +3069,7 @@
     "value": "TX-PETITION-138.06-5-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_6eec5d57d65a6af9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_53b7529c8c2b6865",
@@ -3080,7 +3080,7 @@
     "value": "TX-PETITION-201.00-3-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_706b0aec4ec21255",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b068cbf253a709f1",
@@ -3091,7 +3091,7 @@
     "value": "TX-PETITION-88.10-5-33"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7102cee582cfc5b4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b0be33d55ae6564d",
@@ -3102,7 +3102,7 @@
     "value": "TX-PETITION-111.00-2-95"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_727d0de6453e7f93",
     "field": "tax_foreclosure_event",
     "record_id": "raw_922f3f4096b72ef6",
@@ -3113,7 +3113,7 @@
     "value": "TX-PETITION-120.00-2-5"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_72c93497fc1ba14a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e08320f365507fa3",
@@ -3124,7 +3124,7 @@
     "value": "TX-PETITION-105.07-6-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_73811306cca5bcf1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2b72fc088f649ef8",
@@ -3135,7 +3135,7 @@
     "value": "TX-PETITION-55.12-2-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_73ab0d18691f2c84",
     "field": "tax_foreclosure_event",
     "record_id": "raw_95a90d4fb19fa159",
@@ -3146,7 +3146,7 @@
     "value": "TX-PETITION-166.17-3-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_755bc9753d299dbc",
     "field": "tax_foreclosure_event",
     "record_id": "raw_52b6e88b651eaef7",
@@ -3157,7 +3157,7 @@
     "value": "TX-PETITION-156.18-7-38"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_757a25deb9ee5ad9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c1a46fc7eced36cc",
@@ -3168,7 +3168,7 @@
     "value": "TX-PETITION-34.03-4-39"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7673138e82b1b74b",
     "field": "notice_of_sale",
     "record_id": "raw_be581b4d45f75ddb",
@@ -3179,7 +3179,7 @@
     "value": "VHrrhD5tkF7cU4bSbDYO-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_76aa182047333cf3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3f6c3902e0ced772",
@@ -3190,7 +3190,7 @@
     "value": "TX-PETITION-82.04-2-33"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_770dcc761eca5b14",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c88bc86432a5bfd9",
@@ -3201,7 +3201,7 @@
     "value": "TX-PETITION-96.13-1-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_773900d308f5af7d",
     "field": "notice_of_sale",
     "record_id": "raw_51c868830370f731",
@@ -3212,7 +3212,7 @@
     "value": "NKR2ahxVLzFJ7lzRVYRr-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_776a9fd9578f1c28",
     "field": "notice_of_sale",
     "record_id": "raw_0760e9c244c36ef6",
@@ -3223,7 +3223,7 @@
     "value": "NKR2ahxVLzFJ7lzRVYRr-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7777b2b9e9591fc7",
     "field": "tax_foreclosure_event",
     "record_id": "raw_452a0c707f69238a",
@@ -3234,7 +3234,7 @@
     "value": "TX-PETITION-76.00-1-65"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_77c40278153ab341",
     "field": "letters_of_administration",
     "record_id": "raw_bed507da5e4a25b5",
@@ -3245,7 +3245,7 @@
     "value": "UP2YfYOIR8OgHm7Mk8lq-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_77cf4c48ed903bc6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c5a73f5e162501b8",
@@ -3256,7 +3256,7 @@
     "value": "TX-PETITION-155.12-4-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7863ad998bea7c91",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0431240014dfc751",
@@ -3267,7 +3267,7 @@
     "value": "TX-PETITION-100.08-1-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_788281acc97bb25e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c11e9686817c9277",
@@ -3278,7 +3278,7 @@
     "value": "TX-PETITION-88.10-3-34"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7990b63ea4215d13",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3813ef5cfd33f3cd",
@@ -3289,7 +3289,7 @@
     "value": "TX-PETITION-26.00-5-21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7a0040c0052cd44b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_21acedbc264ebc12",
@@ -3300,7 +3300,7 @@
     "value": "TX-PETITION-21.00-3-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7b0a261c445aface",
     "field": "tax_foreclosure_event",
     "record_id": "raw_51d3942da96fb374",
@@ -3311,7 +3311,7 @@
     "value": "TX-PETITION-88.18-4-47"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7b70cfd9da33c1fe",
     "field": "tax_foreclosure_event",
     "record_id": "raw_95a5b34f1005136f",
@@ -3322,7 +3322,7 @@
     "value": "TX-PETITION-144.00-2-20"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7bc03305c6f5304c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_128327de7d02cc1f",
@@ -3333,7 +3333,7 @@
     "value": "TX-PETITION-146.00-3-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7bd98ab383ff1705",
     "field": "tax_foreclosure_event",
     "record_id": "raw_26a8fbf26575aec6",
@@ -3344,7 +3344,7 @@
     "value": "TX-PETITION-67.00-1-25.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7be60bd15a497a98",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b9b6bf219e09cf22",
@@ -3355,7 +3355,7 @@
     "value": "TX-PETITION-169.00-4-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7c3528d825cfeeb5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_5cb1f57a5a9d5399",
@@ -3366,7 +3366,7 @@
     "value": "TX-PETITION-88.10-3-41"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7cbf441beaa67a07",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2d8ae708c790b2ec",
@@ -3377,7 +3377,7 @@
     "value": "TX-PETITION-38.00-3-30"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7d04e18e78eaf701",
     "field": "tax_foreclosure_event",
     "record_id": "raw_512bb2dfbccb9e32",
@@ -3388,7 +3388,7 @@
     "value": "TX-PETITION-110.00-6-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7d82e58342e28088",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a67e9f8f13087e98",
@@ -3399,7 +3399,7 @@
     "value": "TX-PETITION-171.00-4-45.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7ddf863e7a605669",
     "field": "tax_foreclosure_event",
     "record_id": "raw_afb396f749a2565a",
@@ -3410,7 +3410,7 @@
     "value": "TX-PETITION-39.00-4-20.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7e1df15636d4f823",
     "field": "notice_of_sale",
     "record_id": "raw_3dd977d439bed048",
@@ -3421,7 +3421,7 @@
     "value": "NKR2ahxVLzFJ7lzRVYRr-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7e25decd9f8b517a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e74e5c88081206ee",
@@ -3432,7 +3432,7 @@
     "value": "TX-PETITION-136.00-9-29"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7e27b76dd7822d92",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3ca9e9296430e19b",
@@ -3443,7 +3443,7 @@
     "value": "TX-PETITION-117.00-1-5"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7e75044e2b23d610",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b620013e044f8de7",
@@ -3454,7 +3454,7 @@
     "value": "TX-PETITION-164.16-1-3.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7e808898d9c1000e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_255b488ad5e7bf45",
@@ -3465,7 +3465,7 @@
     "value": "TX-PETITION-78.19-1-38"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7ed533752e8a1c05",
     "field": "tax_foreclosure_event",
     "record_id": "raw_8a1e0bdf01c0e579",
@@ -3476,7 +3476,7 @@
     "value": "TX-PETITION-167.18-2-19"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7eedef79e5bad49d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_50cefa25779703db",
@@ -3487,7 +3487,7 @@
     "value": "TX-PETITION-6.00-2-34"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7ef428a0f23dd3bd",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e428fd555ce58f9c",
@@ -3498,7 +3498,7 @@
     "value": "TX-PETITION-156.70-4-26"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7f23502ee856ac0b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_bf286a0395abc9fb",
@@ -3509,7 +3509,7 @@
     "value": "TX-PETITION-88.10-3-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7f60916f821bc9fe",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ad092009db00f426",
@@ -3520,7 +3520,7 @@
     "value": "TX-PETITION-88.10-4-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_7f82b285c8e20781",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7177f992267a78b0",
@@ -3531,7 +3531,7 @@
     "value": "TX-PETITION-128.00-3-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_8047fe30a6d111ae",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0520565a78491da4",
@@ -3542,7 +3542,7 @@
     "value": "TX-PETITION-65.00-1-30"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_80638a3b067e3371",
     "field": "tax_foreclosure_event",
     "record_id": "raw_edba0d741c2ce191",
@@ -3553,7 +3553,7 @@
     "value": "TX-PETITION-199.12-4-27"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_823da419891431b8",
     "field": "tax_foreclosure_event",
     "record_id": "raw_5f9a104b0c821231",
@@ -3564,7 +3564,7 @@
     "value": "TX-PETITION-88.10-4-20"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_834ddddcf107005e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1e64b9d454ad7099",
@@ -3575,7 +3575,7 @@
     "value": "TX-PETITION-68.00-2-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_83676e95e828b8ac",
     "field": "tax_foreclosure_event",
     "record_id": "raw_cea763b665010424",
@@ -3586,7 +3586,7 @@
     "value": "TX-PETITION-207.00-2-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_83a672d5e01b0618",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3fcbfa6c8b241fd4",
@@ -3597,7 +3597,7 @@
     "value": "TX-PETITION-74.00-4-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_83e50bce4f5f269d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_90fabbf2cd40d34b",
@@ -3608,7 +3608,7 @@
     "value": "TX-PETITION-80.00-1-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_83ef934b512d03f2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_be78c715325ca419",
@@ -3619,7 +3619,7 @@
     "value": "TX-PETITION-166.17-3-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_8478d2ff0a3101c2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e246e99b2822139d",
@@ -3630,7 +3630,7 @@
     "value": "TX-PETITION-80.00-3-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_856879d5dc99fbb4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2702cc62db783fdb",
@@ -3641,7 +3641,7 @@
     "value": "TX-PETITION-74.14-2-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_857b7bbb4a0c8bf1",
     "field": "notice_of_sale",
     "record_id": "raw_4e08f59e2bb123ee",
@@ -3652,7 +3652,7 @@
     "value": "hWv4jhmnTxZyoXj5Q0wT-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_85b21fb934335c55",
     "field": "notice_of_sale",
     "record_id": "raw_dc9e42e55dc47334",
@@ -3663,7 +3663,7 @@
     "value": "hWv4jhmnTxZyoXj5Q0wT-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_85c406c6f7d20970",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0bb1c8a812e3e457",
@@ -3674,7 +3674,7 @@
     "value": "TX-PETITION-107.00-1-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_87681ec659211dae",
     "field": "tax_foreclosure_event",
     "record_id": "raw_27628a28ac2eacd5",
@@ -3685,7 +3685,7 @@
     "value": "TX-PETITION-15.00-1-21.12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_87d7ac04bce18384",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9f749061decfcf94",
@@ -3696,7 +3696,7 @@
     "value": "TX-PETITION-58.00-5-10.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_88471e07be6f06f0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_67745b4a931c8fc5",
@@ -3707,7 +3707,7 @@
     "value": "TX-PETITION-86.00-2-55"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_88f3cd60e4face82",
     "field": "letters_of_administration",
     "record_id": "raw_7db926d9a627eedf",
@@ -3718,7 +3718,7 @@
     "value": "UP2YfYOIR8OgHm7Mk8lq-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_894a6f7da526fade",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1950e22d2b1015ac",
@@ -3729,7 +3729,7 @@
     "value": "TX-PETITION-166.00-2-32"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_89a87e7d8f593987",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c33253e60640a00b",
@@ -3740,7 +3740,7 @@
     "value": "TX-PETITION-23.02-1-20"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_8a6b1d2e4cc3ee3a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d25bafd97c6f2c28",
@@ -3751,7 +3751,7 @@
     "value": "TX-PETITION-122.15-2-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_8b4bfccb531c2070",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e540b4038b5db58f",
@@ -3762,7 +3762,7 @@
     "value": "TX-PETITION-34.03-4-32"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_8b952116b362531b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_91d70bd1989f5b4b",
@@ -3773,7 +3773,7 @@
     "value": "TX-PETITION-206.04-3-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_8b9bd8f9ab3b72d7",
     "field": "tax_foreclosure_event",
     "record_id": "raw_fc87c779c5e5ddd9",
@@ -3784,7 +3784,7 @@
     "value": "TX-PETITION-156.14-6-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_8b9c35cfdd057ed9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f86d9b418062fae2",
@@ -3795,7 +3795,7 @@
     "value": "TX-PETITION-199.12-1-25.11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_8bd1f2f71036ee21",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c4adc48158dc09e8",
@@ -3806,7 +3806,7 @@
     "value": "TX-PETITION-116.00-2-12.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_8f8e10629e2d83e3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ae6bb4052cb1f4b9",
@@ -3817,7 +3817,7 @@
     "value": "TX-PETITION-78.10-2-46"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_8f9f160f2316d3b9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_74c25f7c170b160e",
@@ -3828,7 +3828,7 @@
     "value": "TX-PETITION-88.14-1-35"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_8fa18dffa47a2fd0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_06fe9f44ad61f5ce",
@@ -3839,7 +3839,7 @@
     "value": "TX-PETITION-148.18-2-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_902eb63c78fb3e4c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_055b0186cdbdb456",
@@ -3850,7 +3850,7 @@
     "value": "TX-PETITION-82.04-2-10"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_904f784d94f8ca82",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0e4e68400036389c",
@@ -3861,7 +3861,7 @@
     "value": "TX-PETITION-68.00-3-1.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9056ae1e98f7467c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_719dd1ea01a35454",
@@ -3872,7 +3872,7 @@
     "value": "TX-PETITION-122.11-2-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9155be780632c2b8",
     "field": "tax_foreclosure_event",
     "record_id": "raw_5921b191b40ecc83",
@@ -3883,7 +3883,7 @@
     "value": "TX-PETITION-88.10-4-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_91d3f02db76c049e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c5ae3d6fe5c28893",
@@ -3894,7 +3894,7 @@
     "value": "TX-PETITION-105.06-1-10"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_91d4a4bdad574127",
     "field": "tax_foreclosure_event",
     "record_id": "raw_962c246f3a547765",
@@ -3905,7 +3905,7 @@
     "value": "TX-PETITION-74.14-1-51"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_91f25721f3f37499",
     "field": "letters_of_administration",
     "record_id": "raw_9e751ba20b56adef",
@@ -3916,7 +3916,7 @@
     "value": "hf4AG5lC3hizoLrDz67Q-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9215123b32abf0b6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7966cc5b73a8d44d",
@@ -3927,7 +3927,7 @@
     "value": "TX-PETITION-122.07-1-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_92333567f5ff9a66",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9419519edeff70e1",
@@ -3938,7 +3938,7 @@
     "value": "TX-PETITION-77.00-1-68"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_93d8e23f78f888c2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_709cab189db5c32b",
@@ -3949,7 +3949,7 @@
     "value": "TX-PETITION-100.00-1-30"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_93ff30640c68fc5f",
     "field": "notice_of_sale",
     "record_id": "raw_80c5dafa58a116a1",
@@ -3960,7 +3960,7 @@
     "value": "CSq25aE9QJIjLcSLkxNR-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_940491d3d43ce09e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2ff159a5e1f5e198",
@@ -3971,7 +3971,7 @@
     "value": "TX-PETITION-138.01-1-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_941f6add9ec265b6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_5202a64974f8c746",
@@ -3982,7 +3982,7 @@
     "value": "TX-PETITION-109.00-2-67"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_97448191b6ccdd73",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9f45597e199f20d9",
@@ -3993,7 +3993,7 @@
     "value": "TX-PETITION-181.12-1-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_98085b79bda0fd66",
     "field": "tax_foreclosure_event",
     "record_id": "raw_059da903341a38d7",
@@ -4004,7 +4004,7 @@
     "value": "TX-PETITION-169.04-1-15.12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_980b7273a38d07b6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_92d1860327b7d5a7",
@@ -4015,7 +4015,7 @@
     "value": "TX-PETITION-88.15-2-40"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_987077aca94c5269",
     "field": "tax_foreclosure_event",
     "record_id": "raw_aebe5102735d84ae",
@@ -4026,7 +4026,7 @@
     "value": "TX-PETITION-88.19-6-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9889c52367868c7b",
     "field": "notice_of_sale",
     "record_id": "raw_d83c08ebf0270a5c",
@@ -4037,7 +4037,7 @@
     "value": "s1HTB5skxfEPoZDJJ7t5-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_991031965d218a9b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e23c0f3993e8bf50",
@@ -4048,7 +4048,7 @@
     "value": "TX-PETITION-84.00-6-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_995d094873981330",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7dfad2bc896ca833",
@@ -4059,7 +4059,7 @@
     "value": "TX-PETITION-132.00-3-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_99d3fdf62fc468f8",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3ad08e99c68bcad7",
@@ -4070,7 +4070,7 @@
     "value": "TX-PETITION-137.00-5-18.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9b3b004cbf14a77b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6e4eeac1e6416abd",
@@ -4081,7 +4081,7 @@
     "value": "TX-PETITION-112.00-2-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9b75e85aae3fa6f4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_dc4096f2a846a2d0",
@@ -4092,7 +4092,7 @@
     "value": "TX-PETITION-103.00-6-31"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9bfb461ee1352e7c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_58b788c568082029",
@@ -4103,7 +4103,7 @@
     "value": "TX-PETITION-74.14-1-30"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9c3c4455e79c7348",
     "field": "tax_foreclosure_event",
     "record_id": "raw_bd28e56bb1c977df",
@@ -4114,7 +4114,7 @@
     "value": "TX-PETITION-132.00-2-64"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9c6712b339fc645c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_5cebaec860542913",
@@ -4125,7 +4125,7 @@
     "value": "TX-PETITION-26.00-4-19"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9c95e01e40db5886",
     "field": "notice_of_sale",
     "record_id": "raw_f1ee7014b245f8ad",
@@ -4136,7 +4136,7 @@
     "value": "c7L2HYcCi2mJrXEToWEB-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9d2384069df12f71",
     "field": "tax_foreclosure_event",
     "record_id": "raw_44de6ead09ff9334",
@@ -4147,7 +4147,7 @@
     "value": "TX-PETITION-128.03-1-20"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9d886ba5ef7750a9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0bb9202f559026da",
@@ -4158,7 +4158,7 @@
     "value": "TX-PETITION-66.00-6-32"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9f43b2b914a8a2a2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_12b2f714591540e6",
@@ -4169,7 +4169,7 @@
     "value": "TX-PETITION-65.00-1-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9f64e318def59f9f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c1d6df59bdb19456",
@@ -4180,7 +4180,7 @@
     "value": "TX-PETITION-102.00-2-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9f7aea961808ba3a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_31792ee83ea81616",
@@ -4191,7 +4191,7 @@
     "value": "TX-PETITION-88.00-2-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_9f9a48720b4c5bb5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_21c72133be582cc7",
@@ -4202,7 +4202,7 @@
     "value": "TX-PETITION-88.14-4-25"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a0118791d23a7d8e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_083a331b68a9fd84",
@@ -4213,7 +4213,7 @@
     "value": "TX-PETITION-38.00-6-30"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a0a1c3ddb648f182",
     "field": "tax_foreclosure_event",
     "record_id": "raw_fb7a81d5bfad98b8",
@@ -4224,7 +4224,7 @@
     "value": "TX-PETITION-83.04-3-31"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a0c7a9aaf42ff33e",
     "field": "notice_of_sale",
     "record_id": "raw_830035631098e7c9",
@@ -4235,7 +4235,7 @@
     "value": "s1HTB5skxfEPoZDJJ7t5-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a15c9d168dd7f444",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ef9bafb0bd8843c1",
@@ -4246,7 +4246,7 @@
     "value": "TX-PETITION-88.10-4-32"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a169689c144b242e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6d0f6daa527140c4",
@@ -4257,7 +4257,7 @@
     "value": "TX-PETITION-175.00-2-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a1b5679097b56cd4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6e7f1047febea9d7",
@@ -4268,7 +4268,7 @@
     "value": "TX-PETITION-163.08-1-16.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a1f9cdde766dcf4b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_03e9e0a1b6cebe97",
@@ -4279,7 +4279,7 @@
     "value": "TX-PETITION-26.00-5-23.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a3278fd28b426d15",
     "field": "tax_foreclosure_event",
     "record_id": "raw_10cf5312934a8a8a",
@@ -4290,7 +4290,7 @@
     "value": "TX-PETITION-69.00-2-54"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a33b879d7bf45160",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9659c74f620c05d6",
@@ -4301,7 +4301,7 @@
     "value": "TX-PETITION-97.00-1-79.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a3a38b5f5cccf434",
     "field": "tax_foreclosure_event",
     "record_id": "raw_004d21ef66901f0d",
@@ -4312,7 +4312,7 @@
     "value": "TX-PETITION-155.12-5-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a453436962f57626",
     "field": "tax_foreclosure_event",
     "record_id": "raw_8b7f5bac2f4260d6",
@@ -4323,7 +4323,7 @@
     "value": "TX-PETITION-158.00-3-29"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a4d460e991599ca5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e555933caaaeeeae",
@@ -4334,7 +4334,7 @@
     "value": "TX-PETITION-34.00-5-13.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a5044addceaeba73",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a5a990a58cd879f9",
@@ -4345,7 +4345,7 @@
     "value": "TX-PETITION-14.00-1-23"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a7acbb1143ab4d49",
     "field": "tax_foreclosure_event",
     "record_id": "raw_431b18c4d5663827",
@@ -4356,7 +4356,7 @@
     "value": "TX-PETITION-12.00-1-37"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a80cc5548b0514bb",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7a1acc71c8a99ccf",
@@ -4367,7 +4367,7 @@
     "value": "TX-PETITION-156.18-3-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a80cee33a1b06620",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ae6eef2c459402a6",
@@ -4378,7 +4378,7 @@
     "value": "TX-PETITION-206.04-1-4.12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a81e9208d4e4fc26",
     "field": "tax_foreclosure_event",
     "record_id": "raw_79e580add830c2f0",
@@ -4389,7 +4389,7 @@
     "value": "TX-PETITION-22.00-1-48"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a86be4e54d70d639",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f482bef6fde32377",
@@ -4400,7 +4400,7 @@
     "value": "TX-PETITION-82.04-2-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a94b4e5c5e184866",
     "field": "tax_foreclosure_event",
     "record_id": "raw_8077ffe83ce8fb96",
@@ -4411,7 +4411,7 @@
     "value": "TX-PETITION-78.19-2-43"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_a9fc774e3ca5588e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_edee8c04c989e6ad",
@@ -4422,7 +4422,7 @@
     "value": "TX-PETITION-155.16-1-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_aa62f336c15a0dbe",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1ed62df6526036d4",
@@ -4433,7 +4433,7 @@
     "value": "TX-PETITION-29.00-3-19"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_aa8dc6fdd9eeac44",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2b1dbfcf0ed836f9",
@@ -4444,7 +4444,7 @@
     "value": "TX-PETITION-156.17-3-17"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_aaf40c45a48fe393",
     "field": "tax_foreclosure_event",
     "record_id": "raw_57adc4980fceda84",
@@ -4455,7 +4455,7 @@
     "value": "TX-PETITION-23.00-2-12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ab062e0800f45551",
     "field": "tax_foreclosure_event",
     "record_id": "raw_74f2be6d672dbbad",
@@ -4466,7 +4466,7 @@
     "value": "TX-PETITION-147.20-2-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ab2f459fd02e5264",
     "field": "tax_foreclosure_event",
     "record_id": "raw_48e1e411bfeec417",
@@ -4477,7 +4477,7 @@
     "value": "TX-PETITION-138.07-4-10"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ab4531d3c2fa12fb",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1743d4da3ab37727",
@@ -4488,7 +4488,7 @@
     "value": "TX-PETITION-36.00-4-30"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ab7af96c8e18b8b7",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f700b35a5179a2a1",
@@ -4499,7 +4499,7 @@
     "value": "TX-PETITION-66.01-1-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_aba1c46fc8d9f679",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2ec2478ef08abe4d",
@@ -4510,7 +4510,7 @@
     "value": "TX-PETITION-180.00-2-41.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ac643cf4e05ed734",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1d90a6a94ceeab7a",
@@ -4521,7 +4521,7 @@
     "value": "TX-PETITION-96.00-2-44.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ad036d4bcc8688e6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_332360e42e54021d",
@@ -4532,7 +4532,7 @@
     "value": "TX-PETITION-78.00-6-46.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ad4ff9d90cf8bfdf",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1608aaf4164f6aef",
@@ -4543,7 +4543,7 @@
     "value": "TX-PETITION-160.10-1-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ad5a3680b2f5a55e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ef98efd052614298",
@@ -4554,7 +4554,7 @@
     "value": "TX-PETITION-83.00-2-30"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ad995a3c1f2fee40",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0f7678afc24c2b65",
@@ -4565,7 +4565,7 @@
     "value": "TX-PETITION-118.00-2-35.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ada78b6540ed5fe2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_26f6bd7c6c365641",
@@ -4576,7 +4576,7 @@
     "value": "TX-PETITION-130.00-1-36"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ae044b0c157b1f3d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_584cf5991e0e2f73",
@@ -4587,7 +4587,7 @@
     "value": "TX-PETITION-88.10-3-21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ae1167e568e2e173",
     "field": "tax_foreclosure_event",
     "record_id": "raw_964cdaee529dca5f",
@@ -4598,7 +4598,7 @@
     "value": "TX-PETITION-79.00-4-40.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_aec8e41ab549f50a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4114b12db077c382",
@@ -4609,7 +4609,7 @@
     "value": "TX-PETITION-171.12-2-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_af0810219ce3900e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_70e2961564bac5e9",
@@ -4620,7 +4620,7 @@
     "value": "TX-PETITION-165.20-1-24.21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_af5807701ca6aa39",
     "field": "tax_foreclosure_event",
     "record_id": "raw_06e0697257e42d48",
@@ -4631,7 +4631,7 @@
     "value": "TX-PETITION-129.00-4-5"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b01c329232d2405f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f60f93e2b426ecfe",
@@ -4642,7 +4642,7 @@
     "value": "TX-PETITION-164.00-2-21.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b0249f83532038fa",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3ab9339939f6dd83",
@@ -4653,7 +4653,7 @@
     "value": "TX-PETITION-95.00-7-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b03123bc72aa5ea5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_928059e4b10b1db8",
@@ -4664,7 +4664,7 @@
     "value": "TX-PETITION-56.20-1-51"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b0433862d0bb4a60",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a38151952737f826",
@@ -4675,7 +4675,7 @@
     "value": "TX-PETITION-86.00-7-20"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b053ed7691ffa343",
     "field": "tax_foreclosure_event",
     "record_id": "raw_8e04acbd740325a5",
@@ -4686,7 +4686,7 @@
     "value": "TX-PETITION-82.00-3-9.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b0c1bc24808245e4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1ec2f2a3df48fe91",
@@ -4697,7 +4697,7 @@
     "value": "TX-PETITION-68.00-3-23.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b0cf9acc816a356e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_62d71cf7a7b64ddc",
@@ -4708,7 +4708,7 @@
     "value": "TX-PETITION-138.10-4-22"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b1e534f75cbfd28e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_74c6ca0cf4903637",
@@ -4719,7 +4719,7 @@
     "value": "TX-PETITION-157.00-1-36"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b255ea402b38a6a4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e29a9b7019271479",
@@ -4730,7 +4730,7 @@
     "value": "TX-PETITION-156.70-2-19.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b28ed52d5a90710f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_82f23d1dad4992c3",
@@ -4741,7 +4741,7 @@
     "value": "TX-PETITION-36.00-5-34"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b378161026092bd2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_69dd37b8b8000747",
@@ -4752,7 +4752,7 @@
     "value": "TX-PETITION-140.06-3-12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b384bf545beb193d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_258d024277addb95",
@@ -4763,7 +4763,7 @@
     "value": "TX-PETITION-142.00-1-6.21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b4356c4cd0333136",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f930906b2e43ddfe",
@@ -4774,7 +4774,7 @@
     "value": "TX-PETITION-50.00-1-5"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b4f0a6331fff85e1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_83ee7eeffa6bc3b5",
@@ -4785,7 +4785,7 @@
     "value": "TX-PETITION-79.00-4-75.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b5f2ad4cb974eb35",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f35dd2518b9354fa",
@@ -4796,7 +4796,7 @@
     "value": "TX-PETITION-169.00-4-23"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b60727e045f419c8",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f8f8ae741d8dcbb7",
@@ -4807,7 +4807,7 @@
     "value": "TX-PETITION-172.09-2-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b613cd0595cee0cf",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0fba3bb3be2f802f",
@@ -4818,7 +4818,7 @@
     "value": "TX-PETITION-186.00-6-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b657e1959c43aedd",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0f20f24d7c1d1bd5",
@@ -4829,7 +4829,7 @@
     "value": "TX-PETITION-51.00-2-32"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b673059a18b8832d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e38f524cb78e11b2",
@@ -4840,7 +4840,7 @@
     "value": "TX-PETITION-20.00-2-7.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b78f0aa956b8e365",
     "field": "tax_foreclosure_event",
     "record_id": "raw_acb000abf26a5800",
@@ -4851,7 +4851,7 @@
     "value": "TX-PETITION-137.02-2-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b842264750800e06",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4b61ce9933714c9d",
@@ -4862,7 +4862,7 @@
     "value": "TX-PETITION-183.05-1-35"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b8889c36f24af8e1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_cb21428645dc9eaf",
@@ -4873,7 +4873,7 @@
     "value": "TX-PETITION-103.00-1-23"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b911d66f096a1f22",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4e3d5471dc4fa99c",
@@ -4884,7 +4884,7 @@
     "value": "TX-PETITION-82.04-3-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b95678f1e4d62381",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7cbaf19408c12058",
@@ -4895,7 +4895,7 @@
     "value": "TX-PETITION-105.19-4-21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_b9f55af3860455ec",
     "field": "tax_foreclosure_event",
     "record_id": "raw_90b53de4a8d316c5",
@@ -4906,7 +4906,7 @@
     "value": "TX-PETITION-164.07-1-1.12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ba447276f6bc64a4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ea0f15451bde6688",
@@ -4917,7 +4917,7 @@
     "value": "TX-PETITION-11.00-5-42"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ba62a1e6aea37fe6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_43a40d571f08e150",
@@ -4928,7 +4928,7 @@
     "value": "TX-PETITION-137.00-5-13.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_bbddbbab628e560b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b996768b9506ff0a",
@@ -4939,7 +4939,7 @@
     "value": "TX-PETITION-49.00-3-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_bcc340ab643c8853",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a4bcd4e0d57493cb",
@@ -4950,7 +4950,7 @@
     "value": "TX-PETITION-91.00-1-25.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_bd2ac0527139b02e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f2575512bd5016a9",
@@ -4961,7 +4961,7 @@
     "value": "TX-PETITION-83.04-4-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_bd7b34367f2b22e3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_84d67fd1985c4821",
@@ -4972,7 +4972,7 @@
     "value": "TX-PETITION-12.04-4-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_bd912431cca68074",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4c05db7ad47bea67",
@@ -4983,7 +4983,7 @@
     "value": "TX-PETITION-77.00-2-27"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_be052e53c4fa4f11",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6c90f9054cd89477",
@@ -4994,7 +4994,7 @@
     "value": "TX-PETITION-75.03-3-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_be0dafab52b0862c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3583f07f4b63a4e8",
@@ -5005,7 +5005,7 @@
     "value": "TX-PETITION-21.03-1-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_be322d3cb353c4e3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_dcbc2102d3d3bccd",
@@ -5016,7 +5016,7 @@
     "value": "TX-PETITION-182.00-1-17"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_be513b6206b0885d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0104ca029ca20f4c",
@@ -5027,7 +5027,7 @@
     "value": "TX-PETITION-11.00-4-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_bec6426737a857a7",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b4d51f402d514f60",
@@ -5038,7 +5038,7 @@
     "value": "TX-PETITION-75.03-3-10"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_bf09ac241168424d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_bf3cedbd1b39b2e3",
@@ -5049,7 +5049,7 @@
     "value": "TX-PETITION-41.00-5-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_bf1f66eeb7c48d9c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a35caf505beae1fc",
@@ -5060,7 +5060,7 @@
     "value": "TX-PETITION-105.19-2-12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_bfc658e6f7cc213f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e85d385af260479b",
@@ -5071,7 +5071,7 @@
     "value": "TX-PETITION-166.20-1-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c0e05e8fb722b69e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b5d3b87bf3c26499",
@@ -5082,7 +5082,7 @@
     "value": "TX-PETITION-167.00-4-23"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c1529a576e713d1f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_904079a4f3ae3347",
@@ -5093,7 +5093,7 @@
     "value": "TX-PETITION-85.00-2-37.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c17402a18d1d29da",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d277333168120e21",
@@ -5104,7 +5104,7 @@
     "value": "TX-PETITION-138.07-5-21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c1a34c4e6f10db04",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f7e0e7c68b2c42da",
@@ -5115,7 +5115,7 @@
     "value": "TX-PETITION-32.00-5-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c1be64b49e367f17",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c79f702582e1e8d9",
@@ -5126,7 +5126,7 @@
     "value": "TX-PETITION-91.00-2-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c212d7fa5da0fe41",
     "field": "tax_foreclosure_event",
     "record_id": "raw_bfdc1ab5d62538af",
@@ -5137,7 +5137,7 @@
     "value": "TX-PETITION-49.00-3-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c253ab84eae56fcc",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2125796de9f46720",
@@ -5148,7 +5148,7 @@
     "value": "TX-PETITION-138.01-1-5"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c2e685b876376d36",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4e7b716f17ab2bb8",
@@ -5159,7 +5159,7 @@
     "value": "TX-PETITION-154.00-1-50"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c30fb5c25fe310f1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_71c3484833baf846",
@@ -5170,7 +5170,7 @@
     "value": "TX-PETITION-88.14-3-20"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c3485599f2296caa",
     "field": "tax_foreclosure_event",
     "record_id": "raw_106fb799180936fe",
@@ -5181,7 +5181,7 @@
     "value": "TX-PETITION-118.00-2-20.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c389724f00fe592d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_746708109df3d9b1",
@@ -5192,7 +5192,7 @@
     "value": "TX-PETITION-55.00-2-33"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c38bf38610fedfb4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_836122d7886cb8ee",
@@ -5203,7 +5203,7 @@
     "value": "TX-PETITION-146.00-4-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c3eaabeaebca6f84",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4ba7d8e152f36f2e",
@@ -5214,7 +5214,7 @@
     "value": "TX-PETITION-74.00-1-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c3f5e92607e037be",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d397b5ad0a2b68e1",
@@ -5225,7 +5225,7 @@
     "value": "TX-PETITION-167.00-2-17"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c49a4703f7838d4e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_eda1a783ae024321",
@@ -5236,7 +5236,7 @@
     "value": "TX-PETITION-88.10-4-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c5a7c24f08ab7059",
     "field": "tax_foreclosure_event",
     "record_id": "raw_bab97db909209f1c",
@@ -5247,7 +5247,7 @@
     "value": "TX-PETITION-78.10-2-61"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c5af2164dfac3d2d",
     "field": "notice_of_sale",
     "record_id": "raw_d5697fad0c45fd0c",
@@ -5258,7 +5258,7 @@
     "value": "kIAUtteRI1ZBzTCFaVyz-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c5b6f41ecb7cf991",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6d075460465d3eae",
@@ -5269,7 +5269,7 @@
     "value": "TX-PETITION-166.17-1-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c5c6b8c842527ce5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_213584e0f4ee1239",
@@ -5280,7 +5280,7 @@
     "value": "TX-PETITION-95.06-1-19.11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c6d1b364ae2a121e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d65e7b1bf3c415cf",
@@ -5291,7 +5291,7 @@
     "value": "TX-PETITION-105.06-1-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c6d2f5fed7ca8e81",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6634df0dbb71a119",
@@ -5302,7 +5302,7 @@
     "value": "TX-PETITION-70.00-2-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c6dddb07002ab88d",
     "field": "notice_of_sale",
     "record_id": "raw_ba584ac98cc96a9a",
@@ -5313,7 +5313,7 @@
     "value": "OqRk9bFdh9D7lBGsbHtu-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c6ea42fa71ec26c1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7a45fa889ed86f79",
@@ -5324,7 +5324,7 @@
     "value": "TX-PETITION-171.42-2-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c714e930e86431ca",
     "field": "tax_foreclosure_event",
     "record_id": "raw_68cf3fb5e8f1adab",
@@ -5335,7 +5335,7 @@
     "value": "TX-PETITION-21.00-5-6.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c723ba7fdb9b472a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_39ec1320db75f767",
@@ -5346,7 +5346,7 @@
     "value": "TX-PETITION-29.00-3-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c891f5c0f0294a1b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1e864bdef43e2651",
@@ -5357,7 +5357,7 @@
     "value": "TX-PETITION-105.19-3-21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_c929e653dfd8ce56",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4fa869c2764eb252",
@@ -5368,7 +5368,7 @@
     "value": "TX-PETITION-136.00-8-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ca360e6d4cd8a111",
     "field": "tax_foreclosure_event",
     "record_id": "raw_689e482271e16b7f",
@@ -5379,7 +5379,7 @@
     "value": "TX-PETITION-100.00-4-26"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ca54b5e4d890c4b3",
     "field": "notice_of_sale",
     "record_id": "raw_4fe19f3bafe2c3b5",
@@ -5390,7 +5390,7 @@
     "value": "wmacXKsWO2yC12a9Bh31-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ca9dddba00c3bb42",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c43c2f7cb336c0ff",
@@ -5401,7 +5401,7 @@
     "value": "TX-PETITION-99.00-2-22"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_caa5ebb19860dfbe",
     "field": "tax_foreclosure_event",
     "record_id": "raw_522823d3080454b1",
@@ -5412,7 +5412,7 @@
     "value": "TX-PETITION-105.19-5-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cad8b288877bfd12",
     "field": "notice_of_sale",
     "record_id": "raw_5a3345850c1a8c21",
@@ -5423,7 +5423,7 @@
     "value": "s1HTB5skxfEPoZDJJ7t5-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_caf1b8751ed85f2c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_166d57f8222e39bf",
@@ -5434,7 +5434,7 @@
     "value": "TX-PETITION-79.00-4-60"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cb0973a687e86841",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6f72265e8f85596c",
@@ -5445,7 +5445,7 @@
     "value": "TX-PETITION-53.00-4-32"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cb3de5b0330d35f3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_baaa4922b1eb3a4d",
@@ -5456,7 +5456,7 @@
     "value": "TX-PETITION-52.00-3-29"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cbd74e12acff7827",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c5251e853e0023ec",
@@ -5467,7 +5467,7 @@
     "value": "TX-PETITION-88.10-4-19"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cbeae60e1cd5f15d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b2740434833bf819",
@@ -5478,7 +5478,7 @@
     "value": "TX-PETITION-12.11-12-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cc4fd0f432064cc5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3252f3a33c9c4dc2",
@@ -5489,7 +5489,7 @@
     "value": "TX-PETITION-95.10-3-32"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cc68052c822af7ab",
     "field": "tax_foreclosure_event",
     "record_id": "raw_32eade2576f4626a",
@@ -5500,7 +5500,7 @@
     "value": "TX-PETITION-136.00-8-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ccf0ba91d4b35204",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3453c1bbf34c3084",
@@ -5511,7 +5511,7 @@
     "value": "TX-PETITION-104.00-1-19"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cd5886c05643aa6d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_de2c2ac8672fd0a0",
@@ -5522,7 +5522,7 @@
     "value": "TX-PETITION-68.00-3-23.11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cd5dcbe87bfc947c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_cde3b35ffbc16172",
@@ -5533,7 +5533,7 @@
     "value": "TX-PETITION-110.00-6-58"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cd7b5827fd5b9234",
     "field": "tax_foreclosure_event",
     "record_id": "raw_597fe89053a8b6d4",
@@ -5544,7 +5544,7 @@
     "value": "TX-PETITION-122.10-3-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cd7edbe498e11ded",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c3ea33d9f29d869d",
@@ -5555,7 +5555,7 @@
     "value": "TX-PETITION-61.00-1-40.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cdd941150cce848f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_917a505f58fea82c",
@@ -5566,7 +5566,7 @@
     "value": "TX-PETITION-117.00-5-67"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cddd1873c0d67a42",
     "field": "tax_foreclosure_event",
     "record_id": "raw_90e52b6b461fe100",
@@ -5577,7 +5577,7 @@
     "value": "TX-PETITION-113.00-3-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cdf31f29ffb32115",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7d63f78f2da3e94b",
@@ -5588,7 +5588,7 @@
     "value": "TX-PETITION-83.04-3-29"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ce0874482fe74ee5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_166d507dcf2c883b",
@@ -5599,7 +5599,7 @@
     "value": "TX-PETITION-96.14-2-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ce1a2fcff978bf7d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d8da3ba3dd6dab90",
@@ -5610,7 +5610,7 @@
     "value": "TX-PETITION-206.03-3-114"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ce1c4abc0a968835",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1f6b885f5ad00f4f",
@@ -5621,7 +5621,7 @@
     "value": "TX-PETITION-103.00-6-18.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ce77388afbb1c8b5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_60ebed2b579d5be1",
@@ -5632,7 +5632,7 @@
     "value": "TX-PETITION-88.18-6-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cf0ddbdfefd21a50",
     "field": "tax_foreclosure_event",
     "record_id": "raw_5a1d124b8d9b0b73",
@@ -5643,7 +5643,7 @@
     "value": "TX-PETITION-53.00-3-28.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cf3501f91923c322",
     "field": "notice_of_sale",
     "record_id": "raw_41e56efba733d462",
@@ -5654,7 +5654,7 @@
     "value": "VHrrhD5tkF7cU4bSbDYO-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_cfe5ba3368e370a3",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7a246add70809779",
@@ -5665,7 +5665,7 @@
     "value": "TX-PETITION-96.13-1-26"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d08deb809cd5e234",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f8740d67975652d9",
@@ -5676,7 +5676,7 @@
     "value": "TX-PETITION-169.00-4-7.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d1c5daacb394a54c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_bf1f32f82f59d3fa",
@@ -5687,7 +5687,7 @@
     "value": "TX-PETITION-95.06-2-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d21803b8517c66a2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_24169608b9ed0367",
@@ -5698,7 +5698,7 @@
     "value": "TX-PETITION-99.00-2-23"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d29e96c85dd48d6e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2cda3d1a2a06d696",
@@ -5709,7 +5709,7 @@
     "value": "TX-PETITION-12.00-1-29.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d376fcb99e0cd775",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6d3b1637e5f216b2",
@@ -5720,7 +5720,7 @@
     "value": "TX-PETITION-182.00-1-28"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d48625c20348c138",
     "field": "tax_foreclosure_event",
     "record_id": "raw_bc62bc8f10878939",
@@ -5731,7 +5731,7 @@
     "value": "TX-PETITION-135.00-3-19"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d4941e591141ad7d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3483ea11d41ca8a1",
@@ -5742,7 +5742,7 @@
     "value": "TX-PETITION-122.19-2-5"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d56784e8f3f5a6a8",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1dd508f31ef34ae0",
@@ -5753,7 +5753,7 @@
     "value": "TX-PETITION-88.14-1-5"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d687309ac90af930",
     "field": "tax_foreclosure_event",
     "record_id": "raw_43b3b3eb6cf0c06f",
@@ -5764,7 +5764,7 @@
     "value": "TX-PETITION-80.00-2-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d6c4a28773d967ec",
     "field": "tax_foreclosure_event",
     "record_id": "raw_08fc439cea066cfc",
@@ -5775,7 +5775,7 @@
     "value": "TX-PETITION-66.00-2-28"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d6db9d77ae5f5c2f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_92689c4d3d85338d",
@@ -5786,7 +5786,7 @@
     "value": "TX-PETITION-190.00-1-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d6f6e7303f055b94",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c258b9ae0e6b0ff0",
@@ -5797,7 +5797,7 @@
     "value": "TX-PETITION-86.00-4-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d744bd56f029925f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_df9b594194516b74",
@@ -5808,7 +5808,7 @@
     "value": "TX-PETITION-164.15-3-4"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d75f20371f1a6925",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ab27a640373b098e",
@@ -5819,7 +5819,7 @@
     "value": "TX-PETITION-171.12-1-21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d80c8a3b85e37c3d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_46a5827aad0e3204",
@@ -5830,7 +5830,7 @@
     "value": "TX-PETITION-55.00-2-34"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d92a173215c94d24",
     "field": "notice_of_sale",
     "record_id": "raw_f87ee85e073fcd99",
@@ -5841,7 +5841,7 @@
     "value": "wmacXKsWO2yC12a9Bh31-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d987ec506e193fc1",
     "field": "notice_of_sale",
     "record_id": "raw_6bea5da2a39ea305",
@@ -5852,7 +5852,7 @@
     "value": "hWv4jhmnTxZyoXj5Q0wT-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_d9a58bd9229d018a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_37355e97eff3eea9",
@@ -5863,7 +5863,7 @@
     "value": "TX-PETITION-122.18-5-44"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_dabad0046be7ebec",
     "field": "tax_foreclosure_event",
     "record_id": "raw_9cba0e7145a0e0a4",
@@ -5874,7 +5874,7 @@
     "value": "TX-PETITION-146.00-1-30"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_dbdbd8a724db1121",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0a5ed9f4be923dcc",
@@ -5885,7 +5885,7 @@
     "value": "TX-PETITION-137.00-1-9.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_dbf711a818f5348d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_fcf7e5f22293c95c",
@@ -5896,7 +5896,7 @@
     "value": "TX-PETITION-169.00-4-27"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_dbfd708c20fd3cea",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4f1d8a639d7f61b6",
@@ -5907,7 +5907,7 @@
     "value": "TX-PETITION-101.00-4-6"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_dc4510fd98767188",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b7f083afbb731b15",
@@ -5918,7 +5918,7 @@
     "value": "TX-PETITION-138.00-4-27"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_dc57ca92d124be90",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1127565590fe20d1",
@@ -5929,7 +5929,7 @@
     "value": "TX-PETITION-105.06-1-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_dc9a9d1ac1cf5431",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f210cd923e74bb08",
@@ -5940,7 +5940,7 @@
     "value": "TX-PETITION-113.00-1-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_dc9b5e4e3be498d3",
     "field": "notice_of_sale",
     "record_id": "raw_0dd7e63f37b47dea",
@@ -5951,7 +5951,7 @@
     "value": "NKR2ahxVLzFJ7lzRVYRr-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_dd2d3ba24f393b2f",
     "field": "notice_of_sale",
     "record_id": "raw_a0fcef79e21687ec",
@@ -5962,7 +5962,7 @@
     "value": "CSq25aE9QJIjLcSLkxNR-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_dd30bcaf273f983f",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b7c82b5b88fa6ee6",
@@ -5973,7 +5973,7 @@
     "value": "TX-PETITION-118.00-4-5.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ddb4109f7595e016",
     "field": "tax_foreclosure_event",
     "record_id": "raw_446f9df9a6ac5c15",
@@ -5984,7 +5984,7 @@
     "value": "TX-PETITION-88.18-4-49"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ddf8856a9a53e5b1",
     "field": "notice_of_sale",
     "record_id": "raw_eb6756595c21c150",
@@ -5995,7 +5995,7 @@
     "value": "c7L2HYcCi2mJrXEToWEB-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e033d21e1b17d4f1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_53e0abfbd7e3a8f9",
@@ -6006,7 +6006,7 @@
     "value": "TX-PETITION-50.00-4-52"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e04eb58a870e50ab",
     "field": "tax_foreclosure_event",
     "record_id": "raw_95e1e3c0fe2477ad",
@@ -6017,7 +6017,7 @@
     "value": "TX-PETITION-63.00-3-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e04ebecf5cd401d7",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e882ea627a486f29",
@@ -6028,7 +6028,7 @@
     "value": "TX-PETITION-95.13-2-9"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e0bc59a0f787f785",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2b036383c25abe9f",
@@ -6039,7 +6039,7 @@
     "value": "TX-PETITION-34.03-1-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e11a2455446fe06b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_10362445d0a007a7",
@@ -6050,7 +6050,7 @@
     "value": "TX-PETITION-105.15-3-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e129d57dac51be94",
     "field": "tax_foreclosure_event",
     "record_id": "raw_79a37292fcd2ba0b",
@@ -6061,7 +6061,7 @@
     "value": "TX-PETITION-160.10-1-5"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e18771704917cf5c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_46193dc33c27c693",
@@ -6072,7 +6072,7 @@
     "value": "TX-PETITION-83.04-1-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e19132fc46c65830",
     "field": "tax_foreclosure_event",
     "record_id": "raw_73ba39e6ebdea3ba",
@@ -6083,7 +6083,7 @@
     "value": "TX-PETITION-167.18-1-17"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e20796ec0166d520",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4e71255e51a0a02c",
@@ -6094,7 +6094,7 @@
     "value": "TX-PETITION-164.11-1-20"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e26eaee1f8edf003",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3921502e9214ea80",
@@ -6105,7 +6105,7 @@
     "value": "TX-PETITION-50.01-1-12.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e27aa9f92e7a170e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f091cf4c5d3895cf",
@@ -6116,7 +6116,7 @@
     "value": "TX-PETITION-36.00-5-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e2922a5e7db4dee0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4e4e5cd3916cd72a",
@@ -6127,7 +6127,7 @@
     "value": "TX-PETITION-88.18-5-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e354baf3ade1ac96",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a530bfadcbea7620",
@@ -6138,7 +6138,7 @@
     "value": "TX-PETITION-83.00-7-7"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e436a280e7e741d5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_50b437f670c2949f",
@@ -6149,7 +6149,7 @@
     "value": "TX-PETITION-88.10-3-39"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e4b5ffed7845eb7b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_758b602dbd361036",
@@ -6160,7 +6160,7 @@
     "value": "TX-PETITION-129.00-3-37"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e51079fd84df5e4e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e379c63d2c465461",
@@ -6171,7 +6171,7 @@
     "value": "TX-PETITION-109.00-2-6.12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e57ac1d83f7c5686",
     "field": "tax_foreclosure_event",
     "record_id": "raw_db22f40abcd8c687",
@@ -6182,7 +6182,7 @@
     "value": "TX-PETITION-50.00-1-53"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e5e16a6cb21d8a02",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1a2487cf3a399253",
@@ -6193,7 +6193,7 @@
     "value": "TX-PETITION-51.01-1-10"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e6c7314d9994cac9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ddbd7b73887f530c",
@@ -6204,7 +6204,7 @@
     "value": "TX-PETITION-64.00-6-33"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e6e0c220b1a77587",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2d679ca5aa48cdf1",
@@ -6215,7 +6215,7 @@
     "value": "TX-PETITION-88.18-5-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e7ae6144e145ab18",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2f0458357bbca858",
@@ -6226,7 +6226,7 @@
     "value": "TX-PETITION-75.03-3-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e84c496f887dd1d8",
     "field": "tax_foreclosure_event",
     "record_id": "raw_fa3c0e42d3a8af62",
@@ -6237,7 +6237,7 @@
     "value": "TX-PETITION-5.00-1-14.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e8ba3a444f465ec1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c629fae1fff84440",
@@ -6248,7 +6248,7 @@
     "value": "TX-PETITION-41.00-1-18"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e921d77c32d65f70",
     "field": "tax_foreclosure_event",
     "record_id": "raw_7da2940b1ab860cf",
@@ -6259,7 +6259,7 @@
     "value": "TX-PETITION-95.00-1-31"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e94314247c2ee0e2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a5dc324b3db52403",
@@ -6270,7 +6270,7 @@
     "value": "TX-PETITION-114.01-2-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e948be5135b30230",
     "field": "tax_foreclosure_event",
     "record_id": "raw_51d42382c533945f",
@@ -6281,7 +6281,7 @@
     "value": "TX-PETITION-63.00-3-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e99c41cad917077c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_705b1ca4fec0dbba",
@@ -6292,7 +6292,7 @@
     "value": "TX-PETITION-50.01-1-38"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e9baa28340f7ec09",
     "field": "tax_foreclosure_event",
     "record_id": "raw_24571fd825d4b1d2",
@@ -6303,7 +6303,7 @@
     "value": "TX-PETITION-157.00-2-32.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_e9c9ef8d77f0f53d",
     "field": "tax_foreclosure_event",
     "record_id": "raw_708aefc119fee5f2",
@@ -6314,7 +6314,7 @@
     "value": "TX-PETITION-29.00-2-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ea51d8c9d89e4482",
     "field": "tax_foreclosure_event",
     "record_id": "raw_51297cb800e5d097",
@@ -6325,7 +6325,7 @@
     "value": "TX-PETITION-180.00-2-10"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_eabfce6b18e60a22",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d0254f7b6e82ea94",
@@ -6336,7 +6336,7 @@
     "value": "TX-PETITION-51.00-7-33"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ead4ea3c8bd1bb32",
     "field": "notice_of_sale",
     "record_id": "raw_64dc0e16fd032606",
@@ -6347,7 +6347,7 @@
     "value": "VHrrhD5tkF7cU4bSbDYO-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ec1eca1912db74ba",
     "field": "tax_foreclosure_event",
     "record_id": "raw_a37c01945b0bd8ed",
@@ -6358,7 +6358,7 @@
     "value": "TX-PETITION-24.00-2-28"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ec4ea8e9ac6b7b27",
     "field": "notice_of_sale",
     "record_id": "raw_0139785dcfa11240",
@@ -6369,7 +6369,7 @@
     "value": "s1HTB5skxfEPoZDJJ7t5-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ecd8b18ec547fd4a",
     "field": "tax_foreclosure_event",
     "record_id": "raw_795aef1196fba5d5",
@@ -6380,7 +6380,7 @@
     "value": "TX-PETITION-88.19-5-37"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ecf5cd1c1a8f6517",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4450261212c24e9e",
@@ -6391,7 +6391,7 @@
     "value": "TX-PETITION-94.00-5-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ed0dd561a07e6b5e",
     "field": "lis_pendens",
     "record_id": "raw_da29aeb51e47da27",
@@ -6402,7 +6402,7 @@
     "value": "4Sw2nTZmCvgy0vgNxpjV-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ed1de5a7e7b2da83",
     "field": "lis_pendens",
     "record_id": "raw_9188ddff48ea3740",
@@ -6413,7 +6413,7 @@
     "value": "4Sw2nTZmCvgy0vgNxpjV-0"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_eda0691085dd041b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_1551341a29bbbfd1",
@@ -6424,7 +6424,7 @@
     "value": "TX-PETITION-22.01-1-8"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_edb4152b96f590dc",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b05befadd74a5d11",
@@ -6435,7 +6435,7 @@
     "value": "TX-PETITION-113.00-3-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_edd7f72f683883a6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_fb103bacf546672f",
@@ -6446,7 +6446,7 @@
     "value": "TX-PETITION-128.01-1-29"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ee2536f041661fa1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_4b5652cd5705c09b",
@@ -6457,7 +6457,7 @@
     "value": "TX-PETITION-144.00-2-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ee571a172d1bd5ed",
     "field": "tax_foreclosure_event",
     "record_id": "raw_8bef3cc53e40b56d",
@@ -6468,7 +6468,7 @@
     "value": "TX-PETITION-156.13-8-25"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_eeeb27dc2218e018",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0c37ebadeb47e40e",
@@ -6479,7 +6479,7 @@
     "value": "TX-PETITION-34.03-4-43"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ef11f7be3c0349f9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_21a69e780d219869",
@@ -6490,7 +6490,7 @@
     "value": "TX-PETITION-48.00-2-2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_efa941d959fbc4a0",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f49fd386ac61ec2c",
@@ -6501,7 +6501,7 @@
     "value": "TX-PETITION-117.00-2-80"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f005d420995711aa",
     "field": "tax_foreclosure_event",
     "record_id": "raw_eb842aff4e4c2d2a",
@@ -6512,7 +6512,7 @@
     "value": "TX-PETITION-120.00-3-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f0348dd1787ba171",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ce33d6fb691de8c7",
@@ -6523,7 +6523,7 @@
     "value": "TX-PETITION-206.04-3-5"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f0c9c145c1edafd4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3d1890d9a5e36281",
@@ -6534,7 +6534,7 @@
     "value": "TX-PETITION-41.00-5-25.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f0f18748f7279a83",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ff12523a85e9ea69",
@@ -6545,7 +6545,7 @@
     "value": "TX-PETITION-3.00-1-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f1d8f57ce219a355",
     "field": "tax_foreclosure_event",
     "record_id": "raw_11b6a9ae2c1f6841",
@@ -6556,7 +6556,7 @@
     "value": "TX-PETITION-169.00-4-21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f2383f566175d372",
     "field": "letters_testamentary",
     "record_id": "raw_73e1a982fde7ddc6",
@@ -6567,7 +6567,7 @@
     "value": "gULA9HEtWpKqOUm2k0N7-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f2834f65c9d4d77e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_36701d6552e64d25",
@@ -6578,7 +6578,7 @@
     "value": "TX-PETITION-105.14-2-28"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f2e71aaed3b7f0ab",
     "field": "tax_foreclosure_event",
     "record_id": "raw_2e53cf751412080c",
@@ -6589,7 +6589,7 @@
     "value": "TX-PETITION-22.00-3-12"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f404a61174b82a14",
     "field": "notice_of_sale",
     "record_id": "raw_ebeb3c3fe1e7b90f",
@@ -6600,7 +6600,7 @@
     "value": "f7nv0FktyExrVBBaJjzP-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f42df9bccc2438d5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_5bf4568ceb98f7e7",
@@ -6611,7 +6611,7 @@
     "value": "TX-PETITION-1.00-1-4.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f436c744d6292e3c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c285aceb0f43ced8",
@@ -6622,7 +6622,7 @@
     "value": "TX-PETITION-171.00-3-13"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f443ab22f7199da4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_44d30b1fabd435e2",
@@ -6633,7 +6633,7 @@
     "value": "TX-PETITION-166.18-1-52"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f603fbe286e660f8",
     "field": "tax_foreclosure_event",
     "record_id": "raw_815faf8131e6e6ad",
@@ -6644,7 +6644,7 @@
     "value": "TX-PETITION-88.19-3-37"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f62759b5e9d72d25",
     "field": "tax_foreclosure_event",
     "record_id": "raw_728862fc9c4919ea",
@@ -6655,7 +6655,7 @@
     "value": "TX-PETITION-116.00-2-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f63fe786f9a04e4e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_3766c2891b501a18",
@@ -6666,7 +6666,7 @@
     "value": "TX-PETITION-169.00-2-16.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f64ad83b51f2cd48",
     "field": "tax_foreclosure_event",
     "record_id": "raw_ffec863fd8266879",
@@ -6677,7 +6677,7 @@
     "value": "TX-PETITION-88.10-4-9"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f65b56df296e973c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_fef94a73eef20bfe",
@@ -6688,7 +6688,7 @@
     "value": "TX-PETITION-137.00-5-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f6b5c342bc59096a",
     "field": "notice_of_sale",
     "record_id": "raw_a6d709cbfea7dc61",
@@ -6699,7 +6699,7 @@
     "value": "wmacXKsWO2yC12a9Bh31-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f70b2181459886f6",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0576f5d38abff560",
@@ -6710,7 +6710,7 @@
     "value": "TX-PETITION-5.00-1-16"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f71a4ceff41d20ab",
     "field": "tax_foreclosure_event",
     "record_id": "raw_8762afe848f83028",
@@ -6721,7 +6721,7 @@
     "value": "TX-PETITION-59.00-2-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f7afaff436dda277",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f4ac19e181dac778",
@@ -6732,7 +6732,7 @@
     "value": "TX-PETITION-26.00-5-31"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f7e038b9a990fed4",
     "field": "tax_foreclosure_event",
     "record_id": "raw_0315346523036087",
@@ -6743,7 +6743,7 @@
     "value": "TX-PETITION-182.00-1-27"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f7ef13299627a59e",
     "field": "letters_of_administration",
     "record_id": "raw_75b7ea208bed24da",
@@ -6754,7 +6754,7 @@
     "value": "tiiBxvPLWp52BxAtI1G0-3"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f8b2a368b339844b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_063616e1f7980095",
@@ -6765,7 +6765,7 @@
     "value": "TX-PETITION-53.00-3-1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f8e821413fe07a4b",
     "field": "tax_foreclosure_event",
     "record_id": "raw_e0b3da94960a2216",
@@ -6776,7 +6776,7 @@
     "value": "TX-PETITION-96.00-3-31.2"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_f93135500f478beb",
     "field": "tax_foreclosure_event",
     "record_id": "raw_6602f8ad2ab98d78",
@@ -6787,7 +6787,7 @@
     "value": "TX-PETITION-156.13-2-10"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_fa595fc596ba69da",
     "field": "tax_foreclosure_event",
     "record_id": "raw_b8f3ae31c3c53241",
@@ -6798,7 +6798,7 @@
     "value": "TX-PETITION-88.15-2-15"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_fc181d6b434ec43e",
     "field": "tax_foreclosure_event",
     "record_id": "raw_8d177333734da879",
@@ -6809,7 +6809,7 @@
     "value": "TX-PETITION-132.00-3-45"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_fc1ae7bdd24529ef",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c5a36614820c47df",
@@ -6820,7 +6820,7 @@
     "value": "TX-PETITION-156.14-3-11"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_fc6d79a4396ce172",
     "field": "tax_foreclosure_event",
     "record_id": "raw_039d1e35539b20d9",
@@ -6831,7 +6831,7 @@
     "value": "TX-PETITION-138.00-15-21"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_fc7854dd0b52abb2",
     "field": "tax_foreclosure_event",
     "record_id": "raw_97e330de6e734c3a",
@@ -6842,7 +6842,7 @@
     "value": "TX-PETITION-59.00-1-67"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_fc81477aa1a888dc",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d5f2780a2e7bf8d7",
@@ -6853,7 +6853,7 @@
     "value": "TX-PETITION-182.00-1-29"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_fca41b690e05b3f1",
     "field": "tax_foreclosure_event",
     "record_id": "raw_c8a181f9451d4dc9",
@@ -6864,7 +6864,7 @@
     "value": "TX-PETITION-83.04-2-24"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_fcaac419faa85fb9",
     "field": "tax_foreclosure_event",
     "record_id": "raw_f9318ae17df62ad3",
@@ -6875,7 +6875,7 @@
     "value": "TX-PETITION-105.07-5-14"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_fd3796303e628b51",
     "field": "tax_foreclosure_event",
     "record_id": "raw_70136f69d5e8849a",
@@ -6886,7 +6886,7 @@
     "value": "TX-PETITION-133.00-1-10"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_fdcfb196c255f01c",
     "field": "tax_foreclosure_event",
     "record_id": "raw_d889ab2f63af1aae",
@@ -6897,7 +6897,7 @@
     "value": "TX-PETITION-155.00-4-8.1"
   },
   {
-    "captured_at": "2026-05-25T19:01:49Z",
+    "captured_at": "2026-05-25T19:34:25Z",
     "evidence_id": "ev_ff0497e990fab2f5",
     "field": "tax_foreclosure_event",
     "record_id": "raw_57cb226d71afdc47",
