@@ -145,24 +145,97 @@ def to_elpaso_record(scored: dict, refresh_date: date) -> dict:
         sources = [f"https://aarauctions.com/servlet/Search.do?auctionId={auction_id}"]
 
     # Per-source signal label + doc-type so the El Paso renderer's
-    # "Distress signal" sidebar facet shows distinct labels per source
-    # while every row still uses the `foreclosure_notice` signal_type
-    # (= fcl chip class) for color consistency.
+    # "Distress signal" sidebar facet shows distinct labels per source.
+    # Within `legal_notices_column` we further split by canonical doc
+    # type (foreclosure / lis pendens / probate) so operators see the
+    # actual distress flavor on the card.
     src = scored.get("event_source") or "unknown"
-    SIGNAL_LABELS = {
-        "tax_foreclosure_auction":  ("Tax Foreclosure — Auction",
-                                      "TAX_SALE_AUCTION_LOT",
-                                      "tax_foreclosure_auction"),
-        "tax_foreclosure_petition": ("Tax Foreclosure — In-Rem Petition",
-                                      "TAX_FORECLOSURE_PETITION",
-                                      "tax_foreclosure_petition"),
-        "legal_notices_column":     ("Foreclosure Notice of Sale",
-                                      "COLUMN_NOTICE_OF_SALE",
-                                      "legal_notices_column"),
+
+    # Canonical doc type carried through from the staged-pipeline payload
+    # (run_greene_pipeline.build_payload propagates this from the
+    # scored_leads' doc_type_normalization.canonical_doc_types).
+    canonicals = list(scored.get("canonical_doc_types") or [])
+    if not canonicals:
+        # Backward-compat with older payloads that didn't carry the field.
+        canonicals = (scored.get("doc_type_normalization") or {}).get(
+            "canonical_doc_types") or []
+    canonical0 = (canonicals[0] if canonicals else "").lower()
+
+    # (signal_label, doc_type_raw, source_id, dashboard_signal_type)
+    # dashboard_signal_type maps to the El Paso renderer's chip CSS:
+    #   foreclosure_notice       → red `fcl` chip (default)
+    #   estate_titled_property   → green `estate` chip
+    # Probate / letters_* show up as ESTATE so they get green chips +
+    # tier-3 urgency in `app.js` rather than red-flagged-as-foreclosure.
+    SIGNAL_LABELS: dict = {
+        "tax_foreclosure_auction": (
+            "Tax Foreclosure — Auction",
+            "TAX_SALE_AUCTION_LOT",
+            "tax_foreclosure_auction",
+            "foreclosure_notice"),
+        "tax_foreclosure_petition": (
+            "Tax Foreclosure — In-Rem Petition",
+            "TAX_FORECLOSURE_PETITION",
+            "tax_foreclosure_petition",
+            "foreclosure_notice"),
     }
-    label, doc_raw, src_id = SIGNAL_LABELS.get(
-        src, ("Distress Event", "UNKNOWN", src)
-    )
+    # Column rows: branch by canonical doc type.
+    COLUMN_BY_CANONICAL: dict = {
+        "notice_of_sale": (
+            "Foreclosure Notice of Sale",
+            "COLUMN_NOTICE_OF_SALE",
+            "legal_notices_column",
+            "foreclosure_notice"),
+        "tax_foreclosure_notice": (
+            "Tax Foreclosure — Public Notice",
+            "COLUMN_TAX_FORECLOSURE_NOTICE",
+            "legal_notices_column",
+            "foreclosure_notice"),
+        "lis_pendens": (
+            "Lis Pendens / Foreclosure Summons",
+            "COLUMN_LIS_PENDENS",
+            "legal_notices_column",
+            "foreclosure_notice"),
+        "final_judgment_of_foreclosure": (
+            "Final Judgment of Foreclosure",
+            "COLUMN_FINAL_JUDGMENT",
+            "legal_notices_column",
+            "foreclosure_notice"),
+        "letters_testamentary": (
+            "Probate — Letters Testamentary",
+            "COLUMN_LETTERS_TESTAMENTARY",
+            "legal_notices_column",
+            "estate_titled_property"),
+        "letters_of_administration": (
+            "Probate — Letters of Administration",
+            "COLUMN_LETTERS_OF_ADMIN",
+            "legal_notices_column",
+            "estate_titled_property"),
+        "estate_notice": (
+            "Probate — Estate Notice",
+            "COLUMN_ESTATE_NOTICE",
+            "legal_notices_column",
+            "estate_titled_property"),
+        "mechanics_lien": (
+            "Mechanic's Lien Notice",
+            "COLUMN_MECHANICS_LIEN",
+            "legal_notices_column",
+            "foreclosure_notice"),
+    }
+
+    if src == "legal_notices_column":
+        label, doc_raw, src_id, sig_type = COLUMN_BY_CANONICAL.get(
+            canonical0,
+            ("Foreclosure Notice of Sale",
+             "COLUMN_NOTICE_OF_SALE",
+             "legal_notices_column",
+             "foreclosure_notice"),
+        )
+    else:
+        label, doc_raw, src_id, sig_type = SIGNAL_LABELS.get(
+            src,
+            ("Distress Event", "UNKNOWN", src, "foreclosure_notice"),
+        )
 
     # source_urls per source
     if src == "tax_foreclosure_auction" and auction_id:
@@ -173,7 +246,7 @@ def to_elpaso_record(scored: dict, refresh_date: date) -> dict:
         urls = []
 
     signals = [{
-        "signal_type": "foreclosure_notice",
+        "signal_type": sig_type,
         "signal_label": label,
         "signal_confidence": "HIGH",
         "source_id": src_id,
@@ -227,7 +300,7 @@ def to_elpaso_record(scored: dict, refresh_date: date) -> dict:
         "out_of_state_owner_flag": out_of_state,
         "legal_description": "",
         "signals": signals,
-        "signal_types": ["foreclosure_notice"],
+        "signal_types": [sig_type],
         "source_urls": urls,
         "latest_event_date": sale_date,
         # Recency tagging (UI-3). Pipeline-frozen against refresh_date,

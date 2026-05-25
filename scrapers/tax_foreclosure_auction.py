@@ -445,13 +445,37 @@ def _wrap(payload: dict, *, source_url: str, fetched_at: str) -> dict:
     }
 
 
+def _read_existing_jsonl(path: Path) -> list[dict]:
+    """Read an existing wrapped-JSONL file. Tolerates missing file / blank lines."""
+    if not path.exists():
+        return []
+    out: list[dict] = []
+    for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            out.append(json.loads(line))
+        except json.JSONDecodeError:
+            continue
+    return out
+
+
 def run(*, output_path: Optional[Path] = None,
         auction_id: Optional[int] = None,
+        append: bool = False,
         fetch_fn=None) -> dict:
     """Pull a Greene County AAR tax-foreclosure auction and write the
     wrapped JSONL. If auction_id is None, run discovery first; if discovery
     finds nothing, write an empty JSONL and return stats with
-    `seasonal_zero=True`."""
+    ``seasonal_zero=True``.
+
+    When ``append=True``, existing rows in ``output_path`` are merged with
+    the new pull. Dedupe key is ``raw_record_id`` (auctionId+lot — stable
+    across pulls). The merge order is existing-then-new, so a re-pull of
+    the same auctionId refreshes its rows (newer entries overwrite older
+    ones in the dedupe dict).
+    """
     output_path = (output_path
                    or REPO_ROOT / "data" / "raw" / f"{SOURCE_ID}.jsonl")
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -459,6 +483,7 @@ def run(*, output_path: Optional[Path] = None,
     stats: dict = {
         "source_id": SOURCE_ID, "portal": BASE,
         "output_path": str(output_path),
+        "append": append,
     }
 
     if auction_id is None:
@@ -490,9 +515,26 @@ def run(*, output_path: Optional[Path] = None,
 
     fetched_at = _now_iso()
     pulled = pull_auction(auction_id, fetch_fn=fetch_fn)
-    rows = [_wrap(p, source_url=pulled["first_page_url"],
-                  fetched_at=fetched_at)
-            for p in pulled["lots"]]
+    new_rows = [_wrap(p, source_url=pulled["first_page_url"],
+                      fetched_at=fetched_at)
+                for p in pulled["lots"]]
+
+    if append:
+        existing = _read_existing_jsonl(output_path)
+        merged: dict = {}
+        for r in existing:
+            rid = r.get("raw_record_id")
+            if rid:
+                merged[rid] = r
+        for r in new_rows:
+            rid = r.get("raw_record_id")
+            if rid:
+                merged[rid] = r
+        rows = list(merged.values())
+        stats["existing_rows_before_merge"] = len(existing)
+        stats["new_rows_pulled"] = len(new_rows)
+    else:
+        rows = new_rows
 
     tmp = output_path.with_suffix(".jsonl.tmp")
     with open(tmp, "w", encoding="utf-8") as fh:
@@ -522,10 +564,15 @@ def main() -> int:
                         help="AAR auctionId. If omitted, the adapter "
                              "discovers Greene auctions from AAR index "
                              "pages; absent → seasonal-zero, exit 2.")
+    parser.add_argument("--append", action="store_true",
+                        help="Merge new pull with existing JSONL (dedupe "
+                             "by raw_record_id). Use for historical "
+                             "backfill across multiple auctionIds.")
     args = parser.parse_args()
     try:
         stats = run(output_path=Path(args.out) if args.out else None,
-                    auction_id=args.auction_id)
+                    auction_id=args.auction_id,
+                    append=args.append)
     except urllib.error.URLError as exc:
         print(json.dumps({"source_id": SOURCE_ID, "status": "BLOCKED",
                           "error": str(exc)}, indent=2), file=sys.stderr)

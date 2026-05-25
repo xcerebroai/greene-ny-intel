@@ -56,3 +56,13 @@ htmlcov/
 # capture the actionable findings. Regenerable from the probe_*.py scripts.
 runs/greene_ny/recon/stealth_probe/*.html
 runs/greene_ny/recon/stealth_probe/*.png
+
+# Missed-source audit raw artifacts: HTML snapshots, raw OCR/XML evidence,
+# Wayback-fetched PDFs. The .json + MISSED_SOURCE_AUDIT.md summaries are
+# the durable record; regenerable from the audit scripts saved alongside.
+runs/greene_ny/recon/audit_2026-05-25/*.html
+runs/greene_ny/recon/audit_2026-05-25/*.png
+runs/greene_ny/recon/audit_2026-05-25/*.xml
+runs/greene_ny/recon/audit_2026-05-25/*.txt
+runs/greene_ny/recon/audit_2026-05-25/*.pdf
+runs/greene_ny/recon/audit_2026-05-25/cookies.txt

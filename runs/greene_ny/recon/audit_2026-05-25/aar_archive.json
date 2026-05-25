@@ -1,0 +1,198 @@
+{
+  "audit_date": "2026-05-25",
+  "audit_scope": "AAR (aarauctions.com) + NYSAuctions (nysauctions.com, 301 -> aarauctions.com) historical/current Greene County NY tax-foreclosure auctions. Read-only. stdlib HTTP, no Playwright.",
+  "method": {
+    "url_pattern_catalog": "https://aarauctions.com/servlet/Search.do?auctionId={ID}",
+    "url_pattern_lot_detail": "https://aarauctions.com/servlet/Search.do?auctionId={ID}&itemId={ITEM}",
+    "pagination": "page=N&perPage=20&orderBy=  (20 lots per page; 3 pages => 41-60 lots)",
+    "id_sweep_ranges_probed": [
+      "coarse step=50 across 3500-8500",
+      "step=10 across 2300-6900 + 6900-8500 step=25",
+      "step=1 fall-window bands: 3650-4050, 4700-5100, 5350-5600, 5850-6100, 6500-6700, 6800-6910",
+      "step=1 gap-fill bands: 4050-4700, 5100-5350, 5600-5850, 6100-6500, 6700-6800"
+    ],
+    "index_pages_pulled": [
+      "https://aarauctions.com/auctions/tax-foreclosures/   (HTTP 200, current upcoming list, no Greene)",
+      "https://aarauctions.com/upcoming-auctions/           (HTTP 200, no Greene)",
+      "https://aarauctions.com/past-auctions/               (HTTP 404 - does not exist)",
+      "https://aarauctions.com/auction-results/             (HTTP 200, no Greene listing)",
+      "https://aarauctions.com/auction-calendar/            (HTTP 200, no auctionId links)",
+      "https://aarauctions.com/?s=Greene                    (HTTP 200, 0 Greene posts)",
+      "https://aarauctions.com/tax-foreclosure-auctions/    (HTTP 200, only a Greene testimonial photo)",
+      "https://aarauctions.com/sitemap_index.xml -> post + page sitemap (0 Greene tax-foreclosure entries)",
+      "https://nysauctions.com/* -> 301 to aarauctions.com (sibling alias)"
+    ],
+    "alternate_servlets_tested": {
+      "/servlet/AuctionPostings.do": 500,
+      "/servlet/Auctions.do": 500,
+      "/servlet/BrowseAuctions.do": 500,
+      "/servlet/AuctionList.do": 500,
+      "/servlet/PastAuctions.do": 500,
+      "/servlet/ClosedAuctions.do": 500
+    },
+    "notes": [
+      "AAR's WP marketing pages (upcoming, tax-foreclosures, results, calendar) only show CURRENTLY ACTIVE auctions; once an auction closes it disappears from those indexes.",
+      "Closed auctions are still served by the catalog servlet indefinitely (3+ years confirmed - 3738 from Oct 2022 is fully accessible).",
+      "There is no machine listing endpoint that enumerates Greene auctions. ID-sweep is the only enumeration method.",
+      "The catalog HTML is gzipped on the wire with --compressed transparently decoded; raw bytes contain CRLF + embedded NULs in JS strings, so use python (not grep) to parse."
+    ]
+  },
+  "greene_county_tax_foreclosure_auctions": [
+    {
+      "auctionId": 3738,
+      "title": "Greene County Online Only Tax Foreclosure Real Estate Auction",
+      "auction_date": "2022-10-12",
+      "auction_date_raw": "Wednesday, October 12, 2022 ending at 10AM",
+      "lot_count_verified": 80,
+      "lot_count_method": "unique itemId across pages 1-4 (perPage=20)",
+      "itemId_range": [144266, 144800],
+      "status": "CLOSED (historical; all lots show 'High Bid: $X – winner_username' or 'No Bid')",
+      "catalog_url": "https://aarauctions.com/servlet/Search.do?auctionId=3738",
+      "sample_lot": {
+        "itemId": 144266,
+        "lot_number": "#1",
+        "address_h2": "342 Deer Run Rd, Town of Ashland",
+        "tax_map_number": "76.00-3-19",
+        "lot_size": "6.00 +/- Acre",
+        "school_district": "Windham-Ashland-Jewett CSD",
+        "full_market_value": "$39231",
+        "inspection": "Vacant Land. Drive by anytime.",
+        "high_bid_after_close": "$24,000.00",
+        "winning_bidder_username": "fireside1"
+      }
+    },
+    {
+      "auctionId": 6892,
+      "title": "Greene County Online Only Tax Foreclosure Real Estate Auction",
+      "auction_date": "2025-10-29",
+      "auction_date_raw": "October 29, 2025 at 10AM",
+      "lot_count_verified": 51,
+      "lot_count_method": "unique itemId across pages 1-3 (perPage=20)",
+      "itemId_range": [206065, 206168],
+      "status": "CLOSED (auction ran 2025-10-29; lots display 'High Bid: $X – winner_username')",
+      "catalog_url": "https://aarauctions.com/servlet/Search.do?auctionId=6892",
+      "sample_lot": {
+        "itemId": 206065,
+        "lot_number": "#5",
+        "address_h2": "113/115 N Washington St, Village of Athens, Town of Athens",
+        "tax_map_number": "122.15-2-16",
+        "lot_size": "0.19 +/- Acre",
+        "school_district": "Coxsackie-Athens CSD",
+        "full_market_value": "$326000",
+        "inspection": "Occupied. Drive by anytime.",
+        "school_tax_due": "$4430.39",
+        "village_tax_due": "$4259.10",
+        "county_tax_due": "$ (blank)",
+        "high_bid_after_close": "$157,000.00",
+        "winning_bidder_username": "pdmre"
+      }
+    }
+  ],
+  "greene_county_other_or_adjacent_auctions": [
+    {
+      "auctionId": 6924,
+      "title": "Former Friar Tuck Inn, Catskill, Greene County NY",
+      "status": "Distinct single-property listing (not the annual tax sale; one large parcel)",
+      "lot_count_in_index_view": 0,
+      "catalog_url": "https://aarauctions.com/servlet/Search.do?auctionId=6924",
+      "note": "Located in Greene County (Catskill) but appears to be a private/owner sale of the former Friar Tuck Inn, not a county tax-foreclosure auction."
+    },
+    {
+      "auctionId": 6719,
+      "title": "Multi Property Auction",
+      "lot_count": 7,
+      "scope_description": "'Properties located in Sullivan, Otsego, Greene and Madison Counties.' Not a Greene-only tax-foreclosure auction.",
+      "catalog_url": "https://aarauctions.com/servlet/Search.do?auctionId=6719"
+    },
+    {
+      "auctionId": 6158,
+      "title": "Multi Property Auction",
+      "lot_count": 13,
+      "scope_description": "Multi-county auction; contains some Greene-county school-district references (Cairo-Durham CSD, Catskill CSD) but only a small number of Greene parcels. Not a Greene tax-foreclosure auction.",
+      "catalog_url": "https://aarauctions.com/servlet/Search.do?auctionId=6158"
+    }
+  ],
+  "missing_years_finding": {
+    "years_with_aar_greene_tax_sale": [2022, 2025],
+    "years_without_aar_greene_tax_sale_in_id_range_probed": [2021, 2023, 2024, 2026],
+    "interpretation": "Across the full ID range 2300-8500 (covering AAR auctions from ~2018 through May 2026), only TWO Greene County tax-foreclosure auctions exist on AAR: auctionId=3738 (Oct 2022) and auctionId=6892 (Oct 2025). No Greene tax sale appears for 2021, 2023, or 2024 under any title. Either Greene County did not run a tax-foreclosure sale those years, used a different vendor, or conducted it in-house. There is also no Greene auction yet scheduled for fall 2026 (highest current ID 8500-range shows Clinton/Franklin/Otsego/Lewis/Orange/Sullivan/Madison/Dutchess being booked for May-June 2026).",
+    "calibration_evidence_for_other_county_cadence": [
+      {"county": "Dutchess", "ids_seen": [3730, 5468, 6089], "implies": "annual"},
+      {"county": "Orleans", "ids_seen": [3790, 4502, 5245, 5966, 6868], "implies": "annual"},
+      {"county": "Franklin", "ids_seen": [5199, 5980, 6441, 6630, 7250, 8267], "implies": "annual+"},
+      {"county": "Sullivan", "ids_seen": [3719, 6092, 6787, 8250], "implies": "annual"},
+      {"county": "Otsego", "ids_seen": [3714, 4888, 5460, 5959, 8257], "implies": "annual"},
+      {"county": "Clinton", "ids_seen": [3732, 5528, 5939, 6279, 6786, 8201], "implies": "annual"},
+      {"county": "Greene", "ids_seen": [3738, 6892], "implies": "non-annual (only 2022 and 2025)"}
+    ]
+  },
+  "catalog_field_availability_per_lot": {
+    "available_in_servlet_html": {
+      "lot_number": {"present": true, "example": "#5", "location": "H2 prefix"},
+      "address": {"present": true, "example": "113/115 N Washington St, Village of Athens, Town of Athens", "location": "H2 text"},
+      "municipality": {"present": true, "example": "Village of Athens / Town of Athens", "location": "embedded inside the address H2 string"},
+      "property_description": {"present": true, "example": "Two family residence, 2 story, Old style, built 1900+/-, 2628+/- sq. ft., 5BR/2.5BA", "location": "first <td> in lot's detail table"},
+      "tax_map_number_SBL": {"present": true, "example": "122.15-2-16", "location": "<td><b>Tax Map #:</b> ...</td>"},
+      "lot_size": {"present": true, "example": "0.19 +/- Acre"},
+      "school_district": {"present": true, "example": "Coxsackie-Athens CSD"},
+      "full_market_value": {"present": true, "example": "$326000"},
+      "inspection_status": {"present": true, "example": "Occupied. Drive by anytime."},
+      "school_tax_due": {"present": true, "example": "$4430.39 (often blank)"},
+      "village_tax_due": {"present": true, "example": "$4259.10 (often blank)"},
+      "county_tax_due": {"present": true, "example": "(often blank)"},
+      "google_maps_geocode_query": {"present": true, "note": "Embedded as Google Maps iframe src containing the address"},
+      "photos": {"present": true, "location": "/live/images/auction-{ID}/large-{img}.JPG"},
+      "high_bid_after_close": {"present": true, "example": "$157,000.00 – pdmre", "location": "after auction closes; before close it's 'Current Bid' or 'Login to Bid'"},
+      "winning_bidder_username": {"present": true, "example": "pdmre", "note": "anonymized AAR account name only"},
+      "auction_date": {"present": true, "location": "auction description paragraph (e.g. 'October 29, 2025 at 10AM')"}
+    },
+    "NOT_available_in_servlet_html": {
+      "owner_of_record": "NOT shown anywhere in the AAR catalog. Owner name must come from county assessment / RPS / tax-roll join (e.g. matcher.py via Tax Map# -> PRINT_KEY).",
+      "explicit_status_field": "No 'Status: Closed' tag; closure is inferred from presence of 'High Bid' (or 'No Bid') vs 'Login to Bid' / 'Current Bid'.",
+      "lot_status_per_lot": "No 'Sold/Withdrawn/Cancelled' tag in the HTML.",
+      "real_property_owner_address": "Not present.",
+      "deed_book_page": "Not present"
+    }
+  },
+  "prior_year_catalog_accessibility": {
+    "verdict": "ACCESSIBLE - prior-year catalogs remain online indefinitely",
+    "evidence": {
+      "auctionId_3738_age_years_from_audit": 3.6,
+      "auctionId_3738_http_status": 200,
+      "auctionId_3738_lot_card_data_intact": true,
+      "auctionId_3738_photos_intact": "live/images/auction-3738/ directory still served"
+    },
+    "url_pattern_for_archive_access": "https://aarauctions.com/servlet/Search.do?auctionId={ID}  (no auth, no expiry, no robots block observed)"
+  },
+  "id_sweep_summary": {
+    "ids_probed_total_approx": 7300,
+    "ids_returning_servlet_body_pct": "approx 95%",
+    "ids_returning_EMPTY_servlet_body_observed": [3500, 4530, 4560, 4570, 4590, 4600, 4610, 4620, 4630, 4640, 4650, 4660, 4670, 4680, 4690, 4700, 6883, 7150, 7500, 8500],
+    "greene_county_tax_foreclosure_total_found": 2,
+    "all_greene_string_hits": [
+      {"id": 3738, "kind": "Greene tax-foreclosure (annual)"},
+      {"id": 3837, "kind": "Hudson River Art Auction - false positive (Greene Halleck)"},
+      {"id": 4209, "kind": "Northampton MA - false positive (Planters and Greenery)"},
+      {"id": 4537, "kind": "Art auction - false positive (Greeneville Folio)"},
+      {"id": 4959, "kind": "Youngsville NY - false positive (Dunn by Greene)"},
+      {"id": 5609, "kind": "Chicopee MA - false positive (Greenerd)"},
+      {"id": 6158, "kind": "Multi-property auction with some Greene-county school-district refs"},
+      {"id": 6639, "kind": "Collectibles - false positive (Kevin Greene)"},
+      {"id": 6719, "kind": "Multi-county auction (Sullivan/Otsego/Greene/Madison)"},
+      {"id": 6892, "kind": "Greene tax-foreclosure (annual)"},
+      {"id": 6924, "kind": "Single-property Catskill (former Friar Tuck Inn) - non-tax-sale"}
+    ]
+  },
+  "key_findings_summary": [
+    "ONLY TWO AAR-hosted Greene County tax-foreclosure auctions exist: 3738 (Oct 12, 2022, 80 lots) and 6892 (Oct 29, 2025, 51 lots).",
+    "BOTH ARE CLOSED. Both remain fully accessible via /servlet/Search.do?auctionId=N with no auth.",
+    "Final sale prices and winning-bidder usernames are exposed per lot for closed auctions.",
+    "OWNER OF RECORD IS NOT IN THE AAR CATALOG -- must be joined from county assessment / RPS data via Tax Map # (SBL).",
+    "No 2021, 2023, 2024 Greene tax sale hosted by AAR. No 2026 Greene auction is yet on the schedule.",
+    "No machine-listing endpoint exists; ID-sweep is the only enumeration method.",
+    "Sister site nysauctions.com is a 301 alias of aarauctions.com (same data).",
+    "Field schema per lot (verified): Lot#, Address (with municipality), Property description, Tax Map# (SBL), Lot Size, School District, Full Market Value, Inspection, School/Village/County Tax Due, High Bid + Winner (after close).",
+    "Pagination param is page=N&perPage=20&orderBy= -- NOT pageNum.",
+    "Server forces gzip; use curl --compressed or python urllib + gzip.decompress."
+  ]
+}

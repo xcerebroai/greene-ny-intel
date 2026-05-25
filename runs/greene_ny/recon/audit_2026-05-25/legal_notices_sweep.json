@@ -1,0 +1,283 @@
+{
+  "audit_id": "greene_ny_legal_notices_sweep_2026-05-25",
+  "audit_date": "2026-05-25",
+  "auditor": "claude-opus-4-7-1m",
+  "scope": "Greene County NY legal-notice channel audit (county-hosted + newspaper-of-record + statewide aggregator + Column)",
+  "headline_finding": "Current Column adapter under-reports by ~35x due to a one-character filter mismatch: filter value 'Greene' returns 76 mis-tagged Kingston Daily Freeman notices (0 with Greene-property attachment); filter value 'Greene County' returns 35 Catskill Daily Mail distress notices (30 Foreclosure Sale + 4 Summons + 1 Estate Probate) in the same 90-day window.",
+  "channels": [
+    {
+      "channel_id": "column_enotice",
+      "name": "Column / eNotice (newyork.column.us, catskilldailymail.column.us, hudsonregisterstar.column.us)",
+      "official_status": "official",
+      "rationale": "Column is the technology vendor that powers statutory legal-notice publishing for many NY newspapers including the Catskill Daily Mail (Greene County's newspaper of record under NY Gen Construction Law and county designations). Notices placed here are legally-sufficient publications of record.",
+      "primary_endpoint": "POST https://us-central1-enotice-production.cloudfunctions.net/api/search/public-notices",
+      "request_shape": {
+        "method": "POST",
+        "content_type": "application/json",
+        "headers_required": ["Origin: https://newyork.column.us", "Referer: https://newyork.column.us/"],
+        "body_keys": ["search", "allFilters", "noneFilters", "sort", "pageSize", "isDemo"],
+        "filter_object_keys_observed": ["publishedtimestamp", "state", "county", "newspapername", "noticetype"]
+      },
+      "publication_subdomains_for_greene": [
+        "https://catskilldailymail.column.us/  (Catskill Daily Mail — Greene County newspaper of record)",
+        "https://hudsonregisterstar.column.us/ (Hudson Register Star — Columbia County primary, but cross-published Greene matter)"
+      ],
+      "reachability": {
+        "stdlib_reachable": true,
+        "captcha": false,
+        "js_required_for_browser_UI": true,
+        "js_required_for_API": false,
+        "auth_required": false,
+        "cloudflare_fronted": true,
+        "rate_limit_observed": false
+      },
+      "filter_semantics_critical": {
+        "county_field_is": "publishing/service county of the newspaper, NOT the property's county",
+        "exact_value_for_catskill_daily_mail": "Greene County",
+        "exact_value_observed_for_kingston_daily_freeman_under_greene_search": "Greene",
+        "bug_in_current_adapter": "scrapers/legal_notices_column.py passes county=['Greene'] which matches Kingston Daily Freeman tags but NOT the canonical Catskill Daily Mail tag 'Greene County'. The 76 hits with county='Greene' are Kingston/Ulster notices with zero Greene-property attachment.",
+        "evidence": {
+          "query_county_eq_Greene_search_eq_foreclosure_90d": {
+            "total": 76,
+            "newspapers": {"Kingston Daily Freeman": 76},
+            "greene_property_markers_in_text": 0
+          },
+          "query_county_eq_Greene_County_search_eq_foreclosure_90d": {
+            "total": 35,
+            "newspapers": {"Catskill Daily Mail": 35},
+            "noticetypes": {"Foreclosure Sale": 30, "Summons": 4, "Estate (Probate) Filings": 1}
+          },
+          "query_no_search_newspaper_eq_Catskill_Daily_Mail_90d": {
+            "total": 200,
+            "county_field_value": "Greene County (uniform)",
+            "noticetype_distribution": {
+              "(none)": 129,
+              "Notice of Hearing": 16,
+              "Foreclosure Sale": 10,
+              "Request for Proposal": 13,
+              "Legal Notice": 18,
+              "Summons": 3,
+              "Notice of Proposed Budget": 8,
+              "Estate (Probate) Filings": 1,
+              "Notice of Development": 1,
+              "Notice of Sale": 1
+            },
+            "distress_keyword_text_matches": 17
+          }
+        }
+      },
+      "distress_doc_types_carried": [
+        "Foreclosure Sale (mortgage foreclosure NOS / referee sale combined)",
+        "Notice of Sale (judgment / referee sale)",
+        "Summons (lis pendens / initial foreclosure pleading)",
+        "Estate / Probate filings",
+        "Notice of Hearing (planning / zoning / non-distress)",
+        "Legal Notice (mixed)",
+        "Tax foreclosure (rare here — county runs its own auction process via Absolute Auctions and a scanned petition PDF; Column carries Notice of Sale class)"
+      ],
+      "remediation_one_liner": "In scrapers/legal_notices_column.py change PUBLISHING_COUNTIES = ['Greene', 'Albany', ...] to ['Greene County', 'Albany County', ...] OR drop the county filter and instead filter on newspapername in ['Catskill Daily Mail', 'Hudson Valley 360 / Register Star', 'Ravena News-Herald'] plus require Greene-property markers in text. Either fix lifts 90d yield from 1 to ~35 distress notices.",
+      "secondary_remediation": "noticetype field is rich enough to classify directly: 'Foreclosure Sale', 'Notice of Sale', 'Estate (Probate) Filings', 'Summons'. Adapter currently re-derives via regex; using noticetype as primary signal cuts misclassification."
+    },
+    {
+      "channel_id": "greene_county_treasurer_petition",
+      "name": "Greene County Treasurer — Annual Petition and Notice of Foreclosure (county-hosted PDF)",
+      "official_status": "official",
+      "rationale": "Posted by the County Treasurer per Real Property Tax Law Article 11 (tax-foreclosure proceeding initiated by the county). This IS the in-rem tax-foreclosure petition list.",
+      "primary_url": "https://greenecountyny.gov/wp-content/uploads/2025/04/2025-Petition-and-Notice-of-Forclosure.pdf",
+      "landing_page": "https://greenecountyny.gov/departments/treasurer/",
+      "document_metadata": {
+        "pages": 29,
+        "file_size_bytes": 2847441,
+        "pdf_version": "1.4",
+        "creator": "KM_368 (Konica Minolta bizhub 368)",
+        "creation_date": "2025-04-22 10:52 CDT",
+        "text_layer": "ABSENT — scanned image-only PDF",
+        "ocr_required": true,
+        "page_1_image": "1275x1650 grayscale JPEG"
+      },
+      "reachability": {
+        "stdlib_reachable": true,
+        "captcha": false,
+        "js_required": false,
+        "auth_required": false,
+        "cloudflare_fronted": false
+      },
+      "distress_doc_types_carried": [
+        "Tax-foreclosure petition (RPTL Article 11) — annual list of parcels facing in-rem tax foreclosure"
+      ],
+      "extraction_path": "stdlib urllib download -> pdftotext (returns 0 bytes) -> OCR (tesseract/textract/pdfplumber+OCR) -> parcel/owner/SBL table extraction",
+      "annual_cadence": "Posted yearly under /wp-content/uploads/YYYY/04/  — file naming convention 'YYYY-Petition-and-Notice-of-Forclosure.pdf' (note: county uses misspelled 'Forclosure'). Date pattern: April.",
+      "redemption_deadline_typical": "April publication, statutory October expiration of redemption period under RPTL 1110."
+    },
+    {
+      "channel_id": "greene_county_treasurer_auction",
+      "name": "Greene County Treasurer — annual Tax-Foreclosed Real Estate Online Auction (via Absolute Auctions & Realty / NYSAuctions / Auctions International)",
+      "official_status": "official",
+      "rationale": "Run by the County Treasurer post in-rem; properties have already been county-deeded and are being disposed. Auction catalog is the canonical roster of tax-foreclosed property going to sale.",
+      "primary_urls": [
+        "https://nysauctions.com/  (Absolute Auctions & Realty / AAR — NY tax-foreclosure auctioneer used by Greene)",
+        "https://greenecountyny.gov/news/tax-foreclosed-real-estate-online-auction-opens-monday-october-10th-at-10-am/  (example 2022 announcement)"
+      ],
+      "current_status": "AAR/NYSAuctions is already the source backing the existing 50-real-lead Phase-3 dataset per commit c3d7469. Operator-verified.",
+      "distress_doc_types_carried": [
+        "Tax-foreclosed real estate auction catalog (county-deeded parcels)"
+      ],
+      "reachability": {"stdlib_reachable": true, "captcha": false, "js_required": false}
+    },
+    {
+      "channel_id": "greene_county_notices_category",
+      "name": "Greene County government — /category/notices/ WordPress feed",
+      "official_status": "official",
+      "rationale": "County's own WordPress notices category. Carries county-issued legal notices (RFPs, hearings, organizational meetings, construction projects). Distress notices are sparse here.",
+      "primary_url": "https://greenecountyny.gov/category/notices/",
+      "individual_notice_url_pattern": "https://greenecountyny.gov/notices/{slug}/",
+      "wordpress_search_endpoints": [
+        "https://greenecountyny.gov/?s=foreclosure",
+        "https://greenecountyny.gov/?s=auction",
+        "https://greenecountyny.gov/?s=legal+notice",
+        "https://greenecountyny.gov/?s=surplus  (no relevant hits)",
+        "https://greenecountyny.gov/?s=referee+sale  (no hits)"
+      ],
+      "reachability": {"stdlib_reachable": true, "captcha": false, "js_required": false, "wp_json_api_likely_at": "https://greenecountyny.gov/wp-json/wp/v2/posts?categories=<notices_term_id>"},
+      "category_volume": "161 pages of notices (most are non-distress: meetings, RFPs, hearings, planning, HUD PAR reports)",
+      "distress_doc_types_carried": [
+        "Tax-foreclosure auction announcement (annual, pointed at AAR/NYSAuctions)",
+        "Vehicle/equipment surplus auction notices (occasional, via Auctions International)"
+      ],
+      "value_assessment": "Reference-only for distress in practice — distress content is announcement-level and points at the AAR/NYSAuctions auction or the Treasurer's PDF petition, both of which are already higher-resolution sources. Worth scraping for the *event ping* (auction date + AAR catalog URL) but NOT as a primary parcel-event source."
+    },
+    {
+      "channel_id": "hudson_valley_360_dailymail",
+      "name": "Hudson Valley 360 / Catskill Daily Mail / Register Star (Hometown News group, redirected to Daily Gazette infrastructure)",
+      "official_status": "official",
+      "rationale": "Catskill Daily Mail is Greene County's designated newspaper of record. Daily Mail and Register Star (Columbia County) operate jointly. Their public-notices section now redirects through dailygazette.com hosting.",
+      "primary_urls": [
+        "https://www.hudsonvalley360.com/  -> 301 -> https://www.dailygazette.com/hv360/",
+        "https://www.hudsonvalley360.com/news/public_notices/  -> 301 -> https://www.dailygazette.com/hv360/news/public_notices/  (HTTP 429 throttled at audit time)",
+        "https://catskilldailymail.column.us/place  (notice placement portal — confirms Daily Mail is on Column)",
+        "https://hudsonregisterstar.column.us/place  (Register Star placement portal)"
+      ],
+      "key_finding": "Hudson Valley 360 (the editorial site) and Catskill Daily Mail (the legal-notice publication) BOTH route their legal-notice intake through Column subdomains. The editorial public_notices page is a syndicated display layer; the canonical machine-readable source is the Column API. There is NO independent legal-notices RSS/JSON feed at hudsonvalley360.com or catskillnewspapers.com (the latter is DNS-unresolvable from this sandbox; may be inactive or merged into Daily Gazette).",
+      "reachability": {
+        "stdlib_reachable": "partial — 429 throttling and 301-chains observed",
+        "captcha": false,
+        "js_required": "yes for the website's notices display layer (likely loads from Column API client-side)",
+        "auth_required": false
+      },
+      "distress_doc_types_carried": "same as Column (foreclosure sale, notice of sale, summons, probate, etc.)",
+      "value_assessment": "Display-layer only — DO NOT scrape hudsonvalley360.com or dailygazette.com for notices. Hit the Column API directly with the corrected filter."
+    },
+    {
+      "channel_id": "catskill_newspapers_com",
+      "name": "catskillnewspapers.com (legacy Daily Mail/Register Star portal)",
+      "official_status": "reference-only",
+      "rationale": "DNS-unresolvable in audit sandbox and HTTP-526 via WebFetch. Likely deprecated / migrated into the Daily Gazette / Hudson Valley 360 / Column stack.",
+      "primary_url": "https://catskillnewspapers.com/",
+      "reachability": {"stdlib_reachable": false, "dns_resolves": false, "via_webfetch": "HTTP 526 origin-unreachable"},
+      "recommendation": "Skip. Treat as superseded by Column subdomains."
+    },
+    {
+      "channel_id": "greenville_pioneer",
+      "name": "Greenville Pioneer (small Greene County weekly)",
+      "official_status": "reference-only",
+      "rationale": "Small local paper, not the designated newspaper of record. Not observed publishing distress notices via web. Site at greenvillepioneer.com / www.greenvillepioneer.com is HTTP-526 / origin-unreachable from audit infrastructure. /legal-notices path also unreachable.",
+      "primary_urls": ["https://greenvillepioneer.com/", "https://www.greenvillepioneer.com/", "https://greenvillepioneer.com/legal-notices"],
+      "reachability": {"stdlib_reachable": false, "via_webfetch": "HTTP 526"},
+      "recommendation": "De-prioritize. If Phase-4 needs maximum coverage, manually verify by phoning the paper; otherwise skip."
+    },
+    {
+      "channel_id": "nyspublicnotices_com",
+      "name": "nyspublicnotices.com  (alleged NYNPA statewide aggregator)",
+      "official_status": "unverified / likely-dead",
+      "rationale": "Domain does not resolve from the audit infrastructure (both direct curl and WebFetch ECONNREFUSED / 404). NYNPA member site at nynpa.com is reachable but does not surface a notices feed. The state-newspaper-association aggregator referenced in older recon notes may be defunct or rebranded under Column.",
+      "primary_urls_probed": [
+        "https://nyspublicnotices.com/  (DNS-unresolvable / refused)",
+        "https://www.nyspublicnotices.com/  (DNS-unresolvable / refused)",
+        "https://www.nyspublicnotices.com/County.asp?C=Greene  (refused)",
+        "https://www.nyspublicnotices.com/Search.asp  (refused)",
+        "https://nyspublicnotices.com/Search.aspx  (404)",
+        "https://publicnoticesny.com/  (no content)",
+        "https://www.publicnoticesny.com/  (no content)"
+      ],
+      "nynpa_landing": "https://www.nynpa.com/  (alive, no machine-readable notices feed exposed; member-services brochureware)",
+      "recommendation": "Do NOT depend on this aggregator. The NY public-notice ecosystem has consolidated onto Column for most member papers."
+    },
+    {
+      "channel_id": "mypublicnotices_com",
+      "name": "mypublicnotices.com (national aggregator)",
+      "official_status": "semi-official / reference-only",
+      "rationale": "WebFetch timeouts and 404s on common search paths. Not a primary venue for NY notices; NY participation appears limited.",
+      "primary_urls_probed": [
+        "https://mypublicnotices.com/PublicNotice.asp  (timeout)",
+        "https://www.mypublicnotices.com/  (refused)"
+      ],
+      "recommendation": "Skip."
+    },
+    {
+      "channel_id": "greene_county_clerk",
+      "name": "Greene County Clerk department page",
+      "official_status": "reference-only",
+      "rationale": "County Clerk page documents recording / DMV / passport services; does NOT publish legal notices itself. Directs to county /category/notices/ for postings.",
+      "primary_url": "https://greenecountyny.gov/departments/county-clerk/",
+      "recommendation": "Skip for distress-event recon. (Recorded foreclosure judgments and lis pendens flow through the Clerk's recording system but appear as PRIVATE PERSON SEARCHES via IQS/Cott — separate channel, not relevant to legal-notice publication.)"
+    }
+  ],
+  "ranked_channel_priority_for_distress_recon": [
+    {"rank": 1, "channel": "column_enotice", "tier": "primary", "expected_90d_distress_yield": 35, "fix_required": "change adapter filter from 'Greene' to 'Greene County' (or drop filter and key on newspapername+text)"},
+    {"rank": 2, "channel": "greene_county_treasurer_petition", "tier": "primary", "expected_annual_yield": "~hundreds of parcels (RPTL Article 11 in-rem list)", "fix_required": "OCR pipeline (pdftotext returns 0 — scanned PDF). Use tesseract or AWS Textract."},
+    {"rank": 3, "channel": "greene_county_treasurer_auction", "tier": "primary", "expected_annual_yield": "50+ lots (already realized — Phase 3 leveraged AAR)", "fix_required": "none — already integrated"},
+    {"rank": 4, "channel": "greene_county_notices_category", "tier": "supplementary", "expected_90d_distress_yield": "~1-3 announcements", "fix_required": "tap WP REST API at /wp-json/wp/v2/posts?categories=<notices>"},
+    {"rank": 5, "channel": "hudson_valley_360_dailymail", "tier": "redundant (display layer over Column)", "expected_90d_distress_yield": "same as Column", "fix_required": "do not scrape; hit Column directly"}
+  ],
+  "smoking_gun_evidence": {
+    "summary": "Column adapter filter value 'Greene' returns 76 mis-tagged Kingston Daily Freeman notices with ZERO Greene-property markers. Filter value 'Greene County' returns 35 Catskill Daily Mail distress notices in the same window. One-character fix lifts yield 35x.",
+    "queries_run": {
+      "q1": {
+        "filter": "county=['Greene'], search='foreclosure', state='New York', 90d",
+        "result": "76 results, all from Kingston Daily Freeman, 0 with Greene-property markers"
+      },
+      "q2": {
+        "filter": "county=['Greene County'], search='foreclosure', state='New York', 90d",
+        "result": "35 results, all from Catskill Daily Mail, noticetypes={Foreclosure Sale: 30, Summons: 4, Estate (Probate) Filings: 1}"
+      },
+      "q3": {
+        "filter": "newspapername=['Catskill Daily Mail'], state='New York', 90d, no search",
+        "result": "200 total notices, county field uniformly 'Greene County', 17 distress-keyword text matches"
+      },
+      "q4": {
+        "filter": "search='Greene', state='New York'",
+        "result": "Multi-county tags observed in raw data: 'Albany County, Greene County' for Ravena News-Herald — county field is a comma-joined string for multi-service papers"
+      }
+    }
+  },
+  "framework_classification_summary": {
+    "official_primary_event_sources": [
+      "column_enotice (foreclosure sale, notice of sale, summons, probate)",
+      "greene_county_treasurer_petition (tax-foreclosure in-rem petition)",
+      "greene_county_treasurer_auction (post-judgment tax-deeded parcels)"
+    ],
+    "official_supplementary": [
+      "greene_county_notices_category (county-issued legal notices, mostly non-distress)"
+    ],
+    "display_layer_redundant": [
+      "hudson_valley_360_dailymail (routes back to Column)"
+    ],
+    "dead_or_unreachable": [
+      "catskillnewspapers.com",
+      "greenvillepioneer.com",
+      "nyspublicnotices.com",
+      "mypublicnotices.com",
+      "publicnoticesny.com"
+    ]
+  },
+  "remediation_actions_when_build_resumes": [
+    "1) Patch scrapers/legal_notices_column.py PUBLISHING_COUNTIES to use the canonical Column tag values: replace 'Greene' with 'Greene County' (and 'Albany' -> 'Albany County', etc.). Or refactor to filter on newspapername + text-based property attachment. Verify by re-running with --days-back 90 and expecting ~35 distress notices.",
+    "2) Use Column's noticetype field as the primary classifier: 'Foreclosure Sale', 'Notice of Sale', 'Summons', 'Estate (Probate) Filings'. Adapter currently re-derives via regex DISTRESS_PATTERNS which costs accuracy.",
+    "3) Build an OCR adapter for the Treasurer's annual Petition and Notice of Foreclosure PDF. Path: greenecountyny.gov/wp-content/uploads/YYYY/04/YYYY-Petition-and-Notice-of-Forclosure.pdf (note the misspelling 'Forclosure'). pdftotext returns 0 bytes; needs tesseract/Textract.",
+    "4) Add a /wp-json/wp/v2/posts?categories=<notices> tap to the county WordPress site to detect mid-year auction announcements that link to AAR catalogs.",
+    "5) Do NOT build adapters for catskillnewspapers.com, greenvillepioneer.com, nyspublicnotices.com, mypublicnotices.com — they are dead or display-layer-only.",
+    "6) Do NOT scrape hudsonvalley360.com / dailygazette.com — they re-render Column data client-side."
+  ],
+  "audit_runtime_minutes": 9,
+  "next_steps_for_operator": "Schedule the Column filter fix as a 1-line change with regression test (expected_90d_count >= 25 distress notices). Defer OCR-based Treasurer petition adapter as a separate work item."
+}

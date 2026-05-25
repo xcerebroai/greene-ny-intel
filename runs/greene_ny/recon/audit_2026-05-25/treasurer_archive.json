@@ -1,0 +1,409 @@
+{
+  "audit_metadata": {
+    "audit_date": "2026-05-25",
+    "auditor": "claude-recon",
+    "scope": "Greene County NY Treasurer — historical Annual Petition & Notice of Foreclosure PDFs, related tax-distress documents, tax-search backend",
+    "method": "live-site crawl + Wayback CDX index + direct URL probes + authenticated TCS sampling with documented public credentials",
+    "duration_minutes": 10
+  },
+
+  "summary": {
+    "petition_pdfs_found": 11,
+    "petition_years_covered": ["2015 (2 PDFs)", "2016", "2017", "2018", "2019", "2020", "2022", "2023", "2025"],
+    "petition_years_missing": ["2014 and earlier", "2021 (no foreclosure during COVID — see 2020 resolution canceling interest)", "2024", "2026 (not yet published as of 2026-05-25)"],
+    "live_petition_pdfs_on_greenecountyny_gov": 2,
+    "old_petition_pdfs_only_in_wayback": 9,
+    "old_domain_status": "greenegovernment.com has been DECOMMISSIONED — all paths 301-redirect to https://greenecountyny.gov/ (homepage). Old petition PDFs are NOT directly retrievable from the live web; they survive only via web.archive.org.",
+    "image_only_pdfs_requiring_ocr": ["2015a", "2015b", "2016", "2017", "2018", "2023", "2025"],
+    "text_layer_pdfs_no_ocr_needed": ["2019", "2020", "2022"],
+    "treasurer_backend": "Total Collection Solution (TCS) by Systems East, Inc.",
+    "tcs_url": "https://ny-greenecounty.totalcollectionsolution.com/site/login",
+    "tcs_public_credentials_documented_by_county": {"organization": "greenecounty", "username": "public@greene", "password": "public"},
+    "tcs_record_volume_observed": {"bills_total_rows": 838000, "bills_grid_pages_at_3_rows": 279334, "earliest_visible_bill_year": 2009},
+    "tcs_grid_endpoints_publicly_accessible": ["/entity/listXml", "/bill/listXml", "/payment/listXml"]
+  },
+
+  "petition_pdfs": [
+    {
+      "label": "2015a",
+      "url": "https://www.greenegovernment.com/wp-content/uploads/2013/11/2015-Petition-Notice-of-Foreclosure-13-1209.pdf",
+      "wayback_id_url": "https://web.archive.org/web/2024id_/https://www.greenegovernment.com/wp-content/uploads/2013/11/2015-Petition-Notice-of-Foreclosure-13-1209.pdf",
+      "filing_index": "13-1209",
+      "live_status_code": 301,
+      "live_accessible": false,
+      "wayback_snapshots": ["20160405184423", "20210413044704", "20221203061910", "20240530010302"],
+      "file_size_bytes": 1520054,
+      "pages": 13,
+      "page_size_pts": "612 x 790.92",
+      "creation_date": "2015-07-16",
+      "creator": null,
+      "producer": null,
+      "image_only": true,
+      "text_chars": 0,
+      "image_count": 13,
+      "ocr_required": true,
+      "parcel_count_estimate": "unknown — needs OCR"
+    },
+    {
+      "label": "2015b",
+      "url": "https://www.greenegovernment.com/wp-content/uploads/2013/11/2015-Petition-Notice-of-Foreclosure-15-0039.pdf",
+      "wayback_id_url": "https://web.archive.org/web/2023id_/https://www.greenegovernment.com/wp-content/uploads/2013/11/2015-Petition-Notice-of-Foreclosure-15-0039.pdf",
+      "filing_index": "15-0039",
+      "live_status_code": 301,
+      "live_accessible": false,
+      "wayback_snapshots": ["20160405192942", "20230921145346", "20240617050126"],
+      "file_size_bytes": 198348,
+      "pages": 3,
+      "page_size_pts": "612 x 790.92",
+      "creation_date": "2015-07-16",
+      "image_only": true,
+      "text_chars": 0,
+      "image_count": 3,
+      "ocr_required": true,
+      "parcel_count_estimate": "very small (3-page filing — likely amendment/supplement to 13-1209)",
+      "notes": "Probably a supplemental petition or amended schedule for the 2015 foreclosure index. Filed same day as 2015a."
+    },
+    {
+      "label": "2016",
+      "url": "https://www.greenegovernment.com/wp-content/uploads/2016/03/2016-Petition-Notice-of-Foreclosure-1.pdf",
+      "wayback_id_url": "https://web.archive.org/web/20240603013628id_/https://www.greenegovernment.com/wp-content/uploads/2016/03/2016-Petition-Notice-of-Foreclosure-1.pdf",
+      "filing_index": null,
+      "live_status_code": 301,
+      "live_accessible": false,
+      "wayback_snapshots": ["20161222082821", "20170125092647", "20220126092256", "20230928153048", "20240603013628"],
+      "wayback_truncation_warning": "Early snapshots are truncated at 1048576 bytes (1MB cap). Use 20240603013628 snapshot (2,160,637 bytes) for the full file.",
+      "file_size_bytes": 2160637,
+      "pages": 19,
+      "page_size_pts": "612 x 790.92",
+      "creation_date": "2016-03-09",
+      "image_only": true,
+      "text_chars": 0,
+      "image_count": 19,
+      "ocr_required": true,
+      "parcel_count_estimate": "unknown — needs OCR"
+    },
+    {
+      "label": "2017",
+      "url": "https://www.greenegovernment.com/wp-content/uploads/2017/07/2017-Petition-and-Notice-of-Foreclosure.pdf",
+      "wayback_id_url": "https://web.archive.org/web/2024id_/https://www.greenegovernment.com/wp-content/uploads/2017/07/2017-Petition-and-Notice-of-Foreclosure.pdf",
+      "live_status_code": 301,
+      "live_accessible": false,
+      "wayback_snapshots": ["20201025051811", "20240522083231", "20240612191132"],
+      "file_size_bytes": 1909143,
+      "pages": 16,
+      "page_size_pts": "612 x 790.92",
+      "creation_date": "2017-07-25",
+      "image_only": true,
+      "text_chars": 0,
+      "image_count": 16,
+      "ocr_required": true,
+      "parcel_count_estimate": "unknown — needs OCR"
+    },
+    {
+      "label": "2018",
+      "url": "https://www.greenegovernment.com/wp-content/uploads/2018/03/2018-Petition-Notice-of-Foreclosure.pdf",
+      "wayback_id_url": "https://web.archive.org/web/20240520165611id_/https://www.greenegovernment.com/wp-content/uploads/2018/03/2018-Petition-Notice-of-Foreclosure.pdf",
+      "live_status_code": 301,
+      "live_accessible": false,
+      "wayback_snapshots": ["20230323180712", "20240520165611", "20250217143651"],
+      "wayback_truncation_warning": "20230323180712 and 20250217143651 snapshots are 926KB and may be optimized/lossy; 20240520165611 is 1,872,319 bytes — use that for full quality.",
+      "file_size_bytes": 1872319,
+      "pages": 15,
+      "page_size_pts": "609 x 800",
+      "creation_date": "2018-03-20",
+      "creator": "Atalasoft, Inc.",
+      "producer": "DotImage PDF Encoder",
+      "image_only": true,
+      "text_chars": 0,
+      "image_count": 15,
+      "ocr_required": true,
+      "parcel_count_estimate": "unknown — needs OCR"
+    },
+    {
+      "label": "2019",
+      "url": "https://www.greenegovernment.com/wp-content/uploads/2019/04/2019-Petition-Notice-of-Foreclosure.pdf",
+      "wayback_id_url": "https://web.archive.org/web/2024id_/https://www.greenegovernment.com/wp-content/uploads/2019/04/2019-Petition-Notice-of-Foreclosure.pdf",
+      "live_status_code": 301,
+      "live_accessible": false,
+      "file_size_bytes": 1528316,
+      "pages": 15,
+      "page_size_pts": "612 x 792",
+      "creation_date": "2019-04-01",
+      "creator": "KM_368",
+      "producer": "KONICA MINOLTA bizhub 368",
+      "image_only": "MIXED — has both embedded scanned images (86) AND a real text layer (55,016 chars). Either pre-OCR'd at the bizhub or the source was hybrid.",
+      "text_chars": 55016,
+      "image_count": 86,
+      "ocr_required": false,
+      "parcel_count_estimate_unique_sbl_tokens": 108,
+      "notes": "Smallest text-layer petition. Possibly partial OCR or sparse year."
+    },
+    {
+      "label": "2020",
+      "url": "https://www.greenegovernment.com/wp-content/uploads/2020/02/Petition-Notice-of-Foreclosure-2.20.2020.pdf",
+      "wayback_id_url": "https://web.archive.org/web/2024id_/https://www.greenegovernment.com/wp-content/uploads/2020/02/Petition-Notice-of-Foreclosure-2.20.2020.pdf",
+      "live_status_code": 301,
+      "live_accessible": false,
+      "file_size_bytes": 1842033,
+      "pages": 17,
+      "page_size_pts": "612 x 792",
+      "creation_date": "2020-02-21",
+      "creator": "KM_368",
+      "producer": "KONICA MINOLTA bizhub 368",
+      "image_only": "MIXED — text layer present",
+      "text_chars": 65705,
+      "image_count": 94,
+      "ocr_required": false,
+      "parcel_count_estimate_unique_sbl_tokens": 282,
+      "notes": "Has clean parseable Schedule A grouped by SWIS with columns: Parcel ID | Tax year & type | Current owner | Original Tax | Calculation base | Interest & penalties | Total due. Note: per a related 2020 resolution, county canceled April-May 2020 interest on delinquent RPT due to COVID — petition still filed in Feb 2020 before that resolution."
+    },
+    {
+      "label": "2022",
+      "url": "https://www.greenegovernment.com/wp-content/uploads/2022/05/Petition-Notice-of-Foreclosure-4.21.2022.pdf",
+      "wayback_id_url": "https://web.archive.org/web/2024id_/https://www.greenegovernment.com/wp-content/uploads/2022/05/Petition-Notice-of-Foreclosure-4.21.2022.pdf",
+      "live_status_code": 301,
+      "live_accessible": false,
+      "file_size_bytes": 3364313,
+      "pages": 31,
+      "page_size_pts": "612 x 792",
+      "creation_date": "2022-04-19",
+      "creator": "KM_368",
+      "producer": "KONICA MINOLTA bizhub 368",
+      "image_only": "MIXED — text layer present",
+      "text_chars": 129593,
+      "image_count": 228,
+      "ocr_required": false,
+      "parcel_count_estimate_unique_sbl_tokens": 337,
+      "parcel_row_lines": 712,
+      "notes": "Largest pre-2025 petition. Includes 2017-2020 tax years (so 2021 was rolled into this filing — explains the missing 2021 petition). Same Schedule A column schema as 2020."
+    },
+    {
+      "label": "2023",
+      "url": "https://greenecountyny.gov/wp-content/uploads/2025/01/Petition-and-Notice-of-Foreclosure-21-885with-schedule-A.pdf",
+      "old_url_redirect_origin": "https://www.greenegovernment.com/wp-content/uploads/2023/05/Petition-and-Notice-of-Foreclosure-21-885with-schedule-A.pdf",
+      "filing_index": "21-885",
+      "live_status_code": 200,
+      "live_accessible": true,
+      "file_size_bytes": 8199237,
+      "pages": 15,
+      "page_size_pts": "613 x 801",
+      "creation_date": "2023-05-21",
+      "creator": "Atalasoft, Inc.",
+      "producer": "DotImage PDF Encoder",
+      "image_only": true,
+      "text_chars": 0,
+      "image_count": 15,
+      "ocr_required": true,
+      "parcel_count_estimate": "unknown — needs OCR",
+      "notes": "Index 21-885 means the 2023 petition referenced tax years going back to 2021. Re-hosted on the new greenecountyny.gov in Jan 2025 (one of two petitions currently surviving on the live site)."
+    },
+    {
+      "label": "2025_CURRENT",
+      "url": "https://greenecountyny.gov/wp-content/uploads/2025/04/2025-Petition-and-Notice-of-Forclosure.pdf",
+      "live_status_code": 200,
+      "live_accessible": true,
+      "file_size_bytes": 2847441,
+      "pages": 29,
+      "page_size_pts": "612 x 792",
+      "creation_date": "2025-04-22",
+      "creator": "KM_368",
+      "producer": "KONICA MINOLTA bizhub 368",
+      "image_only": true,
+      "text_chars": 0,
+      "image_count": 299,
+      "ocr_required": true,
+      "parcel_count_known": 584,
+      "notes": "THE canonical current-year file used by the live tax_foreclosure_petition adapter. Despite being from the same Konica Minolta bizhub that produced text-layer petitions in 2019/2020/2022, the 2025 PDF has NO text layer — possible setting change on scanner. URL contains the canonical 'Forclosure' typo (sic)."
+    }
+  ],
+
+  "url_naming_conventions_observed": {
+    "filename_patterns": [
+      "{year}-Petition-Notice-of-Foreclosure.pdf  (2016-2019)",
+      "Petition-Notice-of-Foreclosure-{date}.pdf  (2020, 2022)",
+      "Petition-and-Notice-of-Foreclosure-{index}with-schedule-A.pdf  (2023)",
+      "{year}-Petition-and-Notice-of-Forclosure.pdf  (2025 — note 'Forclosure' typo)",
+      "{year}-Petition-Notice-of-Foreclosure-{index}.pdf  (2015 batch, two PDFs)"
+    ],
+    "upload_month_patterns": [
+      "2013/11/  (used for 2015 batch — uploads dated by upload, not filing year)",
+      "2016/03/  (2016)",
+      "2017/07/  (2017)",
+      "2018/03/  (2018)",
+      "2019/04/  (2019)",
+      "2020/02/  (2020)",
+      "2022/05/  (2022)",
+      "2023/05/  (2023 — original)",
+      "2025/01/  (2023 — re-uploaded after domain cutover)",
+      "2025/04/  (2025 current)"
+    ],
+    "filename_typo": "The current canonical URL uses 'Forclosure' (missing the second 'e'). 2019 and 2020 filings ALSO use 'Foreclosure' correctly. Inconsistent spelling — adapters/probes need to test both."
+  },
+
+  "related_tax_distress_documents_found": [
+    {
+      "label": "Delinquent Tax Homeowner Information",
+      "url": "https://greenecountyny.gov/wp-content/uploads/2025/05/Delinquent-Tax-Homeowner-Information.pdf",
+      "live_accessible": true,
+      "purpose": "Hardship/at-risk-of-foreclosure homeowner guidance leaflet (NOT a parcel list)"
+    },
+    {
+      "label": "Delinquent Tax Installment Payment Plan Information",
+      "url": "https://greenecountyny.gov/wp-content/uploads/2025/05/Delinquent-Tax-Installment-Payment-Plan-Information.pdf",
+      "live_accessible": true,
+      "purpose": "Installment plan terms (NOT a parcel list)"
+    },
+    {
+      "label": "Resolution Authorizing Co-Treas to Cancel April-May 2020 Interest on Delinquent RPT",
+      "url": "https://greenecountyny.gov/wp-content/uploads/2025/01/Resolution-Authorizing-Co-Treas-to-Cancel-April-May-2020-Interest-on-Delinquent-RPT.pdf",
+      "old_url": "https://www.greenegovernment.com/wp-content/uploads/2020/05/Resolution-Authorizing-Co-Treas-to-Cancel-April-May-2020-Interest-on-Delinquent-RPT.pdf",
+      "live_accessible": true,
+      "purpose": "COVID-era resolution canceling delinquent-RPT interest for Apr-May 2020. Explains why no separate 2021 petition exists (the 2022 petition rolled up 2018-2020 delinquencies)."
+    },
+    {
+      "label": "Credit Card Payments for Delinquent Taxes",
+      "url": "https://web.archive.org/web/2024id_/http://greenegovernment.com/wp-content/uploads/2013/11/CREDITCARDPAYMENTSFORDELINQUENTTAXES.pdf",
+      "live_accessible": false,
+      "purpose": "Payment-method info sheet (NOT a parcel list)"
+    },
+    {
+      "label": "Tax Foreclosed Real Estate Online Auction — Oct 2022",
+      "url": "https://greenecountyny.gov/news/tax-foreclosed-real-estate-online-auction-opens-monday-october-10th-at-10-am/",
+      "live_accessible": true,
+      "purpose": "News article announcing AAR-hosted online auction of post-foreclosure parcels. No parcel-list PDF linked from this article.",
+      "auction_vendor": "Absolute Auctions & Realty (AAR)",
+      "auction_url_pattern": "https://aarauctions.com/auctions/tax-foreclosures/"
+    },
+    {
+      "label": "nysauctions.com link from Treasurer page",
+      "url": "https://nysauctions.com/",
+      "live_accessible": true,
+      "purpose": "Current Treasurer page links directly to nysauctions.com (the public-facing portal that AAR uses) for tax-foreclosed-real-estate auctions."
+    }
+  ],
+  "related_documents_NOT_found": [
+    "Final Judgment of Foreclosure PDFs (none found published on greenecountyny.gov; would need County Clerk records center)",
+    "Standalone 'Notice of Sale' / 'Auction Notice' PDFs from Treasurer (auctions referenced only via news articles + nysauctions.com)",
+    "List of Tax Delinquent Properties as separate annual PDF (the Petition's Schedule A IS the delinquent list)",
+    "'Letters of Notification' series (not found)",
+    "2026 petition PDF (not yet filed/published as of 2026-05-25 — historical filing months span Feb-July)"
+  ],
+
+  "treasurer_tax_search_form": {
+    "page": "https://greenecountyny.gov/departments/treasurer/property-tax-search/",
+    "page_describes": "How to use the county's TCS portal",
+    "external_portal": "https://ny-greenecounty.totalcollectionsolution.com/site/login",
+    "vendor": "Systems East, Inc. — 'Total Collection Solution' (TCS)",
+    "public_access_credentials_documented_on_county_page": {
+      "organization_hidden_field": "greenecounty",
+      "username": "public@greene",
+      "password": "public"
+    },
+    "post_login_capabilities_observed": {
+      "menu": ["Home", "Entities", "Bills", "Payments", "Admin (restricted)", "Help"],
+      "entity_grid_columns_exposed": ["Entity Code", "SWIS Code", "Parcel ID", "Prior Print Key", "InstallmentID", "Owner 1", "Loc Number", "Loc Name", "Status"],
+      "bill_grid_columns_exposed": ["Entity", "Bill Number", "Bill Date", "Status (Paid/Unpaid/Pending)", "Owner", "Bill Type (e.g. '2009 School', 'County/Town')", "Base Amount", "Interest", "Penalty", "Amount Paid", "Amount Due"],
+      "bill_record_count_observed": 838000,
+      "earliest_visible_bill_date": "09/01/2010 (page-1 sample; older records likely present sorted differently)",
+      "swis_codes_referenced": "14 Greene County municipalities (per public-facing page text)"
+    },
+    "public_xml_grid_endpoints": {
+      "entity_listXml": {
+        "url": "https://ny-greenecounty.totalcollectionsolution.com/entity/listXml",
+        "method": "POST",
+        "required_params": "page, rows, sidx (must be a real column — 'parcelId' rejected; needs investigation), sord",
+        "status": "Available; sidx schema needs reverse-engineering"
+      },
+      "bill_listXml": {
+        "url": "https://ny-greenecounty.totalcollectionsolution.com/bill/listXml",
+        "method": "POST",
+        "sidx_known_good": "billNumber",
+        "status": "CONFIRMED WORKING — returns paginated XML with full bill rows including parcel ID, owner, bill type, amounts, status. Default sort by billNumber desc returns most recent first."
+      },
+      "payment_listXml": {
+        "url": "https://ny-greenecounty.totalcollectionsolution.com/payment/listXml",
+        "status": "Not yet probed but exists per menu"
+      }
+    },
+    "extraction_potential": "EXTREMELY HIGH. This portal exposes every bill in Greene County (paid+unpaid) since at least 2009 — 838K records. With public-documented creds, this is the authoritative source for tax-distress signals and is far richer than the annual petition PDFs. Recommend building a TCS adapter that scrapes the jqGrid XML pagination.",
+    "rate_limit_notes": "No rate-limit observed during recon. Yii framework with PostgreSQL backend (SQL error messages leak engine = Postgres)."
+  },
+
+  "tcs_integration": {
+    "confirmed": true,
+    "vendor": "Systems East, Inc.",
+    "vendor_product": "Total Collection Solution (TCS)",
+    "vendor_help_url": "http://www.systemseast.com/tcsnet/help/index.htm",
+    "tenant_url": "https://ny-greenecounty.totalcollectionsolution.com/",
+    "framework_observed": "Yii (PHP) + PostgreSQL backend (per SQL error messages)",
+    "linked_from_county_pages": [
+      "https://greenecountyny.gov/departments/treasurer/property-tax-search/",
+      "https://greenecountyny.gov/departments/treasurer/property-tax/  (lists 'ny.greenecounty.totalcollectionsolution.com')",
+      "https://greenecountyny.gov/news/propertytaxinformation/"
+    ]
+  },
+
+  "town_school_payment_platforms_observed": {
+    "BAS_basgov": {
+      "url": "https://egov.basgov.com/",
+      "purpose": "Town/County tax bill payment for several Greene County towns"
+    },
+    "NY_Tax_Glance": {
+      "url": "https://nytaxglance.com/tax/tjewett.php",
+      "purpose": "Town of Jewett tax lookup"
+    },
+    "Village_of_Athens_clerk": {
+      "url": "https://athensvillageny.com/village-government/village-clerk/",
+      "purpose": "Athens village tax info"
+    },
+    "Village_of_Coxsackie": {
+      "url": "https://villageofcoxsackie.com/pay-village-bills-online/",
+      "purpose": "Coxsackie village bill pay"
+    },
+    "INFOTAX_ONLINE": {
+      "url": "https://www.infotaxonline.com/",
+      "purpose": "School district tax payments"
+    },
+    "TaxLookup_net": {
+      "url": "https://www.taxlookup.net/index.aspx?county=ulster",
+      "purpose": "Onteora school district (which crosses Greene/Ulster border)"
+    },
+    "Greene_GIS": {
+      "url": "https://gis.gcgovny.com/greenewebmap/",
+      "purpose": "County GIS map (separate from Treasurer)"
+    }
+  },
+
+  "sitemap_urls_checked": [
+    "https://greenecountyny.gov/sitemap.xml (returns sitemap_index)",
+    "https://greenecountyny.gov/sitemap_index.xml (no foreclosure-specific entries; treasurer page is in page-sitemap)",
+    "https://greenecountyny.gov/post-sitemap.xml",
+    "https://greenecountyny.gov/page-sitemap.xml"
+  ],
+
+  "wayback_cdx_queries_used": [
+    "https://web.archive.org/cdx/search/cdx?url=greenegovernment.com&matchType=domain&filter=mimetype:application/pdf",
+    "https://web.archive.org/cdx/search/cdx?url=greenegovernment.com/wp-content/uploads/{YYYY}/&matchType=prefix&filter=mimetype:application/pdf",
+    "https://web.archive.org/cdx/search/cdx?url=greenecountyny.gov/wp-content/uploads/{YYYY}/&matchType=prefix&filter=mimetype:application/pdf"
+  ],
+
+  "key_findings": [
+    "ONLY 2 petition PDFs are directly retrievable from the live county website: 2023 and 2025. All others (2015, 2016, 2017, 2018, 2019, 2020, 2022) require Wayback Machine — the old greenegovernment.com domain 301-redirects everything to the new homepage.",
+    "Of the 11 historical petitions found, only 3 have a text layer (2019, 2020, 2022 — all produced by the same Konica Minolta bizhub 368). The other 8 are image-only PDFs requiring OCR. Notably, the 2025 current petition was ALSO produced by the same bizhub but flattened to images-only.",
+    "The text-layer petitions (2019, 2020, 2022) reveal the consistent Schedule A schema: Parcel ID | Tax year & type | Current owner | Original Tax | Calculation base | Interest & penalties | Total due, grouped by SWIS (municipality). 2022 contains ~337 unique SBLs across 712 row-lines (multiple tax years per parcel).",
+    "No 2021 petition exists — the 2022 petition rolled in 2018-2020 delinquencies after the COVID-era resolution canceling Apr-May 2020 interest. No 2024 petition was filed (or it was rolled into 2025). No 2026 petition has been published yet (as of 2026-05-25).",
+    "Filename typo 'Forclosure' (missing the second 'e') is used in the 2025 URL. Other years vary: 2019/2020/2022/2023 use 'Foreclosure'; 2015/2017/2018/2019 use 'Petition-Notice-of-Foreclosure' (no 'and'); 2017/2023/2025 use 'Petition-and-Notice-of-Foreclosure'. Adapters/probes must test multiple spellings.",
+    "The Treasurer's Property Tax Search redirects to TCS (Total Collection Solution by Systems East), with COUNTY-DOCUMENTED public credentials (public@greene / public). The TCS portal exposes Entities, Bills, Payments grids via jqGrid XML endpoints. Bill grid alone contains 838,000 rows going back to at least 2009. This is a far richer tax-distress data source than the annual petition PDFs and is publicly accessible.",
+    "Auction vendor for foreclosed parcels is Absolute Auctions & Realty (AAR) at aarauctions.com / nysauctions.com — historical auction-results pages may exist on those sites but were not crawled here.",
+    "Final Judgment of Foreclosure documents are NOT published as PDFs on the Treasurer site — they would be filed with the County Clerk's record center.",
+    "BAS (egov.basgov.com), Info-Tax Online, NY Tax Glance handle town and school-district tax payments; school re-levies merge into the County Treasurer's TCS records once delinquent (per the property-tax-search page guidance)."
+  ],
+
+  "recommendations_for_downstream_work": [
+    "Continue using the 2025 petition as the primary tax_foreclosure_petition source — confirmed canonical, 29 pages, 584 parcels, image-only (OCR layer already in place per existing adapter).",
+    "For multi-year backfill: text-layer petitions (2019, 2020, 2022) can be parsed without OCR, yielding ~108 + 282 + 337 = ~727 historical distinct parcels worth of distressed-tax history with full owner+amount fields.",
+    "Image-only historical petitions (2015a, 2015b, 2016, 2017, 2018, 2023, 2025) all need OCR — same scanner-derived layout, same Schedule A column structure (per visual inspection); same OCR pipeline should work for all.",
+    "Build a TCS adapter targeting /bill/listXml with pagination (rows=500, sort by billNumber desc). 838K rows = ~1,700 pages. Filter to Status=Unpaid for delinquent leads. This will give continuously-fresh delinquent data without waiting for the annual petition.",
+    "Cross-reference TCS Entity.parcelId with the Schedule A 'Parcel ID' format (e.g., '122.10-2-18') to merge petition-level filing data with bill-level real-time amounts."
+  ]
+}

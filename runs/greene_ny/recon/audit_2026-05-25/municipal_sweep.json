@@ -1,0 +1,441 @@
+{
+  "audit_date": "2026-05-25",
+  "county": "greene_ny",
+  "scope": "15 towns + key incorporated villages: tax portals, delinquent lists, code enforcement, demolition, condemnation",
+  "executive_summary": {
+    "headline": "Most Greene towns sit on a single vendor stack (BAS eGov, formerly basgov.com, now under Edmunds GovTech). BAS portals are bill-lookup + pay only — no public delinquent list, no aggregate arrears view. Town-level delinquent collection escalates to the county Treasurer after July 31, who in turn feeds the annual AAR (Absolute Auctions & Realty) tax-foreclosure auction. The AAR auction is the primary stdlib-reachable distress event source for Greene County. Town/village code-enforcement offices exist but none publish a crawlable list of violations, condemnation orders, or demolition orders — those would require FOIL or board-meeting minutes parsing.",
+    "primary_event_sources_found": [
+      "aar_auctions_greene_county_tax_foreclosure",
+      "village_of_tannersville_unpaid_taxes_returned_to_county_oct_31",
+      "village_of_athens_sewer_rent_delinquency_5_percent_penalty",
+      "village_of_catskill_unpaid_water_sewer_becomes_lien_on_property"
+    ],
+    "enrichment_only": [
+      "bas_egov_per_town_portals (9 towns confirmed)",
+      "greene_county_treasurer_property_tax_page",
+      "doxo (third-party aggregator for Halcott, Jewett)"
+    ],
+    "no_online_presence": ["Ashland (tax)", "Halcott (tax)", "Prattsville (tax)"],
+    "code_enforcement_publication": "NONE FOUND. No town or village in Greene County publishes a crawlable list of code violations, unsafe-building determinations, condemnation orders, or demolition orders. Town of Catskill Ch. 90 (Unsafe Buildings) gives the CEO power to recommend demolition to Town Board and bill the cost back to the parcel as a tax lien — but the determinations themselves are NOT published as a list; they appear in town-board meeting minutes (unstructured) and as recorded liens on the parcel."
+  },
+  "vendor_stack": {
+    "bas_egov": {
+      "vendor": "Business Automation Services (BAS) eGov — basgov.com now redirects to edmundsgovtech.com (Edmunds GovTech acquired)",
+      "url_pattern_a": "http://egov.basgov.com/<town>/",
+      "url_pattern_b": "http://egov.basgov.com/townof<town>/  or  /villageof<town>/",
+      "javascript_required": false,
+      "captcha": false,
+      "paid": false,
+      "stdlib_reachable": true,
+      "exposes": ["bill #", "tax map #", "property address", "owner name (search input)", "current bill", "5-yr payment history", "PDF receipt"],
+      "does_not_expose": ["aggregate delinquent list", "arrears flag in search results", "county-level delinquency (after July 31 cutoff)"],
+      "classification": "ENRICHMENT_ONLY — parcel-bound lookup, useful for bill# + owner reconciliation against AAR auction PRINT_KEY; cannot originate distress events."
+    },
+    "infotax_online": {
+      "vendor": "Williamson Law Book Online Tax Lookup (infotaxonline.com)",
+      "scope_for_greene": "School districts only — no Greene town/village uses InfoTax for town/village taxes. Greene districts on InfoTax: Catskill CSD, Coxsackie-Athens CSD, Hunter-Tannersville CSD, Windham-Ashland-Jewett CSD.",
+      "javascript_required": true,
+      "notes": "Uses ASP.NET __doPostBack — not a direct GET. Index-based navigation. School-tax bills lag town-tax cycle by ~6 months (Sept billing).",
+      "classification": "ENRICHMENT_ONLY for school-tax bills; potentially SUPPORTING if a parcel shows unpaid school tax (which gets re-levied onto town tax bill the following Jan)."
+    },
+    "edmundsgovtech": {
+      "parent_of": "basgov.com",
+      "notes": "Acquisition is recent — old basgov.com URLs 301 to edmundsgovtech.com. The per-town egov.basgov.com URLs still resolve and serve content."
+    }
+  },
+  "county_level_sources": {
+    "greene_county_treasurer": {
+      "url": "https://greenecountyny.gov/departments/treasurer/property-tax/",
+      "role": "Collects all unpaid town+county taxes after July 31. Conducts annual tax-foreclosure auction.",
+      "publishes_delinquent_list": false,
+      "publishes_auction_list": "INDIRECTLY — routes to AAR Auctions",
+      "classification": "REFERENCE_ONLY (the page itself); the auction itself is PRIMARY (via AAR)."
+    },
+    "aar_auctions_greene_tax_foreclosure": {
+      "url_pattern": "https://aarauctions.com/servlet/Search.do?auctionId=<N>",
+      "recent_auction_id": 3738,
+      "last_auction_date": "2025-10-27",
+      "stdlib_reachable": true,
+      "classification": "PRIMARY_EVENT_SOURCE — this is the source already wired into the Greene v5.4.0 build (50-lead AAR adapter, 635 leads with §20 DEPLOY_OK per recent commits)."
+    },
+    "greene_county_code_enforcement": {
+      "url": "https://greenecountyny.gov/departments/code-enforcement/",
+      "status": "404 / not a department. Greene County does NOT operate a county-wide code enforcement office. Code enforcement is exclusively municipal in Greene.",
+      "classification": "N/A"
+    },
+    "greene_county_buildings_grounds": {
+      "url": "https://greenecountyny.gov/departments/buildings-and-grounds/",
+      "scope": "County-owned buildings only — not a private-property enforcement office.",
+      "classification": "N/A"
+    },
+    "greene_county_demolition_search": {
+      "url": "https://greenecountyny.gov/?s=demolition",
+      "results": "Historical (2013 FEMA post-Irene Lexington/Catskill acquisitions, 2019 Exit 21 Quality Inn) — no live demolition list.",
+      "classification": "REFERENCE_ONLY"
+    }
+  },
+  "per_municipality": [
+    {
+      "name": "Ashland",
+      "type": "town",
+      "tax_portal": {
+        "url": null,
+        "vendor": null,
+        "status": "NO_ONLINE_PORTAL — phone-only: (518) 734-3636",
+        "site": "https://www.ashlandny.com/"
+      },
+      "delinquent_list": "None published. Returns to county Treasurer after July 31.",
+      "code_enforcement": "Form-based ('Forms and Regulations' menu) — no public violation list.",
+      "stdlib_reachable_distress_doc": false,
+      "classification": "no_event_source"
+    },
+    {
+      "name": "Athens",
+      "type": "town",
+      "tax_portal": {
+        "url": "http://egov.basgov.com/athens/",
+        "vendor": "BAS eGov",
+        "exposes": "bill lookup + 5yr history; 'PAYMENTS MADE TO THE COUNTY WILL NOT BE POSTED'"
+      },
+      "delinquent_list": "None published at town level. AAR auction covers escalations.",
+      "code_enforcement": "Town code enforcement page at townofathensny.com/government/enforcement.html — informational only.",
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    },
+    {
+      "name": "Athens (Village)",
+      "type": "village",
+      "tax_portal": {
+        "url": null,
+        "vendor": "Village Clerk — manual",
+        "site": "https://athensvillageny.gov/"
+      },
+      "delinquent_list": "None published.",
+      "sewer_rent": {
+        "due_dates": ["September 15", "February 15"],
+        "delinquency_penalty": "5% per annum",
+        "relevy_to_property_tax": "Standard NY village pattern — unpaid village water/sewer becomes a lien re-levied onto next village tax bill",
+        "publicly_listed": false,
+        "classification": "SUPPORTING_EVENT — if obtainable via FOIL, would corroborate distress; not stdlib-reachable as a list."
+      },
+      "code_enforcement": {
+        "phone": "518-945-0601",
+        "public_list": false
+      },
+      "stdlib_reachable_distress_doc": false,
+      "classification": "no_event_source"
+    },
+    {
+      "name": "Cairo",
+      "type": "town",
+      "tax_portal": {
+        "url": "http://egov.basgov.com/cairo/",
+        "vendor": "BAS eGov",
+        "tax_collector": "Susan B. Hilgendorff (518-622-3120 x110)",
+        "exposes": "bill lookup 2007-2026; bill#/tax map#/address/owner search"
+      },
+      "delinquent_list": "None published. Town of Cairo's website republishes the Greene County AAR auction link.",
+      "code_enforcement": {
+        "officer": "Stacy Sprague",
+        "building_inspector": "Earlin Rosa",
+        "public_list": false,
+        "url": "https://townofcairo.com/government-and-services/departments/building-and-code-enforcement/"
+      },
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    },
+    {
+      "name": "Catskill",
+      "type": "town",
+      "tax_portal": {
+        "url": "http://egov.basgov.com/catskill/",
+        "vendor": "BAS eGov",
+        "exposes": "bill lookup; pay; print"
+      },
+      "delinquent_list": "None published.",
+      "code_enforcement": {
+        "url": "https://www.townofcatskillny.gov/code-enforcement (returned 404 on direct fetch; navigable from townofcatskillny.gov)",
+        "address": "439 Main Street, Catskill",
+        "ecode360_chapters": ["Ch. 87 Building Code Administration", "Ch. 90 Buildings, Unsafe"],
+        "unsafe_building_law": "CEO inspects, reports to Town Board, Board may authorize immediate demolition; cost becomes charge against the land (lien)",
+        "public_list": false,
+        "classification": "PRIMARY_BY_DESIGN_BUT_NOT_PUBLISHED — the demolition lien is a real distress signal, but Catskill does not publish the determinations as a crawlable list. Only Town Board minutes (unstructured) carry the references."
+      },
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only_plus_unpublished_supporting"
+    },
+    {
+      "name": "Catskill (Village)",
+      "type": "village",
+      "tax_portal": {
+        "url": "https://egov.basgov.com/villageofcatskill/",
+        "vendor": "BAS eGov",
+        "exposes": "village property tax bills 2013-2026; bill#/tax map#/address/owner search"
+      },
+      "water_sewer": {
+        "department": "Village of Catskill Water Dept + Sewer Dept",
+        "portal_for_pay": "ampstun.utilitybillingsystem.us (third-party utility billing)",
+        "delinquent_published": false,
+        "relevy_to_property_tax": "Standard NY pattern; unpaid utility becomes a charge against the parcel",
+        "classification": "SUPPORTING_EVENT (unpublished as a list)"
+      },
+      "code_enforcement": {
+        "url": "https://villageofcatskillny.gov/code-enforcement-planning",
+        "officer": "Mike Ragaini (temporary) + Michael Tetro (in training)",
+        "public_list": false,
+        "documents_available": ["Building Permit Application", "General Complaint Form"],
+        "classification": "no_published_list"
+      },
+      "delinquent_tax_cutoff": "Pay by Jan 31 (no penalty); last day at Village Hall Oct 31 then returns to County Treasurer",
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    },
+    {
+      "name": "Coxsackie",
+      "type": "town",
+      "tax_portal": {
+        "url": "http://egov.basgov.com/coxsackie/",
+        "vendor": "BAS eGov",
+        "tax_collector": "Bambi Hotaling (518-731-7313)",
+        "exposes": "bill lookup 2007-2026"
+      },
+      "delinquent_list": "None published.",
+      "code_enforcement": {
+        "site": "https://coxsackie.org/",
+        "public_list": false
+      },
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    },
+    {
+      "name": "Coxsackie (Village)",
+      "type": "village",
+      "tax_portal": {
+        "url": "https://villageofcoxsackie.gov/",
+        "vendor": "Village water + tax payment portal (not BAS — separate village payment system)",
+        "notes": "Recently launched STR Certificate and Tax Portal for short-term-rental registration"
+      },
+      "code_enforcement": {
+        "url": "https://villageofcoxsackie.gov/departments/code-enforcement/",
+        "officer": "Michael Ragaini",
+        "documents_available": ["Building Permit Application", "Fee Schedule", "Nuisance Complaint Form"],
+        "public_violation_list": false,
+        "classification": "no_published_list"
+      },
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    },
+    {
+      "name": "Durham",
+      "type": "town",
+      "tax_portal": {
+        "url": "http://egov.basgov.com/durham/",
+        "vendor": "BAS eGov",
+        "tax_collector": "Janet Partridge"
+      },
+      "delinquent_list": "None published.",
+      "code_enforcement": "Not separately probed; no public list found in directory.",
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    },
+    {
+      "name": "Greenville",
+      "type": "town",
+      "tax_portal": {
+        "url": "http://egov.basgov.com/greenville/",
+        "vendor": "BAS eGov",
+        "exposes": "bill lookup 2014-2026"
+      },
+      "delinquent_list": "None published.",
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    },
+    {
+      "name": "Halcott",
+      "type": "town",
+      "tax_portal": {
+        "url": null,
+        "vendor": null,
+        "status": "NO_ONLINE_PORTAL — Town Tax Collector at the Grange Hall, (845) 701-1364. Third-party doxo aggregator listing exists but is not an official portal.",
+        "site": "https://halcottcenter.com/"
+      },
+      "delinquent_list": "None published. Smallest town in Greene County (~200 pop).",
+      "stdlib_reachable_distress_doc": false,
+      "classification": "no_event_source"
+    },
+    {
+      "name": "Hunter",
+      "type": "town",
+      "tax_portal": {
+        "url": "http://egov.basgov.com/hunter/",
+        "vendor": "BAS eGov",
+        "exposes": "current + past bills 2007-2026; payment history"
+      },
+      "delinquent_list": "None published.",
+      "code_enforcement": {
+        "site": "https://townofhunterny.gov/government/town-code-laws/",
+        "local_law_topics": ["demolition fees", "residency req for Building Inspector", "NYS Uniform Code admin"],
+        "demolition_permit": "available via Forms & Permits page",
+        "public_violation_list": false,
+        "notes": "Town has been actively recruiting for a Building Inspector/CEO — suggests churn/under-resourced"
+      },
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    },
+    {
+      "name": "Hunter (Village)",
+      "type": "village",
+      "tax_portal": {
+        "url": null,
+        "site": "https://villageofhunterny.com/",
+        "building_inspector_page": "https://villageofhunterny.com/departments/building-inspector/"
+      },
+      "code_enforcement": {
+        "public_violation_list": false
+      },
+      "stdlib_reachable_distress_doc": false,
+      "classification": "no_event_source"
+    },
+    {
+      "name": "Jewett",
+      "type": "town",
+      "tax_portal": {
+        "url": "https://townofjewettny.gov/  (online lookup + pay via credit/debit/echeck)",
+        "vendor": "Unclear — likely a generic municipal payment processor (NOT BAS based on egov.basgov.com/jewett returning 404). Also listed on doxo.",
+        "exposes": "bill lookup + pay"
+      },
+      "delinquent_list": "None published.",
+      "code_enforcement": {
+        "url": "https://townofjewettny.gov/departments/building-department/",
+        "public_violation_list": false
+      },
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    },
+    {
+      "name": "Lexington",
+      "type": "town",
+      "tax_portal": {
+        "url": "https://egov.basgov.com/townoflexington/",
+        "vendor": "BAS eGov",
+        "exposes": "bill lookup + pay; 2.50% credit fee, $4 debit, $2 echeck"
+      },
+      "delinquent_list": "None published. (Note: Lexington was hit by Irene 2011 + had FEMA acquisitions/demolitions — historical only.)",
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    },
+    {
+      "name": "New Baltimore",
+      "type": "town",
+      "tax_portal": {
+        "url": "https://egov.basgov.com/townofnewbaltimore/",
+        "vendor": "BAS eGov",
+        "exposes": "bill lookup + pay; 2.5% credit/debit fee"
+      },
+      "delinquent_list": "None published.",
+      "code_enforcement": {
+        "officer": "Allan Jourdin (518-801-6693)",
+        "url": "https://townofnewbaltimore.gov/departments/building-department-code-enforcement",
+        "public_violation_list": false
+      },
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    },
+    {
+      "name": "Prattsville",
+      "type": "town",
+      "tax_portal": {
+        "url": null,
+        "vendor": null,
+        "status": "NO_ONLINE_PORTAL — phone-only (518) 299-3186",
+        "site": "https://www.townofprattsville.com/departments/tax-collector"
+      },
+      "delinquent_list": "None published. Town was nearly destroyed by Irene 2011 — historical demolition events documented in news but not as a current list.",
+      "stdlib_reachable_distress_doc": false,
+      "classification": "no_event_source"
+    },
+    {
+      "name": "Windham",
+      "type": "town",
+      "tax_portal": {
+        "url": "https://egov.basgov.com/townofwindham/",
+        "vendor": "BAS eGov",
+        "tax_collector": "Katherine Murray, CPA (518-734-6309)",
+        "exposes": "bill lookup + pay; multi-year 2013-2026"
+      },
+      "delinquent_list": "None published.",
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    },
+    {
+      "name": "Tannersville (Village)",
+      "type": "village",
+      "tax_portal": {
+        "url": "https://tannersvilleny.gov/village-info/village-taxes/",
+        "vendor": "Village clerk — online debit/credit + echeck accepted",
+        "billing_cycle": "Bills issued June 1, due June 30",
+        "penalty_schedule": "5% added July 1; +1%/month thereafter; returns to County Treasurer Oct 31"
+      },
+      "delinquent_list": "None published.",
+      "code_enforcement": {
+        "public_violation_list": false
+      },
+      "notable": "Village voters had a referendum on DISSOLUTION OF THE VILLAGE — administrative-distress signal at the municipal level (not a property-level lead source, but indicates fiscal stress).",
+      "stdlib_reachable_distress_doc": false,
+      "classification": "enrichment_only"
+    }
+  ],
+  "school_districts_infotax_online": [
+    {"district": "Catskill CSD", "url_pattern": "infotaxonline.com (postback-based)", "js_required": true},
+    {"district": "Coxsackie-Athens CSD", "url_pattern": "infotaxonline.com", "js_required": true},
+    {"district": "Hunter-Tannersville CSD", "url_pattern": "infotaxonline.com", "js_required": true},
+    {"district": "Windham-Ashland-Jewett CSD", "url": "https://infotaxonline.com?custid=89", "js_required": true}
+  ],
+  "classification_summary": {
+    "primary_event_sources_stdlib_reachable": [
+      "AAR Auctions — Greene County tax-foreclosure auction (already integrated, 50/50 leads with PRINT_KEY join)"
+    ],
+    "supporting_event_sources_NOT_stdlib_reachable_would_require_FOIL": [
+      "Town of Catskill Ch. 90 unsafe-building determinations + Town Board demolition orders",
+      "Village of Athens sewer-rent delinquency (5%/yr penalty, re-levy lien)",
+      "Village of Catskill water/sewer delinquency (re-levy lien)",
+      "Village of Coxsackie nuisance/code-enforcement files",
+      "Town of Hunter demolition permits"
+    ],
+    "enrichment_only_stdlib_reachable": [
+      "BAS eGov portals for 9 confirmed towns: Athens, Cairo, Catskill, Coxsackie, Durham, Greenville, Hunter, Lexington, New Baltimore, Windham + Village of Catskill",
+      "InfoTax Online for 4 Greene school districts (JS-required postback)"
+    ],
+    "no_online_presence": [
+      "Town of Ashland",
+      "Town of Halcott",
+      "Town of Prattsville"
+    ],
+    "reference_only": [
+      "Greene County Treasurer property-tax info page",
+      "Town of Cairo's republished AAR auction announcement page"
+    ]
+  },
+  "build_implications": {
+    "no_new_primary_source_to_add": "The audit confirms no NEW stdlib-reachable primary event source exists at the municipal level beyond what is already wired (AAR auction). Per-town BAS portals are enrichment-only and useful for owner/bill# reconciliation against the AAR PRINT_KEY join already implemented.",
+    "potential_future_phases": {
+      "phase_FOIL_demolition_orders": "Town of Catskill Town Board minutes contain Ch. 90 demolition references; would need OCR/NLP over PDF minutes — high effort, low yield per parcel.",
+      "phase_village_utility_relevy": "Village of Athens + Village of Catskill water/sewer delinquencies become tax liens; FOIL request to clerks would surface ~30-100 distressed parcels each. Not stdlib-reachable.",
+      "phase_school_tax_infotax": "Unpaid school taxes re-levy onto Jan town tax bill. Could write a JS-aware scraper (Playwright) over the 4 Greene CSD InfoTax instances to flag parcels with unpaid Sept billings — would corroborate AAR pipeline ~6 months earlier."
+    }
+  },
+  "method_notes": {
+    "tools_used": ["WebFetch (HTTP GET, markdown extraction)", "WebSearch (Google web search)"],
+    "duration_minutes_approx": 11,
+    "404_endpoints_confirmed": [
+      "http://egov.basgov.com/ashland/",
+      "http://egov.basgov.com/windham/  (correct path is /townofwindham/)",
+      "http://egov.basgov.com/jewett/",
+      "http://egov.basgov.com/lexington/  (correct path is /townoflexington/)",
+      "http://egov.basgov.com/prattsville/",
+      "http://egov.basgov.com/halcott/",
+      "http://egov.basgov.com/newbaltimore/  (correct path is /townofnewbaltimore/)",
+      "https://greenecountyny.gov/departments/code-enforcement/  (department does not exist)"
+    ]
+  }
+}

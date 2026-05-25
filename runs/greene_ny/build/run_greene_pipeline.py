@@ -116,7 +116,13 @@ def aar_to_raw_event(aar: dict, pm_by_pk: dict, fetched_at: str) -> dict:
 def petition_to_raw_event(pt: dict, pm_by_pk: dict, fetched_at: str) -> dict:
     """Treasurer petition row → raw_event. parties from Schedule A
     owner column (the petition IS the event document; the owner is a
-    named defendant in the in-rem proceeding)."""
+    named defendant in the in-rem proceeding).
+
+    raw_event_id encodes petition_year so the same SBL appearing across
+    multiple petition years (2019/2020/2022/2025) produces distinct
+    raw_events. The matcher then stacks these by parcel_id into a
+    single multi-year persistent-delinquency lead with stack_depth=N.
+    """
     p = pt["raw_payload"]
     sbl = (p.get("tax_map") or "").strip()
     pm = pm_by_pk.get(sbl)
@@ -124,7 +130,13 @@ def petition_to_raw_event(pt: dict, pm_by_pk: dict, fetched_at: str) -> dict:
     # Prefer parcel_master canonical address; fall back to OCR address.
     situs = ((pm.get("address") or "").upper() if pm
              else (p.get("address_raw") or "").strip().upper())
-    rid = _det_id("raw", "petition", sbl)
+    petition_year = p.get("petition_year") or 2025
+    # 2025 keeps the legacy rid shape (no year segment) so existing
+    # evidence_ids/lead_ids stay stable; older years carry the year.
+    if petition_year == 2025:
+        rid = _det_id("raw", "petition", sbl)
+    else:
+        rid = _det_id("raw", "petition", str(petition_year), sbl)
     parties: list = []
     owner_raw = (p.get("owner_name_raw") or "").strip()
     if owner_raw:
@@ -404,11 +416,17 @@ def project_lead(scored: dict, *, aar_by_doc: dict,
     enriched = bool(pm_enrich)
     situs = pm_enrich or seam_parcel
     event_source = _event_source_for(scored)
-    canonical_dt = ""
-    # patterns/display_patterns can carry the canonical hint per source
+    # Carry the §17-normalized canonical doc type into the dashboard
+    # payload so the renderer can vary the chip label per distress
+    # flavor (foreclosure / lis_pendens / probate / tax_foreclosure_*).
+    canonical_types = list(
+        (scored.get("doc_type_normalization") or {}).get("canonical_doc_types")
+        or []
+    )
     return {
         "lead_id": scored["lead_id"],
         "scored_lead_id": scored["scored_lead_id"],
+        "canonical_doc_types": canonical_types,
         "primary_parcel_id": pm_enrich.get("swis_sbl_id")
                              or scored.get("primary_parcel_id"),
         "tax_map": pm_enrich.get("tax_map"),

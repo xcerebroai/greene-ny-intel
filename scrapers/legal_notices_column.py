@@ -9,22 +9,35 @@ API (recon, 2026-05-25):
   POST https://us-central1-enotice-production.cloudfunctions.net/api/search/public-notices
   Content-Type: application/json
   Body: {"search":"<keyword>", "allFilters":[{"publishedtimestamp":{"from":<ms>,"to":<ms>}},
-         {"state":["New York"]}, {"county":["Greene"]}],
+         {"state":["New York"]}, {"county":["Greene County"]}],
          "noneFilters":[], "sort":[{"publishedtimestamp":"desc"}],
          "pageSize":N, "isDemo":false}
   Headers: content-type:application/json; origin/referer:newyork.column.us
 
-Important caveat — Column's `county` field is the PUBLISHING-county
-(the county of the newspaper that printed the notice), NOT the
-property's county. A Greene-property foreclosure can be advertised in
-a regional paper based in Ulster, Albany, or Columbia. This adapter
-queries SEVERAL likely publishing counties and filters on TEXT
-CONTENT for Greene-property markers (Greene town names appearing in
-the notice body) before emitting a record.
+2026-05-25 missed-source audit correction:
 
-Per the Duval-lesson rule, every emitted row must show property
-attachment in the raw text. Notices that mention Greene only as a
-publisher but have no Greene-property reference are filtered out.
+Column's `county` field is keyed with the FULL county-name token
+(e.g. ``"Greene County"``), not the bare county name. The earlier
+adapter passed ``county=["Greene"]`` and matched 76 *Kingston Daily
+Freeman* notices tagged with Greene as service-area metadata only
+(zero Greene-property content). The Catskill Daily Mail's notices —
+the actual primary venue for Greene-property notices — tag the
+``county`` field as ``"Greene County"`` and were silently being
+excluded.
+
+Switching the filter to ``"Greene County"`` returns ~35 real distress
+notices in a 90-day window (30 Foreclosure Sale, 4 Summons (lis
+pendens), 1 Estate (Probate) Filing). Column's ``noticetype`` field
+is preferred over body-text regex for classification — it's the
+publisher-set categorical, not the parser's regex guess. We still
+require property-attachment evidence (street address or tax-map ref)
+before emitting per the Duval-lesson rule.
+
+Column's ``county`` field on multi-county papers is a comma-joined
+string (e.g. ``"Albany County, Greene County"`` for the Ravena
+News-Herald). The result-side property-attachment filter handles
+those — querying with a single ``"Greene County"`` token + Column's
+server-side substring inclusion is sufficient to surface them.
 
 Stage boundary: this is a PRIMARY EVENT SOURCE per §13.2 — each
 distress notice (foreclosure sale, sheriff sale, tax sale, lis pendens,
@@ -55,11 +68,45 @@ API_URL = ("https://us-central1-enotice-production.cloudfunctions.net/"
            "api/search/public-notices")
 USER_AGENT = "xcerebro-greene-ny-column/0.1"
 
-# Counties whose newspapers publish Greene-relevant notices.
+# Publishing-county tokens used as Column's `county` filter value.
+# Per the 2026-05-25 missed-source audit, Column keys these with the
+# FULL "County" suffix — querying ``"Greene"`` (no suffix) silently
+# matched 76 unrelated Kingston Daily Freeman service-area notices,
+# whereas ``"Greene County"`` returns the actual Catskill Daily Mail
+# Greene distress notices (35 / 90 d). Surrounding county tokens are
+# kept for cross-region pickup — a Greene-property foreclosure may
+# also be advertised in an Albany / Ulster / Columbia paper.
 PUBLISHING_COUNTIES = [
-    "Greene", "Albany", "Ulster", "Columbia", "Delaware", "Schoharie",
-    "Rensselaer", "Schenectady",
+    "Greene County",
+    "Albany County",
+    "Ulster County",
+    "Columbia County",
+    "Delaware County",
+    "Schoharie County",
+    "Rensselaer County",
+    "Schenectady County",
 ]
+
+# Column's `noticetype` field — publisher-set categorical, preferred
+# over body-text regex. Verified against the audit's 35 Greene notices.
+# Each canonical value maps to the framework's registered doc type.
+NOTICETYPE_TO_CANONICAL: dict = {
+    "Foreclosure Sale":          "NOTICE_OF_SALE",
+    "Notice of Sale":            "NOTICE_OF_SALE",
+    "Sheriff Sale":              "NOTICE_OF_SALE",
+    "Referee's Sale":            "NOTICE_OF_SALE",
+    "Tax Sale":                  "TAX_FORECLOSURE_NOTICE",
+    "Tax Foreclosure":           "TAX_FORECLOSURE_NOTICE",
+    "Summons":                   "LIS_PENDENS",      # foreclosure summons = lis-pendens proxy (RPAPL §1310/§1331)
+    "Lis Pendens":               "LIS_PENDENS",
+    "Notice of Pendency":        "LIS_PENDENS",
+    "Estate (Probate) Filings":  "ESTATE_NOTICE",
+    "Estate Filings":            "ESTATE_NOTICE",
+    "Probate":                   "ESTATE_NOTICE",
+    "Letters Testamentary":      "LETTERS_TESTAMENTARY",
+    "Letters of Administration": "LETTERS_OF_ADMINISTRATION",
+    "Mechanic's Lien":           "MECHANICS_LIEN",
+}
 
 # Greene County town / village names — checked case-insensitively in the
 # notice body to confirm property attachment.
@@ -167,15 +214,34 @@ def _search(*, keyword: str, publishing_county: str, days_back: int,
         return json.loads(resp.read()).get("results", [])
 
 
-def _classify(text: str) -> tuple[str | None, str]:
-    """Return (canonical_doc_type, signal_label) or (None,'') if non-distress."""
+def _classify(text: str, noticetype: str = "") -> tuple[str | None, str, str]:
+    """Return (canonical_doc_type, signal_label, classifier_source).
+
+    Per the 2026-05-25 audit, Column's publisher-set ``noticetype`` is
+    the strong signal — prefer it. Body-text regex remains as fallback
+    for notices that lack a noticetype tag (older filings).
+
+    classifier_source ∈ {``noticetype``, ``regex``} for downstream audit.
+    """
     if NON_DISTRESS.search(text):
-        return None, ""
+        return None, "", ""
+    # 1) Publisher-set noticetype is authoritative
+    nt = (noticetype or "").strip()
+    if nt and nt in NOTICETYPE_TO_CANONICAL:
+        canonical = NOTICETYPE_TO_CANONICAL[nt]
+        return canonical, nt, "noticetype"
+    # 2) Substring fallback (handles minor casing/punctuation drift)
+    if nt:
+        nt_lower = nt.lower()
+        for key, canonical in NOTICETYPE_TO_CANONICAL.items():
+            if key.lower() in nt_lower or nt_lower in key.lower():
+                return canonical, nt, "noticetype_fuzzy"
+    # 3) Body-text regex fallback
     for canonical, rx in DISTRESS_PATTERNS:
         if rx.search(text):
             label = canonical.replace("_", " ").title()
-            return canonical, label
-    return None, ""
+            return canonical, label, "regex"
+    return None, "", ""
 
 
 def _greene_property(text: str) -> tuple[bool, list[str]]:
@@ -216,7 +282,7 @@ def _property_attachment(text: str) -> tuple[bool, str]:
 
 def _wrap(notice: dict, canonical: str, signal_label: str,
           greene_markers: list[str], property_evidence: str,
-          fetched_at: str) -> dict:
+          classifier_source: str, fetched_at: str) -> dict:
     nid = notice.get("id") or ""
     return {
         "raw_record_id": f"{SOURCE_ID}:{nid}",
@@ -241,6 +307,7 @@ def _wrap(notice: dict, canonical: str, signal_label: str,
             "pdf_url": notice.get("pdfurl") or "",
             "greene_attachment_markers": greene_markers,
             "property_attachment_evidence": property_evidence,
+            "classifier_source": classifier_source,
             "filer": notice.get("filer") or "",
         },
     }
@@ -257,6 +324,8 @@ def run(*, output_path: Path | None = None, days_back: int = 90,
     kept: list[dict] = []
     probed = 0
     by_cty: dict = {}
+    classifier_tally: dict = {"noticetype": 0, "noticetype_fuzzy": 0, "regex": 0}
+    canonical_tally: dict = {}
     skipped: dict = {
         "non_distress": 0,
         "no_greene_attachment": 0,
@@ -284,11 +353,12 @@ def run(*, output_path: Path | None = None, days_back: int = 90,
                     continue
                 seen_ids.add(nid)
                 text = n.get("text") or ""
+                noticetype = n.get("noticetype") or ""
                 ok_greene, markers = _greene_property(text)
                 if not ok_greene:
                     skipped["no_greene_attachment"] += 1
                     continue
-                canonical, label = _classify(text)
+                canonical, label, classifier_src = _classify(text, noticetype)
                 if not canonical:
                     skipped["non_distress"] += 1
                     continue
@@ -297,7 +367,11 @@ def run(*, output_path: Path | None = None, days_back: int = 90,
                     skipped["no_property_evidence"] += 1
                     continue
                 kept.append(_wrap(n, canonical, label, markers, prop_evidence,
-                                  fetched_at))
+                                  classifier_src, fetched_at))
+                classifier_tally[classifier_src] = (
+                    classifier_tally.get(classifier_src, 0) + 1)
+                canonical_tally[canonical] = (
+                    canonical_tally.get(canonical, 0) + 1)
                 per_cty += 1
         by_cty[pcty] = per_cty
     # Write
@@ -310,6 +384,8 @@ def run(*, output_path: Path | None = None, days_back: int = 90,
         "source_id": SOURCE_ID, "api_url": API_URL,
         "days_back": days_back, "probed_results": probed,
         "records_written": len(kept), "by_publishing_county": by_cty,
+        "by_canonical_doc_type": canonical_tally,
+        "by_classifier_source": classifier_tally,
         "skipped_breakdown": skipped, "output_path": str(output_path),
     }
 

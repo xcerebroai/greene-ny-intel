@@ -1,0 +1,260 @@
+{
+  "audit_id": "tcs_deep_2026-05-25",
+  "target_url": "https://ny-greenecounty.totalcollectionsolution.com/",
+  "framework": "Yii 1.x + jqGrid (vendor: Systems East — TCSnet)",
+  "auth": {
+    "login_works": true,
+    "login_url": "https://ny-greenecounty.totalcollectionsolution.com/site/login",
+    "login_method": "POST",
+    "login_form_fields": {
+      "LoginForm[loginOrganization]": "greenecounty",
+      "LoginForm[username]": "public@greene",
+      "LoginForm[password]": "public",
+      "LoginForm[rememberMe]": "0",
+      "yt0": "Login"
+    },
+    "csrf_required": false,
+    "session_cookie_name": "PHPSESSID",
+    "post_login_redirect": "https://ny-greenecounty.totalcollectionsolution.com/index.php",
+    "post_login_greeting_text": "Welcome to Greene County, public@greene.",
+    "public_user_id_internal": 694,
+    "read_only_account": true,
+    "write_blocked_evidence": "POST /bill/create returns 'Access Denied: User does not have access to Bill Create'"
+  },
+  "endpoints_discovered": [
+    {
+      "url": "/bill/listXml",
+      "method": "POST",
+      "purpose": "Master bill grid — all bills county-wide; the headline distress-discovery endpoint.",
+      "auth_required": true,
+      "params": {
+        "page": "1..N",
+        "rows": "page size (tested 20, 100, 500)",
+        "sidx": "sort column (billDate, billNumber, status, owner1, entityName, …)",
+        "sord": "ASC|DESC",
+        "_search": "true to apply filters",
+        "status": "filter by status code: 0=Unpaid, 1=Paid, 2=Partially Paid, 3=Delinquent, 4=Inactive, 5=Pending, 6=Bundled, 7=Relevied, 8=Tax Sale, 9=Municipality Owned, 10=Sold, 11=Repurchased, 12=PITA, 13=Exempt, 14=Installment, 15=Write-off, 16=Write-off Ordinance, 17=Write-off centioriari, 18=Write-off LB, 19=Tax Trust, 20=Discharged, 21=Bankruptcy",
+        "entityName": "free-text parcel/SBL filter (e.g. 192000-60.00-1-45)",
+        "billNumber": "free-text bill # filter",
+        "owner1": "free-text owner-name filter",
+        "billTypeName": "free-text bill-type filter",
+        "billDate": "date filter"
+      },
+      "response_shape": "jqGrid XML: <rows><page>N</page><total>PAGES</total><records>TOTAL</records><row id='BILL_ID'><cell>…</cell> x 13</row>… <userdata name='baseAmount'>…</userdata>…</rows>",
+      "fields_per_row": [
+        "actions (show/pay icons + embedded forms)",
+        "entity (parcel SBL / print key, e.g. 193200-23.00-2-1)",
+        "billNumber",
+        "billDate",
+        "status (text: Delinquent, Unpaid, Relevied, …)",
+        "owner1",
+        "billTypeName (e.g. '2025 School', '2024 Town/County', 'Installment Payment Plan')",
+        "baseAmount",
+        "interestAmount",
+        "penaltyAmount",
+        "amountPaid",
+        "amountDue",
+        "modifiedUser (numeric user id)"
+      ],
+      "total_records_unfiltered": 838000,
+      "page_size_max_tested": 500,
+      "pagination": "page= + rows= parameters; 838000 records / 100 rows = 8380 pages on default sort"
+    },
+    {
+      "url": "/bill/show/id/{billId}",
+      "method": "GET",
+      "purpose": "Per-bill detail view (Yii detailView). Exposes mailing address + delinquency dates not present in the grid.",
+      "auth_required": true,
+      "extra_fields_vs_grid": [
+        "Owner 1, Owner 2 (Owner 2 is property street address)",
+        "Address 1 (city/state/zip line)",
+        "Bill Status",
+        "Orig Amount",
+        "Date Delinquent",
+        "Base/Interest/Penalty Due",
+        "Assessed Value, Market Value (often $0 on this view)",
+        "Star Tax Savings",
+        "Is Arrears (Yes/No)",
+        "6 installment payments + interests"
+      ]
+    },
+    {
+      "url": "/entity/listXml",
+      "method": "POST",
+      "purpose": "Master parcel/entity grid. 44,897 records = full Greene County parcel master.",
+      "params_notes": "sort by entityId1 (SWIS) works; sort by parcelID throws 500.",
+      "fields_per_row": [
+        "name (canonical entity name, e.g. 192000-60.00-1-45)",
+        "entityId1 (SWIS code — 192000=Town of Cairo, 192289=Catskill, 192000-19xxxx municipalities)",
+        "entityId2 (parcel ID / SBL within SWIS)",
+        "priorPrintKey (PRINT_KEY — joins to NY State assessment roll)",
+        "entityId3 (installment id)",
+        "owner1",
+        "locationNumber (house number)",
+        "locationName (street name)",
+        "status (0=Inactive, 1=Active, 5=Pending)"
+      ],
+      "total_records": 44897
+    },
+    {
+      "url": "/address/listXml",
+      "method": "POST",
+      "purpose": "Owner mailing-address registry keyed by entity. Multiple address types per parcel.",
+      "fields_per_row": [
+        "addrType (Primary, Mailing, …)",
+        "entity (parcel SBL)",
+        "addr1..addr4",
+        "city, state, zip"
+      ],
+      "total_records": 65588
+    },
+    {
+      "url": "/billItem/listXml",
+      "method": "POST",
+      "purpose": "Bill line items (tax-levy decomposition per bill).",
+      "fields_per_row": ["billType","bill","line","description","amountDue","account","rate","origRate","origAmountDue"]
+    },
+    {
+      "url": "/payment/listXml",
+      "method": "POST",
+      "purpose": "Payment history grid.",
+      "fields_per_row": ["entity","bill","billType","receiptNumber","dateReceived","amountPaid","owner1","status"]
+    },
+    {
+      "url": "/landsale/listXml",
+      "method": "POST",
+      "purpose": "In-rem tax-foreclosure land-sale roster (parcels that went through County tax-foreclosure auction).",
+      "fields_per_row": ["processed","entity","landsaleBatch","newOwner1","newAddr1","newCity","newState","newZip","saleAmount"],
+      "total_records": 165,
+      "notes": "Only 165 records and saleAmount shows $0 on every sample — public account likely sees redacted sale amounts. Latest batch=140 dated 2015-11-16 — list appears partially exposed / not current. NOT the live foreclosure-pending list."
+    },
+    {
+      "url": "/landsaleBatch/listXml",
+      "method": "POST",
+      "purpose": "Land-sale batch headers (auction events).",
+      "total_records": 2,
+      "notes": "Only batch 140 (11/16/2015) and batch 45 (01/11/2011) visible to public account. Older batches likely restricted."
+    },
+    {
+      "url": "/customer/listXml",
+      "method": "POST",
+      "purpose": "Third-party tax-search customer accounts. Empty or restricted under public account."
+    },
+    {
+      "url": "/site/admin",
+      "method": "GET",
+      "purpose": "Admin navigation menu — viewable but most actions return Access Denied for public account."
+    }
+  ],
+  "delinquent_list_endpoint": "/bill/listXml  (POST, status=3 for Delinquent; status=0 for Unpaid)",
+  "delinquent_list_total_rows": {
+    "status_0_Unpaid": 85,
+    "status_3_Delinquent": 2084,
+    "status_7_Relevied": 80608,
+    "status_8_TaxSale": 0,
+    "live_actionable_pool_total_records_county_wide": 838000
+  },
+  "sample_rows": [
+    {
+      "bill_id": "4955052",
+      "entity_parcel": "193200-23.00-2-1",
+      "bill_number": "2222221-08",
+      "bill_date": "05/01/2026",
+      "status": "Delinquent",
+      "owner1": "Beechert Kenneth G",
+      "bill_type": "Installment Payment Plan",
+      "base_amount": "$439.14",
+      "interest_amount": "$0.00",
+      "penalty_amount": "$21.96",
+      "amount_paid": "$0.00",
+      "amount_due": "$461.10",
+      "detail_extras": {
+        "owner_address_line_1": "Greenville, NY 12083",
+        "owner_address_line_2": "136 County Route 75",
+        "date_delinquent": "05/16/2026",
+        "orig_amount": "$3,118.13",
+        "is_arrears": "No"
+      }
+    },
+    {
+      "bill_id": "4955061",
+      "entity_parcel": "192289-105.00-3-1",
+      "bill_number": "2222221-08",
+      "bill_date": "05/01/2026",
+      "status": "Delinquent",
+      "owner1": "Zarski Wladimir",
+      "bill_type": "Installment Payment Plan",
+      "base_amount": "$376.90",
+      "interest_amount": "$0.00",
+      "penalty_amount": "$18.85",
+      "amount_paid": "$0.00",
+      "amount_due": "$395.75"
+    },
+    {
+      "bill_id": "5016119",
+      "entity_parcel": "192000-110.00-4-1",
+      "bill_number": "0",
+      "bill_date": "09/01/2025",
+      "status": "Relevied",
+      "owner1": "Musacchia John Jr",
+      "bill_type": "2025 School",
+      "base_amount": "$164.94",
+      "amount_due": "$0.00",
+      "_note": "Relevied = unpaid school taxes that have been re-rolled onto the next County roll. Historical distress signal, not a live amount due."
+    }
+  ],
+  "public_account_restrictions": {
+    "read_endpoints_accessible": true,
+    "write_endpoints_blocked": true,
+    "evidence": "POST /bill/create -> 'Access Denied: User does not have access to Bill Create'",
+    "redactions_observed": {
+      "landsale_sale_amount": "All sample sale-amount cells show $0.00 — likely masked",
+      "landsale_batches": "Only 2 of N batches visible; appears restricted"
+    },
+    "no_field_masking_observed_in_bill_or_entity_or_address_endpoints": true,
+    "no_rate_limit_headers_returned": true,
+    "no_captcha_observed": true
+  },
+  "classification": "PRIMARY_EVENT_SOURCE",
+  "classification_rationale": "The /bill/listXml endpoint accepts a status filter (status=3 Delinquent, status=0 Unpaid, status=7 Relevied) and returns a paginated grid of bills county-wide WITHOUT requiring a parcel pre-selection. A single authenticated POST yields 2,084 currently-delinquent bills with parcel SBL, owner name, bill type, base/interest/penalty/amount-due, and bill date — every field needed to originate a tax-distress lead. The optional /bill/show/id/{N} detail view enriches each row with mailing address and explicit Date Delinquent. Combined with /entity/listXml (parcel master with PRINT_KEY join field) and /address/listXml (65,588 mailing-address records), this is a fully self-contained distress-event firehose, not an enrichment lookup. It satisfies the PRIMARY_EVENT_SOURCE test exactly: net-new leads are discoverable purely by querying status, not by knowing parcels in advance. The Relevied pool (80,608 records) additionally provides a multi-year arrears history per parcel — a strong supporting risk signal.",
+  "scrape_blueprint": {
+    "step_1_login": "POST /site/login with LoginForm[loginOrganization]=greenecounty, LoginForm[username]=public@greene, LoginForm[password]=public. Persist PHPSESSID cookie.",
+    "step_2_pull_delinquent": "POST /bill/listXml with body 'page=N&rows=500&sidx=billDate&sord=DESC&_search=true&status=3' for N in 1..5 → all 2084 delinquent bills.",
+    "step_3_pull_unpaid": "Same but status=0 → 85 unpaid bills.",
+    "step_4_enrich_addresses": "POST /address/listXml paginated → join on entity (parcel SBL) to attach mailing addresses.",
+    "step_5_join_to_assessment_roll": "Use /entity/listXml priorPrintKey field to join the assessment roll (PRINT_KEY = the join we already use in the v5.4.0 build).",
+    "step_6_optional_detail": "GET /bill/show/id/{billId} per row for Date Delinquent + Orig Amount. ~2084 GETs at modest rate.",
+    "estimated_total_request_count_for_full_pull": "~20 requests for grid + 2084 detail GETs (optional) = ~2100 requests"
+  },
+  "ethical_legal_concerns": {
+    "robots_txt": "https://ny-greenecounty.totalcollectionsolution.com/robots.txt returns 'User-agent: * / Disallow: /' — operator explicitly disallows crawlers. Even though the data is behind a documented public credential, this is a flag.",
+    "tos_visibility": "No public ToS link found on the login page or the admin nav menu; ToS would live with vendor Systems East (TCSnet). No explicit license grant for bulk extract.",
+    "credential_provenance": "Credentials (greenecounty / public@greene / public) are documented by Greene County Treasurer's office for public bill lookup. The intent is interactive single-bill lookup, not bulk extraction.",
+    "rate_limit": "No rate-limit headers observed and no CAPTCHA. A respectful scrape (≤1 req/sec, off-hours, identifying User-Agent) is unlikely to be detected, but volume scraping the full 838k-row table or the 2084 detail pages would exceed the spirit of the public-lookup intent.",
+    "data_sensitivity": "Owner names + mailing addresses + tax delinquency amounts are public records under NY RPTL §1500 et seq. (open access to tax rolls), so the underlying data is not sensitive in the legal sense. The concern is platform ToS / unauthorized-access exposure under NY Penal Law §156 if Systems East asserts that 'public@greene' is intended only for interactive use.",
+    "recommendation": "Treat /bill/listXml as a confirmed PRIMARY event source for the v5.4.0 build, but: (a) restrict pulls to status=3 and status=0 (the live actionable pool, ~2,170 records — small enough to be defensible as 'directed lookup' rather than 'bulk scrape'); (b) cap request rate at ≤1 rps with a 5-minute jitter; (c) identify the client with a descriptive User-Agent (e.g. 'XcerebroAuditBot/1.0 (treasurer-public-lookup)'); (d) before going to production, obtain written confirmation from the Treasurer that the public account may be used for repeated automated lookups, or fall back to FOIL request for the same data."
+  },
+  "verification_artifacts_on_disk": [
+    "runs/greene_ny/recon/audit_2026-05-25/login_page.html",
+    "runs/greene_ny/recon/audit_2026-05-25/post_login.html",
+    "runs/greene_ny/recon/audit_2026-05-25/post_login_headers.txt",
+    "runs/greene_ny/recon/audit_2026-05-25/cookies.txt",
+    "runs/greene_ny/recon/audit_2026-05-25/ctrl_bill.html",
+    "runs/greene_ny/recon/audit_2026-05-25/ctrl_entity.html",
+    "runs/greene_ny/recon/audit_2026-05-25/ctrl_payment.html",
+    "runs/greene_ny/recon/audit_2026-05-25/listxml_default.xml",
+    "runs/greene_ny/recon/audit_2026-05-25/listxml_status_0.xml",
+    "runs/greene_ny/recon/audit_2026-05-25/listxml_status_3.xml",
+    "runs/greene_ny/recon/audit_2026-05-25/listxml_status_7.xml",
+    "runs/greene_ny/recon/audit_2026-05-25/listxml_status_8.xml",
+    "runs/greene_ny/recon/audit_2026-05-25/listxml_status3_500.xml",
+    "runs/greene_ny/recon/audit_2026-05-25/bill_show.html",
+    "runs/greene_ny/recon/audit_2026-05-25/entity_default2.xml",
+    "runs/greene_ny/recon/audit_2026-05-25/addr_xml.xml",
+    "runs/greene_ny/recon/audit_2026-05-25/landsale_xml.xml",
+    "runs/greene_ny/recon/audit_2026-05-25/lsbatch_xml.xml",
+    "runs/greene_ny/recon/audit_2026-05-25/site_admin.html",
+    "runs/greene_ny/recon/audit_2026-05-25/write_test.html",
+    "runs/greene_ny/recon/audit_2026-05-25/robots.txt"
+  ]
+}

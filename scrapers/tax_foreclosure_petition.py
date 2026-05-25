@@ -65,7 +65,10 @@ _ROW = re.compile(
     (?P<sbl>\d{1,3}(?:\.\d+)?-\d+(?:\.\d+)?-\d+(?:\.\d+)?)   # SBL/PRINT_KEY
     \s+
     (?P<year>\d{4})                                          # tax year
-    \s+
+    \s*                                                      # 2022-text-layer
+                                                             # PDFs sometimes
+                                                             # drop space here
+                                                             # ("2017County/Town")
     (?P<fund>(?:County(?:/Town|/Vill|/Sch)?|Town|Village|School|Special)
         [A-Za-z/]*)                                          # fund label
     [\s_—\-]+
@@ -104,7 +107,32 @@ def download_petition(url: str, dst: Path) -> Path:
     return dst
 
 
-# ---------------------------------------------------------- OCR pipeline
+# --------------------------------------------------- text extraction
+# Older Greene petitions (2019 / 2020 / 2022, per the 2026-05-25 audit)
+# were produced on a Konica Minolta bizhub that embedded a real text
+# layer. Those parse directly via pdftotext with no tesseract round-trip.
+# 2023 and 2025 lack the text layer (scanner setting drift) and still
+# need OCR. The adapter now auto-detects.
+
+TEXT_LAYER_MIN_CHARS = 5000
+
+
+def extract_text_layer(pdf: Path, workdir: Path) -> Path | None:
+    """Try `pdftotext -layout`. If the result is non-trivial (>= 5 000
+    chars), return its path. Else return None to signal OCR fallback."""
+    workdir.mkdir(parents=True, exist_ok=True)
+    out = workdir / "petition_text_layer.txt"
+    try:
+        subprocess.run(
+            ["pdftotext", "-layout", str(pdf), str(out)],
+            check=True, stderr=subprocess.DEVNULL,
+        )
+    except (FileNotFoundError, subprocess.CalledProcessError):
+        return None
+    if not out.exists() or out.stat().st_size < TEXT_LAYER_MIN_CHARS:
+        return None
+    return out
+
 
 def render_and_ocr(pdf: Path, workdir: Path) -> Path:
     """pdftoppm → PNG per page → tesseract → TXT per page → concat.
@@ -233,14 +261,23 @@ def collapse_by_sbl(rows: list[dict]) -> list[dict]:
 # ---------------------------------------------------------------- emit
 
 def to_wrapped(rec: dict, *, source_url: str, fetched_at: str,
-               recorded_date: str) -> dict:
+               recorded_date: str, petition_year: int) -> dict:
+    """Build a §4.32 wrapped record. raw_record_id encodes petition_year
+    so historical backfills coexist with the current-year pull."""
     sbl = rec["sbl"]
+    # Backward compat: when petition_year == 2025, keep the legacy id
+    # shape (no year segment) so the matcher join key + existing
+    # downstream evidence_ids stay stable.
+    rid = (f"{SOURCE_ID}:{sbl}" if petition_year == 2025
+           else f"{SOURCE_ID}:{petition_year}:{sbl}")
+    inst = (f"TX-PETITION-{sbl}" if petition_year == 2025
+            else f"TX-PETITION-{petition_year}-{sbl}")
     return {
-        "raw_record_id": f"{SOURCE_ID}:{sbl}",
+        "raw_record_id": rid,
         "source_id": SOURCE_ID,
         "source_url": source_url,
         "source_fetched_at": fetched_at,
-        "parser_confidence": 75,   # OCR — moderate confidence
+        "parser_confidence": 75,
         "raw_payload": {
             "tax_map": sbl,
             "owner_name_raw": rec["owner_name"],
@@ -250,24 +287,65 @@ def to_wrapped(rec: dict, *, source_url: str, fetched_at: str,
             "total_owed": round(rec["total_owed"], 2) if rec["total_owed"] else None,
             "face_total": round(rec["face_total"], 2) if rec["face_total"] else None,
             "raw_doc_type": "TAX_FORECLOSURE_PETITION",
-            "instrument_number": f"TX-PETITION-{sbl}",
+            "instrument_number": inst,
             "recorded_date": recorded_date,
+            "petition_year": petition_year,
         },
     }
 
 
 # ---------------------------------------------------------------- main
 
-def run(*, output_path: Path | None = None, petition_url: str = DEFAULT_PETITION_URL,
-        petition_year: int = 2025) -> dict:
+def _read_existing_jsonl(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    out: list[dict] = []
+    for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            out.append(json.loads(line))
+        except json.JSONDecodeError:
+            continue
+    return out
+
+
+def run(*, output_path: Path | None = None,
+        petition_url: str = DEFAULT_PETITION_URL,
+        petition_year: int = 2025,
+        workdir_suffix: str | None = None,
+        append: bool = False) -> dict:
+    """Pull + parse the Treasurer petition PDF.
+
+    Auto-detects text-layer vs OCR: ``pdftotext -layout`` first, falls
+    back to ``pdftoppm + tesseract`` if the text layer is empty. The
+    audit confirms 2019 / 2020 / 2022 carry text layers; 2023 + 2025
+    need OCR.
+
+    ``workdir_suffix`` (default: f"{petition_year}") isolates each
+    petition's PDF + extraction artifacts so prior-year backfills
+    don't trample one another.
+
+    ``append`` merges new parcels with the existing JSONL (dedupe by
+    ``raw_record_id`` which already encodes petition_year+SBL).
+    """
     output_path = (output_path
                    or REPO_ROOT / "data" / "raw" / f"{SOURCE_ID}.jsonl")
-    workdir = REPO_ROOT / "data" / "raw" / "_workdir"
+    suffix = workdir_suffix if workdir_suffix is not None else str(petition_year)
+    workdir = REPO_ROOT / "data" / "raw" / f"_workdir_{suffix}"
     workdir.mkdir(parents=True, exist_ok=True)
     pdf = workdir / "petition.pdf"
     if not pdf.exists() or pdf.stat().st_size < 1000:
         download_petition(petition_url, pdf)
-    full_text = render_and_ocr(pdf, workdir)
+
+    # 1) Text-layer path (no OCR)
+    extraction_path = "text_layer"
+    full_text = extract_text_layer(pdf, workdir)
+    if full_text is None:
+        # 2) OCR fallback
+        extraction_path = "ocr"
+        full_text = render_and_ocr(pdf, workdir)
     rows = parse_full_text(full_text.read_text(encoding="utf-8", errors="replace"))
     parcels = collapse_by_sbl(rows)
 
@@ -276,11 +354,27 @@ def run(*, output_path: Path | None = None, petition_url: str = DEFAULT_PETITION
     # date on every page, but the petition is officially captioned/filed
     # in 02-Feb of the petition year (RPTL Art. 11 timeline).
     recorded_date = f"{petition_year}-02-27"
-    wrapped = [
+    wrapped_new = [
         to_wrapped(p, source_url=petition_url, fetched_at=fetched_at,
-                   recorded_date=recorded_date)
+                   recorded_date=recorded_date, petition_year=petition_year)
         for p in parcels if p["sbl"]
     ]
+
+    if append:
+        existing = _read_existing_jsonl(output_path)
+        merged: dict = {}
+        for r in existing:
+            rid = r.get("raw_record_id")
+            if rid:
+                merged[rid] = r
+        for r in wrapped_new:
+            rid = r.get("raw_record_id")
+            if rid:
+                merged[rid] = r
+        wrapped = list(merged.values())
+    else:
+        wrapped = wrapped_new
+
     output_path.parent.mkdir(parents=True, exist_ok=True)
     tmp = output_path.with_suffix(".jsonl.tmp")
     with open(tmp, "w", encoding="utf-8") as fh:
@@ -295,8 +389,14 @@ def run(*, output_path: Path | None = None, petition_url: str = DEFAULT_PETITION
 
     return {
         "source_id": SOURCE_ID, "petition_url": petition_url,
-        "petition_year": petition_year, "ocr_lines": len(rows),
-        "parcels": len(parcels), "records_written": len(wrapped),
+        "petition_year": petition_year,
+        "extraction_path": extraction_path,
+        "workdir": str(workdir),
+        "ocr_lines": len(rows),
+        "parcels": len(parcels),
+        "records_written_for_year": len(wrapped_new),
+        "records_written_total": len(wrapped),
+        "append": append,
         "year_distribution": dict(sorted(by_year.items())),
         "output_path": str(output_path),
     }
@@ -311,18 +411,25 @@ def main() -> int:
     parser.add_argument("--out", default=None)
     parser.add_argument("--petition-url", default=DEFAULT_PETITION_URL)
     parser.add_argument("--petition-year", type=int, default=2025)
+    parser.add_argument("--workdir-suffix", default=None,
+                        help="Per-year workdir tag. Default: petition_year.")
+    parser.add_argument("--append", action="store_true",
+                        help="Merge new parcels with the existing JSONL "
+                             "(dedupe by raw_record_id, which includes "
+                             "petition_year for historical backfills).")
     args = parser.parse_args()
     try:
         stats = run(
             output_path=Path(args.out) if args.out else None,
             petition_url=args.petition_url, petition_year=args.petition_year,
+            workdir_suffix=args.workdir_suffix, append=args.append,
         )
     except urllib.error.URLError as e:
         print(json.dumps({"status": "BLOCKED", "error": str(e)},
                          indent=2), file=sys.stderr)
         return 4
     print(json.dumps(stats, indent=2))
-    return 0 if stats["records_written"] > 0 else 2
+    return 0 if stats.get("records_written_total", 0) > 0 else 2
 
 
 if __name__ == "__main__":
