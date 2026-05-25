@@ -265,15 +265,16 @@ def to_elpaso_record(scored: dict, refresh_date: date) -> dict:
         urls = []
 
     stack_depth = int(scored.get("stack_depth") or 0)
+    # Source URLs (aarauctions, greenecountyny.gov, column.us, etc.) are
+    # internal evidence pointers — they belong in the evidence ledger
+    # and the CSV export, NOT in the client-facing UI payload. The
+    # renderer omits them from the lead-board signal entry.
     signals = [{
         "signal_type": sig_type,
         "signal_label": label,
         "signal_confidence": "HIGH",
-        "source_id": src_id,
         "chip_class": chip_class,
         "count": max(1, stack_depth),
-        "source_urls": urls,
-        "evidence_ids": list(scored.get("evidence_ids") or []),
         "instrument_numbers": [doc_num] if doc_num else [],
         "doc_type_raw": doc_raw,
         "recorded_date": sale_date,
@@ -303,16 +304,9 @@ def to_elpaso_record(scored: dict, refresh_date: date) -> dict:
         # `enrichment_status` stays as an unqualified alias.
         "parcel_master_enrichment_status": enr_status,
         "enrichment_status": enr_status,
-        # AAR doesn't expose a filer; §17 placeholder is preserved on the
-        # source row but not surfaced as a filer in this projection.
         "filer_entity": "",
-        # owner — comes from parcel_master via the PRINT_KEY join; per-row
-        # provenance is visible via owner_source.
         "owner_name": owner or "Unknown",
         "owner_type": owner_type,
-        "owner_source": scored.get("owner_source") or "unresolved",
-        "owner_source_section17_raw": scored.get("display_owner_section17_raw")
-                                       or "",
         "property_full_address": property_full,
         "property_street": p_street,
         "property_city": p_city,
@@ -331,12 +325,8 @@ def to_elpaso_record(scored: dict, refresh_date: date) -> dict:
         "signals": signals,
         "signal_types": [sig_type],
         "signal_chip_class": chip_class,
-        # signal_count = matcher stack_depth (= number of stacked
-        # distress events on this parcel). Wires the "Multi-signal
-        # stacked" preset filter to real data.
         "signal_count": max(1, stack_depth),
         "stack_depth": stack_depth,
-        "source_urls": urls,
         "latest_event_date": sale_date,
         # Recency tagging (UI-3). Pipeline-frozen against refresh_date,
         # not the viewer's wall clock — same NEW set for every operator.
@@ -348,10 +338,10 @@ def to_elpaso_record(scored: dict, refresh_date: date) -> dict:
         # the renderer pushes them below current/recent in default sort.
         "is_historical": is_historical,
         "review_required": is_review,
-        "review_reason": (
-            "owner_not_on_document — AAR exposes no owner per lot; "
-            "owner attached downstream from parcel_master."
-        ) if is_review else "",
+        # review_reason is intentionally NOT carried into the client
+        # payload — it contains internal-pipeline commentary
+        # ("§17 routing", "owner_not_on_document", source IDs) that
+        # belongs in the evidence ledger, not the lead board.
     }
 
 
@@ -481,19 +471,17 @@ def main() -> int:
     estate_count = sum(1 for r in records if r["owner_type"] == "ESTATE")
     life_estate_count = sum(1 for r in records if r["owner_type"] == "LIFE_ESTATE")
 
+    # Client-facing payload — strictly operator-visible stats. Internal
+    # build commentary (build_label, build_label_reason — the
+    # SOURCE_LIMITED / stealth / Cloudflare / cf_clearance / recon-path
+    # prose) is intentionally OMITTED. So are owner_source_policy /
+    # owner_source_counts / enrichment_join_method_counts /
+    # semantic_verdict / sources_active — all internal-pipeline labels.
     out = {
         "generated_at": payload.get("generated_at"),
-        "refresh_date": refresh_iso,   # the date NEW/last-30 are computed against
+        "refresh_date": refresh_iso,
         "county": payload.get("county"),
         "state": payload.get("state"),
-        "build_label": payload.get("build_label"),
-        "build_label_reason": payload.get("build_label_reason", ""),
-        "semantic_verdict": payload.get("semantic_verdict"),
-        "sources_active": sorted({
-            (r.get("signals") or [{}])[0].get("source_id", "")
-            for r in records
-            if (r.get("signals") or [{}])[0].get("source_id")
-        }),
         "lead_total": len(records),
         "actionable_leads": actionable,
         "review_required": review,
@@ -503,15 +491,8 @@ def main() -> int:
         "historical_count": historical,
         "estate_count": estate_count,
         "life_estate_count": life_estate_count,
-        "duplicates_collapsed": dupes_dropped,
-        # NYS GIS parcel-master enrichment counts (Greene-appropriate).
         "parcel_master_enrichment_resolved": enriched,
         "parcel_master_enrichment_unresolved": unenriched,
-        # provenance breakdowns from the staged payload, surfaced for ops:
-        "owner_source_counts": payload.get("owner_source_counts", {}),
-        "enrichment_join_method_counts": payload.get(
-            "enrichment_join_method_counts", {}),
-        "owner_source_policy": payload.get("owner_source_policy", ""),
         "records": records,
     }
 

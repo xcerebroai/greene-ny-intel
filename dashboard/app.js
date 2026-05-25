@@ -183,12 +183,10 @@
     records.forEach(prep);
 
     $("topStats").innerHTML = topStatsHtml(payload);
-    if (payload.build_label && payload.build_label !== "FULL_BUILD") {
-      var b = $("banner");
-      b.hidden = false;
-      b.textContent = "PARTIAL LEAD BOARD (" + payload.build_label + ") — " +
-        (payload.build_label_reason || "");
-    }
+    // Build-status banner is intentionally NOT rendered on the
+    // client-facing board. payload.build_label / build_label_reason
+    // carry internal recon/stealth/Cloudflare commentary that is for
+    // operator + repo eyes only — never for the lead-board viewer.
 
     buildPresets();
     buildSignalFilter();
@@ -703,11 +701,9 @@
       var ins = (s.instrument_numbers || []).join(", ");
       if (ins) add(s.signal_label + " instr#", esc(ins));
     });
-    var urls = (r.source_urls || []).map(function (u) {
-      return '<a href="' + esc(u) + '" target="_blank" rel="noopener">' +
-        esc(u) + "</a>";
-    }).join("<br>");
-    if (urls) rows.push(["Source records", urls]);
+    // Source URLs are intentionally NOT rendered on the client-facing
+    // board. They live in the raw evidence ledger + the CSV export
+    // (operator/analyst surfaces) — never the lead-board UI.
 
     var grid = '<dl class="detail-grid">' + rows.map(function (kv) {
       return "<dt>" + kv[0] + "</dt><dd>" + kv[1] + "</dd>";
