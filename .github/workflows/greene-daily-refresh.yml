@@ -44,8 +44,11 @@ on:
 
 permissions:
   contents: write   # commit refreshed data/ + dashboard/ back to main
-  pages: write
-  id-token: write
+  # GitHub Pages for this repo is configured in LEGACY branch-serving
+  # mode (`build_type: legacy`, source = main / root). The commit step
+  # below is the deploy mechanism — pushing `dashboard/*` to `main`
+  # makes it live at https://xcerebroai.github.io/greene-ny-intel/
+  # dashboard/ within ~60 s. No actions/deploy-pages needed.
 
 concurrency:
   group: greene-daily-refresh
@@ -168,14 +171,23 @@ jobs:
             git push
           fi
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+      # Pages deploy IS the commit step above. Repo Pages is in legacy
+      # main-branch serving mode; `actions/deploy-pages` would conflict
+      # (it requires `build_type: workflow` + an `environment:
+      # github-pages` deployment, neither of which is set here on
+      # purpose). Live dashboard refreshes the moment the commit lands.
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dashboard
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Verify dashboard live
+        run: |
+          sleep 30   # Pages cache flush ≈ 10–60 s after a main push
+          set -e
+          status=$(curl -sS -o /dev/null -w "%{http_code}" \
+            "https://xcerebroai.github.io/greene-ny-intel/dashboard/data.json")
+          echo "data.json HTTP status: $status"
+          test "$status" = "200" || (echo "Live dashboard fetch failed"; exit 1)
+          # Lead-total sanity — must be > 100 (the AAR-only baseline)
+          live_total=$(curl -sS \
+            "https://xcerebroai.github.io/greene-ny-intel/dashboard/data.json" \
+            | python -c "import json,sys; print(json.load(sys.stdin)['lead_total'])")
+          echo "Live lead_total: $live_total"
+          test "$live_total" -gt 100
