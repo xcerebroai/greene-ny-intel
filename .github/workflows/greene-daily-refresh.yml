@@ -312,7 +312,6 @@ jobs:
           enr   = d.get("parcel_master_enrichment_resolved") or 0
           unenr = d.get("parcel_master_enrichment_unresolved") or 0
           actionable = d.get("actionable_leads") or 0
-          # Spot-check actual records: any with empty addr + Unknown owner?
           rows = d.get("records") or []
           unknown_owner = sum(1 for r in rows if (r.get("owner_name") or "").strip() == "Unknown")
           empty_addr = sum(1 for r in rows if not (r.get("property_full_address") or "").strip())
@@ -321,10 +320,22 @@ jobs:
           print(f"LIVE total={total} enriched={enr} unenriched={unenr} "
                 f"actionable={actionable} pct_owner_unknown={pct_unknown}% "
                 f"pct_empty_addr={pct_empty_addr}%")
-          # Hard gates
+          # Two-phase exit semantics. The Pages CDN can serve a STALE
+          # copy for up to ~3 min after the main-branch commit. During
+          # that window, any of the enrichment fields could still
+          # reflect the PRIOR deploy — so treat them as "retry" (rc=2),
+          # not "hard fail" (rc=3). Only once the live total has caught
+          # up to expected do we treat enrichment-broken as a real
+          # publish-time fail.
+          stale = (total != $expected_total)
           if total < $MIN_TOTAL:
-              print(f"FAIL: lead_total {total} < {$MIN_TOTAL}")
+              print(f"STALE/SHORT: lead_total {total} < {$MIN_TOTAL}")
               sys.exit(2)
+          if stale:
+              # Pages cache still serving the prior deploy. Retry.
+              print(f"STALE: live total {total} != expected $expected_total — Pages cache still flushing")
+              sys.exit(2)
+          # Live IS caught up to this run. Apply enrichment hard gates.
           if enr < $MIN_ENRICHED:
               print(f"FAIL: parcel_master_enrichment_resolved {enr} < {$MIN_ENRICHED} — "
                     "every lead would render as 'Unknown — UNKNOWN — No property address'")
@@ -338,11 +349,6 @@ jobs:
           if actionable < 500:
               print(f"FAIL: actionable_leads {actionable} < 500 — board is mostly Unknown")
               sys.exit(3)
-          # Soft: hasn't caught up to this run yet?
-          if total != $expected_total:
-              print(f"STALE: live total {total} != expected $expected_total — Pages cache still flushing")
-              sys.exit(2)
-              # exit 2 is retryable; exit 3 is hard fail
           sys.exit(0)
           PY
           }
