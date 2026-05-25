@@ -48,6 +48,18 @@
       </section>
 
       <section class="side-block">
+        <h2>Recorded / filed date</h2>
+        <select id="recordedWindow">
+          <option value="any">Any date</option>
+          <option value="0">NEW today</option>
+          <option value="7">Last 7 days</option>
+          <option value="30">Last 30 days</option>
+          <option value="90">Last 90 days</option>
+          <option value="365">Last year</option>
+        </select>
+      </section>
+
+      <section class="side-block">
         <h2>Assessed value</h2>
         <div class="range-row">
           <input type="number" id="valMin" placeholder="min $" min="0" step="10000">
@@ -90,6 +102,7 @@
           </select>
         </label>
         <span class="legend">
+          <span class="lg lg-n"></span>NEW today
           <span class="lg lg-r"></span>Foreclosure &le;21d
           <span class="lg lg-o"></span>22&ndash;60d
           <span class="lg lg-g"></span>Estate-titled

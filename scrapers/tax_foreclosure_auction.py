@@ -465,11 +465,23 @@ def run(*, output_path: Optional[Path] = None,
         discovered = discover_greene_auctions()
         stats["discovery"] = discovered
         if not discovered:
-            output_path.write_text("", encoding="utf-8")
+            # Seasonal-zero. Greene auctions run annually; outside that
+            # window discovery returns nothing. PRESERVE any existing
+            # historical JSONL on disk — the daily-refresh CI needs the
+            # last good Greene auction to survive between seasons.
+            preserved = (output_path.exists()
+                         and output_path.read_text(encoding="utf-8").strip())
+            if not preserved:
+                output_path.write_text("", encoding="utf-8")
             stats.update({
                 "seasonal_zero": True,
                 "records_written": 0,
+                "preserved_existing": bool(preserved),
                 "message": "No live or upcoming Greene auction discovered "
+                           "across AAR index pages. Greene auctions are "
+                           "seasonal (next likely Sep/Oct). Existing "
+                           "JSONL preserved." if preserved else
+                           "No live or upcoming Greene auction discovered "
                            "across AAR index pages. Greene auctions are "
                            "seasonal (next likely Sep/Oct).",
             })

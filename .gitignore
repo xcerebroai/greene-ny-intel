@@ -50,3 +50,9 @@ secrets/
 .coverage
 htmlcov/
 .tox/
+
+# Stealth-recon snapshots: HTML/PNG are bulky; the .json/.md summaries
+# committed under runs/greene_ny/recon/stealth_probe/ + stealth_recon_*.md
+# capture the actionable findings. Regenerable from the probe_*.py scripts.
+runs/greene_ny/recon/stealth_probe/*.html
+runs/greene_ny/recon/stealth_probe/*.png

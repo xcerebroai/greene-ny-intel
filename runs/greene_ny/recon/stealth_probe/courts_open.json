@@ -1,0 +1,2320 @@
+{
+  "wcs_index": {
+    "id": "webcivil_supreme_index",
+    "title": "WebCivil Supreme - Case Search",
+    "url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=I",
+    "forms": [
+      {
+        "action": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+        "method": "post",
+        "id": "search_form",
+        "name": "search_form",
+        "inputs": [
+          {
+            "tag": "input",
+            "id": "hWhichPage",
+            "name": "hWhichPage",
+            "type": "hidden",
+            "value": "I"
+          },
+          {
+            "tag": "input",
+            "id": "hCourtType",
+            "name": "hCourtType",
+            "type": "hidden",
+            "value": "Supreme"
+          },
+          {
+            "tag": "input",
+            "id": "hPageNumber",
+            "name": "hPageNumber",
+            "type": "hidden",
+            "value": "1"
+          },
+          {
+            "tag": "input",
+            "id": "hSearchKey",
+            "name": "hSearchKey",
+            "type": "hidden",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "txtIndex",
+            "name": "txtIndex",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "txtPlaintiffLname",
+            "name": "txtPlaintiffLname",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "txtAttorneyLname",
+            "name": "txtAttorneyLname",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "txtJudgeLname",
+            "name": "txtJudgeLname",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rdRepresents",
+            "type": "radio",
+            "value": "Plaintiff"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rdRepresents",
+            "type": "radio",
+            "value": "Defendant"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rdRepresents",
+            "type": "radio",
+            "value": "OtherRoles"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rdRepresents",
+            "type": "radio",
+            "value": "AllRoles"
+          },
+          {
+            "tag": "select",
+            "id": "",
+            "name": "cboCourt",
+            "type": "select-multiple",
+            "value": ""
+          },
+          {
+            "tag": "select",
+            "id": "",
+            "name": "cboYearOfFiling",
+            "type": "select-one",
+            "value": "0"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rbStatus",
+            "type": "radio",
+            "value": "open"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rbStatus",
+            "type": "radio",
+            "value": "all"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rbFutureCases",
+            "type": "radio",
+            "value": "Y"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rbFutureCases",
+            "type": "radio",
+            "value": "N"
+          },
+          {
+            "tag": "select",
+            "id": "",
+            "name": "cboSort",
+            "type": "select-one",
+            "value": "index_number"
+          },
+          {
+            "tag": "input",
+            "id": "rbOutputFormat0",
+            "name": "rbOutputFormat",
+            "type": "radio",
+            "value": "HTML"
+          },
+          {
+            "tag": "input",
+            "id": "rbOutputFormat1",
+            "name": "rbOutputFormat",
+            "type": "radio",
+            "value": "PDF"
+          },
+          {
+            "tag": "textarea",
+            "id": "g-recaptcha-response-04iisggy38ud",
+            "name": "g-recaptcha-response",
+            "type": "textarea",
+            "value": ""
+          },
+          {
+            "tag": "textarea",
+            "id": "h-captcha-response-04iisggy38ud",
+            "name": "h-captcha-response",
+            "type": "textarea",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "btnFindCase",
+            "name": "btnFindCase",
+            "type": "submit",
+            "value": "Find Case(s)"
+          }
+        ],
+        "selectOptions": [
+          {
+            "id": "",
+            "name": "cboCourt",
+            "options": [
+              {
+                "v": "1",
+                "t": "Albany County Court"
+              },
+              {
+                "v": "2",
+                "t": "Albany Supreme Court"
+              },
+              {
+                "v": "3",
+                "t": "Allegany County Court"
+              },
+              {
+                "v": "4",
+                "t": "Allegany Supreme Court"
+              },
+              {
+                "v": "124",
+                "t": "Bronx Supreme Court"
+              },
+              {
+                "v": "5",
+                "t": "Broome County Court"
+              },
+              {
+                "v": "6",
+                "t": "Broome Supreme Court"
+              },
+              {
+                "v": "7",
+                "t": "Cattaraugus County Court"
+              },
+              {
+                "v": "8",
+                "t": "Cattaraugus Supreme Court"
+              },
+              {
+                "v": "9",
+                "t": "Cayuga County Court"
+              },
+              {
+                "v": "10",
+                "t": "Cayuga Supreme Court"
+              },
+              {
+                "v": "11",
+                "t": "Chautauqua County Court"
+              },
+              {
+                "v": "12",
+                "t": "Chautauqua Supreme Court"
+              },
+              {
+                "v": "13",
+                "t": "Chemung County Court"
+              },
+              {
+                "v": "14",
+                "t": "Chemung Supreme Court"
+              },
+              {
+                "v": "15",
+                "t": "Chenango County Court"
+              },
+              {
+                "v": "16",
+                "t": "Chenango Supreme Court"
+              },
+              {
+                "v": "17",
+                "t": "Clinton County Court"
+              },
+              {
+                "v": "18",
+                "t": "Clinton Supreme Court"
+              },
+              {
+                "v": "19",
+                "t": "Columbia County Court"
+              },
+              {
+                "v": "20",
+                "t": "Columbia Supreme Court"
+              },
+              {
+                "v": "21",
+                "t": "Cortland County Court"
+              },
+              {
+                "v": "22",
+                "t": "Cortland Supreme Court"
+              },
+              {
+                "v": "23",
+                "t": "Delaware County Court"
+              },
+              {
+                "v": "24",
+                "t": "Delaware Supreme Court"
+              },
+              {
+                "v": "25",
+                "t": "Dutchess County Court"
+              },
+              {
+                "v": "26",
+                "t": "Dutchess Supreme Court"
+              },
+              {
+                "v": "27",
+                "t": "Erie County Court"
+              },
+              {
+                "v": "28",
+                "t": "Erie Supreme Court"
+              },
+              {
+                "v": "29",
+                "t": "Essex County Court"
+              },
+              {
+                "v": "30",
+                "t": "Essex Supreme Court"
+              },
+              {
+                "v": "31",
+                "t": "Franklin County Court"
+              },
+              {
+                "v": "32",
+                "t": "Franklin Supreme Court"
+              },
+              {
+                "v": "33",
+                "t": "Fulton County Court"
+              },
+              {
+                "v": "34",
+                "t": "Fulton Supreme Court"
+              },
+              {
+                "v": "35",
+                "t": "Genesee County Court"
+              },
+              {
+                "v": "36",
+                "t": "Genesee Supreme Court"
+              },
+              {
+                "v": "37",
+                "t": "Greene County Court"
+              },
+              {
+                "v": "38",
+                "t": "Greene Supreme Court"
+              },
+              {
+                "v": "39",
+                "t": "Hamilton County Court"
+              },
+              {
+                "v": "40",
+                "t": "Hamilton Supreme Court"
+              },
+              {
+                "v": "41",
+                "t": "Herkimer County Court"
+              },
+              {
+                "v": "42",
+                "t": "Herkimer Supreme Court"
+              },
+              {
+                "v": "43",
+                "t": "Jefferson County Court"
+              },
+              {
+                "v": "44",
+                "t": "Jefferson Supreme Court"
+              },
+              {
+                "v": "46",
+                "t": "Kings Supreme Court"
+              },
+              {
+                "v": "47",
+                "t": "Lewis County Court"
+              },
+              {
+                "v": "48",
+                "t": "Lewis Supreme Court"
+              },
+              {
+                "v": "49",
+                "t": "Livingston County Court"
+              },
+              {
+                "v": "50",
+                "t": "Livingston Supreme Court"
+              },
+              {
+                "v": "51",
+                "t": "Madison County Court"
+              },
+              {
+                "v": "52",
+                "t": "Madison Supreme Court"
+              },
+              {
+                "v": "53",
+                "t": "Monroe County Court"
+              },
+              {
+                "v": "54",
+                "t": "Monroe Supreme Court"
+              },
+              {
+                "v": "55",
+                "t": "Montgomery County Court"
+              },
+              {
+                "v": "56",
+                "t": "Montgomery Supreme Court"
+              },
+              {
+                "v": "57",
+                "t": "Nassau County Court"
+              },
+              {
+                "v": "58",
+                "t": "Nassau Supreme Court"
+              },
+              {
+                "v": "60",
+                "t": "New York Supreme Court"
+              },
+              {
+                "v": "61",
+                "t": "Niagara County Court"
+              },
+              {
+                "v": "62",
+                "t": "Niagara Supreme Court"
+              },
+              {
+                "v": "63",
+                "t": "Oneida County Court"
+              },
+              {
+                "v": "64",
+                "t": "Oneida Supreme Court"
+              },
+              {
+                "v": "65",
+                "t": "Onondaga County Court"
+              },
+              {
+                "v": "66",
+                "t": "Onondaga Supreme Court"
+              },
+              {
+                "v": "67",
+                "t": "Ontario County Court"
+              },
+              {
+                "v": "68",
+                "t": "Ontario Supreme Court"
+              },
+              {
+                "v": "69",
+                "t": "Orange County Court"
+              },
+              {
+                "v": "70",
+                "t": "Orange Supreme Court"
+              },
+              {
+                "v": "71",
+                "t": "Orleans County Court"
+              },
+              {
+                "v": "72",
+                "t": "Orleans Supreme Court"
+              },
+              {
+                "v": "73",
+                "t": "Oswego County Court"
+              },
+              {
+                "v": "74",
+                "t": "Oswego Supreme Court"
+              },
+              {
+                "v": "75",
+                "t": "Otsego County Court"
+              },
+              {
+                "v": "76",
+                "t": "Otsego Supreme Court"
+              },
+              {
+                "v": "77",
+                "t": "Putnam County Court"
+              },
+              {
+                "v": "78",
+                "t": "Putnam Supreme Court"
+              },
+              {
+                "v": "80",
+                "t": "Queens Supreme Court"
+              },
+              {
+                "v": "81",
+                "t": "Rensselaer County Court"
+              },
+              {
+                "v": "82",
+                "t": "Rensselaer Supreme Court"
+              },
+              {
+                "v": "84",
+                "t": "Richmond Supreme Court"
+              },
+              {
+                "v": "85",
+                "t": "Rockland County Court"
+              },
+              {
+                "v": "86",
+                "t": "Rockland Supreme Court"
+              },
+              {
+                "v": "89",
+                "t": "Saratoga County Court"
+              },
+              {
+                "v": "90",
+                "t": "Saratoga Supreme Court"
+              },
+              {
+                "v": "91",
+                "t": "Schenectady County Court"
+              },
+              {
+                "v": "92",
+                "t": "Schenectady Supreme Court"
+              },
+              {
+                "v": "93",
+                "t": "Schoharie County Court"
+              },
+              {
+                "v": "94",
+                "t": "Schoharie Supreme Court"
+              },
+              {
+                "v": "95",
+                "t": "Schuyler County Court"
+              },
+              {
+                "v": "96",
+                "t": "Schuyler Supreme Court"
+              },
+              {
+                "v": "97",
+                "t": "Seneca County Court"
+              },
+              {
+                "v": "98",
+                "t": "Seneca Supreme Court"
+              },
+              {
+                "v": "87",
+                "t": "St. Lawrence County Court"
+              },
+              {
+                "v": "88",
+                "t": "St. Lawrence Supreme Court"
+              },
+              {
+                "v": "99",
+                "t": "Steuben County Court"
+              },
+              {
+                "v": "100",
+                "t": "Steuben Supreme Court"
+              },
+              {
+                "v": "101",
+                "t": "Suffolk County Court"
+              },
+              {
+                "v": "102",
+                "t": "Suffolk Supreme Court"
+              },
+              {
+                "v": "103",
+                "t": "Sullivan County Court"
+              },
+              {
+                "v": "104",
+                "t": "Sullivan Supreme Court"
+              },
+              {
+                "v": "105",
+                "t": "Tioga County Court"
+              },
+              {
+                "v": "106",
+                "t": "Tioga Supreme Court"
+              },
+              {
+                "v": "107",
+                "t": "Tompkins County Court"
+              },
+              {
+                "v": "108",
+                "t": "Tompkins Supreme Court"
+              },
+              {
+                "v": "109",
+                "t": "Ulster County Court"
+              },
+              {
+                "v": "110",
+                "t": "Ulster Supreme Court"
+              },
+              {
+                "v": "111",
+                "t": "Warren County Court"
+              },
+              {
+                "v": "112",
+                "t": "Warren Supreme Court"
+              },
+              {
+                "v": "113",
+                "t": "Washington County Court"
+              },
+              {
+                "v": "114",
+                "t": "Washington Supreme Court"
+              },
+              {
+                "v": "115",
+                "t": "Wayne County Court"
+              },
+              {
+                "v": "116",
+                "t": "Wayne Supreme Court"
+              },
+              {
+                "v": "117",
+                "t": "Westchester County Court"
+              },
+              {
+                "v": "118",
+                "t": "Westchester Supreme Court"
+              },
+              {
+                "v": "119",
+                "t": "Wyoming County Court"
+              },
+              {
+                "v": "120",
+                "t": "Wyoming Supreme Court"
+              },
+              {
+                "v": "121",
+                "t": "Yates County Court"
+              },
+              {
+                "v": "122",
+                "t": "Yates Supreme Court"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "cboYearOfFiling",
+            "options": [
+              {
+                "v": "0",
+                "t": ""
+              },
+              {
+                "v": "2026",
+                "t": "2026"
+              },
+              {
+                "v": "2025",
+                "t": "2025"
+              },
+              {
+                "v": "2024",
+                "t": "2024"
+              },
+              {
+                "v": "2023",
+                "t": "2023"
+              },
+              {
+                "v": "2022",
+                "t": "2022"
+              },
+              {
+                "v": "2021",
+                "t": "2021"
+              },
+              {
+                "v": "2020",
+                "t": "2020"
+              },
+              {
+                "v": "2019",
+                "t": "2019"
+              },
+              {
+                "v": "2018",
+                "t": "2018"
+              },
+              {
+                "v": "2017",
+                "t": "2017"
+              },
+              {
+                "v": "2016",
+                "t": "2016"
+              },
+              {
+                "v": "2015",
+                "t": "2015"
+              },
+              {
+                "v": "2014",
+                "t": "2014"
+              },
+              {
+                "v": "2013",
+                "t": "2013"
+              },
+              {
+                "v": "2012",
+                "t": "2012"
+              },
+              {
+                "v": "2011",
+                "t": "2011"
+              },
+              {
+                "v": "2010",
+                "t": "2010"
+              },
+              {
+                "v": "2009",
+                "t": "2009"
+              },
+              {
+                "v": "2008",
+                "t": "2008"
+              },
+              {
+                "v": "2007",
+                "t": "2007"
+              },
+              {
+                "v": "2006",
+                "t": "2006"
+              },
+              {
+                "v": "2005",
+                "t": "2005"
+              },
+              {
+                "v": "2004",
+                "t": "2004"
+              },
+              {
+                "v": "2003",
+                "t": "2003"
+              },
+              {
+                "v": "2002",
+                "t": "2002"
+              },
+              {
+                "v": "2001",
+                "t": "2001"
+              },
+              {
+                "v": "2000",
+                "t": "2000"
+              },
+              {
+                "v": "1999",
+                "t": "1999"
+              },
+              {
+                "v": "1998",
+                "t": "1998"
+              },
+              {
+                "v": "1997",
+                "t": "1997"
+              },
+              {
+                "v": "1996",
+                "t": "1996"
+              },
+              {
+                "v": "1995",
+                "t": "1995"
+              },
+              {
+                "v": "1994",
+                "t": "1994"
+              },
+              {
+                "v": "1993",
+                "t": "1993"
+              },
+              {
+                "v": "1992",
+                "t": "1992"
+              },
+              {
+                "v": "1991",
+                "t": "1991"
+              },
+              {
+                "v": "1990",
+                "t": "1990"
+              },
+              {
+                "v": "1989",
+                "t": "1989"
+              },
+              {
+                "v": "1988",
+                "t": "1988"
+              },
+              {
+                "v": "1987",
+                "t": "1987"
+              },
+              {
+                "v": "1986",
+                "t": "1986"
+              },
+              {
+                "v": "1985",
+                "t": "1985"
+              },
+              {
+                "v": "1984",
+                "t": "1984"
+              },
+              {
+                "v": "1983",
+                "t": "1983"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "cboSort",
+            "options": [
+              {
+                "v": "index_number",
+                "t": "Year Filed/Index Number"
+              },
+              {
+                "v": "plaintiff",
+                "t": "Plaintiff/Petitioner"
+              },
+              {
+                "v": "defendant",
+                "t": "Defendant/Respondent"
+              },
+              {
+                "v": "court",
+                "t": "Court"
+              },
+              {
+                "v": "appearance_date",
+                "t": "Appearance Date"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "wcs_party": {
+    "id": "webcivil_supreme_party",
+    "title_initial": "WebCivil Supreme - Case Search",
+    "forms_initial": [
+      {
+        "action": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+        "method": "post",
+        "id": "search_form",
+        "name": "search_form",
+        "inputs": [
+          {
+            "tag": "input",
+            "id": "hWhichPage",
+            "name": "hWhichPage",
+            "type": "hidden",
+            "value": "P"
+          },
+          {
+            "tag": "input",
+            "id": "hCourtType",
+            "name": "hCourtType",
+            "type": "hidden",
+            "value": "Supreme"
+          },
+          {
+            "tag": "input",
+            "id": "hPageNumber",
+            "name": "hPageNumber",
+            "type": "hidden",
+            "value": "1"
+          },
+          {
+            "tag": "input",
+            "id": "hSearchKey",
+            "name": "hSearchKey",
+            "type": "hidden",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "txtIndex",
+            "name": "txtIndex",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "txtPlaintiffLname",
+            "name": "txtPlaintiffLname",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "txtAttorneyLname",
+            "name": "txtAttorneyLname",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "txtJudgeLname",
+            "name": "txtJudgeLname",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rdRepresents",
+            "type": "radio",
+            "value": "Plaintiff"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rdRepresents",
+            "type": "radio",
+            "value": "Defendant"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rdRepresents",
+            "type": "radio",
+            "value": "OtherRoles"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rdRepresents",
+            "type": "radio",
+            "value": "AllRoles"
+          },
+          {
+            "tag": "select",
+            "id": "",
+            "name": "cboCourt",
+            "type": "select-multiple",
+            "value": ""
+          },
+          {
+            "tag": "select",
+            "id": "",
+            "name": "cboYearOfFiling",
+            "type": "select-one",
+            "value": "0"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rbStatus",
+            "type": "radio",
+            "value": "open"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rbStatus",
+            "type": "radio",
+            "value": "all"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rbFutureCases",
+            "type": "radio",
+            "value": "Y"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "rbFutureCases",
+            "type": "radio",
+            "value": "N"
+          },
+          {
+            "tag": "select",
+            "id": "",
+            "name": "cboSort",
+            "type": "select-one",
+            "value": "index_number"
+          },
+          {
+            "tag": "input",
+            "id": "rbOutputFormat0",
+            "name": "rbOutputFormat",
+            "type": "radio",
+            "value": "HTML"
+          },
+          {
+            "tag": "input",
+            "id": "rbOutputFormat1",
+            "name": "rbOutputFormat",
+            "type": "radio",
+            "value": "PDF"
+          },
+          {
+            "tag": "textarea",
+            "id": "g-recaptcha-response-0hxwshjlsqa",
+            "name": "g-recaptcha-response",
+            "type": "textarea",
+            "value": ""
+          },
+          {
+            "tag": "textarea",
+            "id": "h-captcha-response-0hxwshjlsqa",
+            "name": "h-captcha-response",
+            "type": "textarea",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "btnFindCase",
+            "name": "btnFindCase",
+            "type": "submit",
+            "value": "Find Case(s)"
+          }
+        ],
+        "selectOptions": [
+          {
+            "id": "",
+            "name": "cboCourt",
+            "options": [
+              {
+                "v": "1",
+                "t": "Albany County Court"
+              },
+              {
+                "v": "2",
+                "t": "Albany Supreme Court"
+              },
+              {
+                "v": "3",
+                "t": "Allegany County Court"
+              },
+              {
+                "v": "4",
+                "t": "Allegany Supreme Court"
+              },
+              {
+                "v": "124",
+                "t": "Bronx Supreme Court"
+              },
+              {
+                "v": "5",
+                "t": "Broome County Court"
+              },
+              {
+                "v": "6",
+                "t": "Broome Supreme Court"
+              },
+              {
+                "v": "7",
+                "t": "Cattaraugus County Court"
+              },
+              {
+                "v": "8",
+                "t": "Cattaraugus Supreme Court"
+              },
+              {
+                "v": "9",
+                "t": "Cayuga County Court"
+              },
+              {
+                "v": "10",
+                "t": "Cayuga Supreme Court"
+              },
+              {
+                "v": "11",
+                "t": "Chautauqua County Court"
+              },
+              {
+                "v": "12",
+                "t": "Chautauqua Supreme Court"
+              },
+              {
+                "v": "13",
+                "t": "Chemung County Court"
+              },
+              {
+                "v": "14",
+                "t": "Chemung Supreme Court"
+              },
+              {
+                "v": "15",
+                "t": "Chenango County Court"
+              },
+              {
+                "v": "16",
+                "t": "Chenango Supreme Court"
+              },
+              {
+                "v": "17",
+                "t": "Clinton County Court"
+              },
+              {
+                "v": "18",
+                "t": "Clinton Supreme Court"
+              },
+              {
+                "v": "19",
+                "t": "Columbia County Court"
+              },
+              {
+                "v": "20",
+                "t": "Columbia Supreme Court"
+              },
+              {
+                "v": "21",
+                "t": "Cortland County Court"
+              },
+              {
+                "v": "22",
+                "t": "Cortland Supreme Court"
+              },
+              {
+                "v": "23",
+                "t": "Delaware County Court"
+              },
+              {
+                "v": "24",
+                "t": "Delaware Supreme Court"
+              },
+              {
+                "v": "25",
+                "t": "Dutchess County Court"
+              },
+              {
+                "v": "26",
+                "t": "Dutchess Supreme Court"
+              },
+              {
+                "v": "27",
+                "t": "Erie County Court"
+              },
+              {
+                "v": "28",
+                "t": "Erie Supreme Court"
+              },
+              {
+                "v": "29",
+                "t": "Essex County Court"
+              },
+              {
+                "v": "30",
+                "t": "Essex Supreme Court"
+              },
+              {
+                "v": "31",
+                "t": "Franklin County Court"
+              },
+              {
+                "v": "32",
+                "t": "Franklin Supreme Court"
+              },
+              {
+                "v": "33",
+                "t": "Fulton County Court"
+              },
+              {
+                "v": "34",
+                "t": "Fulton Supreme Court"
+              },
+              {
+                "v": "35",
+                "t": "Genesee County Court"
+              },
+              {
+                "v": "36",
+                "t": "Genesee Supreme Court"
+              },
+              {
+                "v": "37",
+                "t": "Greene County Court"
+              },
+              {
+                "v": "38",
+                "t": "Greene Supreme Court"
+              },
+              {
+                "v": "39",
+                "t": "Hamilton County Court"
+              },
+              {
+                "v": "40",
+                "t": "Hamilton Supreme Court"
+              },
+              {
+                "v": "41",
+                "t": "Herkimer County Court"
+              },
+              {
+                "v": "42",
+                "t": "Herkimer Supreme Court"
+              },
+              {
+                "v": "43",
+                "t": "Jefferson County Court"
+              },
+              {
+                "v": "44",
+                "t": "Jefferson Supreme Court"
+              },
+              {
+                "v": "46",
+                "t": "Kings Supreme Court"
+              },
+              {
+                "v": "47",
+                "t": "Lewis County Court"
+              },
+              {
+                "v": "48",
+                "t": "Lewis Supreme Court"
+              },
+              {
+                "v": "49",
+                "t": "Livingston County Court"
+              },
+              {
+                "v": "50",
+                "t": "Livingston Supreme Court"
+              },
+              {
+                "v": "51",
+                "t": "Madison County Court"
+              },
+              {
+                "v": "52",
+                "t": "Madison Supreme Court"
+              },
+              {
+                "v": "53",
+                "t": "Monroe County Court"
+              },
+              {
+                "v": "54",
+                "t": "Monroe Supreme Court"
+              },
+              {
+                "v": "55",
+                "t": "Montgomery County Court"
+              },
+              {
+                "v": "56",
+                "t": "Montgomery Supreme Court"
+              },
+              {
+                "v": "57",
+                "t": "Nassau County Court"
+              },
+              {
+                "v": "58",
+                "t": "Nassau Supreme Court"
+              },
+              {
+                "v": "60",
+                "t": "New York Supreme Court"
+              },
+              {
+                "v": "61",
+                "t": "Niagara County Court"
+              },
+              {
+                "v": "62",
+                "t": "Niagara Supreme Court"
+              },
+              {
+                "v": "63",
+                "t": "Oneida County Court"
+              },
+              {
+                "v": "64",
+                "t": "Oneida Supreme Court"
+              },
+              {
+                "v": "65",
+                "t": "Onondaga County Court"
+              },
+              {
+                "v": "66",
+                "t": "Onondaga Supreme Court"
+              },
+              {
+                "v": "67",
+                "t": "Ontario County Court"
+              },
+              {
+                "v": "68",
+                "t": "Ontario Supreme Court"
+              },
+              {
+                "v": "69",
+                "t": "Orange County Court"
+              },
+              {
+                "v": "70",
+                "t": "Orange Supreme Court"
+              },
+              {
+                "v": "71",
+                "t": "Orleans County Court"
+              },
+              {
+                "v": "72",
+                "t": "Orleans Supreme Court"
+              },
+              {
+                "v": "73",
+                "t": "Oswego County Court"
+              },
+              {
+                "v": "74",
+                "t": "Oswego Supreme Court"
+              },
+              {
+                "v": "75",
+                "t": "Otsego County Court"
+              },
+              {
+                "v": "76",
+                "t": "Otsego Supreme Court"
+              },
+              {
+                "v": "77",
+                "t": "Putnam County Court"
+              },
+              {
+                "v": "78",
+                "t": "Putnam Supreme Court"
+              },
+              {
+                "v": "80",
+                "t": "Queens Supreme Court"
+              },
+              {
+                "v": "81",
+                "t": "Rensselaer County Court"
+              },
+              {
+                "v": "82",
+                "t": "Rensselaer Supreme Court"
+              },
+              {
+                "v": "84",
+                "t": "Richmond Supreme Court"
+              },
+              {
+                "v": "85",
+                "t": "Rockland County Court"
+              },
+              {
+                "v": "86",
+                "t": "Rockland Supreme Court"
+              },
+              {
+                "v": "89",
+                "t": "Saratoga County Court"
+              },
+              {
+                "v": "90",
+                "t": "Saratoga Supreme Court"
+              },
+              {
+                "v": "91",
+                "t": "Schenectady County Court"
+              },
+              {
+                "v": "92",
+                "t": "Schenectady Supreme Court"
+              },
+              {
+                "v": "93",
+                "t": "Schoharie County Court"
+              },
+              {
+                "v": "94",
+                "t": "Schoharie Supreme Court"
+              },
+              {
+                "v": "95",
+                "t": "Schuyler County Court"
+              },
+              {
+                "v": "96",
+                "t": "Schuyler Supreme Court"
+              },
+              {
+                "v": "97",
+                "t": "Seneca County Court"
+              },
+              {
+                "v": "98",
+                "t": "Seneca Supreme Court"
+              },
+              {
+                "v": "87",
+                "t": "St. Lawrence County Court"
+              },
+              {
+                "v": "88",
+                "t": "St. Lawrence Supreme Court"
+              },
+              {
+                "v": "99",
+                "t": "Steuben County Court"
+              },
+              {
+                "v": "100",
+                "t": "Steuben Supreme Court"
+              },
+              {
+                "v": "101",
+                "t": "Suffolk County Court"
+              },
+              {
+                "v": "102",
+                "t": "Suffolk Supreme Court"
+              },
+              {
+                "v": "103",
+                "t": "Sullivan County Court"
+              },
+              {
+                "v": "104",
+                "t": "Sullivan Supreme Court"
+              },
+              {
+                "v": "105",
+                "t": "Tioga County Court"
+              },
+              {
+                "v": "106",
+                "t": "Tioga Supreme Court"
+              },
+              {
+                "v": "107",
+                "t": "Tompkins County Court"
+              },
+              {
+                "v": "108",
+                "t": "Tompkins Supreme Court"
+              },
+              {
+                "v": "109",
+                "t": "Ulster County Court"
+              },
+              {
+                "v": "110",
+                "t": "Ulster Supreme Court"
+              },
+              {
+                "v": "111",
+                "t": "Warren County Court"
+              },
+              {
+                "v": "112",
+                "t": "Warren Supreme Court"
+              },
+              {
+                "v": "113",
+                "t": "Washington County Court"
+              },
+              {
+                "v": "114",
+                "t": "Washington Supreme Court"
+              },
+              {
+                "v": "115",
+                "t": "Wayne County Court"
+              },
+              {
+                "v": "116",
+                "t": "Wayne Supreme Court"
+              },
+              {
+                "v": "117",
+                "t": "Westchester County Court"
+              },
+              {
+                "v": "118",
+                "t": "Westchester Supreme Court"
+              },
+              {
+                "v": "119",
+                "t": "Wyoming County Court"
+              },
+              {
+                "v": "120",
+                "t": "Wyoming Supreme Court"
+              },
+              {
+                "v": "121",
+                "t": "Yates County Court"
+              },
+              {
+                "v": "122",
+                "t": "Yates Supreme Court"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "cboYearOfFiling",
+            "options": [
+              {
+                "v": "0",
+                "t": ""
+              },
+              {
+                "v": "2026",
+                "t": "2026"
+              },
+              {
+                "v": "2025",
+                "t": "2025"
+              },
+              {
+                "v": "2024",
+                "t": "2024"
+              },
+              {
+                "v": "2023",
+                "t": "2023"
+              },
+              {
+                "v": "2022",
+                "t": "2022"
+              },
+              {
+                "v": "2021",
+                "t": "2021"
+              },
+              {
+                "v": "2020",
+                "t": "2020"
+              },
+              {
+                "v": "2019",
+                "t": "2019"
+              },
+              {
+                "v": "2018",
+                "t": "2018"
+              },
+              {
+                "v": "2017",
+                "t": "2017"
+              },
+              {
+                "v": "2016",
+                "t": "2016"
+              },
+              {
+                "v": "2015",
+                "t": "2015"
+              },
+              {
+                "v": "2014",
+                "t": "2014"
+              },
+              {
+                "v": "2013",
+                "t": "2013"
+              },
+              {
+                "v": "2012",
+                "t": "2012"
+              },
+              {
+                "v": "2011",
+                "t": "2011"
+              },
+              {
+                "v": "2010",
+                "t": "2010"
+              },
+              {
+                "v": "2009",
+                "t": "2009"
+              },
+              {
+                "v": "2008",
+                "t": "2008"
+              },
+              {
+                "v": "2007",
+                "t": "2007"
+              },
+              {
+                "v": "2006",
+                "t": "2006"
+              },
+              {
+                "v": "2005",
+                "t": "2005"
+              },
+              {
+                "v": "2004",
+                "t": "2004"
+              },
+              {
+                "v": "2003",
+                "t": "2003"
+              },
+              {
+                "v": "2002",
+                "t": "2002"
+              },
+              {
+                "v": "2001",
+                "t": "2001"
+              },
+              {
+                "v": "2000",
+                "t": "2000"
+              },
+              {
+                "v": "1999",
+                "t": "1999"
+              },
+              {
+                "v": "1998",
+                "t": "1998"
+              },
+              {
+                "v": "1997",
+                "t": "1997"
+              },
+              {
+                "v": "1996",
+                "t": "1996"
+              },
+              {
+                "v": "1995",
+                "t": "1995"
+              },
+              {
+                "v": "1994",
+                "t": "1994"
+              },
+              {
+                "v": "1993",
+                "t": "1993"
+              },
+              {
+                "v": "1992",
+                "t": "1992"
+              },
+              {
+                "v": "1991",
+                "t": "1991"
+              },
+              {
+                "v": "1990",
+                "t": "1990"
+              },
+              {
+                "v": "1989",
+                "t": "1989"
+              },
+              {
+                "v": "1988",
+                "t": "1988"
+              },
+              {
+                "v": "1987",
+                "t": "1987"
+              },
+              {
+                "v": "1986",
+                "t": "1986"
+              },
+              {
+                "v": "1985",
+                "t": "1985"
+              },
+              {
+                "v": "1984",
+                "t": "1984"
+              },
+              {
+                "v": "1983",
+                "t": "1983"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "cboSort",
+            "options": [
+              {
+                "v": "index_number",
+                "t": "Year Filed/Index Number"
+              },
+              {
+                "v": "plaintiff",
+                "t": "Plaintiff/Petitioner"
+              },
+              {
+                "v": "defendant",
+                "t": "Defendant/Respondent"
+              },
+              {
+                "v": "court",
+                "t": "Court"
+              },
+              {
+                "v": "appearance_date",
+                "t": "Appearance Date"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "wcs_documents": {
+    "id": "webcivil_supreme_documents",
+    "title": "WebCivil Supreme - Document Search",
+    "url": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch",
+    "forms": [
+      {
+        "action": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch",
+        "method": "post",
+        "id": "doc_form",
+        "name": "doc_form",
+        "inputs": [
+          {
+            "tag": "input",
+            "id": "btnClose",
+            "name": "btnClose",
+            "type": "hidden",
+            "value": "no"
+          },
+          {
+            "tag": "input",
+            "id": "txtIndexNo",
+            "name": "txtIndexNo",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "select",
+            "id": "",
+            "name": "cboCourt",
+            "type": "select-one",
+            "value": "\u00a0"
+          },
+          {
+            "tag": "textarea",
+            "id": "g-recaptcha-response-0udsoe62h9kb",
+            "name": "g-recaptcha-response",
+            "type": "textarea",
+            "value": ""
+          },
+          {
+            "tag": "textarea",
+            "id": "h-captcha-response-0udsoe62h9kb",
+            "name": "h-captcha-response",
+            "type": "textarea",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "btnFindDecision",
+            "type": "submit",
+            "value": "Find Decisions"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "btnFindDecision",
+            "type": "button",
+            "value": "Search for text in On-Line Decisions"
+          }
+        ],
+        "selectOptions": [
+          {
+            "id": "",
+            "name": "cboCourt",
+            "options": [
+              {
+                "v": "\u00a0",
+                "t": ""
+              },
+              {
+                "v": "1",
+                "t": "Albany County Court"
+              },
+              {
+                "v": "2",
+                "t": "Albany Supreme Court"
+              },
+              {
+                "v": "3",
+                "t": "Allegany County Court"
+              },
+              {
+                "v": "4",
+                "t": "Allegany Supreme Court"
+              },
+              {
+                "v": "124",
+                "t": "Bronx Supreme Court"
+              },
+              {
+                "v": "5",
+                "t": "Broome County Court"
+              },
+              {
+                "v": "6",
+                "t": "Broome Supreme Court"
+              },
+              {
+                "v": "7",
+                "t": "Cattaraugus County Court"
+              },
+              {
+                "v": "8",
+                "t": "Cattaraugus Supreme Court"
+              },
+              {
+                "v": "9",
+                "t": "Cayuga County Court"
+              },
+              {
+                "v": "10",
+                "t": "Cayuga Supreme Court"
+              },
+              {
+                "v": "11",
+                "t": "Chautauqua County Court"
+              },
+              {
+                "v": "12",
+                "t": "Chautauqua Supreme Court"
+              },
+              {
+                "v": "13",
+                "t": "Chemung County Court"
+              },
+              {
+                "v": "14",
+                "t": "Chemung Supreme Court"
+              },
+              {
+                "v": "15",
+                "t": "Chenango County Court"
+              },
+              {
+                "v": "16",
+                "t": "Chenango Supreme Court"
+              },
+              {
+                "v": "17",
+                "t": "Clinton County Court"
+              },
+              {
+                "v": "18",
+                "t": "Clinton Supreme Court"
+              },
+              {
+                "v": "19",
+                "t": "Columbia County Court"
+              },
+              {
+                "v": "20",
+                "t": "Columbia Supreme Court"
+              },
+              {
+                "v": "21",
+                "t": "Cortland County Court"
+              },
+              {
+                "v": "22",
+                "t": "Cortland Supreme Court"
+              },
+              {
+                "v": "23",
+                "t": "Delaware County Court"
+              },
+              {
+                "v": "24",
+                "t": "Delaware Supreme Court"
+              },
+              {
+                "v": "25",
+                "t": "Dutchess County Court"
+              },
+              {
+                "v": "26",
+                "t": "Dutchess Supreme Court"
+              },
+              {
+                "v": "27",
+                "t": "Erie County Court"
+              },
+              {
+                "v": "28",
+                "t": "Erie Supreme Court"
+              },
+              {
+                "v": "29",
+                "t": "Essex County Court"
+              },
+              {
+                "v": "30",
+                "t": "Essex Supreme Court"
+              },
+              {
+                "v": "31",
+                "t": "Franklin County Court"
+              },
+              {
+                "v": "32",
+                "t": "Franklin Supreme Court"
+              },
+              {
+                "v": "33",
+                "t": "Fulton County Court"
+              },
+              {
+                "v": "34",
+                "t": "Fulton Supreme Court"
+              },
+              {
+                "v": "35",
+                "t": "Genesee County Court"
+              },
+              {
+                "v": "36",
+                "t": "Genesee Supreme Court"
+              },
+              {
+                "v": "37",
+                "t": "Greene County Court"
+              },
+              {
+                "v": "38",
+                "t": "Greene Supreme Court"
+              },
+              {
+                "v": "39",
+                "t": "Hamilton County Court"
+              },
+              {
+                "v": "40",
+                "t": "Hamilton Supreme Court"
+              },
+              {
+                "v": "41",
+                "t": "Herkimer County Court"
+              },
+              {
+                "v": "42",
+                "t": "Herkimer Supreme Court"
+              },
+              {
+                "v": "43",
+                "t": "Jefferson County Court"
+              },
+              {
+                "v": "44",
+                "t": "Jefferson Supreme Court"
+              },
+              {
+                "v": "46",
+                "t": "Kings Supreme Court"
+              },
+              {
+                "v": "47",
+                "t": "Lewis County Court"
+              },
+              {
+                "v": "48",
+                "t": "Lewis Supreme Court"
+              },
+              {
+                "v": "49",
+                "t": "Livingston County Court"
+              },
+              {
+                "v": "50",
+                "t": "Livingston Supreme Court"
+              },
+              {
+                "v": "51",
+                "t": "Madison County Court"
+              },
+              {
+                "v": "52",
+                "t": "Madison Supreme Court"
+              },
+              {
+                "v": "53",
+                "t": "Monroe County Court"
+              },
+              {
+                "v": "54",
+                "t": "Monroe Supreme Court"
+              },
+              {
+                "v": "55",
+                "t": "Montgomery County Court"
+              },
+              {
+                "v": "56",
+                "t": "Montgomery Supreme Court"
+              },
+              {
+                "v": "57",
+                "t": "Nassau County Court"
+              },
+              {
+                "v": "58",
+                "t": "Nassau Supreme Court"
+              },
+              {
+                "v": "60",
+                "t": "New York Supreme Court"
+              },
+              {
+                "v": "61",
+                "t": "Niagara County Court"
+              },
+              {
+                "v": "62",
+                "t": "Niagara Supreme Court"
+              },
+              {
+                "v": "63",
+                "t": "Oneida County Court"
+              },
+              {
+                "v": "64",
+                "t": "Oneida Supreme Court"
+              },
+              {
+                "v": "65",
+                "t": "Onondaga County Court"
+              },
+              {
+                "v": "66",
+                "t": "Onondaga Supreme Court"
+              },
+              {
+                "v": "67",
+                "t": "Ontario County Court"
+              },
+              {
+                "v": "68",
+                "t": "Ontario Supreme Court"
+              },
+              {
+                "v": "69",
+                "t": "Orange County Court"
+              },
+              {
+                "v": "70",
+                "t": "Orange Supreme Court"
+              },
+              {
+                "v": "71",
+                "t": "Orleans County Court"
+              },
+              {
+                "v": "72",
+                "t": "Orleans Supreme Court"
+              },
+              {
+                "v": "73",
+                "t": "Oswego County Court"
+              },
+              {
+                "v": "74",
+                "t": "Oswego Supreme Court"
+              },
+              {
+                "v": "75",
+                "t": "Otsego County Court"
+              },
+              {
+                "v": "76",
+                "t": "Otsego Supreme Court"
+              },
+              {
+                "v": "77",
+                "t": "Putnam County Court"
+              },
+              {
+                "v": "78",
+                "t": "Putnam Supreme Court"
+              },
+              {
+                "v": "80",
+                "t": "Queens Supreme Court"
+              },
+              {
+                "v": "81",
+                "t": "Rensselaer County Court"
+              },
+              {
+                "v": "82",
+                "t": "Rensselaer Supreme Court"
+              },
+              {
+                "v": "84",
+                "t": "Richmond Supreme Court"
+              },
+              {
+                "v": "85",
+                "t": "Rockland County Court"
+              },
+              {
+                "v": "86",
+                "t": "Rockland Supreme Court"
+              },
+              {
+                "v": "89",
+                "t": "Saratoga County Court"
+              },
+              {
+                "v": "90",
+                "t": "Saratoga Supreme Court"
+              },
+              {
+                "v": "91",
+                "t": "Schenectady County Court"
+              },
+              {
+                "v": "92",
+                "t": "Schenectady Supreme Court"
+              },
+              {
+                "v": "93",
+                "t": "Schoharie County Court"
+              },
+              {
+                "v": "94",
+                "t": "Schoharie Supreme Court"
+              },
+              {
+                "v": "95",
+                "t": "Schuyler County Court"
+              },
+              {
+                "v": "96",
+                "t": "Schuyler Supreme Court"
+              },
+              {
+                "v": "97",
+                "t": "Seneca County Court"
+              },
+              {
+                "v": "98",
+                "t": "Seneca Supreme Court"
+              },
+              {
+                "v": "87",
+                "t": "St. Lawrence County Court"
+              },
+              {
+                "v": "88",
+                "t": "St. Lawrence Supreme Court"
+              },
+              {
+                "v": "99",
+                "t": "Steuben County Court"
+              },
+              {
+                "v": "100",
+                "t": "Steuben Supreme Court"
+              },
+              {
+                "v": "101",
+                "t": "Suffolk County Court"
+              },
+              {
+                "v": "102",
+                "t": "Suffolk Supreme Court"
+              },
+              {
+                "v": "103",
+                "t": "Sullivan County Court"
+              },
+              {
+                "v": "104",
+                "t": "Sullivan Supreme Court"
+              },
+              {
+                "v": "105",
+                "t": "Tioga County Court"
+              },
+              {
+                "v": "106",
+                "t": "Tioga Supreme Court"
+              },
+              {
+                "v": "107",
+                "t": "Tompkins County Court"
+              },
+              {
+                "v": "108",
+                "t": "Tompkins Supreme Court"
+              },
+              {
+                "v": "109",
+                "t": "Ulster County Court"
+              },
+              {
+                "v": "110",
+                "t": "Ulster Supreme Court"
+              },
+              {
+                "v": "111",
+                "t": "Warren County Court"
+              },
+              {
+                "v": "112",
+                "t": "Warren Supreme Court"
+              },
+              {
+                "v": "113",
+                "t": "Washington County Court"
+              },
+              {
+                "v": "114",
+                "t": "Washington Supreme Court"
+              },
+              {
+                "v": "115",
+                "t": "Wayne County Court"
+              },
+              {
+                "v": "116",
+                "t": "Wayne Supreme Court"
+              },
+              {
+                "v": "117",
+                "t": "Westchester County Court"
+              },
+              {
+                "v": "118",
+                "t": "Westchester Supreme Court"
+              },
+              {
+                "v": "119",
+                "t": "Wyoming County Court"
+              },
+              {
+                "v": "120",
+                "t": "Wyoming Supreme Court"
+              },
+              {
+                "v": "121",
+                "t": "Yates County Court"
+              },
+              {
+                "v": "122",
+                "t": "Yates Supreme Court"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "websurrogate": {
+    "id": "websurrogate",
+    "title_welcome": "Welcome",
+    "url_welcome": "https://websurrogates.nycourts.gov/Home/Welcome/?ReturnUrl=%2F",
+    "title_search": "Just a moment...",
+    "url_search": "https://websurrogates.nycourts.gov/Search/Cases",
+    "forms_search": [],
+    "text_head": "websurrogates.nycourts.gov\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a0155a176c2769ba\nPerformance and Security by Cloudflare\nPrivacy"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "step1_title": "eCourts",
+  "step2_title": "Just a moment...",
+  "step3_title": "Just a moment...",
+  "step4_title": "Just a moment...",
+  "error": "TimeoutError: Locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"input[name=txtPlaintiffLname]\").first\n"
+}

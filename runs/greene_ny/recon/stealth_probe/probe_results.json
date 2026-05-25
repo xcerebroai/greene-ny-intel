@@ -1,0 +1,621 @@
+[
+  {
+    "id": "searchiqs_landing",
+    "url": "https://www.searchiqs.com/nygre/LoginA.aspx",
+    "note": "Greene County clerk land-records login (guest mode link from county clerk site)",
+    "http_status": 200,
+    "final_url": "https://www.searchiqs.com/nygre/LoginA.aspx",
+    "title": "",
+    "html_length": 39,
+    "blockers": {
+      "cf_markers": [],
+      "looks_blocked": false
+    },
+    "text_head": "",
+    "screenshot": "searchiqs_landing.png",
+    "html_file": "searchiqs_landing.html",
+    "forms": [],
+    "links_sample": []
+  },
+  {
+    "id": "searchiqs_root",
+    "url": "https://www.searchiqs.com/nygre/",
+    "note": "Greene County clerk land-records root (county code path)",
+    "http_status": 200,
+    "final_url": "https://www.searchiqs.com/nygre/",
+    "networkidle_error": "Timeout 20000ms exceeded.",
+    "title": "Greene County, NY - SearchIQS",
+    "html_length": 16075,
+    "blockers": {
+      "cf_markers": [],
+      "looks_blocked": false
+    },
+    "text_head": "Greene County, NY\nMarilyn Farrell, County Clerk\n\u00a0Search Records as Guest\n\n\n\nSee Subscription Plans/Create an Account\n\nAlready have an account? Log in here.\n\nUsername\nPassword\nForgot your password?\n\n\n\n\u00a9 2026 Info Quick Solutions, Inc.\nBy using this website you accept the terms and conditions.",
+    "screenshot": "searchiqs_root.png",
+    "html_file": "searchiqs_root.html",
+    "forms": [
+      {
+        "action": "https://www.searchiqs.com/nygre/",
+        "method": "post",
+        "id": "form1",
+        "name": "",
+        "inputs": [
+          {
+            "tag": "input",
+            "name": "__EVENTTARGET",
+            "id": "__EVENTTARGET",
+            "type": "hidden",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "name": "__EVENTARGUMENT",
+            "id": "__EVENTARGUMENT",
+            "type": "hidden",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "name": "__VIEWSTATE",
+            "id": "__VIEWSTATE",
+            "type": "hidden",
+            "value": "/wEPaA8FDzhkZWJhNDgzMjE0OTU3ZGQKAke08FqzdOhuJnKILR87UNUwaONMVGY+DBUEztGIGA=="
+          },
+          {
+            "tag": "input",
+            "name": "__VIEWSTATEGENERATOR",
+            "id": "__VIEWSTATEGENERATOR",
+            "type": "hidden",
+            "value": "8E91B522"
+          },
+          {
+            "tag": "input",
+            "name": "__EVENTVALIDATION",
+            "id": "__EVENTVALIDATION",
+            "type": "hidden",
+            "value": "/wEdAAZkwH5uquZMHeUfKte8d/WXZx2+BvjND/pmAi3FDx2Wlgkbq8Q+ob52t63N9IN3E1MqGgLJV0m0siKzkCBhn9Fh7ixyIk7cehzrzFMW1kZASIpVkFeAZD8ZRHRShIYYV000p3YvNetfcEL21TpYWzrHONubo+Fwdwb1q76VYKq0ng=="
+          },
+          {
+            "tag": "input",
+            "name": "BrowserWidth",
+            "id": "hiddenWidth",
+            "type": "hidden",
+            "value": "1380"
+          },
+          {
+            "tag": "input",
+            "name": "BrowserHeight",
+            "id": "hiddenHeight",
+            "type": "hidden",
+            "value": "880"
+          },
+          {
+            "tag": "input",
+            "name": "hidPendingID",
+            "id": "hidPendingID",
+            "type": "hidden",
+            "value": ""
+          },
+          {
+            "tag": "button",
+            "name": "",
+            "id": "btnGuestLogin",
+            "type": "button",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "name": "username",
+            "id": "username",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "name": "password",
+            "id": "password",
+            "type": "password",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "name": "cmdLogin",
+            "id": "cmdLogin",
+            "type": "submit",
+            "value": "Log In"
+          }
+        ]
+      }
+    ],
+    "links_sample": [
+      {
+        "href": "https://searchiqs.com/",
+        "text": ""
+      },
+      {
+        "href": "https://www.searchiqs.com/nygre/SelfSignUp.aspx",
+        "text": "See Subscription Plans/Create an Account"
+      },
+      {
+        "href": "https://www.searchiqs.com/nygre/ForgotPassword.aspx",
+        "text": "Forgot your password?"
+      },
+      {
+        "href": "https://iqsworks.com/",
+        "text": "Info Quick Solutions, Inc."
+      },
+      {
+        "href": "https://help.searchiqs.com/legal/searchiqs",
+        "text": "terms and conditions"
+      }
+    ]
+  },
+  {
+    "id": "nyscef_search",
+    "url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name",
+    "note": "NYSCEF case search \u2014 county/court selector (Supreme + Surrogate)",
+    "http_status": 200,
+    "final_url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name",
+    "networkidle_error": "Timeout 20000ms exceeded.\n=========================== logs ===========================\n\"load\" event fired\n============================================================",
+    "title": "Case Search",
+    "html_length": 71863,
+    "blockers": {
+      "cf_markers": [],
+      "looks_blocked": false
+    },
+    "text_head": "Skip To: Content Navigation Accessibility\nNew York State Unified Court System\nNYSCEF - New York State Courts Electronic Filing (Live System)\nHome\nNYSCEF\nHome\nUnrepresented Litigants\nAccount\nCreate an Account\nLogin\nSearch as Guest\nResources\nForms\nAuthorized Courts\nAvailable Documents\nRules & Legislation\nProtocols\nHelp\nCase Search\nCase Identifier\nName\nTax Cert/SCAR\nNew Cases\n \n\nEnter a Business/Organization name or a First and Last name. The Business/Organization requires at least 2 characters. The First and Last name require at least 1 character.\n\nName Type\n Party  Attorney\nBusiness/Organization\n\nFirst, Middle, and Last Name\nFirst\n Middle\n Last\n Search\n\n\nNarrow Your Results\n\nNarrow your results by County, Case Type, or Filing Date. If narrowing by Filing Date, both the Start and End date are required. Enter date as mm/dd/yyyy.\n\nCounty\n\nPlease select...\n*** UI/WC ***\nAlbany\nAllegany\nAppellate Division - 1st Dept\nAppellate Division - 2nd Dept\nAppellate Division - 3rd Dept\nAppellate Division - 4th Dept\nBronx\nBroome\nCattaraugus\nCayuga\nChautauqua\nChemung\nChenango\nClinton\nColumbia\nCortland\nDelaware\nDutchess\nErie\nEssex\nFranklin\nFulton\nGenesee\nGreene\nHamilton\nHerkimer\nJefferson\nKings\nLewis\n",
+    "screenshot": "nyscef_search.png",
+    "html_file": "nyscef_search.html",
+    "forms": [
+      {
+        "action": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name",
+        "method": "post",
+        "id": "form",
+        "name": "form",
+        "inputs": [
+          {
+            "tag": "input",
+            "name": "rbnameType",
+            "id": "partyName",
+            "type": "radio",
+            "value": "partyName"
+          },
+          {
+            "tag": "input",
+            "name": "rbnameType",
+            "id": "attorneyName",
+            "type": "radio",
+            "value": "attorneyName"
+          },
+          {
+            "tag": "input",
+            "name": "txtBusinessOrgName",
+            "id": "txtBusinessOrgName",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "name": "txtPartyFirstName",
+            "id": "txtPartyFirstName",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "name": "txtPartyMiddleName",
+            "id": "txtPartyMiddleName",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "name": "txtPartyLastName",
+            "id": "txtPartyLastName",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "textarea",
+            "name": "g-recaptcha-response",
+            "id": "g-recaptcha-response-0f31vuj57m9",
+            "type": "textarea",
+            "value": ""
+          },
+          {
+            "tag": "textarea",
+            "name": "h-captcha-response",
+            "id": "h-captcha-response-0f31vuj57m9",
+            "type": "textarea",
+            "value": ""
+          },
+          {
+            "tag": "button",
+            "name": "btnSubmit",
+            "id": "",
+            "type": "submit",
+            "value": "Search"
+          },
+          {
+            "tag": "select",
+            "name": "txtCounty",
+            "id": "txtCounty",
+            "type": "select-one",
+            "value": "-1"
+          },
+          {
+            "tag": "select",
+            "name": "txtCaseType",
+            "id": "txtCaseType",
+            "type": "select-one",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "name": "txtFilingDateFrom",
+            "id": "txtFilingDateFrom",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "input",
+            "name": "txtFilingDateTo",
+            "id": "txtFilingDateTo",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "tag": "textarea",
+            "name": "g-recaptcha-response",
+            "id": "g-recaptcha-response-18etdflunf6d",
+            "type": "textarea",
+            "value": ""
+          },
+          {
+            "tag": "textarea",
+            "name": "h-captcha-response",
+            "id": "h-captcha-response-18etdflunf6d",
+            "type": "textarea",
+            "value": ""
+          },
+          {
+            "tag": "button",
+            "name": "btnSubmit",
+            "id": "",
+            "type": "submit",
+            "value": "Search"
+          }
+        ]
+      }
+    ],
+    "links_sample": [
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name#content",
+        "text": "Content"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name#nav",
+        "text": "Navigation"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/accessibility.htm",
+        "text": "Accessibility"
+      },
+      {
+        "href": "http://www.nycourts.gov/",
+        "text": "New York State Unified Court System"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/HomePage",
+        "text": "NYSCEF -"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/SupremeHome",
+        "text": "New York State Courts Electronic Filing"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/HomePage",
+        "text": "Home\nNYSCEF"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/UnRepresentedHome",
+        "text": "Home\nUnrepresented Litigants"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/CreateAccount",
+        "text": "Create an Account"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/Login",
+        "text": "Login"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/CaseSearch",
+        "text": "Search as Guest"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/forms.htm",
+        "text": "Forms"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/AuthorizedCaseType",
+        "text": "Authorized Courts"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/AvailableDocumentTypes",
+        "text": "Available Documents"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/legislation.htm",
+        "text": "Rules & Legislation"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/protocols.htm",
+        "text": "Protocols"
+      },
+      {
+        "href": "https://iappscontent.courts.state.ny.us/NYSCEF/live/help/efileCaseSearch.html",
+        "text": "Help"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=caseIdentifier",
+        "text": "Case Identifier"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name",
+        "text": "Name"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=taxCertOrScar",
+        "text": "Tax Cert/SCAR"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=courtDateRange",
+        "text": "New Cases"
+      },
+      {
+        "href": "mailto:nyscef@nycourts.gov?subject=E-Filing%Web%Site",
+        "text": "nyscef@nycourts.gov"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/HomePage",
+        "text": "NYSCEF"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/UnRepresentedHome",
+        "text": "Unrepresented Litigants"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/CreateAccount",
+        "text": "Create an Account"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/Login",
+        "text": "Login"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/CaseSearch",
+        "text": "Search as Guest"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/forms.htm",
+        "text": "Forms"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/AuthorizedCaseType",
+        "text": "Authorized Courts"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/AvailableDocumentTypes",
+        "text": "Available Documents"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/legislation.htm",
+        "text": "Rules & Legislation"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/protocols.htm",
+        "text": "Protocols"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/faq.htm",
+        "text": "FAQs"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/help/RemoveConsentInstructions.html",
+        "text": "Remove Attorney Representation"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/training.htm",
+        "text": "Training"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/termsOfUse.htm",
+        "text": "Terms of Use"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/training/userManual.html",
+        "text": "User Manual"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/requirements.htm",
+        "text": "Filing Requirements"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/evidence.htm",
+        "text": "VEC Resources"
+      },
+      {
+        "href": "https://iappscontent01-qa.azurewebsites.us/NYSCEF/staging/contact.htm",
+        "text": "Contact Us"
+      }
+    ]
+  },
+  {
+    "id": "nyscef_root",
+    "url": "https://iapps.courts.state.ny.us/nyscef/",
+    "note": "NYSCEF landing",
+    "http_status": 200,
+    "final_url": "https://iapps.courts.state.ny.us/nyscef/",
+    "title": "Just a moment...",
+    "html_length": 31869,
+    "blockers": {
+      "cf_markers": [
+        "challenges.cloudflare.com",
+        "Just a moment",
+        "turnstile",
+        "cf_chl_"
+      ],
+      "looks_blocked": true
+    },
+    "text_head": "iapps.courts.state.ny.us\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a015399b8ad0eb12\nPerformance and Security by Cloudflare\nPrivacy",
+    "screenshot": "nyscef_root.png",
+    "html_file": "nyscef_root.html",
+    "forms": [],
+    "links_sample": [
+      {
+        "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
+        "text": "Cloudflare"
+      },
+      {
+        "href": "https://www.cloudflare.com/privacypolicy/",
+        "text": "Privacy"
+      }
+    ]
+  },
+  {
+    "id": "webcivil",
+    "url": "https://iapps.courts.state.ny.us/webcivil/ecourtsMain",
+    "note": "WebCivil Supreme entry",
+    "http_status": 200,
+    "final_url": "https://iapps.courts.state.ny.us/webcivil/ecourtsMain",
+    "title": "eCourts",
+    "html_length": 30459,
+    "blockers": {
+      "cf_markers": [],
+      "looks_blocked": false
+    },
+    "text_head": "\u00a0\t\n\n\nWebCivil Local\nWebCivil Supreme\nWebCriminal\nWebFamily\neTrack\n\n\nDecisions\n\n\nElectronic Filing\n\n\nWebSurrogate\n\n\nContact Us\nEmergency Alert Portal\n\n\n\neCourts Home\n\n\t\n\n\n\n\n\nWelcome to eCourts\n\n\nUsing our free case information services you can find future appearance dates for cases in Criminal and Family Courts. You may also view information on both active and disposed cases in Civil Supreme and Local Civil Courts, and by signing up for our eTrack case tracking service you can receive email updates and appearance reminders for Civil Supreme and Local Civil Court cases.\n\n\n\n\n\n\nWebCivil Local\n\n\n\nWebCivil Local contains cases from all the local Civil Courts in New York State (61 City Courts, the District Courts in Nassau and Suffolk Counties, and the New York City Civil Courts). You may search for cases by Index Number, Party Name, Attorney/Firm Name or Judge, and produce calendars for a specific Attorney/Firm or by Judge or Part. For a complete list of all the courts click here.\n\n\n WebCivil Local\n\n\n\u00a0\nWebCivil Supreme\n\t\u00a0\t\u00a0\n\n\nWebCivil Supreme contains information on both Active and Disposed Civil Supreme Court cases in all 62 counties of New York State. You may search for cases by Index ",
+    "screenshot": "webcivil.png",
+    "html_file": "webcivil.html",
+    "forms": [],
+    "links_sample": [
+      {
+        "href": "https://iapps.courts.state.ny.us/webcivilLocal/LCMain",
+        "text": "WebCivil Local"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASMain",
+        "text": "WebCivil Supreme"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webcrim_attorney/AttorneyWelcome",
+        "text": "WebCriminal"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/fcasfamily/main",
+        "text": "WebFamily"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webcivil/etrackMain",
+        "text": "eTrack"
+      },
+      {
+        "href": "http://www.nycourts.gov/decisions/index.shtml",
+        "text": "Decisions"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/nyscef/HomePage",
+        "text": "Electronic Filing"
+      },
+      {
+        "href": "https://websurrogates.nycourts.gov/",
+        "text": "WebSurrogate"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webcivil/ecourtsContact",
+        "text": "Contact Us"
+      },
+      {
+        "href": "http://www.nycourts.gov/notice/emergency-alerts.shtml",
+        "text": "Emergency Alert Portal"
+      },
+      {
+        "href": "http://ww2.nycourts.gov/social/twitter.shtml",
+        "text": ""
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webcivil/ecourtsMain",
+        "text": "eCourts Home"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webcivilLocal/LCAvailableCourts",
+        "text": "here"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webcivilLocal/LCMain",
+        "text": "WebCivil Local"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASMain",
+        "text": "WebCivil Supreme"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webmobile/ecourts/app-production.html",
+        "text": "WebCivil Supreme Mobile"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webcrim_attorney/AttorneyHelp",
+        "text": "WebCriminal FAQ."
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webcrim_attorney/AttorneyWelcome",
+        "text": "WebCriminal"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webmobile/ecourts/app-production.html",
+        "text": "WebCriminal Mobile"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/fcasfamily/main",
+        "text": "WebFamily"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webcivilLocal/LCAvailableCourts",
+        "text": "click here"
+      },
+      {
+        "href": "https://iapps.courts.state.ny.us/webcivil/etrackLogin",
+        "text": "eTrack"
+      },
+      {
+        "href": "http://www.nycourts.gov/courts",
+        "text": ""
+      },
+      {
+        "href": "http://www.nycourts.gov/litigants",
+        "text": ""
+      },
+      {
+        "href": "http://www.nycourts.gov/attorneys",
+        "text": ""
+      },
+      {
+        "href": "http://www.nyjuror.gov/index.shtml",
+        "text": ""
+      },
+      {
+        "href": "http://www.nycourts.gov/judges",
+        "text": ""
+      },
+      {
+        "href": "http://www.nycourts.gov/careers",
+        "text": ""
+      },
+      {
+        "href": "http://www.nycourts.gov/google/sitewide.shtml",
+        "text": ""
+      }
+    ]
+  }
+]

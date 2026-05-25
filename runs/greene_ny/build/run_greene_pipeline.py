@@ -586,12 +586,21 @@ def main() -> int:
         county="Greene County", state="NY",
         build_label="SOURCE_LIMITED",
         build_label_reason=(
-            "Three primary event sources are live (AAR tax-foreclosure "
+            "Three PRIMARY event sources are live (AAR tax-foreclosure "
             "auction, Treasurer Annual Petition & Notice of Foreclosure "
-            "PDF, Column legal notices). SearchIQS clerk + NYSCEF court "
-            "primaries remain Cloudflare-Turnstile-gated — plain headless "
-            "Playwright cannot pass; punch-listed for stealth tooling / "
-            "operator-seeded session."
+            "PDF, Column legal notices) — 634 tax-foreclosure-notice + 1 "
+            "foreclosure-notice-of-sale signals. SearchIQS clerk land "
+            "records, NYSCEF Supreme + Surrogate, WebSurrogate, and "
+            "WebCivil Supreme were probed 2026-05-25 with stealth chromium "
+            "+ playwright-stealth (same combo that broke Smith TX "
+            "publicsearch.us): landing pages render, but every actionable "
+            "request (guest-login click, search submit, follow-on nav) "
+            "fires Cloudflare Managed Challenge (cType=managed, "
+            "_cf_chl_opt) which did NOT auto-resolve in 40–60 s polls "
+            "across cold + warmed sessions. Stealth empirically ruled out; "
+            "punch-listed for an operator-supplied cf_clearance cookie + "
+            "session-cookie pair (see runs/greene_ny/recon/stealth_recon"
+            "_2026-05-25.md)."
         ),
         aar_by_doc=aar_by_doc, petition_by_sbl=petition_by_sbl,
         pm_by_pk=pm_by_pk, pm_by_parcel_id=pm_by_parcel_id,

@@ -1,0 +1,54 @@
+[
+  {
+    "plaintiff": "BANK",
+    "year": "2025",
+    "url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+    "title": "Just a moment...",
+    "html_len": 34463,
+    "challenge": true,
+    "recaptcha_dialog_count": 0,
+    "error_text": "",
+    "tables": [],
+    "body_head": "iapps.courts.state.ny.us | Performing security verification |  | This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot. |  | Ray ID: a015652f0f6f4743 | Performance and Security by Cloudflare | Privacy",
+    "html_file": "wcs_submit_BANK_2025.html"
+  },
+  {
+    "plaintiff": "WELLS FARGO",
+    "year": "2025",
+    "url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+    "title": "Just a moment...",
+    "html_len": 34442,
+    "challenge": true,
+    "recaptcha_dialog_count": 0,
+    "error_text": "",
+    "tables": [],
+    "body_head": "iapps.courts.state.ny.us | Performing security verification |  | This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot. |  | Ray ID: a0156614ac6c4781 | Performance and Security by Cloudflare | Privacy",
+    "html_file": "wcs_submit_WELLS_FARGO_2025.html"
+  },
+  {
+    "plaintiff": "US BANK",
+    "year": "2025",
+    "url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+    "title": "Just a moment...",
+    "html_len": 34442,
+    "challenge": true,
+    "recaptcha_dialog_count": 0,
+    "error_text": "",
+    "tables": [],
+    "body_head": "iapps.courts.state.ny.us | Performing security verification |  | This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot. |  | Ray ID: a01566f9edda4775 | Performance and Security by Cloudflare | Privacy",
+    "html_file": "wcs_submit_US_BANK_2025.html"
+  },
+  {
+    "plaintiff": "FREEDOM MORTGAGE",
+    "year": "2025",
+    "url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch",
+    "title": "Just a moment...",
+    "html_len": 34485,
+    "challenge": true,
+    "recaptcha_dialog_count": 0,
+    "error_text": "",
+    "tables": [],
+    "body_head": "iapps.courts.state.ny.us | Performing security verification |  | This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot. |  | Ray ID: a01567df9d6f6c62 | Performance and Security by Cloudflare | Privacy",
+    "html_file": "wcs_submit_FREEDOM_MORTGAGE_2025.html"
+  }
+]

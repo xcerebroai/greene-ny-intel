@@ -1,18 +1,20 @@
 {
-  "run_id": "run_a3d44fd91a8642e3bc06ff8a857a0247",
-  "county": "Bexar",
-  "state": "TX",
-  "started_at": "2026-05-15T20:00:49Z",
-  "finished_at": "2026-05-15T20:00:49Z",
+  "run_id": "run_197450f4f2cc45aaa426979015af4ff6",
+  "county": "Greene County",
+  "state": "NY",
+  "started_at": "2026-05-23T22:52:38Z",
+  "finished_at": "2026-05-23T22:52:38Z",
   "sources_attempted": 1,
-  "records_collected": 288,
-  "records_normalized": 288,
-  "leads_created": 287,
-  "review_required": 62,
+  "records_collected": 50,
+  "records_normalized": 50,
+  "leads_created": 50,
+  "review_required": 50,
   "errors": [],
   "output_files": [
-    "data/leads.json",
+    "data/dashboard.json",
     "data/source_heartbeat.json",
-    "data/evidence.jsonl"
+    "data/matched_leads.json",
+    "data/scored_leads.json",
+    "data/evidence_ledger.json"
   ]
 }

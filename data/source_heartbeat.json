@@ -1,19 +1,19 @@
 [
   {
-    "source_id": "foreclosure_notices_map",
-    "source_name": "foreclosure_notices_map",
+    "source_id": "tax_foreclosure_auction",
+    "source_name": "tax_foreclosure_auction",
     "source_class": "lead_generating",
     "source_priority": "P0",
     "source_reliability_grade": "A",
     "build_priority": "mvp_required",
     "access_pattern": "open_api",
     "status": "healthy",
-    "last_attempted_at": "2026-05-15T20:00:49Z",
-    "last_successful_at": "2026-05-15T20:00:49Z",
+    "last_attempted_at": "2026-05-23T22:52:38Z",
+    "last_successful_at": "2026-05-23T22:52:38Z",
     "last_failed_at": null,
     "last_failure_reason": null,
-    "records_seen_current_run": 288,
-    "records_new_current_run": 288,
+    "records_seen_current_run": 50,
+    "records_new_current_run": 50,
     "records_seen_previous_run": 0,
     "records_new_previous_run": 0,
     "parser_confidence_avg": 100,
@@ -28,8 +28,8 @@
         "attempt_order": 1,
         "strategy": "arcgis_rest_query",
         "status": "SUCCESS",
-        "reason": "Phase 3 production pull from foreclosure_notices_map",
-        "timestamp": "2026-05-15T20:00:49Z"
+        "reason": "Phase 3 production pull from tax_foreclosure_auction",
+        "timestamp": "2026-05-23T22:52:38Z"
       }
     ],
     "final_access_strategy": "arcgis_rest_query",

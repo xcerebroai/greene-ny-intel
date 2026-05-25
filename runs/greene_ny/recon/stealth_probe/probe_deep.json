@@ -1,0 +1,1872 @@
+{
+  "searchiqs": {
+    "id": "searchiqs",
+    "landing": {
+      "name": "iqs_01_landing",
+      "url": "https://www.searchiqs.com/nygre/",
+      "title": "Greene County, NY - SearchIQS",
+      "html_len": 16075,
+      "text_head": "Greene County, NY\nMarilyn Farrell, County Clerk\n\u00a0Search Records as Guest\n\n\n\nSee Subscription Plans/Create an Account\n\nAlready have an account? Log in here.\n\nUsername\nPassword\nForgot your password?\n\n\n\n\u00a9 2026 Info Quick Solutions, Inc.\nBy using this website you accept the terms and conditions.",
+      "has_recaptcha_iframe": 0,
+      "has_turnstile": false
+    },
+    "guest_btn_count": 1,
+    "after_guest": {
+      "name": "iqs_02_after_guest",
+      "url": "https://www.searchiqs.com/nygre/",
+      "title": "Just a moment...",
+      "html_len": 32244,
+      "text_head": "www.searchiqs.com\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a0154463497aefb5\nPerformance and Security by Cloudflare\nPrivacy",
+      "has_recaptcha_iframe": 0,
+      "has_turnstile": true
+    },
+    "after_guest_links": [
+      {
+        "text": "Cloudflare",
+        "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m"
+      },
+      {
+        "text": "Privacy",
+        "href": "https://www.cloudflare.com/privacypolicy/"
+      }
+    ],
+    "after_guest_selects": [],
+    "after_guest_inputs": [
+      {
+        "tag": "input",
+        "id": "cf-chl-widget-vj4xt_response",
+        "name": "cf-turnstile-response",
+        "type": "hidden",
+        "value": ""
+      }
+    ]
+  },
+  "nyscef_query": {
+    "id": "nyscef_query",
+    "initial": {
+      "name": "nyscef_01_initial",
+      "url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name",
+      "title": "Case Search",
+      "html_len": 71869,
+      "text_head": "Skip To: Content Navigation Accessibility\nNew York State Unified Court System\nNYSCEF - New York State Courts Electronic Filing (Live System)\nHome\nNYSCEF\nHome\nUnrepresented Litigants\nAccount\nCreate an Account\nLogin\nSearch as Guest\nResources\nForms\nAuthorized Courts\nAvailable Documents\nRules & Legislation\nProtocols\nHelp\nCase Search\nCase Identifier\nName\nTax Cert/SCAR\nNew Cases\n \n\nEnter a Business/Organization name or a First and Last name. The Business/Organization requires at least 2 characters. The First and Last name require at least 1 character.\n\nName Type\n Party  Attorney\nBusiness/Organization\n\nFirst, Middle, and Last Name\nFirst\n Middle\n Last\n Search\n\n\nNarrow Your Results\n\nNarrow your results by County, Case Type, or Filing Date. If narrowing by Filing Date, both the Start and End date are required. Enter date as mm/dd/yyyy.\n\nCounty\n\nPlease select...\n*** UI/WC ***\nAlbany\nAllegany\nAppellate Division - 1st Dept\nAppellate Division - 2nd Dept\nAppellate Division - 3rd Dept\nAppellate Division - 4th Dept\nBronx\nBroome\nCattaraugus\nCayuga\nChautauqua\nChemung\nChenango\nClinton\nColumbia\nCortland\nDelaware\nDutchess\nErie\nEssex\nFranklin\nFulton\nGenesee\nGreene\nHamilton\nHerkimer\nJefferson\nKings\nLewis\nLivingston\nMadison\nMonroe\nMontgomery\nNYS Court of Claims\nNassau\nNew York\nNiagara\nNone\nOneida\nOnondaga\nOntario\nOrange\nOrleans\nOswego\nOtsego\nPutnam\nQueens\nRensselaer\nRichmond\nRockland\nSaratoga\nSchenectady\nSchoharie\nSchuyler\nSeneca\nSt. Lawrence\nStatewide\nSteuben\nSuffolk\nSullivan\nTioga\nTompkins\nUlster\nW",
+      "has_recaptcha_iframe": 2,
+      "has_turnstile": false
+    },
+    "select_options": {
+      "county": [
+        {
+          "v": "-1",
+          "t": "Please select..."
+        },
+        {
+          "v": "93",
+          "t": "*** UI/WC ***"
+        },
+        {
+          "v": "1",
+          "t": "Albany"
+        },
+        {
+          "v": "2",
+          "t": "Allegany"
+        },
+        {
+          "v": "95",
+          "t": "Appellate Division - 1st Dept"
+        },
+        {
+          "v": "96",
+          "t": "Appellate Division - 2nd Dept"
+        },
+        {
+          "v": "97",
+          "t": "Appellate Division - 3rd Dept"
+        },
+        {
+          "v": "98",
+          "t": "Appellate Division - 4th Dept"
+        },
+        {
+          "v": "62",
+          "t": "Bronx"
+        },
+        {
+          "v": "4",
+          "t": "Broome"
+        },
+        {
+          "v": "5",
+          "t": "Cattaraugus"
+        },
+        {
+          "v": "6",
+          "t": "Cayuga"
+        },
+        {
+          "v": "7",
+          "t": "Chautauqua"
+        },
+        {
+          "v": "8",
+          "t": "Chemung"
+        },
+        {
+          "v": "9",
+          "t": "Chenango"
+        },
+        {
+          "v": "10",
+          "t": "Clinton"
+        },
+        {
+          "v": "11",
+          "t": "Columbia"
+        },
+        {
+          "v": "12",
+          "t": "Cortland"
+        },
+        {
+          "v": "13",
+          "t": "Delaware"
+        },
+        {
+          "v": "14",
+          "t": "Dutchess"
+        },
+        {
+          "v": "15",
+          "t": "Erie"
+        },
+        {
+          "v": "16",
+          "t": "Essex"
+        },
+        {
+          "v": "17",
+          "t": "Franklin"
+        },
+        {
+          "v": "18",
+          "t": "Fulton"
+        },
+        {
+          "v": "19",
+          "t": "Genesee"
+        },
+        {
+          "v": "20",
+          "t": "Greene"
+        },
+        {
+          "v": "21",
+          "t": "Hamilton"
+        },
+        {
+          "v": "22",
+          "t": "Herkimer"
+        },
+        {
+          "v": "23",
+          "t": "Jefferson"
+        },
+        {
+          "v": "24",
+          "t": "Kings"
+        },
+        {
+          "v": "25",
+          "t": "Lewis"
+        },
+        {
+          "v": "26",
+          "t": "Livingston"
+        },
+        {
+          "v": "27",
+          "t": "Madison"
+        },
+        {
+          "v": "28",
+          "t": "Monroe"
+        },
+        {
+          "v": "29",
+          "t": "Montgomery"
+        },
+        {
+          "v": "99",
+          "t": "NYS Court of Claims"
+        },
+        {
+          "v": "30",
+          "t": "Nassau"
+        },
+        {
+          "v": "31",
+          "t": "New York"
+        },
+        {
+          "v": "32",
+          "t": "Niagara"
+        },
+        {
+          "v": "0",
+          "t": "None"
+        },
+        {
+          "v": "33",
+          "t": "Oneida"
+        },
+        {
+          "v": "34",
+          "t": "Onondaga"
+        },
+        {
+          "v": "35",
+          "t": "Ontario"
+        },
+        {
+          "v": "36",
+          "t": "Orange"
+        },
+        {
+          "v": "37",
+          "t": "Orleans"
+        },
+        {
+          "v": "38",
+          "t": "Oswego"
+        },
+        {
+          "v": "39",
+          "t": "Otsego"
+        },
+        {
+          "v": "40",
+          "t": "Putnam"
+        },
+        {
+          "v": "41",
+          "t": "Queens"
+        },
+        {
+          "v": "42",
+          "t": "Rensselaer"
+        },
+        {
+          "v": "43",
+          "t": "Richmond"
+        },
+        {
+          "v": "44",
+          "t": "Rockland"
+        },
+        {
+          "v": "46",
+          "t": "Saratoga"
+        },
+        {
+          "v": "47",
+          "t": "Schenectady"
+        },
+        {
+          "v": "48",
+          "t": "Schoharie"
+        },
+        {
+          "v": "49",
+          "t": "Schuyler"
+        },
+        {
+          "v": "50",
+          "t": "Seneca"
+        },
+        {
+          "v": "45",
+          "t": "St. Lawrence"
+        },
+        {
+          "v": "91",
+          "t": "Statewide"
+        },
+        {
+          "v": "51",
+          "t": "Steuben"
+        },
+        {
+          "v": "52",
+          "t": "Suffolk"
+        },
+        {
+          "v": "53",
+          "t": "Sullivan"
+        },
+        {
+          "v": "54",
+          "t": "Tioga"
+        },
+        {
+          "v": "55",
+          "t": "Tompkins"
+        },
+        {
+          "v": "56",
+          "t": "Ulster"
+        },
+        {
+          "v": "57",
+          "t": "Warren"
+        },
+        {
+          "v": "58",
+          "t": "Washington"
+        },
+        {
+          "v": "59",
+          "t": "Wayne"
+        },
+        {
+          "v": "60",
+          "t": "Westchester"
+        },
+        {
+          "v": "61",
+          "t": "Wyoming"
+        },
+        {
+          "v": "63",
+          "t": "Yates"
+        }
+      ],
+      "caseType": [
+        {
+          "v": "",
+          "t": ""
+        },
+        {
+          "v": "/52XA7gmkWV_PLUS_5ZxM6DcspQ==",
+          "t": "440 Motion"
+        },
+        {
+          "v": "/sOq/fH5irAGL63I9ZbLKQ==",
+          "t": "Abuse/Neglect"
+        },
+        {
+          "v": "sTShoYfmvVprI_PLUS_4gtFBwQA==",
+          "t": "Administration"
+        },
+        {
+          "v": "dXKr0Z0utbvrtRAa570hHQ==",
+          "t": "Adoption"
+        },
+        {
+          "v": "55fVDrKR2kuIrblnLB_PLUS_8CA==",
+          "t": "Article 17"
+        },
+        {
+          "v": "En/EzIVliWhtHfBqcQhVwQ==",
+          "t": "Article 17-A"
+        },
+        {
+          "v": "E78zPAaNv9ZX/mXoyTVxmA==",
+          "t": "Article 75 Arbitration"
+        },
+        {
+          "v": "t8XQMstJWS6IJ_PLUS_PrD7hY0w==",
+          "t": "Article 75 proceedings"
+        },
+        {
+          "v": "stZo8sP_PLUS_CM8AegvbLUjgYQ==",
+          "t": "Article 78 Proceeding against Body or Officer"
+        },
+        {
+          "v": "k9594ZABBZINksfM6EYkoQ==",
+          "t": "Article 78 proceedings"
+        },
+        {
+          "v": "rtTgLTlhrlRvI1DSC0dIkQ==",
+          "t": "Asbestos"
+        },
+        {
+          "v": "L8BLrSuy7VdoYjh2/Uo_PLUS_7Q==",
+          "t": "Attorney Matters"
+        },
+        {
+          "v": "Pja53s9ARqhK9KJUUNKBcQ==",
+          "t": "CRIMINAL"
+        },
+        {
+          "v": "9fc4bxOUmg0hSfL419olJg==",
+          "t": "Child Custody/Visitation"
+        },
+        {
+          "v": "Z1Wgio65etNlUV_PLUS_iglFsWg==",
+          "t": "Child Support"
+        },
+        {
+          "v": "FT27JYq/gWemN8dsLTBIkQ==",
+          "t": "Child-Parent Security Act - (Assisted Reproduction)"
+        },
+        {
+          "v": "I92eH8rJQ6q3V9UsC4Feaw==",
+          "t": "Child-Parent Security Act - (Surrogacy Agreement)"
+        },
+        {
+          "v": "uUmzUSYuiiVxycJPYWK84A==",
+          "t": "City - Asbestos"
+        },
+        {
+          "v": "2AhSgNIzcWnjabgJczckZg==",
+          "t": "City - Child Victims Act"
+        },
+        {
+          "v": "QDmGhy0Z2xMbbCr_PLUS_SgS/6g==",
+          "t": "City - Contract"
+        },
+        {
+          "v": "Qg2DEjEjjL23wS2cxnb55A==",
+          "t": "City - Environmental"
+        },
+        {
+          "v": "/nY3HA6NfSOSTbnI3AX1yw==",
+          "t": "City - Motor Vehicle"
+        },
+        {
+          "v": "zMSj535SWuuruN7mqpbTzw==",
+          "t": "City - Other Negligence"
+        },
+        {
+          "v": "RqNKAMdEL2ZSfQjhEf_PLUS_RlA==",
+          "t": "City - Other Professional Malpractice"
+        },
+        {
+          "v": "EZ8jUKEB32C/n6Quv2wgEA==",
+          "t": "City - Other Tort"
+        },
+        {
+          "v": "PtpMdtUTCAlTDPCJkwy/xw==",
+          "t": "City - Other-OOM"
+        },
+        {
+          "v": "Q/JQT9f5mBEn1JT7ZUtJBw==",
+          "t": "City - Torts - Asbestos"
+        },
+        {
+          "v": "KgqFglgduI9NrPPNTNlzVA==",
+          "t": "City - Torts - Child Victims Act"
+        },
+        {
+          "v": "DeadskboJkTR7gHYfa3fiQ==",
+          "t": "City - Torts - Environmental"
+        },
+        {
+          "v": "rdECvQbXvFA78k6oqxAZvA==",
+          "t": "City - Torts - Medical, Dental, or Podiatrist Malpractice"
+        },
+        {
+          "v": "yHt1IesQKuZBhMZzZ_PLUS_8QRA==",
+          "t": "City - Torts - Motor Vehicle"
+        },
+        {
+          "v": "bmW4yLa4pkLgK3q5kWL7ZA==",
+          "t": "City - Torts - Other"
+        },
+        {
+          "v": "6ilQfGWmOHkVfgmSqlFdKA==",
+          "t": "City - Torts - Other Negligence"
+        },
+        {
+          "v": "OCUZ6ZpVvsK2LMQ262Kk8w==",
+          "t": "City - Torts - Other Professional Malpractice"
+        },
+        {
+          "v": "Clj0wiZ3xF0ZjIh_PLUS_ALCZCA==",
+          "t": "City - Torts - Product Liability"
+        },
+        {
+          "v": "goXAeZBQ2EGFTr1mypKhJA==",
+          "t": "City-Med Mal - Medical, Dental, or Podiatrist Malpractice"
+        },
+        {
+          "v": "rciTABQb2nxV87VuaQxv0Q==",
+          "t": "Civil - Dangerous Dog Proceedings"
+        },
+        {
+          "v": "aoK/be1P7XXDPXVUZiiumA==",
+          "t": "Civil - Other than Small Claims or Summary Proceedings"
+        },
+        {
+          "v": "f03/K85GpPtKUc16sq8V/A==",
+          "t": "Civil - Small Claims"
+        },
+        {
+          "v": "vNAm4n/icFOa1mfxHPkGIw==",
+          "t": "Civil - Summary Proceedings"
+        },
+        {
+          "v": "8DtBMlFPzpcYjcei8JyuGA==",
+          "t": "Civil Action - General"
+        },
+        {
+          "v": "ahRyNfuj7qpKjgwbwTS2xQ==",
+          "t": "Civil Action - MHL Article 81 Proceeding"
+        },
+        {
+          "v": "KWUPn0iV9AG6WjkVzAPJFA==",
+          "t": "Civil Action - Matrimonial"
+        },
+        {
+          "v": "IHMVS0eJhh361rxBAn3ktw==",
+          "t": "Civil Action - Mental Hygiene"
+        },
+        {
+          "v": "wGhRXvag1G5mU9sVGPtpow==",
+          "t": "Civil Action - Name Change/Sex Designation Change"
+        },
+        {
+          "v": "RlMRY5123BVBf_PLUS_BVR46xUw==",
+          "t": "Civil Forfeiture"
+        },
+        {
+          "v": "Uju/vt8LvB7HE_PLUS_K6u3evVA==",
+          "t": "Claim"
+        },
+        {
+          "v": "b8eTUf6dId2gQ2wc71q/4w==",
+          "t": "Commercial"
+        },
+        {
+          "v": "GgxEYltdbvf8Cl2HDcjjxQ==",
+          "t": "Commercial (General)"
+        },
+        {
+          "v": "Cxo5S_PLUS_jxMqnido8RoiOtvQ==",
+          "t": "Commercial - 1199 SEIU"
+        },
+        {
+          "v": "_PLUS_1NG8MufNJeQtxjc/1mj8A==",
+          "t": "Commercial - Business Entity"
+        },
+        {
+          "v": "yU1tiuMVRmxxXTQIfbSeTg==",
+          "t": "Commercial - Business Entity - Commercial Division"
+        },
+        {
+          "v": "82GfkFhsdiXarpPtO7sONg==",
+          "t": "Commercial - Contract"
+        },
+        {
+          "v": "Yi4bpGanMYD0myMyaWqlCQ==",
+          "t": "Commercial - Contract - City"
+        },
+        {
+          "v": "1QqlymQHccRK8CjaHve5rQ==",
+          "t": "Commercial - Contract - City Contract - Commercial Division"
+        },
+        {
+          "v": "4mrohz_PLUS_vlvjFWdInTRlTYA==",
+          "t": "Commercial - Contract - Commercial Division"
+        },
+        {
+          "v": "aIAGUdv4hxBdnMbaEta8dQ==",
+          "t": "Commercial - Insurance"
+        },
+        {
+          "v": "5gWwJSwF2Kw912_PLUS_zHVtI8w==",
+          "t": "Commercial - Insurance - Commercial Division"
+        },
+        {
+          "v": "/EWEoxwsHkZnvuPgpyIWlg==",
+          "t": "Commercial - International Arbitration"
+        },
+        {
+          "v": "CmxHbOQbURBXp_PLUS_36kKOKXw==",
+          "t": "Commercial - International Arbitration - Commercial Division"
+        },
+        {
+          "v": "D6SnVBKPw9iorcmwhlfAmw==",
+          "t": "Commercial - Other"
+        },
+        {
+          "v": "KGWu4LNi97SAC1Xr/27qPQ==",
+          "t": "Commercial - Other - City"
+        },
+        {
+          "v": "GuDuz5QmrUTgMlMGWfvaOA==",
+          "t": "Commercial - Other - Commercial Division"
+        },
+        {
+          "v": "/KAF2kq4Uo_PLUS_jyEwMaHmxPg==",
+          "t": "Commercial - Other - Corporate - Commercial Division"
+        },
+        {
+          "v": "BLRXLMP9yCmQ3T00rgF0ew==",
+          "t": "Commercial - UCC"
+        },
+        {
+          "v": "xvjxx4OEgS6f7_PLUS_493E/AZg==",
+          "t": "Commercial - UCC - Commercial Division"
+        },
+        {
+          "v": "623qi5_PLUS_q76qdRXUApO7W3Q==",
+          "t": "Commercial Division"
+        },
+        {
+          "v": "HVq4Ts7tkJSXt2IcQCQdsQ==",
+          "t": "Commercial Division - Business Entity"
+        },
+        {
+          "v": "PfGd5k10y2_PLUS_KM8VnhioERA==",
+          "t": "Commercial Division - CPLR Article 75 (Arbitration)"
+        },
+        {
+          "v": "9tRabCrpvBEeYqrJ6FmLPA==",
+          "t": "Commercial Division - Contract"
+        },
+        {
+          "v": "Q3Ji6MMiZQyDoBibS8pp9A==",
+          "t": "Commercial Division - Insurance"
+        },
+        {
+          "v": "qC_PLUS_9b3kg1ct/61fuTigVtQ==",
+          "t": "Commercial Division - Mortgage Foreclosure - Commercial"
+        },
+        {
+          "v": "OFVeUjnJv9HVxzhUa0eydw==",
+          "t": "Commercial Division - Other"
+        },
+        {
+          "v": "Tcbze2A13yMQkyOR8ZQ_PLUS_Zg==",
+          "t": "Commercial Division - Other Special Proceeding"
+        },
+        {
+          "v": "I_PLUS_IweAQ1aYlqkomDg79kcQ==",
+          "t": "Commercial Division - Other-COC"
+        },
+        {
+          "v": "EjAUuNmoYMhO0bxtdDDwyQ==",
+          "t": "Commercial Division - Torts - Product Liability"
+        },
+        {
+          "v": "6KiemcuoAisaYSFWYQDPlg==",
+          "t": "Commercial Division - UCC"
+        },
+        {
+          "v": "leC3F3KWEwVbbQpdNXyb_PLUS_w==",
+          "t": "Conference Ineligible - Mortgage Foreclosure - Residential"
+        },
+        {
+          "v": "xJihlok5hZUxR65qsRfVsw==",
+          "t": "Consumer Credit (Card) Debt Buyer Plaintiff"
+        },
+        {
+          "v": "1RmeXuFMOM1awnVOwUGAaw==",
+          "t": "Consumer Credit (Card) Original Creditor Plaintiff"
+        },
+        {
+          "v": "nhAKlfhzfQ1Ag9RMgeO/7Q==",
+          "t": "Consumer Credit (Card) Secondary Debt Buyer Plaintiff"
+        },
+        {
+          "v": "mfvuzMdltEpFVH_PLUS_k1jSaUg==",
+          "t": "Consumer Credit (Card) Transaction Debt Buyer Plaintiff"
+        },
+        {
+          "v": "xYrkrAxVcva2Hi2p513Acw==",
+          "t": "Consumer Credit (Card) Transaction Original Creditor Plaintiff"
+        },
+        {
+          "v": "DGLKo1HEFyjjMdebWsMo0g==",
+          "t": "Consumer Credit (Card) Transaction Secondary Debt Buyer Plaintiff"
+        },
+        {
+          "v": "sMAyHQxRt2z4C0PGAawWOQ==",
+          "t": "Consumer Credit (Non-Card) Transaction"
+        },
+        {
+          "v": "YqjybiXvBiEOGM6Srtw_PLUS_EQ==",
+          "t": "Consumer Credit Transaction"
+        },
+        {
+          "v": "rmp94OLjmD7fEzuJl5Ou9w==",
+          "t": "Consumer Debt - Other-OOM"
+        },
+        {
+          "v": "IXgne8T4q6IPXgVYhl1ecA==",
+          "t": "Contract"
+        },
+        {
+          "v": "9JelefnTp2RCwJwHIX90Bw==",
+          "t": "Contract (Non-Commercial)"
+        },
+        {
+          "v": "TFePXGz/0kyIcB/J3dLduQ==",
+          "t": "County Court - Civil"
+        },
+        {
+          "v": "T3NaFMSljFFEWMojkFPqGw==",
+          "t": "Court Use Only"
+        },
+        {
+          "v": "JayH2Ywy7FnkxXMh5uOv2w==",
+          "t": "Covid - 19 Action Against Nursing Home"
+        },
+        {
+          "v": "JihZuyaZHU2778U0b3DApg==",
+          "t": "Criminal"
+        },
+        {
+          "v": "3_PLUS_N6CoSTBAck8n3gKY7LQw==",
+          "t": "Custody/Visitation"
+        },
+        {
+          "v": "UL52PH8C8hGuNqZigyPVIw==",
+          "t": "Dept of Health Violation - Application for Judgment"
+        },
+        {
+          "v": "lNaMeVgAraLjsgGu7/bieA==",
+          "t": "Direct Appeal"
+        },
+        {
+          "v": "Kg/qnkwCZaTFStrraID76g==",
+          "t": "Election Law"
+        },
+        {
+          "v": "Nb4JKWJeOZQCvgIy_PLUS_lp7Gg==",
+          "t": "Emergency Applications Related to Coronavirus"
+        },
+        {
+          "v": "7Td1UFARWD2S2st3MRVBJQ==",
+          "t": "Emergency Applications Related to Coronavirus - Matrimonial"
+        },
+        {
+          "v": "Q/bm65h6_PLUS_EFJ3K/cT2dclw==",
+          "t": "Eminent Domain"
+        },
+        {
+          "v": "M3Sth6XLz8fb6cOq9W_PLUS_e7w==",
+          "t": "Essential Matter per AO-78-2020 Exhibit A (E)(1)"
+        },
+        {
+          "v": "IYaL26Gh1nX_PLUS_biTKD5I3VQ==",
+          "t": "Essential Matter per AO-78-2020 Exhibit A (E)(1) - Asbestos"
+        },
+        {
+          "v": "1LDkCR_PLUS_Qf_PLUS_NkUigXPxsKQw==",
+          "t": "Essential Matter per AO-78-2020 Exhibit A (E)(1) - Comm Contract"
+        },
+        {
+          "v": "Z/z/gqik/hDetlH/BXBhZQ==",
+          "t": "Evidence"
+        },
+        {
+          "v": "i7XzCplUPwSWnuwgJOypRA==",
+          "t": "Family Offense"
+        },
+        {
+          "v": "aYNRngiXLpyN2z2nRU9vRw==",
+          "t": "Foreclosure"
+        },
+        {
+          "v": "iftoxkDYvqF59ZAvbqM6Ng==",
+          "t": "Foreclosure (non-mortgage)"
+        },
+        {
+          "v": "eWEcKS0gLzobJpX/xZVZaw==",
+          "t": "Foreclosure (non-residential mortgage)"
+        },
+        {
+          "v": "JbQC6VgvKoU/HT2R2NGoRw==",
+          "t": "Foreclosure (residential mortgage)"
+        },
+        {
+          "v": "LGax1X6snO7naPlsE9hzxQ==",
+          "t": "Guardianship"
+        },
+        {
+          "v": "PzpgffwElVMwhvFvFCCEcA==",
+          "t": "Habeas Corpus"
+        },
+        {
+          "v": "2UUJks3Tk280KdlJAK3w2A==",
+          "t": "Indictment - General Criminal"
+        },
+        {
+          "v": "zYzl5fw3aa3Fl7dMhuZgvQ==",
+          "t": "JD/PINS"
+        },
+        {
+          "v": "mtor2rSleoUHQ1pj1GQicQ==",
+          "t": "Landlord and Tenant - Alleged Illegal Lockout"
+        },
+        {
+          "v": "LtRan4b37veVV7DnLpcrtQ==",
+          "t": "Landlord and Tenant - Article 7A"
+        },
+        {
+          "v": "_PLUS_J8wbImjTGwG9CUxmjG/Jw==",
+          "t": "Landlord and Tenant - HP Action (Breach of Warrant of Habitability)"
+        },
+        {
+          "v": "aKGw3E4PY6rIrbl/_PLUS_KxnmA==",
+          "t": "Landlord and Tenant - HP Action (to obtain repairs)"
+        },
+        {
+          "v": "xRe5m3DC9ivKIh1CqQnutg==",
+          "t": "Landlord and Tenant - HP Action (with Harassment)"
+        },
+        {
+          "v": "JBxhVuPXHHOupscP1pHrug==",
+          "t": "Landlord and Tenant - Holdover"
+        },
+        {
+          "v": "xQHQBPgkwxZpSkTGFIfeGw==",
+          "t": "Landlord and Tenant - Holdover (Illegal Activity)"
+        },
+        {
+          "v": "/I6tjMliCcveO2jDh3G6yg==",
+          "t": "Landlord and Tenant - Nonpayment"
+        },
+        {
+          "v": "/5Vj2IsHkW_PLUS_pZ1JrP4JPIw==",
+          "t": "Landlord and Tenant - Pre-OSC Procedure (HP Action)"
+        },
+        {
+          "v": "18CHVxJ6Y4OMEh9haBWm0g==",
+          "t": "Landlord and Tenant - Pre-OSC Procedure (Recovery of Possession or Property)"
+        },
+        {
+          "v": "rFm5hqELlHh5JB/4qOWZmw==",
+          "t": "Litigation Coordinating Panel Matter"
+        },
+        {
+          "v": "mJlCiEMso20tXtLR4iVSyg==",
+          "t": "MHL - Other"
+        },
+        {
+          "v": "b96jojm2wEk0Sdi8byCI1A==",
+          "t": "MHL - SORA"
+        },
+        {
+          "v": "/0D_PLUS_xPjUAvIawXWRD9yIvg==",
+          "t": "Maimonides - Medical, Dental, or Podiatrist Malpractice"
+        },
+        {
+          "v": "FcYbt3yP1gmwWfTtPkRSHw==",
+          "t": "Mass Tort - Bextra Celebrex"
+        },
+        {
+          "v": "0mvOdLIfaorusTvoAIbn2w==",
+          "t": "Mass Tort - Chantix"
+        },
+        {
+          "v": "O8XFoQnvPu2wA7ZJQjmbJA==",
+          "t": "Mass Tort - Human Tissue Litigation"
+        },
+        {
+          "v": "MH9mM5_PLUS_RtvmeiGGclRJq_PLUS_Q==",
+          "t": "Mass Tort - Neurontin"
+        },
+        {
+          "v": "IozTh7tXfG7Zp0J70GjFaw==",
+          "t": "Mass Tort - RENU"
+        },
+        {
+          "v": "3RQTiUOgf3_PLUS_cZNRt1dPDJQ==",
+          "t": "Mass Tort - Steampipe Explosion"
+        },
+        {
+          "v": "0/cEok5BeNGRaUJuSkwnZA==",
+          "t": "Matrimonial"
+        },
+        {
+          "v": "P1GJ8kmp7T8yW0RAU7lJ5w==",
+          "t": "Matrimonial - Contested"
+        },
+        {
+          "v": "D4iNUZWGYoMPqDxgVJmgnQ==",
+          "t": "Matrimonial - Contested - IDV - Intregrated Domestic Violence"
+        },
+        {
+          "v": "w4YcWHiGNB9yVMcov0lKuQ==",
+          "t": "Matrimonial - Uncontested"
+        },
+        {
+          "v": "MiqjHN3dsXEyR2kmlMep7A==",
+          "t": "Medical Malpractice"
+        },
+        {
+          "v": "ssbN3m9Z1jESVc1BgOmdoA==",
+          "t": "Mental Hygiene"
+        },
+        {
+          "v": "TQl5SkueKaayLQ5Jd0l5yA==",
+          "t": "Motion for Permission to File Late"
+        },
+        {
+          "v": "USz7jl3K92EP/KBNe8rA9g==",
+          "t": "NYCHA - CPLR Article 78(Body or Officer)"
+        },
+        {
+          "v": "o61evISEaAYgrH_PLUS_AxGKAFg==",
+          "t": "NYCHH - Medical, Dental, or Podiatric Malpractice"
+        },
+        {
+          "v": "Sa2fsO_PLUS_bBB69rVO44H98_PLUS_w==",
+          "t": "Name Change"
+        },
+        {
+          "v": "gCiI9p6x/aVa4VCFQwceOA==",
+          "t": "Name Change/Sex Designation Change"
+        },
+        {
+          "v": "8GV2BWibVX9TbP4xadGjBg==",
+          "t": "No Fault"
+        },
+        {
+          "v": "rd5mFZgN5GC6C1p/qgb9pQ==",
+          "t": "Original Proceeding"
+        },
+        {
+          "v": "WVI2lq348VKQjS/uWSHLaw==",
+          "t": "Other Family"
+        },
+        {
+          "v": "7kMU2up877n7fQqA4tJlAA==",
+          "t": "Other Matters - Agriculture/Market"
+        },
+        {
+          "v": "LorNb4W/O0ejYTdYmGEOEQ==",
+          "t": "Other Matters - Application to Docket Family Court Judgment"
+        },
+        {
+          "v": "AGxUPFfRi9xECmCxQuRDfQ==",
+          "t": "Other Matters - Bureau of Administrative Adjudication - City of Yonkers App for Judgment"
+        },
+        {
+          "v": "0eXHYDe_PLUS_4031u7im5UwhVw==",
+          "t": "Other Matters - Bureau of Administrative Adjudication - City of Yonkers Code Enforcement"
+        },
+        {
+          "v": "UyLm8ewTBJ5I0KCX9lLfrg==",
+          "t": "Other Matters - Bureau of Administrative Adjudication - City of Yonkers Consumer Protection"
+        },
+        {
+          "v": "ETrimjnxBLiqBsDFFhBQLA==",
+          "t": "Other Matters - Bureau of Administrative Adjudication - City of Yonkers Parking Violations"
+        },
+        {
+          "v": "SbGdCbvuFrVhKkoossnBDA==",
+          "t": "Other Matters - CPLR 3102(e) application for disclosure"
+        },
+        {
+          "v": "W/H3kaE_PLUS_CiiCfRLisLwNHg==",
+          "t": "Other Matters - CSEB Confession of Judgment"
+        },
+        {
+          "v": "WwkLZ7ZlgZAocxYBZ6JntA==",
+          "t": "Other Matters - Certificate of Incorporation/Dissolution"
+        },
+        {
+          "v": "fEwxLMYNMaSHQ9Pr4jxV3w==",
+          "t": "Other Matters - Certificate of Incorporation/Dissolution - Commercial Division"
+        },
+        {
+          "v": "X42xz8yvi/vkzurvfOeLrg==",
+          "t": "Other Matters - Civil Forfeiture"
+        },
+        {
+          "v": "Nr6OfLImppkF9DHhSN_PLUS_9Qw==",
+          "t": "Other Matters - Consumer Credit (Card) Debt Buyer Plaintiff"
+        },
+        {
+          "v": "tUXOJfm8N3WkahoU_PLUS_95Cag==",
+          "t": "Other Matters - Consumer Credit (Card) Original Creditor Plaintiff"
+        },
+        {
+          "v": "7AnNo3OIorVWbiJm8v8OZg==",
+          "t": "Other Matters - Consumer Credit (Card) Secondary Debt Buyer Plaintiff"
+        },
+        {
+          "v": "wVfqVO5ZnwG4Agdmdm2eGg==",
+          "t": "Other Matters - Consumer Credit (Non-Card) Transaction"
+        },
+        {
+          "v": "_PLUS_PJHBqaY7TroNdf98UngWw==",
+          "t": "Other Matters - Contract - Other"
+        },
+        {
+          "v": "61WjyLvravXErSMOZokijQ==",
+          "t": "Other Matters - Contract Non-Commercial"
+        },
+        {
+          "v": "veCOqACbaI_PLUS_gszZyoXMkBA==",
+          "t": "Other Matters - County Court Order/Judgment"
+        },
+        {
+          "v": "HPfvR_PLUS_1tys5CDYYgL1nenA==",
+          "t": "Other Matters - County/Supreme Court Order/Judgment"
+        },
+        {
+          "v": "maDESKCHxMnVv77sEjk3jA==",
+          "t": "Other Matters - DSS Welfare Fraud Unit Confession of Judgment"
+        },
+        {
+          "v": "ZHFmU6yyeMRj5Rzzkd_PLUS_Ezw==",
+          "t": "Other Matters - Dept of Health Violation App for Judgment"
+        },
+        {
+          "v": "s6RzemoxbEyT1V43M_PLUS_ohKw==",
+          "t": "Other Matters - Dept of Health-SS Law Sect 145-a - App for Judgment"
+        },
+        {
+          "v": "BaK3vAiomW4dHkgLO75ZCg==",
+          "t": "Other Matters - Dept of Labor App for Judgment"
+        },
+        {
+          "v": "FS56m_PLUS__PLUS_ELUYa_PLUS_3n0KbHohw==",
+          "t": "Other Matters - Emergency Medical Treatment"
+        },
+        {
+          "v": "4Vw/yTnd8H1yE9NtEkp5lw==",
+          "t": "Other Matters - Emergency Medical Treatment - Central Islip"
+        },
+        {
+          "v": "F1u6t_PLUS_7FRCM5RWoOPlwymg==",
+          "t": "Other Matters - Emergency Medical Treatment - Quarantine"
+        },
+        {
+          "v": "mw4nz3nZMWxk4jXSzq/Eww==",
+          "t": "Other Matters - Habeas"
+        },
+        {
+          "v": "tfFoa2jwn/3oeD1CIlwKbg==",
+          "t": "Other Matters - Habeas Corpus"
+        },
+        {
+          "v": "JbHZpHXPEnqPr_PLUS__PLUS_bAN685Q==",
+          "t": "Other Matters - Habeas Corpus - Central Islip"
+        },
+        {
+          "v": "k7oTsoYzuGXg822k_PLUS_eeVdw==",
+          "t": "Other Matters - Habeas Corpus - Inmate"
+        },
+        {
+          "v": "p3A4uUC7ti5I9dTwVdNWkQ==",
+          "t": "Other Matters - Habeas Corpus Movant Institutionalized"
+        },
+        {
+          "v": "FefR3k/FuI6k6KA/4fMIqA==",
+          "t": "Other Matters - Local Court Appeal"
+        },
+        {
+          "v": "Mgk1wSD1YAZiA5LVv70cZQ==",
+          "t": "Other Matters - Mechanic's Lien"
+        },
+        {
+          "v": "gG5xTzlRC7wg_PLUS_IYzwzgSbw==",
+          "t": "Other Matters - NYS Division of Housing & Community Renewal App for Judgment"
+        },
+        {
+          "v": "QQhLu129oOsd6PIFsspdFA==",
+          "t": "Other Matters - Name Change"
+        },
+        {
+          "v": "27iFz0MGj0vPuV0bzR6v0w==",
+          "t": "Other Matters - Name Change - Central Islip"
+        },
+        {
+          "v": "Wsa2hO0DJrK3eh4aK_PLUS_3dXQ==",
+          "t": "Other Matters - Name Change/Sex Designation Change"
+        },
+        {
+          "v": "MvIyh66rh_PLUS_MitKYiiw3IYA==",
+          "t": "Other Matters - Name Change/Sex Designation Change - Central Islip"
+        },
+        {
+          "v": "2Gdy_PLUS_fpwCdL_PLUS_5okConGU8w==",
+          "t": "Other Matters - Other - Civil Forfeiture - D.A."
+        },
+        {
+          "v": "4S74vIcv2sdX8w3gQghwPw==",
+          "t": "Other Matters - Other - Civil Forfeiture - Krimstock"
+        },
+        {
+          "v": "WqsP2XtF2vomk3z/zi9Dpw==",
+          "t": "Other Matters - Other - Opioid Litigation"
+        },
+        {
+          "v": "dOiwjDE4cJ6to9l4FzCYWQ==",
+          "t": "Other Matters - Pistol Permit Revocation Hearing"
+        },
+        {
+          "v": "BezA4Wh6yaXNeC/PLCJYIw==",
+          "t": "Other Matters - Sale or Finance of Religious/Not for Profit Property"
+        },
+        {
+          "v": "L_PLUS_1h6ZAg4qpzMilHT2oKuw==",
+          "t": "Other Matters - Warrant of Inspection"
+        },
+        {
+          "v": "6CKEDkESlI541AYmoIp1sA==",
+          "t": "Other Matters - Workers Comp App for Judgment"
+        },
+        {
+          "v": "TrbvWInP7NY7If3e0FX4Gw==",
+          "t": "Other Matters- Local Court Appeal"
+        },
+        {
+          "v": "ZaRoNFyePibfbjwSAS3Oxg==",
+          "t": "Other Real Property - Eminent Domain"
+        },
+        {
+          "v": "ZgrcQOlw22U7sp1yW5_PLUS_AwA==",
+          "t": "Other Real Property - Foreclosure on Mechanic's Lien"
+        },
+        {
+          "v": "oRUmsMUkpd66yLWJdFoIqQ==",
+          "t": "Other Real Property - Non-Mortgage Foreclosure"
+        },
+        {
+          "v": "xT1MqXSSZ8BTp4Szel7QGA==",
+          "t": "Other Real Property - Other Partition Action"
+        },
+        {
+          "v": "mwpvPjqjwkiO3ptjb8ibyA==",
+          "t": "Other Real Property - Partition of Heirs Property"
+        },
+        {
+          "v": "pmh6mCWmIV6Nsppo12KdUw==",
+          "t": "Other Real Property - SCAR"
+        },
+        {
+          "v": "DpvNv7SwSFMaR9_PLUS_Q49jxAg==",
+          "t": "Other Real Property - Unsafe Buildings"
+        },
+        {
+          "v": "R46gTCmWxRz8bjltsk4azQ==",
+          "t": "Other Special Proceeding"
+        },
+        {
+          "v": "x6uFithAwgiBCpz1t/ZEzA==",
+          "t": "Parentage - Assisted Reproduction"
+        },
+        {
+          "v": "Kdwuc_PLUS_Xrq8AXiUxoOpunZA==",
+          "t": "Parentage - Surrogacy"
+        },
+        {
+          "v": "0w58Tbd7JNDioyc_PLUS_LuImhw==",
+          "t": "Paternity"
+        },
+        {
+          "v": "X1eRe4WP85TrZRjUjMxsMA==",
+          "t": "Personal Injury"
+        },
+        {
+          "v": "U32UPd_PLUS__PLUS_3UjmMc3pMaurUg==",
+          "t": "Plenary Action - Custody and Visitation"
+        },
+        {
+          "v": "/vjLSu8R_PLUS_Tm5RJmca6yBRA==",
+          "t": "Plenary Action - Support"
+        },
+        {
+          "v": "ntslbmCrczig7H4ZusQIcA==",
+          "t": "Plenary Action - Writ of Habeas Corpus - Child Custody"
+        },
+        {
+          "v": "oO6N9feZj2EY72Le5tgWpw==",
+          "t": "Post Judgment CM"
+        },
+        {
+          "v": "8JQR6STqI4lwg9ufsQx33g==",
+          "t": "Post Judgment UM"
+        },
+        {
+          "v": "ZXL47MVGiXTShahJS1u1Sw==",
+          "t": "Probate"
+        },
+        {
+          "v": "aqDSJqFg6W2eig2QR1tO4Q==",
+          "t": "Real Property - Condemnation"
+        },
+        {
+          "v": "tXYu2fTBbJH4ayq6e2ktVw==",
+          "t": "Real Property - Mortgage Foreclosure - Commercial"
+        },
+        {
+          "v": "_PLUS_Hfy79/3L7zKXgLtE8l83w==",
+          "t": "Real Property - Mortgage Foreclosure - Commercial - Commercial Division"
+        },
+        {
+          "v": "B94BvU9G6DAYkBKdqmIMwA==",
+          "t": "Real Property - Mortgage Foreclosure - Residential"
+        },
+        {
+          "v": "6geP8pdUHX3W0XhPHV7xCA==",
+          "t": "Real Property - Mortgage Foreclosure - Residential - Ineligible"
+        },
+        {
+          "v": "VnCkDbO9CQ44vaOfHFm8vA==",
+          "t": "Real Property - Mortgage Foreclosure - Residential - NO RJI"
+        },
+        {
+          "v": "yGlpiRVBh/MVF_PLUS_EFWpL94g==",
+          "t": "Real Property - Mortgage Foreclosure - Residential - NOT ELIGIBLE"
+        },
+        {
+          "v": "m69w15XxJyBZBw8Q6_PLUS_9lgg==",
+          "t": "Real Property - Mortgage Foreclosure - Residential - Reverse Mortgage"
+        },
+        {
+          "v": "qCbAQxtX6J9/fwvNL2sEjw==",
+          "t": "Real Property - Other"
+        },
+        {
+          "v": "3jyg7eKPUxM9ahLxrlsmFw==",
+          "t": "Real Property - Other - Central Islip"
+        },
+        {
+          "v": "3OR4c7j4q5py35uDAn3jQw==",
+          "t": "Real Property - Other - Nuisance Abatement"
+        },
+        {
+          "v": "boxeOlxUBya_PLUS_FAaWJC6_PLUS_4g==",
+          "t": "Real Property - Other - Partition"
+        },
+        {
+          "v": "_PLUS_uJTbW_PLUS_tZ9paQLxVsijTWg==",
+          "t": "Real Property - Other - Unsafe Building"
+        },
+        {
+          "v": "lHsQHmhNgSKZWfxojY7e4w==",
+          "t": "Real Property - Partition"
+        },
+        {
+          "v": "4gtUgyBhoNKUE5I7yBCgFQ==",
+          "t": "Real Property - Tax Certiorari"
+        },
+        {
+          "v": "o9QL19EH313iuwoQN/JfRw==",
+          "t": "Real Property - Tax Foreclosure"
+        },
+        {
+          "v": "etzuv6_PLUS_eOYi5A_PLUS_qLmgD5rA==",
+          "t": "Real Property Foreclosure"
+        },
+        {
+          "v": "j9MSKKRrYqe26gonQ3N9Pg==",
+          "t": "Real Property-Foreclosure on Mechanic Lien"
+        },
+        {
+          "v": "8g4PWW9ZJ3P0BTdq2vQfMg==",
+          "t": "SCI - General Criminal"
+        },
+        {
+          "v": "evx0lqyD0A_PLUS_B7LODiy9MCQ==",
+          "t": "Securities Act of 1933"
+        },
+        {
+          "v": "maP2agoJZR/4_PLUS__PLUS_2ydex44w==",
+          "t": "Small Claims Assessment Review"
+        },
+        {
+          "v": "9JfZ2o3lEbKU0c/H_PLUS_Cv_PLUS_Tw==",
+          "t": "Special Proceeding - CPLR Article 75"
+        },
+        {
+          "v": "R570WmnHUskErHwUGbpigg==",
+          "t": "Special Proceeding - CPLR Article 78"
+        },
+        {
+          "v": "aEZuL9pb1E7fxwFgLLKgbw==",
+          "t": "Special Proceeding - CPLR Article 78 - DHCR"
+        },
+        {
+          "v": "F4dcKhV6pzRomNP1YuITcQ==",
+          "t": "Special Proceeding - EDPL 207"
+        },
+        {
+          "v": "CutUBIXYiuNKOjRRAyUSmQ==",
+          "t": "Special Proceeding - Executive Law 298"
+        },
+        {
+          "v": "oMaRN4ggGk/IXRWwyRJUWA==",
+          "t": "Special Proceeding - Labor Law 220 or 220-b"
+        },
+        {
+          "v": "8/tA6iKHIcxUIixTsm_PLUS_R6A==",
+          "t": "Special Proceeding - Other"
+        },
+        {
+          "v": "ebzEtbW/rJ66L1wbMPWohg==",
+          "t": "Special Proceeding - Other - Central Islip"
+        },
+        {
+          "v": "jcN_PLUS_jajH0xiUK5rkPQKFrA==",
+          "t": "Special Proceeding - Other - Commercial Division"
+        },
+        {
+          "v": "TseeKk0RDFOTB56c6Pk_PLUS_nQ==",
+          "t": "Special Proceeding - Other - Mat Out-of-County PD Application"
+        },
+        {
+          "v": "3vuZ7g45uAjmMgQ3V4AcYA==",
+          "t": "Special Proceeding - Other - Matrimonial SP"
+        },
+        {
+          "v": "PMbt_PLUS_4zO8oT6v71BcQmmqQ==",
+          "t": "Special Proceeding - Public Officers Law 76"
+        },
+        {
+          "v": "GkbxjFr0QYXlUeM12nvtOw==",
+          "t": "Special Proceeding - Public Service Law 128 or 170"
+        },
+        {
+          "v": "2aulyIGBwQPP5D8UbtALTQ==",
+          "t": "Special Proceeding - RPTL 1218"
+        },
+        {
+          "v": "izHN2zWweCRTNae8kb7Aww==",
+          "t": "Special Proceedings - CPLR Article 75"
+        },
+        {
+          "v": "w3lFVD9aCoygx004nW2sIA==",
+          "t": "Special Proceedings - CPLR Article 75 (Arbitration) - Commercial Division"
+        },
+        {
+          "v": "6zQ8de2UcMGeyu3lzigLpg==",
+          "t": "Special Proceedings - CPLR Article 75 - Uninsured Motorist"
+        },
+        {
+          "v": "Ubl_PLUS_rkecdTHQqJ8sevyGmw==",
+          "t": "Special Proceedings - CPLR Article 78"
+        },
+        {
+          "v": "lWB45g4qp1Z0OnxvcWZQvA==",
+          "t": "Special Proceedings - Election Law"
+        },
+        {
+          "v": "UiFMYAm_PLUS_YdKhHBiW8Nk8KQ==",
+          "t": "Special Proceedings - Extreme Risk Protection Order"
+        },
+        {
+          "v": "bD1zwCn13C4LcamdYznwPA==",
+          "t": "Special Proceedings - MHL Article 10 Initial"
+        },
+        {
+          "v": "IcZAModH/Djarxt1j4NeXA==",
+          "t": "Special Proceedings - MHL Article 10 Review"
+        },
+        {
+          "v": "SypbvtBxENjJFcvgNxRpHg==",
+          "t": "Special Proceedings - MHL Article 81"
+        },
+        {
+          "v": "LhMlfkB4I5ZUE3hQJ9Z4UA==",
+          "t": "Special Proceedings - MHL Article 9.6"
+        },
+        {
+          "v": "vptOEEwPzLt/xuygqikR5w==",
+          "t": "Special Proceedings - Mechanic's Lien"
+        },
+        {
+          "v": "Z4X1takKqR5U9Xw8TEimCQ==",
+          "t": "Special Proceedings - Other"
+        },
+        {
+          "v": "Z61m8ctYaqlKSIXWdS9y9g==",
+          "t": "Special Proceedings - Other - City"
+        },
+        {
+          "v": "Ylzk8/5AEGLRJ0YofZx8_PLUS_g==",
+          "t": "Special Proceedings - Other - Nuisance Abatement"
+        },
+        {
+          "v": "_PLUS_5t/IF9vmvYo8LuBawADyw==",
+          "t": "Special Proceedings - Other - Transit Authority"
+        },
+        {
+          "v": "VMEwTe3mqsZBjxBG2h5/QQ==",
+          "t": "Special Proceedings - Other Mental Hygiene"
+        },
+        {
+          "v": "Zi19sjXqYcin7Ba4N4sGTg==",
+          "t": "Special Proceedings - Other Mental Hygiene - Article 83"
+        },
+        {
+          "v": "emW4d3gclHfs2PsFd/WPZw==",
+          "t": "Special Proceedings - Other Mental Hygiene - Habeas Corpus"
+        },
+        {
+          "v": "daWnhfCx_PLUS_0mXT67cxXGmMg==",
+          "t": "Special Proceedings - Other Mental Hygiene - Involuntary Mental Health Proceedings (Including Protected Mental Health Records)"
+        },
+        {
+          "v": "Wazze_PLUS_5/9MYouuEAxPoTTw==",
+          "t": "Special Proceedings - Other Mental Hygiene - MHL Article 9"
+        },
+        {
+          "v": "JFmdchONIWMf1iuqnBtgMA==",
+          "t": "Special Proceedings - Other Mental Hygiene - MHL Article 9 - Other"
+        },
+        {
+          "v": "XYej4va96/8Q9FUFIqqDOw==",
+          "t": "Special Proceedings - Other Mental Hygiene - Pilgrim"
+        },
+        {
+          "v": "fgrs1OiyMVZDzHmtovh3HA==",
+          "t": "Special Proceedings - Other Mental Hygiene - Pilgrim MHL 33"
+        },
+        {
+          "v": "cixygZCEabiS4Ztp6OxHIA==",
+          "t": "Support"
+        },
+        {
+          "v": "sWHk4cQE2DWkSsfNFnJ1xw==",
+          "t": "Tax Certiorari"
+        },
+        {
+          "v": "VjcAYONKbtMAoqSCzYwE1w==",
+          "t": "Termination of Parental Rights"
+        },
+        {
+          "v": "9nuUvtAZ_PLUS_XoMbi1xO8F0fQ==",
+          "t": "Tort"
+        },
+        {
+          "v": "YeJV5CVwL7HgmGm4S4au7w==",
+          "t": "Torts - Adult Survivors Act"
+        },
+        {
+          "v": "RPb6m5RwbOmVuRQR_PLUS_LCQYA==",
+          "t": "Torts - Asbestos"
+        },
+        {
+          "v": "obIZPO7TTJ5SQ8XfPkrL5g==",
+          "t": "Torts - Asbestos - City"
+        },
+        {
+          "v": "W9IYAwfMn4kIPROYfm3Ouw==",
+          "t": "Torts - Breast Implant"
+        },
+        {
+          "v": "IHcQU4IefJ6ZOxmOLDPxoQ==",
+          "t": "Torts - Child Victims Act"
+        },
+        {
+          "v": "lCujgDP_PLUS_u/GIxSaXX/JhzQ==",
+          "t": "Torts - Child Victims Act - Motion Sealing"
+        },
+        {
+          "v": "fU0TyLK/2jX5vFA_PLUS_dpcjIA==",
+          "t": "Torts - Environmental"
+        },
+        {
+          "v": "1h1WjBbYu2mjoQFTTnN/Bw==",
+          "t": "Torts - Environmental - City"
+        },
+        {
+          "v": "5x4Cx0qiEo6uUgY1AMzUSg==",
+          "t": "Torts - Gender-Motivated Violence Act (GMVA)"
+        },
+        {
+          "v": "G4N07ghHhsygnMmAvFTd2w==",
+          "t": "Torts - Medical Dental or Podiatrist Malpractice - City Med Mal"
+        },
+        {
+          "v": "3/47nliEZpJ/rdntxCDeUg==",
+          "t": "Torts - Medical Dental or Podiatrist Malpractice - Medical Mal - HHC"
+        },
+        {
+          "v": "7CrhKLhN63DksRAWALAdYg==",
+          "t": "Torts - Medical Dental or Podiatrist Malpractice - Other Health Malpractice"
+        },
+        {
+          "v": "0MLbiKhYEcv29Zk8yBfC5w==",
+          "t": "Torts - Medical, Dental, or Podiatrist Malpractice"
+        },
+        {
+          "v": "4dU4Lt03mJLeiWM2qgLDfA==",
+          "t": "Torts - Motor Vehicle"
+        },
+        {
+          "v": "3zKQ6Kforvhk3heMzgWm9A==",
+          "t": "Torts - Motor Vehicle - City"
+        },
+        {
+          "v": "0FCbh0OTzZ3/VgXaj7SmLA==",
+          "t": "Torts - Motor Vehicle - Transit Authority"
+        },
+        {
+          "v": "p7SNzR6n/GemoNJVvKiMKg==",
+          "t": "Torts - Other"
+        },
+        {
+          "v": "co7lFqniolhHV/MUAVRogA==",
+          "t": "Torts - Other - Asset Forfeiture- Civil"
+        },
+        {
+          "v": "z_PLUS_z4QeFOv/pGFiS5z7dO0w==",
+          "t": "Torts - Other - City"
+        },
+        {
+          "v": "BJ/WQ4Rj8ATAgRALubZ_PLUS_yg==",
+          "t": "Torts - Other - Transit Authority"
+        },
+        {
+          "v": "d_PLUS_NxUoVqWxbegaiGqaUOVg==",
+          "t": "Torts - Other Negligence"
+        },
+        {
+          "v": "PF7Ct2/Ye1fkZusFrgTRsQ==",
+          "t": "Torts - Other Negligence - City"
+        },
+        {
+          "v": "GyCTh6TkS2lXeiL6_PLUS_6_PLUS_sRQ==",
+          "t": "Torts - Other Negligence - Mass Tort - Gas Explosion"
+        },
+        {
+          "v": "carUjb5kpj8oM/EEr7Hz9w==",
+          "t": "Torts - Other Negligence - Mass Tort - Human Tissue Litigation"
+        },
+        {
+          "v": "pDo2buEt/eLUIbvUSgZfMw==",
+          "t": "Torts - Other Negligence - Mass Tort - Steampipe Explosion"
+        },
+        {
+          "v": "r1rJHeyAT_PLUS_7729cnx2Z3Rw==",
+          "t": "Torts - Other Negligence - Transit Authority"
+        },
+        {
+          "v": "mLjxjh67H1q82i3tCXicZA==",
+          "t": "Torts - Other Professional Malpractice"
+        },
+        {
+          "v": "0keJN/WNp/BDnuMpxm11jA==",
+          "t": "Torts - Other Professional Malpractice - Legal Malpractice"
+        },
+        {
+          "v": "/q94u63By9xYnV3Gmqs75w==",
+          "t": "Torts - Product Liability"
+        },
+        {
+          "v": "c425IG430KOQOAOV0k2ARQ==",
+          "t": "Torts - Product Liability - Mass Tort - Bextra Celebrex"
+        },
+        {
+          "v": "7t4yNmCmlE9n9kfi/7OyYg==",
+          "t": "Torts - Product Liability - Mass Tort - Chantix"
+        },
+        {
+          "v": "kHD2U7NTE2HGBTsaTU2NxA==",
+          "t": "Torts - Product Liability - Mass Tort - Depo-Provera"
+        },
+        {
+          "v": "xLcXlU9fhESAeAeg8joPXQ==",
+          "t": "Torts - Product Liability - Mass Tort - Neurontin"
+        },
+        {
+          "v": "mSh4W0UALCUSloshr03Xww==",
+          "t": "Torts - Product Liability - Mass Tort - RENU"
+        },
+        {
+          "v": "E/NDYmqYmtJ2sr528cwGVQ==",
+          "t": "Torts - Product Liability - Mass Tort - Zantac"
+        },
+        {
+          "v": "auGy5pj2Q_PLUS_/UQlW318S/wQ==",
+          "t": "Torts - Product Liability - Opioids"
+        },
+        {
+          "v": "LjtPnJfgYvJOkY7gjtJlZg==",
+          "t": "Transit - Torts - Asbestos"
+        },
+        {
+          "v": "SXM/1tpJbM_PLUS_4kRpZ0YEkZg==",
+          "t": "Transit - Torts - Child Victims Act"
+        },
+        {
+          "v": "CRUvB68XLBodGG7DOwmu1g==",
+          "t": "Transit - Torts - Environmental"
+        },
+        {
+          "v": "uJqZ36qBAXlM2X6QKj0JzQ==",
+          "t": "Transit - Torts - Medical, Dental, or Podiatrist Malpractice"
+        },
+        {
+          "v": "_PLUS_k3mgAXngfFZtjFRfe6iUg==",
+          "t": "Transit - Torts - Motor Vehicle"
+        },
+        {
+          "v": "BSCJzDlDmpC2Eq67mpsX3A==",
+          "t": "Transit - Torts - Other"
+        },
+        {
+          "v": "oYu_PLUS_B1gjTz7CV2RoU3h/UQ==",
+          "t": "Transit - Torts - Other Negligence"
+        },
+        {
+          "v": "4PTYZ3Qr_PLUS_AU4pEVQVL6BlA==",
+          "t": "Transit - Torts - Other Professional Malpractice"
+        },
+        {
+          "v": "h6s3Q6FvHheEMa7/IkpK2g==",
+          "t": "Transit - Torts - Product Liability"
+        },
+        {
+          "v": "CZ5ErsXjHq4ZCvOPIRm1RQ==",
+          "t": "Uncontested Matrimonial"
+        },
+        {
+          "v": "Mc1QPyAMNed_PLUS_Fzs7NPi1lQ==",
+          "t": "Unemployment Insurance"
+        },
+        {
+          "v": "7Go4GGapasmlQhqz4dSaFg==",
+          "t": "Vehicle and Traffic Matter"
+        },
+        {
+          "v": "FmF4ziiIKxN9cj22Y1eLPQ==",
+          "t": "Voluntary"
+        },
+        {
+          "v": "BDSXJCX67ExduC1K4jqO6g==",
+          "t": "Workers Comp App for Judgement"
+        },
+        {
+          "v": "83ZBtC6C8fi2v0dNeCo8Vg==",
+          "t": "Workers' Compensation"
+        }
+      ]
+    },
+    "greene_option_value": "20",
+    "pre_submit": {
+      "name": "nyscef_02_pre_submit",
+      "url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name",
+      "title": "Case Search",
+      "html_len": 71936,
+      "text_head": "Skip To: Content Navigation Accessibility\nNew York State Unified Court System\nNYSCEF - New York State Courts Electronic Filing (Live System)\nHome\nNYSCEF\nHome\nUnrepresented Litigants\nAccount\nCreate an Account\nLogin\nSearch as Guest\nResources\nForms\nAuthorized Courts\nAvailable Documents\nRules & Legislation\nProtocols\nHelp\nCase Search\nCase Identifier\nName\nTax Cert/SCAR\nNew Cases\n \n\nEnter a Business/Organization name or a First and Last name. The Business/Organization requires at least 2 characters. The First and Last name require at least 1 character.\n\nName Type\n Party  Attorney\nBusiness/Organization\n\nFirst, Middle, and Last Name\nFirst\n Middle\n Last\n Search\n\n\nNarrow Your Results\n\nNarrow your results by County, Case Type, or Filing Date. If narrowing by Filing Date, both the Start and End date are required. Enter date as mm/dd/yyyy.\n\nCounty\n\nPlease select...\n*** UI/WC ***\nAlbany\nAllegany\nAppellate Division - 1st Dept\nAppellate Division - 2nd Dept\nAppellate Division - 3rd Dept\nAppellate Division - 4th Dept\nBronx\nBroome\nCattaraugus\nCayuga\nChautauqua\nChemung\nChenango\nClinton\nColumbia\nCortland\nDelaware\nDutchess\nErie\nEssex\nFranklin\nFulton\nGenesee\nGreene\nHamilton\nHerkimer\nJefferson\nKings\nLewis\nLivingston\nMadison\nMonroe\nMontgomery\nNYS Court of Claims\nNassau\nNew York\nNiagara\nNone\nOneida\nOnondaga\nOntario\nOrange\nOrleans\nOswego\nOtsego\nPutnam\nQueens\nRensselaer\nRichmond\nRockland\nSaratoga\nSchenectady\nSchoharie\nSchuyler\nSeneca\nSt. Lawrence\nStatewide\nSteuben\nSuffolk\nSullivan\nTioga\nTompkins\nUlster\nW",
+      "has_recaptcha_iframe": 2,
+      "has_turnstile": false
+    },
+    "post_submit": {
+      "name": "nyscef_03_post_submit",
+      "url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name",
+      "title": "Just a moment...",
+      "html_len": 34314,
+      "text_head": "iapps.courts.state.ny.us\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a0154530c96cf07c\nPerformance and Security by Cloudflare\nPrivacy",
+      "has_recaptcha_iframe": 0,
+      "has_turnstile": true
+    },
+    "tables": []
+  },
+  "websurrogate": {
+    "id": "websurrogate",
+    "initial": {
+      "name": "wsurr_01_initial",
+      "url": "https://websurrogates.nycourts.gov/Home/Welcome/?ReturnUrl=%2F",
+      "title": "Welcome",
+      "html_len": 26689,
+      "text_head": "Skip To: \u00a0\u00a0Content | Navigation | Accessibility\nNew York State Unified Court System\nWebSurrogate\nWelcome to WebSurrogate\nHELP\nView Help PDF (opens in new tab)\n\nWebSurrogate provides information on estate proceedings and other filings within New York State Surrogate's Courts. WebSurrogate is a free service that allows you to search files, retrieve documents, and view historical records that are considered to be public information.\n\nAvailable Search Options\n\nName Search\n\nFind Surrogate's Court files by Party Name, narrow your search by date of death. View file history and associated documents.\n\nFile Search\n\nFind Surrogate's Court files by file number. View file history and associated documents.\n\nOld Index Search*\n\nFind historical Surrogate's Court records (Old Indexes) by file number or file name. View images of available file records.\n\nIndex Book Pages*\n\nBrowse and view available images of pages from Surrogate's Court index books.\n\nWill Search*\n\nFind records for Wills Filed For Safekeeping with a Surrogate's Court by Testator name. View a list of matching Will records held at a Surrogate's Court. Wills Filed For Safekeeping are not available for public view.\n\n*Not all Surrogate's Courts have these records available online.\n\nIMPORTANT NOTE\n\nOn February 19, 2014, the Uniform Rules for Surrogate\u2019s Courts were amended to include Section 207.64 to protect CPI and restrict access to certain file records and documents.\n\nWebSurrogate prevents access to files and documents that are res",
+      "has_recaptcha_iframe": 0,
+      "has_turnstile": false
+    },
+    "forms": [
+      {
+        "action": "https://websurrogates.nycourts.gov/Home/Welcome",
+        "method": "post",
+        "inputs": [
+          {
+            "tag": "button",
+            "id": "StartSearchButton",
+            "name": "WelcomePageButton",
+            "type": "submit"
+          },
+          {
+            "tag": "button",
+            "id": "StartSearchButtonDisabled",
+            "name": "WelcomePageButton",
+            "type": "submit"
+          },
+          {
+            "tag": "input",
+            "id": "",
+            "name": "__RequestVerificationToken",
+            "type": "hidden"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "text": "Content",
+        "href": "https://websurrogates.nycourts.gov/Home/Welcome/?ReturnUrl=%2F#content"
+      },
+      {
+        "text": "Navigation",
+        "href": "https://websurrogates.nycourts.gov/Home/Welcome/?ReturnUrl=%2F#footer"
+      },
+      {
+        "text": "Accessibility",
+        "href": "https://websurrogates.nycourts.gov/Home/Accessibility"
+      },
+      {
+        "text": "HELP\nView Help PDF (opens in new tab)",
+        "href": "https://websurrogates.nycourts.gov/image/WebSurrogate%20Help.pdf"
+      },
+      {
+        "text": "PART 207. Uniform Rules For The Surrogate's Court | NYCOURTS.GOV",
+        "href": "https://websurrogates.nycourts.gov/Home/PageFor20764"
+      },
+      {
+        "text": "Terms of Use",
+        "href": "https://websurrogates.nycourts.gov/Home/TermsOfUse"
+      }
+    ]
+  },
+  "webcivil_supreme": {
+    "id": "webcivil_supreme",
+    "initial": {
+      "name": "wcs_01_initial",
+      "url": "https://iapps.courts.state.ny.us/webcivil/FCASMain",
+      "title": "WebCivil Supreme",
+      "html_len": 24079,
+      "text_head": "What's New\nTerms of Use\nFAQ\nCommon\nAbbreviations\nResources\nContact Us\nEmergency Alert Portal\n\n\n\nIndex Search\nParty Search\nAttorney/Firm\nSearch\nJustice Search\n\n\nCourt Calendars\nAttorney/Firm\nCalendars\n\n\nDocument Search\n\n\neTrack\n\n\neCourts Home\nWebCivil Supreme\nMobile\n\t\n\n\n\nWebCivil Supreme\n\nThis system provides past, present and future case information for New York State Civil Supreme Courts Only.\n\n\u00a0Index Search\tFind New York State Civil Supreme Court cases by index number.\n\u00a0\n\u00a0Party Search\tFind New York State Civil Supreme Court cases by party name.\n\u00a0\n\u00a0Attorney/Firm Search\tFind New York State Civil Supreme Court cases by attorney name.\n\u00a0\n\u00a0Justice Search\tFind New York State Civil Supreme Court cases by justice name.\n\u00a0\n\u00a0Court Calendars\tFind calendar information by county, justice and part.\n\u00a0\n\u00a0Attorney/Firm Calendars\u00a0\tFind calendar information for an attorney or firm and email copies of your Calendar.\n\u00a0\n\u00a0Document Search\tFind published decisions by index number and county.\n\u00a0\n\n\t\n\n\n\n\n\n\n\n\n",
+      "has_recaptcha_iframe": 0,
+      "has_turnstile": false
+    },
+    "links": [
+      {
+        "text": "What's New",
+        "href": "https://iapps.courts.state.ny.us/webcivil/ecourtsWhatsNew?pCourtType=Supreme"
+      },
+      {
+        "text": "Terms of Use",
+        "href": "https://iapps.courts.state.ny.us/webcivil/TermsOfUse"
+      },
+      {
+        "text": "FAQ",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASFAQ"
+      },
+      {
+        "text": "Common\nAbbreviations",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASGlossary"
+      },
+      {
+        "text": "Resources",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASResources"
+      },
+      {
+        "text": "Contact Us",
+        "href": "https://iapps.courts.state.ny.us/webcivil/ecourtsContact"
+      },
+      {
+        "text": "Emergency Alert Portal",
+        "href": "http://www.nycourts.gov/notice/emergency-alerts.shtml"
+      },
+      {
+        "text": "",
+        "href": "http://ww2.nycourts.gov/social/twitter.shtml"
+      },
+      {
+        "text": "Index Search",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=I"
+      },
+      {
+        "text": "Party Search",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P"
+      },
+      {
+        "text": "Attorney/Firm\nSearch",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=A"
+      },
+      {
+        "text": "Justice Search",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=J"
+      },
+      {
+        "text": "Court Calendars",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASCalendarSearch"
+      },
+      {
+        "text": "Attorney/Firm\nCalendars",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASAttorneyCalendarSearch"
+      },
+      {
+        "text": "Document Search",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch"
+      },
+      {
+        "text": "eTrack",
+        "href": "https://iapps.courts.state.ny.us/webcivil/etrackMain"
+      },
+      {
+        "text": "eCourts Home",
+        "href": "https://iapps.courts.state.ny.us/webcivil/ecourtsMain"
+      },
+      {
+        "text": "WebCivil Supreme\nMobile",
+        "href": "https://iapps.courts.state.ny.us/webmobile/ecourts/app-production.html"
+      },
+      {
+        "text": "Index Search",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=I"
+      },
+      {
+        "text": "Party Search",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P"
+      },
+      {
+        "text": "Attorney/Firm Search",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=A"
+      },
+      {
+        "text": "Justice Search",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=J"
+      },
+      {
+        "text": "Court Calendars",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASCalendarSearch"
+      },
+      {
+        "text": "Attorney/Firm Calendars",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASAttorneyCalendarSearch"
+      },
+      {
+        "text": "Document Search",
+        "href": "https://iapps.courts.state.ny.us/webcivil/FCASDocumentSearch"
+      },
+      {
+        "text": "",
+        "href": "http://www.nycourts.gov/courts"
+      },
+      {
+        "text": "",
+        "href": "http://www.nycourts.gov/litigants"
+      },
+      {
+        "text": "",
+        "href": "http://www.nycourts.gov/attorneys"
+      },
+      {
+        "text": "",
+        "href": "http://www.nyjuror.gov/index.shtml"
+      },
+      {
+        "text": "",
+        "href": "http://www.nycourts.gov/judges"
+      },
+      {
+        "text": "",
+        "href": "http://www.nycourts.gov/careers"
+      },
+      {
+        "text": "",
+        "href": "http://www.nycourts.gov/google/sitewide.shtml"
+      }
+    ]
+  }
+}

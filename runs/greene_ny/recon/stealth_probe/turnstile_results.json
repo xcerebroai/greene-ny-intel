@@ -1,0 +1,180 @@
+[
+  {
+    "id": "searchiqs_landing",
+    "url": "https://www.searchiqs.com/nygre/",
+    "action": null,
+    "http_status": 200,
+    "initial_state": {
+      "title": "Greene County, NY - SearchIQS",
+      "url": "https://www.searchiqs.com/nygre/",
+      "challenge_title": false,
+      "has_turnstile_widget": false,
+      "cf_iframes": 0,
+      "cf_chl_input_count": 0,
+      "looks_blocked": false,
+      "html_len": 16075,
+      "resolved": true,
+      "clicked": false,
+      "iterations": 1
+    }
+  },
+  {
+    "id": "searchiqs_guest_click",
+    "url": "https://www.searchiqs.com/nygre/",
+    "action": "click_guest",
+    "http_status": 200,
+    "initial_state": {
+      "title": "Greene County, NY - SearchIQS",
+      "url": "https://www.searchiqs.com/nygre/",
+      "challenge_title": false,
+      "has_turnstile_widget": false,
+      "cf_iframes": 0,
+      "cf_chl_input_count": 0,
+      "looks_blocked": false,
+      "html_len": 16075,
+      "resolved": true,
+      "clicked": false,
+      "iterations": 1
+    },
+    "post_action_state": {
+      "title": "Just a moment...",
+      "url": "https://www.searchiqs.com/nygre/",
+      "challenge_title": true,
+      "has_turnstile_widget": true,
+      "cf_iframes": 0,
+      "cf_chl_input_count": 1,
+      "looks_blocked": true,
+      "html_len": 32244,
+      "resolved": false,
+      "clicked": false,
+      "iterations": 6
+    }
+  },
+  {
+    "id": "nyscef_case_search",
+    "url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name",
+    "action": null,
+    "http_status": 200,
+    "initial_state": {
+      "title": "Case Search",
+      "url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name",
+      "challenge_title": false,
+      "has_turnstile_widget": false,
+      "cf_iframes": 0,
+      "cf_chl_input_count": 0,
+      "looks_blocked": false,
+      "html_len": 71863,
+      "resolved": true,
+      "clicked": false,
+      "iterations": 1
+    }
+  },
+  {
+    "id": "nyscef_submit",
+    "url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name",
+    "action": "submit_smith",
+    "http_status": 200,
+    "initial_state": {
+      "title": "Case Search",
+      "url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name",
+      "challenge_title": false,
+      "has_turnstile_widget": false,
+      "cf_iframes": 0,
+      "cf_chl_input_count": 0,
+      "looks_blocked": false,
+      "html_len": 71863,
+      "resolved": true,
+      "clicked": false,
+      "iterations": 1
+    },
+    "post_action_state": {
+      "title": "Just a moment...",
+      "url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch?TAB=name",
+      "challenge_title": true,
+      "has_turnstile_widget": true,
+      "cf_iframes": 0,
+      "cf_chl_input_count": 1,
+      "looks_blocked": true,
+      "html_len": 34314,
+      "resolved": false,
+      "clicked": false,
+      "iterations": 6
+    }
+  },
+  {
+    "id": "websurrogate_root",
+    "url": "https://websurrogates.nycourts.gov/",
+    "action": null,
+    "http_status": 200,
+    "initial_state": {
+      "title": "Welcome",
+      "url": "https://websurrogates.nycourts.gov/Home/Welcome/?ReturnUrl=%2F",
+      "challenge_title": false,
+      "has_turnstile_widget": false,
+      "cf_iframes": 0,
+      "cf_chl_input_count": 0,
+      "looks_blocked": false,
+      "html_len": 26689,
+      "resolved": true,
+      "clicked": false,
+      "iterations": 1
+    }
+  },
+  {
+    "id": "websurrogate_case_search",
+    "url": "https://websurrogates.nycourts.gov/Search/Cases",
+    "action": null,
+    "http_status": 404,
+    "initial_state": {
+      "title": "",
+      "url": "https://websurrogates.nycourts.gov/Search/Cases",
+      "challenge_title": false,
+      "has_turnstile_widget": false,
+      "cf_iframes": 0,
+      "cf_chl_input_count": 0,
+      "looks_blocked": false,
+      "html_len": 39,
+      "resolved": true,
+      "clicked": false,
+      "iterations": 1
+    }
+  },
+  {
+    "id": "webcivil_supreme_index",
+    "url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=I",
+    "action": null,
+    "http_status": 200,
+    "initial_state": {
+      "title": "WebCivil Supreme - Case Search",
+      "url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=I",
+      "challenge_title": false,
+      "has_turnstile_widget": false,
+      "cf_iframes": 0,
+      "cf_chl_input_count": 0,
+      "looks_blocked": false,
+      "html_len": 47341,
+      "resolved": true,
+      "clicked": false,
+      "iterations": 1
+    }
+  },
+  {
+    "id": "webcivil_supreme_party",
+    "url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+    "action": null,
+    "http_status": 200,
+    "initial_state": {
+      "title": "WebCivil Supreme - Case Search",
+      "url": "https://iapps.courts.state.ny.us/webcivil/FCASSearch?param=P",
+      "challenge_title": false,
+      "has_turnstile_widget": false,
+      "cf_iframes": 0,
+      "cf_chl_input_count": 0,
+      "looks_blocked": false,
+      "html_len": 47380,
+      "resolved": true,
+      "clicked": false,
+      "iterations": 1
+    }
+  }
+]

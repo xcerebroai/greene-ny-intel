@@ -31,6 +31,8 @@ body {
   letter-spacing: .4px; }
 .topstat.urgent .n { color: var(--red); }
 .topstat.estate .n { color: var(--green); }
+.topstat.new .n { color: #59c87a; }
+.topstat.recent .n { color: var(--accent); }
 .topactions { display: flex; gap: 8px; }
 
 .btn {
@@ -106,6 +108,7 @@ main { display: flex; flex: 1; min-height: 0; }
 .lg-r { background: var(--red); } .lg-o { background: var(--orange); }
 .lg-g { background: var(--green); } .lg-y { background: var(--yellow); }
 .lg-v { background: var(--violet); }
+.lg-n { background: #59c87a; }
 
 .leadlist { flex: 1; overflow-y: auto; padding: 8px 16px; }
 .sentinel { height: 1px; }
@@ -125,6 +128,18 @@ main { display: flex; flex: 1; min-height: 0; }
   background: repeating-linear-gradient(135deg, var(--panel),
     var(--panel) 11px, #1c1822 11px, #1c1822 22px); }
 .lead.marked { box-shadow: inset 3px 0 0 0 #e6c34a; }
+.lead.is-new {
+  background: linear-gradient(to right,
+    rgba(89, 200, 122, 0.10) 0,
+    rgba(89, 200, 122, 0.04) 36%,
+    var(--panel) 70%);
+  box-shadow: 0 0 0 1px rgba(89, 200, 122, 0.45);
+}
+.lead.is-new.review {
+  background: repeating-linear-gradient(135deg,
+    rgba(89, 200, 122, 0.10), rgba(89, 200, 122, 0.10) 11px,
+    rgba(28, 24, 34, 0.95) 11px, rgba(28, 24, 34, 0.95) 22px);
+}
 
 .lead-main { display: flex; gap: 14px; align-items: flex-start; }
 .lead-id { flex: 1; min-width: 0; }
@@ -160,6 +175,17 @@ main { display: flex; flex: 1; min-height: 0; }
   background: var(--chip-bg); color: var(--ink2); }
 .badge.warn { background: #33291f; color: #f0c98a; }
 .badge.good { background: #1f3324; color: #9be3a8; }
+.badge.badge-new {
+  background: #59c87a; color: #082515; font-weight: 800;
+  font-size: 11px; padding: 1px 8px; letter-spacing: 0.4px;
+  box-shadow: 0 0 0 1px rgba(89,200,122,0.55), 0 0 4px rgba(89,200,122,0.45);
+  animation: badge-new-pulse 1.8s ease-in-out infinite;
+}
+.badge.badge-recent { background: #1d2a3a; color: #9bd1ff; }
+@keyframes badge-new-pulse {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(89,200,122,0.55), 0 0 4px rgba(89,200,122,0.45); }
+  50%      { box-shadow: 0 0 0 1px rgba(89,200,122,0.75), 0 0 7px rgba(89,200,122,0.65); }
+}
 
 /* ---- detail panel (UI-4) ---- */
 .detail { margin-top: 9px; padding-top: 9px; border-top: 1px dashed var(--line);

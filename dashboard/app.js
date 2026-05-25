@@ -44,9 +44,11 @@
   var DATA = (typeof window !== "undefined" && window.LEADS) || null;
   var records = [];
   var state = {
-    search: "", saleWindow: "any", valMin: null, valMax: null,
+    search: "", saleWindow: "any", recordedWindow: "any",
+    valMin: null, valMax: null,
     signals: {}, owners: {}, absentee: false, oos: false, review: false,
-    multiOnly: false, sort: "urgency", shown: 0, preset: "all"
+    multiOnly: false, newOnly: false, sort: "urgency",
+    shown: 0, preset: "all"
   };
   var PAGE = 60;
   var marked = loadMarked();   // Set of lead_id (localStorage)
@@ -88,7 +90,13 @@
     r._days = daysFromToday(sd);
     r._assessed = Number(r.assessed_value) || 0;
     r._review = r.parcel_resolution_status === "REVIEW_REQUIRED";
-    r._filed = parseDate(r.latest_event_date);
+    r._filed = parseDate(r.latest_event_date || r.recorded_date);
+    // Recency (UI-3+). Pipeline-frozen — read precomputed flags from the
+    // payload rather than recomputing against the viewer's clock.
+    r._isNew = !!r.is_new;
+    r._daysSince = (typeof r.days_since_event === "number")
+      ? r.days_since_event : null;
+    r._last30 = !!r.last_30_days;
     r._tier = urgencyTier(r);
     var taxd = r.signal_types.indexOf("state_tax_lien") >= 0 ||
       r.signal_types.indexOf("federal_tax_lien") >= 0;
@@ -138,6 +146,12 @@
   }
 
   function topStatsHtml(p) {
+    var newToday = (typeof p.new_today_count === "number")
+      ? p.new_today_count
+      : records.filter(function (r) { return r._isNew; }).length;
+    var last30 = (typeof p.last_30_days_count === "number")
+      ? p.last_30_days_count
+      : records.filter(function (r) { return r._last30; }).length;
     var fclAddr = records.filter(function (r) {
       return r._isFcl && r.property_full_address;
     }).length;
@@ -153,6 +167,10 @@
         n + '</div><div class="l">' + l + "</div></div>";
     }
     return st(records.length.toLocaleString(), "leads") +
+      st(newToday.toLocaleString(),
+         'NEW today &middot; ' + esc(p.refresh_date || ""),
+         "new") +
+      st(last30.toLocaleString(), "last 30 days", "recent") +
       st(act.toLocaleString(), "actionable") +
       st(fclAddr, "foreclosures w/ addr") +
       st(soon, "sale &le;21 days", "urgent") +
@@ -161,12 +179,14 @@
 
   // ---------- sidebar ----------
   var PRESETS = [
-    { id: "fcl21", label: "Foreclosures — next 21 days" },
+    { id: "new",     label: "NEW today" },
+    { id: "last30",  label: "Last 30 days" },
+    { id: "fcl21",   label: "Foreclosures — next 21 days" },
     { id: "estates", label: "Estate-titled properties" },
-    { id: "oos", label: "Out-of-state absentees" },
-    { id: "multi", label: "Multi-signal stacked" },
-    { id: "tax", label: "Tax delinquent" },
-    { id: "all", label: "Show all" }
+    { id: "oos",     label: "Out-of-state absentees" },
+    { id: "multi",   label: "Multi-signal stacked" },
+    { id: "tax",     label: "Tax delinquent" },
+    { id: "all",     label: "Show all" }
   ];
   function buildPresets() {
     var box = $("presets");
@@ -238,6 +258,10 @@
     $("saleWindow").addEventListener("change", function (e) {
       state.saleWindow = e.target.value; markPresetActive(""); render();
     });
+    var rw = $("recordedWindow");
+    if (rw) rw.addEventListener("change", function (e) {
+      state.recordedWindow = e.target.value; markPresetActive(""); render();
+    });
     $("valMin").addEventListener("input", function (e) {
       state.valMin = e.target.value === "" ? null : Number(e.target.value);
       markPresetActive(""); render();
@@ -273,12 +297,14 @@
     // reset everything to defaults first
     state.search = ""; $("search").value = "";
     state.saleWindow = "any"; $("saleWindow").value = "any";
+    state.recordedWindow = "any";
+    var rw = $("recordedWindow"); if (rw) rw.value = "any";
     state.valMin = null; state.valMax = null;
     $("valMin").value = ""; $("valMax").value = "";
     state.absentee = false; $("togAbsentee").checked = false;
     state.oos = false; $("togOos").checked = false;
     state.review = false; $("togReview").checked = false;
-    state.multiOnly = false;
+    state.multiOnly = false; state.newOnly = false;
     setAllChecks("signalFilter", "sig", state.signals, true);
     setAllChecks("ownerFilter", "own", state.owners, true);
 
@@ -295,6 +321,13 @@
     } else if (id === "tax") {
       onlyChecks("signalFilter", "sig", state.signals,
         ["state_tax_lien", "federal_tax_lien"]);
+    } else if (id === "new") {
+      state.recordedWindow = "0";
+      if (rw) rw.value = "0";
+      state.newOnly = true;
+    } else if (id === "last30") {
+      state.recordedWindow = "30";
+      if (rw) rw.value = "30";
     }
     markPresetActive(id);
     render();
@@ -318,6 +351,8 @@
     var ownKeys = Object.keys(state.owners);
     var allOwn = ownKeys.every(function (k) { return state.owners[k]; });
     var win = state.saleWindow === "any" ? null : Number(state.saleWindow);
+    var rwin = state.recordedWindow === "any"
+      ? null : Number(state.recordedWindow);
 
     return records.filter(function (r) {
       if (skipped[r.lead_id]) return false;
@@ -332,9 +367,21 @@
       if (state.absentee && !r.absentee_owner_flag) return false;
       if (state.oos && !r.out_of_state_owner_flag) return false;
       if (state.multiOnly && (r.signal_count || 0) < 2) return false;
+      if (state.newOnly && !r._isNew) return false;
       if (win != null) {
         if (!r._isFcl || r._days == null || r._days < 0 || r._days > win)
           return false;
+      }
+      // Recorded-date window. 0 = NEW today only (days_since_event == 0).
+      // n > 0 = recorded within the past n days (inclusive). Filters out
+      // rows with no days_since_event (e.g. missing recorded_date).
+      if (rwin != null) {
+        if (r._daysSince == null) return false;
+        if (rwin === 0) {
+          if (r._daysSince !== 0) return false;
+        } else if (r._daysSince < 0 || r._daysSince > rwin) {
+          return false;
+        }
       }
       if (state.valMin != null && r._assessed < state.valMin) return false;
       if (state.valMax != null &&
@@ -444,6 +491,7 @@
   function rowEl(r) {
     var el = document.createElement("div");
     el.className = "lead u-" + r._tier +
+      (r._isNew ? " is-new" : "") +
       (r._review ? " review" : "") + (marked[r.lead_id] ? " marked" : "");
     el.dataset.id = r.lead_id;
 
@@ -495,6 +543,10 @@
   }
   function badgeHtml(r) {
     var b = [];
+    if (r._isNew)
+      b.push('<span class="badge badge-new">NEW</span>');
+    else if (r._daysSince != null && r._daysSince > 0 && r._daysSince <= 30)
+      b.push('<span class="badge badge-recent">' + r._daysSince + "d ago</span>");
     if (r._review)
       b.push('<span class="badge warn">REVIEW REQUIRED</span>');
     if (r.absentee_owner_flag)
@@ -594,6 +646,11 @@
     if (state.search) parts.push('search "' + esc(state.search) + '"');
     if (state.saleWindow !== "any")
       parts.push("sale &le; " + state.saleWindow + " days");
+    if (state.recordedWindow !== "any") {
+      parts.push(state.recordedWindow === "0"
+        ? "NEW today"
+        : "filed &le; " + state.recordedWindow + " days");
+    }
     var sigOff = Object.keys(state.signals).filter(function (k) {
       return !state.signals[k];
     });
