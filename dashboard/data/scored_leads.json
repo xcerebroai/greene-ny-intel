@@ -22,7 +22,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_9427474c9eceb2ed"
+      "ev_f5cf66e35b5c3dcd"
     ],
     "lead_id": "lead_unresolved_AAR-6892-101",
     "lead_status": "REVIEW_REQUIRED",
@@ -30,7 +30,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -43,7 +43,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -90,7 +90,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_a2f291fc54194d36"
+      "ev_36084e54526d6084"
     ],
     "lead_id": "lead_unresolved_AAR-6892-102",
     "lead_status": "REVIEW_REQUIRED",
@@ -98,7 +98,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -111,7 +111,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -158,7 +158,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_7f0f41d1c2569c36"
+      "ev_49d1c7fe29e34129"
     ],
     "lead_id": "lead_unresolved_AAR-6892-105",
     "lead_status": "REVIEW_REQUIRED",
@@ -166,7 +166,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -179,7 +179,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -226,7 +226,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_181041be5aa84f3d"
+      "ev_07abdc24bfe54971"
     ],
     "lead_id": "lead_unresolved_AAR-6892-107",
     "lead_status": "REVIEW_REQUIRED",
@@ -234,7 +234,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -247,7 +247,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -294,7 +294,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_bb98a6e2f4286eec"
+      "ev_89133ee9dc64ffa2"
     ],
     "lead_id": "lead_unresolved_AAR-6892-11",
     "lead_status": "REVIEW_REQUIRED",
@@ -302,7 +302,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -315,7 +315,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -362,7 +362,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_cdca1e15e534c38e"
+      "ev_ba3e695850f7edf5"
     ],
     "lead_id": "lead_unresolved_AAR-6892-112",
     "lead_status": "REVIEW_REQUIRED",
@@ -370,7 +370,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -383,7 +383,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -430,7 +430,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_002eb1426a7b0546"
+      "ev_06899624ff8fcf3e"
     ],
     "lead_id": "lead_unresolved_AAR-6892-115",
     "lead_status": "REVIEW_REQUIRED",
@@ -438,7 +438,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -451,7 +451,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -498,7 +498,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_df32eb57c5fb2e51"
+      "ev_5427f2af2f616b14"
     ],
     "lead_id": "lead_unresolved_AAR-6892-119",
     "lead_status": "REVIEW_REQUIRED",
@@ -506,7 +506,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -519,7 +519,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -566,7 +566,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_aaff359676ba9a38"
+      "ev_ac5ae67cd94433bf"
     ],
     "lead_id": "lead_unresolved_AAR-6892-12",
     "lead_status": "REVIEW_REQUIRED",
@@ -574,7 +574,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -587,7 +587,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -634,7 +634,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_40efc146e8fcd18d"
+      "ev_5490da748d941663"
     ],
     "lead_id": "lead_unresolved_AAR-6892-125",
     "lead_status": "REVIEW_REQUIRED",
@@ -642,7 +642,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -655,7 +655,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -702,7 +702,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_23b2bb730a90b912"
+      "ev_93c4d12411ffcbe1"
     ],
     "lead_id": "lead_unresolved_AAR-6892-126",
     "lead_status": "REVIEW_REQUIRED",
@@ -710,7 +710,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -723,7 +723,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -770,7 +770,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_ddebf6a6110834e8"
+      "ev_d0df11ebfe6d8718"
     ],
     "lead_id": "lead_unresolved_AAR-6892-13",
     "lead_status": "REVIEW_REQUIRED",
@@ -778,7 +778,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -791,7 +791,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -838,7 +838,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_6dba34f08e077ed2"
+      "ev_4f9586a3a0e40a97"
     ],
     "lead_id": "lead_unresolved_AAR-6892-16",
     "lead_status": "REVIEW_REQUIRED",
@@ -846,7 +846,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -859,7 +859,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -906,7 +906,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_b82a1158d6abdfef"
+      "ev_4097294d0ab61a4e"
     ],
     "lead_id": "lead_unresolved_AAR-6892-17",
     "lead_status": "REVIEW_REQUIRED",
@@ -914,7 +914,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -927,7 +927,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -974,7 +974,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_0ec654270778688c"
+      "ev_91bd13d6be194590"
     ],
     "lead_id": "lead_unresolved_AAR-6892-18",
     "lead_status": "REVIEW_REQUIRED",
@@ -982,7 +982,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -995,7 +995,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1042,7 +1042,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_fb05ee2a1b2851a6"
+      "ev_e796f0a224bd2706"
     ],
     "lead_id": "lead_unresolved_AAR-6892-19",
     "lead_status": "REVIEW_REQUIRED",
@@ -1050,7 +1050,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1063,7 +1063,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1110,7 +1110,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_94547b3f0d9e0318"
+      "ev_b21ed4b1affef951"
     ],
     "lead_id": "lead_unresolved_AAR-6892-20",
     "lead_status": "REVIEW_REQUIRED",
@@ -1118,7 +1118,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1131,7 +1131,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1178,7 +1178,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_9fac0c2a0eb2a928"
+      "ev_eca25902bf4096ac"
     ],
     "lead_id": "lead_unresolved_AAR-6892-24",
     "lead_status": "REVIEW_REQUIRED",
@@ -1186,7 +1186,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1199,7 +1199,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1246,7 +1246,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_03ec450e8129922e"
+      "ev_421b9d9aa96bb52e"
     ],
     "lead_id": "lead_unresolved_AAR-6892-25",
     "lead_status": "REVIEW_REQUIRED",
@@ -1254,7 +1254,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1267,7 +1267,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1314,7 +1314,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_21e2be98fcecbfa3"
+      "ev_1d7c185c85afbd6e"
     ],
     "lead_id": "lead_unresolved_AAR-6892-26",
     "lead_status": "REVIEW_REQUIRED",
@@ -1322,7 +1322,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1335,7 +1335,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1382,7 +1382,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_fb5a311185d8ae1a"
+      "ev_d7abaf4762a4760e"
     ],
     "lead_id": "lead_unresolved_AAR-6892-28",
     "lead_status": "REVIEW_REQUIRED",
@@ -1390,7 +1390,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1403,7 +1403,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1450,7 +1450,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_7caa4dadce01b1fa"
+      "ev_cc9480e6f70b04a3"
     ],
     "lead_id": "lead_unresolved_AAR-6892-36",
     "lead_status": "REVIEW_REQUIRED",
@@ -1458,7 +1458,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1471,7 +1471,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1518,7 +1518,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_32911f29283f0b58"
+      "ev_fd88d3bcd0ac2cdc"
     ],
     "lead_id": "lead_unresolved_AAR-6892-38",
     "lead_status": "REVIEW_REQUIRED",
@@ -1526,7 +1526,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1539,7 +1539,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1586,7 +1586,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_78cc52bea11d85f4"
+      "ev_fe2dfb3513afd8bc"
     ],
     "lead_id": "lead_unresolved_AAR-6892-41",
     "lead_status": "REVIEW_REQUIRED",
@@ -1594,7 +1594,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1607,7 +1607,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1654,7 +1654,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_29a25859dbd8791e"
+      "ev_cbf39065ada4c6cf"
     ],
     "lead_id": "lead_unresolved_AAR-6892-42",
     "lead_status": "REVIEW_REQUIRED",
@@ -1662,7 +1662,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1675,7 +1675,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1722,7 +1722,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_5c5ae7c48f7c7e19"
+      "ev_81270013fa1c3286"
     ],
     "lead_id": "lead_unresolved_AAR-6892-43",
     "lead_status": "REVIEW_REQUIRED",
@@ -1730,7 +1730,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1743,7 +1743,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1790,7 +1790,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_f61a557963339cf5"
+      "ev_e51203758b3738a9"
     ],
     "lead_id": "lead_unresolved_AAR-6892-49",
     "lead_status": "REVIEW_REQUIRED",
@@ -1798,7 +1798,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1811,7 +1811,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1858,7 +1858,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_42578fb25202f076"
+      "ev_f0362828e6d5a3f1"
     ],
     "lead_id": "lead_unresolved_AAR-6892-5",
     "lead_status": "REVIEW_REQUIRED",
@@ -1866,7 +1866,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1879,7 +1879,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1926,7 +1926,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_7a5e01558b9a9983"
+      "ev_e3ed314fcb57d0b4"
     ],
     "lead_id": "lead_unresolved_AAR-6892-54",
     "lead_status": "REVIEW_REQUIRED",
@@ -1934,7 +1934,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -1947,7 +1947,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -1994,7 +1994,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_103500aee7ea8ebe"
+      "ev_fb222cb9f83a244a"
     ],
     "lead_id": "lead_unresolved_AAR-6892-56",
     "lead_status": "REVIEW_REQUIRED",
@@ -2002,7 +2002,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2015,7 +2015,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2062,7 +2062,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_b5705a0266211da2"
+      "ev_42c83a1c34ee4d6f"
     ],
     "lead_id": "lead_unresolved_AAR-6892-59",
     "lead_status": "REVIEW_REQUIRED",
@@ -2070,7 +2070,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2083,7 +2083,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2130,7 +2130,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_e3946aec86a0b330"
+      "ev_98739eca76200b2c"
     ],
     "lead_id": "lead_unresolved_AAR-6892-6",
     "lead_status": "REVIEW_REQUIRED",
@@ -2138,7 +2138,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2151,7 +2151,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2198,7 +2198,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_d1a6b59a5030b26d"
+      "ev_03bf6e5f0747d7a7"
     ],
     "lead_id": "lead_unresolved_AAR-6892-60",
     "lead_status": "REVIEW_REQUIRED",
@@ -2206,7 +2206,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2219,7 +2219,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2266,7 +2266,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_ca335ac4e2b0ca6d"
+      "ev_2ac881501864be35"
     ],
     "lead_id": "lead_unresolved_AAR-6892-62",
     "lead_status": "REVIEW_REQUIRED",
@@ -2274,7 +2274,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2287,7 +2287,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2334,7 +2334,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_e90b4bf00b0e6c82"
+      "ev_3c70910a0f9fd24d"
     ],
     "lead_id": "lead_unresolved_AAR-6892-63",
     "lead_status": "REVIEW_REQUIRED",
@@ -2342,7 +2342,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2355,7 +2355,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2402,7 +2402,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_af3a6a38567d21f2"
+      "ev_e87e69e7592e5a7b"
     ],
     "lead_id": "lead_unresolved_AAR-6892-65",
     "lead_status": "REVIEW_REQUIRED",
@@ -2410,7 +2410,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2423,7 +2423,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2470,7 +2470,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_4d0114a8bab83657"
+      "ev_bd2b122aec53ae0d"
     ],
     "lead_id": "lead_unresolved_AAR-6892-66",
     "lead_status": "REVIEW_REQUIRED",
@@ -2478,7 +2478,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2491,7 +2491,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2538,7 +2538,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_6eb36ff84683d12e"
+      "ev_7ecdac82f4745501"
     ],
     "lead_id": "lead_unresolved_AAR-6892-71",
     "lead_status": "REVIEW_REQUIRED",
@@ -2546,7 +2546,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2559,7 +2559,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2606,7 +2606,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_24884f6e7e31a607"
+      "ev_e33949e19a7e9605"
     ],
     "lead_id": "lead_unresolved_AAR-6892-72",
     "lead_status": "REVIEW_REQUIRED",
@@ -2614,7 +2614,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2627,7 +2627,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2674,7 +2674,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_a27bd64b2e70ca76"
+      "ev_5a49ef728972a060"
     ],
     "lead_id": "lead_unresolved_AAR-6892-73",
     "lead_status": "REVIEW_REQUIRED",
@@ -2682,7 +2682,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2695,7 +2695,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2742,7 +2742,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_8e9cfe5944d12dc3"
+      "ev_ca62a3506a82c4e8"
     ],
     "lead_id": "lead_unresolved_AAR-6892-74",
     "lead_status": "REVIEW_REQUIRED",
@@ -2750,7 +2750,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2763,7 +2763,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2810,7 +2810,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_3e05e90cad8aa341"
+      "ev_379381ccb8c44242"
     ],
     "lead_id": "lead_unresolved_AAR-6892-75",
     "lead_status": "REVIEW_REQUIRED",
@@ -2818,7 +2818,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2831,7 +2831,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2878,7 +2878,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_b7d2dd7afb220a06"
+      "ev_924eeb1b915c13b1"
     ],
     "lead_id": "lead_unresolved_AAR-6892-8",
     "lead_status": "REVIEW_REQUIRED",
@@ -2886,7 +2886,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2899,7 +2899,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -2946,7 +2946,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_936bfa32ad13ffc5"
+      "ev_26740ef0b37b8477"
     ],
     "lead_id": "lead_unresolved_AAR-6892-9",
     "lead_status": "REVIEW_REQUIRED",
@@ -2954,7 +2954,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -2967,7 +2967,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -3014,7 +3014,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_1d8e952c40708b0c"
+      "ev_a4628c8b9cf48ccc"
     ],
     "lead_id": "lead_unresolved_AAR-6892-90",
     "lead_status": "REVIEW_REQUIRED",
@@ -3022,7 +3022,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -3035,7 +3035,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -3082,7 +3082,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_b6f48a89f68f0213"
+      "ev_f21f866baf08a446"
     ],
     "lead_id": "lead_unresolved_AAR-6892-91",
     "lead_status": "REVIEW_REQUIRED",
@@ -3090,7 +3090,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -3103,7 +3103,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -3150,7 +3150,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_971dfe7d9360d77f"
+      "ev_761cec467da3a790"
     ],
     "lead_id": "lead_unresolved_AAR-6892-93",
     "lead_status": "REVIEW_REQUIRED",
@@ -3158,7 +3158,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -3171,7 +3171,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -3218,7 +3218,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_68b1c9114e566007"
+      "ev_236bc52d12586d67"
     ],
     "lead_id": "lead_unresolved_AAR-6892-96",
     "lead_status": "REVIEW_REQUIRED",
@@ -3226,7 +3226,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -3239,7 +3239,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -3286,7 +3286,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_a2328d7fa7aa200d"
+      "ev_12c5346b03bd89af"
     ],
     "lead_id": "lead_unresolved_AAR-6892-98",
     "lead_status": "REVIEW_REQUIRED",
@@ -3294,7 +3294,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -3307,7 +3307,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [
@@ -3354,7 +3354,7 @@
     },
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_0f810eeeffcd400c"
+      "ev_779a69da5e499d11"
     ],
     "lead_id": "lead_unresolved_AAR-6892-99",
     "lead_status": "REVIEW_REQUIRED",
@@ -3362,7 +3362,7 @@
       {
         "reason": "parcel_resolution_review_required; matched_lead_review_reason:owner_not_on_document",
         "status": "REVIEW_REQUIRED",
-        "transitioned_at": "2026-05-23T22:52:38Z"
+        "transitioned_at": "2026-05-25T13:01:44Z"
       }
     ],
     "match_confidence": null,
@@ -3375,7 +3375,7 @@
     "patterns": [
       "tax"
     ],
-    "primary_event_date": "2025-10-01",
+    "primary_event_date": "2025-10-29",
     "primary_parcel_id": null,
     "recent_flag": false,
     "review_flags": [

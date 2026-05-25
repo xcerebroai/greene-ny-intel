@@ -1,14 +1,27 @@
 {
-  "generated_at": "2026-05-23T22:52:38Z",
+  "generated_at": "2026-05-25T13:01:44Z",
   "build_label": "SOURCE_LIMITED",
+  "build_label_reason": "Only one primary event source is live (AAR tax-foreclosure auction). Clerk + court primaries remain Cloudflare-gated and require an operator-seeded session to ingest.",
   "mode": "production",
   "county": "Greene County",
   "state": "NY",
   "semantic_verdict": "DEPLOY_OK",
   "lead_total": 50,
+  "event_source": "tax_foreclosure_auction",
+  "owner_source_policy": "Owner is ATTACHED downstream as enrichment from parcel_master via the v5.4.0 seam (R3-iii / §13.14). §17 keeps its honest owner-unresolved routing when the AAR event document did not name the owner; that routing is NEVER relabeled. The dashboard row carries display_owner_source per lead so the provenance is always visible.",
   "enrichment_breakdown": {
+    "ENRICHED": 50,
+    "UNENRICHED": 0
+  },
+  "seam_enrichment_breakdown": {
     "ENRICHED": 0,
     "UNENRICHED": 50
+  },
+  "owner_source_counts": {
+    "parcel_master": 50
+  },
+  "enrichment_join_method_counts": {
+    "print_key": 50
   },
   "pattern_counts": {
     "tax": 50
@@ -27,15 +40,19 @@
     {
       "lead_id": "lead_unresolved_AAR-6892-101",
       "scored_lead_id": "scored_ffaa40dc7dbdfc6f",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19400014400000020200000000",
+      "tax_map": "144.00-2-20",
+      "display_address": "ROUTE 42, Lexington, NY",
+      "display_owner": "Ajlyakin, Mustafa",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "683 Tumbleweed Ranch RD",
+      "display_owner_mailing_city": "West Kill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12492",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -45,49 +62,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 37000,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_9427474c9eceb2ed"
+        "ev_f5cf66e35b5c3dcd"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-102",
       "scored_lead_id": "scored_ecda7a803e2c0091",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19400014400000020240000000",
+      "tax_map": "144.00-2-24",
+      "display_address": "30 & 33 HARTER RD, Lexington, NY",
+      "display_owner": "Ajlyakin, Mustafa",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "683 Tumbleweed Ranch RD",
+      "display_owner_mailing_city": "West Kill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12492",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -97,49 +107,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 135300,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "240",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_a2f291fc54194d36"
+        "ev_36084e54526d6084"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-105",
       "scored_lead_id": "scored_4ac3445c3a7776a7",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19400016000000010260000000",
+      "tax_map": "160.00-1-26",
+      "display_address": "2134 ROUTE 42, Lexington, NY",
+      "display_owner": "Count of Greene",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "County Bluilding Dr",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -149,49 +152,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 78300,
+      "display_year_built": 1925,
+      "display_property_use": "210",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_7f0f41d1c2569c36"
+        "ev_49d1c7fe29e34129"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-107",
       "scored_lead_id": "scored_1c8d2644df2f4c06",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19420000100000010060000000",
+      "tax_map": "1.00-1-6",
+      "display_address": "1131 OLD STATE RD, New Baltimore, NY",
+      "display_owner": "Blakesley, Rudolph & Blakesley, Marie P",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "917 Spring Branch Rd",
+      "display_owner_mailing_city": "Wilmington",
+      "display_owner_mailing_state": "NC",
+      "display_owner_mailing_zip": "28405",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -201,49 +197,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 10400,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "311",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_181041be5aa84f3d"
+        "ev_07abdc24bfe54971"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-11",
       "scored_lead_id": "scored_c0935c6122f7fb35",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19228913800000040270000000",
+      "tax_map": "138.00-4-27",
+      "display_address": "FOREST HILLS AVE, Athens, NY",
+      "display_owner": "Maxwell, John",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "107 Stoneybrook Rd",
+      "display_owner_mailing_city": "Fishkill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12524",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -253,49 +242,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 13000,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "311",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_bb98a6e2f4286eec"
+        "ev_89133ee9dc64ffa2"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-112",
       "scored_lead_id": "scored_b6e58a5235d00f8e",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19440007401400020180000000",
+      "tax_map": "74.14-2-18",
+      "display_address": "5546 WASHINGTON ST, Prattsville, NY",
+      "display_owner": "Sherman, Everett J",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "5546 Washington St",
+      "display_owner_mailing_city": "Prattsville",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12468",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -305,49 +287,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 148400,
+      "display_year_built": 1917,
+      "display_property_use": "210",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_cdca1e15e534c38e"
+        "ev_ba3e695850f7edf5"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-115",
       "scored_lead_id": "scored_aead9555f2fa9b5d",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19440007500300030130000000",
+      "tax_map": "75.03-3-13",
+      "display_address": "ROUTE 23, Prattsville, NY",
+      "display_owner": "Mongelli, Matteo & Mongelli, Nicola",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "52 Palmetto Dr",
+      "display_owner_mailing_city": "Ormond Beach",
+      "display_owner_mailing_state": "FL",
+      "display_owner_mailing_zip": "32176",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -357,49 +332,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 600,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_002eb1426a7b0546"
+        "ev_06899624ff8fcf3e"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-119",
       "scored_lead_id": "scored_df2c4a588eced6d2",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19460007801900020430000000",
+      "tax_map": "78.19-2-43",
+      "display_address": "46 MILL ST, Windham, NY",
+      "display_owner": "Wicht, James A & Haggerty, Maxine E",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "149 Jefferson Heights  17",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -409,49 +377,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 21500,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "312",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_df32eb57c5fb2e51"
+        "ev_5427f2af2f616b14"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-12",
       "scored_lead_id": "scored_30dac8b24ee73858",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19240006600000020010000000",
+      "tax_map": "66.00-2-1",
+      "display_address": "OFF ROUTE 32, Cairo, NY",
+      "display_owner": "County of Greene",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "411 Main St, 4th FL Treasury",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -461,49 +422,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 3800,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_aaff359676ba9a38"
+        "ev_ac5ae67cd94433bf"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-125",
       "scored_lead_id": "scored_a17e413ad9388d12",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19460009601800020240000000",
+      "tax_map": "96.18-2-24",
+      "display_address": "ROUTE 40, Windham, NY",
+      "display_owner": "Royal Christie Prop Inc",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "3781 Lincoln St",
+      "display_owner_mailing_city": "Seaford",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11783",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -513,49 +467,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 2000,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_40efc146e8fcd18d"
+        "ev_5490da748d941663"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-126",
       "scored_lead_id": "scored_78de0a43cff494af",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19460011400100020130000000",
+      "tax_map": "114.01-2-13",
+      "display_address": "96 ROUTE 56, Windham, NY",
+      "display_owner": "Sirel, Janet",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "96 County Route 56",
+      "display_owner_mailing_city": "Maplecrest",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12454",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -565,49 +512,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 185000,
+      "display_year_built": 1957,
+      "display_property_use": "220",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_23b2bb730a90b912"
+        "ev_93c4d12411ffcbe1"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-13",
       "scored_lead_id": "scored_9f2336b146e307f8",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19240006700000010230000000",
+      "tax_map": "67.00-1-23",
+      "display_address": "DOMAN RD, Cairo, NY",
+      "display_owner": "Piszel, Bonnie",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "2866 Watkins Dr",
+      "display_owner_mailing_city": "Melbourne",
+      "display_owner_mailing_state": "FL",
+      "display_owner_mailing_zip": "32901",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -617,49 +557,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 15500,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "322",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_ddebf6a6110834e8"
+        "ev_d0df11ebfe6d8718"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-16",
       "scored_lead_id": "scored_7cf27fe470186b92",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19240008200400020130000000",
+      "tax_map": "82.04-2-13",
+      "display_address": "572 OLD ROUTE 23, Cairo, NY",
+      "display_owner": "Executive Park Partners LLC",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "PO BOX 1071",
+      "display_owner_mailing_city": "Newburgh",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12551",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -669,49 +602,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 83750,
+      "display_year_built": 1930,
+      "display_property_use": "210",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_6dba34f08e077ed2"
+        "ev_4f9586a3a0e40a97"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-17",
       "scored_lead_id": "scored_c5a37113cf3205fa",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19240008200400030030000000",
+      "tax_map": "82.04-3-3",
+      "display_address": "OFF ROOSEVELT AVE, Cairo, NY",
+      "display_owner": "Fede, Vj & Valentine, Jf Fam",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "Box 156",
+      "display_owner_mailing_city": "Acra",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12405",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -721,49 +647,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 7900,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_b82a1158d6abdfef"
+        "ev_4097294d0ab61a4e"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-18",
       "scored_lead_id": "scored_fd18cabd26853fd8",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19240008300000060100000000",
+      "tax_map": "83.00-6-10",
+      "display_address": "OLD ROUTE 23, Cairo, NY",
+      "display_owner": "Monzidelis-Viani, Kathleen & Viani, Aqualina",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "8523 Chase Preserve  Apt B",
+      "display_owner_mailing_city": "Naples",
+      "display_owner_mailing_state": "FL",
+      "display_owner_mailing_zip": "34113",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -773,49 +692,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 1000,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_0ec654270778688c"
+        "ev_91bd13d6be194590"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-19",
       "scored_lead_id": "scored_eea797bb25be58f1",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19240008500000020190000000",
+      "tax_map": "85.00-2-19",
+      "display_address": "OFF RUDOLPH WEIR JUNIOR RD, Cairo, NY",
+      "display_owner": "Piszel, Bonnie",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "2866 Watkins Dr",
+      "display_owner_mailing_city": "Melbourne",
+      "display_owner_mailing_state": "FL",
+      "display_owner_mailing_zip": "32901",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -825,49 +737,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 13700,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "323",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_fb05ee2a1b2851a6"
+        "ev_e796f0a224bd2706"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-20",
       "scored_lead_id": "scored_2f53eb0fc2eb20ff",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19240008500000030080000000",
+      "tax_map": "85.00-3-8",
+      "display_address": "142 MIDDLEFIELD RD, Cairo, NY",
+      "display_owner": "Ballard James & Casper, Monica I",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "142 Middlefield Rd",
+      "display_owner_mailing_city": "Earlton",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12058",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -877,49 +782,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 88000,
+      "display_year_built": 1972,
+      "display_property_use": "210",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_94547b3f0d9e0318"
+        "ev_b21ed4b1affef951"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-24",
       "scored_lead_id": "scored_e1e4257cb435c882",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19240010100500030012000000",
+      "tax_map": "101.05-3-1.2",
+      "display_address": "560 MAIN ST, Cairo, NY",
+      "display_owner": "Lewis Steve H",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "114-15 August Court",
+      "display_owner_mailing_city": "Queens",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11434",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -929,49 +827,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 67200,
+      "display_year_built": 1920,
+      "display_property_use": "483",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_9fac0c2a0eb2a928"
+        "ev_eca25902bf4096ac"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-25",
       "scored_lead_id": "scored_e04a97c66169525d",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19240010200000020040000000",
+      "tax_map": "102.00-2-4",
+      "display_address": "735 ROUTE 67, Cairo, NY",
+      "display_owner": "Sieburg, Estate of, Otto & Sieburg, Estate of, Anne",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "21 Ruthenbeck Rd",
+      "display_owner_mailing_city": "Shandaken",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12480",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -981,49 +872,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 26600,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "270",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_03ec450e8129922e"
+        "ev_421b9d9aa96bb52e"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-26",
       "scored_lead_id": "scored_0b33d351522d21c0",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19240010200300010340000000",
+      "tax_map": "102.03-1-34",
+      "display_address": "IRA VAIL RD, Cairo, NY",
+      "display_owner": "County of Greene",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "411 Main St 4th FL Treasury",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1033,49 +917,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 9900,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_21e2be98fcecbfa3"
+        "ev_1d7c185c85afbd6e"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-28",
       "scored_lead_id": "scored_9a3fa7fde084ea2b",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19240013500000030190000000",
+      "tax_map": "135.00-3-19",
+      "display_address": "POLLYS ROCK RD, Cairo, NY",
+      "display_owner": "Pesco, Estate of, Nicholas",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "PO BOX 84",
+      "display_owner_mailing_city": "New Rochelle",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10802",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1085,49 +962,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 8400,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_fb5a311185d8ae1a"
+        "ev_d7abaf4762a4760e"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-36",
       "scored_lead_id": "scored_c8bcf901b1793fdc",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19268913700000010090020000",
+      "tax_map": "137.00-1-9.2",
+      "display_address": "103 PORTO RD, Catskill, NY",
+      "display_owner": "Ronk, James & Ronk, Rebecca",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "PO BOX 477",
+      "display_owner_mailing_city": "Leeds",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12451",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1137,49 +1007,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 42200,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "270",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_7caa4dadce01b1fa"
+        "ev_cc9480e6f70b04a3"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-38",
       "scored_lead_id": "scored_e90dfbd1923c549e",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19268913700200020140000000",
+      "tax_map": "137.02-2-14",
+      "display_address": "OFF CAIRO JUNCTION RD, Catskill, NY",
+      "display_owner": "Tomkins, Alexander C & Tomkins, Delores",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "47 Washburn",
+      "display_owner_mailing_city": "Caldwell",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "07006",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1189,49 +1052,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 1600,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "311",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_32911f29283f0b58"
+        "ev_fd88d3bcd0ac2cdc"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-41",
       "scored_lead_id": "scored_2fc280645d4e6b1d",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19268915400000010500000000",
+      "tax_map": "154.00-1-50",
+      "display_address": "PARADISE LAKE RD, Catskill, NY",
+      "display_owner": "Lacek, Debra",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "7 Hoose Blvd",
+      "display_owner_mailing_city": "Fishkill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12524",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1241,49 +1097,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 12900,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_78cc52bea11d85f4"
+        "ev_fe2dfb3513afd8bc"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-42",
       "scored_lead_id": "scored_bab3d917e4667c6c",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19268915400000040270000000",
+      "tax_map": "154.00-4-27",
+      "display_address": "OFF VEDDER MOUNTAIN RD, Catskill, NY",
+      "display_owner": "Palmer, Steven & Bickford, John H",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "149 Jefferson Hts Apt 18",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1293,49 +1142,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 500,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_29a25859dbd8791e"
+        "ev_cbf39065ada4c6cf"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-43",
       "scored_lead_id": "scored_62fbc7b93cbdf6f8",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19268915500000010080000000",
+      "tax_map": "155.00-1-8",
+      "display_address": "PAUL HORN RD, Catskill, NY",
+      "display_owner": "Littell, Stephen T Jr.",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "571 Hinson Dr Apt 73B",
+      "display_owner_mailing_city": "Myrtle Beach",
+      "display_owner_mailing_state": "SC",
+      "display_owner_mailing_zip": "29579",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1345,49 +1187,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 4000,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "312",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_5c5ae7c48f7c7e19"
+        "ev_81270013fa1c3286"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-49",
       "scored_lead_id": "scored_7aa1810847f74a45",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19268919900800020250000000",
+      "tax_map": "199.08-2-25",
+      "display_address": "OFF CEMETERY RD, Catskill, NY",
+      "display_owner": "Moore, Antonette",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "103-60 105th St",
+      "display_owner_mailing_city": "Ozone Park 17",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11417",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1397,49 +1232,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 2800,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_f61a557963339cf5"
+        "ev_e51203758b3738a9"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-5",
       "scored_lead_id": "scored_9f04a75da5598ae2",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19220112201500020160000000",
+      "tax_map": "122.15-2-16",
+      "display_address": "113/115 N WASHINGTON ST, Athens, Village, NY",
+      "display_owner": "Del Vecchio, Teresa M & Whiteman, Brian G Jr",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "115 N Washington St",
+      "display_owner_mailing_city": "Athens",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "120151116",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1449,49 +1277,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 326000,
+      "display_year_built": 1900,
+      "display_property_use": "220",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_42578fb25202f076"
+        "ev_f0362828e6d5a3f1"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-54",
       "scored_lead_id": "scored_17ab28cab5b0804d",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19288903800000030300000000",
+      "tax_map": "38.00-3-30",
+      "display_address": "416 HONEY HOLLOW RD, Coxsackie, NY",
+      "display_owner": "Terrell, Derek & Terrell, Randall D",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "788 Riverside Dr Apt 3AA",
+      "display_owner_mailing_city": "New York",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10032",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1501,49 +1322,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 127500,
+      "display_year_built": 1989,
+      "display_property_use": "210",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_7a5e01558b9a9983"
+        "ev_e3ed314fcb57d0b4"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-56",
       "scored_lead_id": "scored_9680607d84585bfd",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19288905300000040120000000",
+      "tax_map": "53.00-4-12",
+      "display_address": "738 & 758 CR 45, Coxsackie, NY",
+      "display_owner": "Lapinski, Gabriella",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "781 Route 45",
+      "display_owner_mailing_city": "Earlton",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12058",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1553,49 +1367,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 26000,
+      "display_year_built": 1875,
+      "display_property_use": "210",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_103500aee7ea8ebe"
+        "ev_fb222cb9f83a244a"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-59",
       "scored_lead_id": "scored_52167ba5ba015883",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19288908800000020040000000",
+      "tax_map": "88.00-2-4",
+      "display_address": "2463 SR 385, Coxsackie, NY",
+      "display_owner": "Tryon, Henry L",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "19 Candie Dr",
+      "display_owner_mailing_city": "Poughkeepsie",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12603",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1605,49 +1412,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 33500,
+      "display_year_built": 1935,
+      "display_property_use": "210",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_b5705a0266211da2"
+        "ev_42c83a1c34ee4d6f"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-6",
       "scored_lead_id": "scored_a4e5720a7c02ed75",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19228908600000020550000000",
+      "tax_map": "86.00-2-55",
+      "display_address": "POTIC MOUNTAIN RD, Athens, NY",
+      "display_owner": "Wohlmaker, Mark D & Wohlmaker, Arlene  (Etal)",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "878 Potic Mtn Rd",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1657,49 +1457,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 12300,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "311",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_e3946aec86a0b330"
+        "ev_98739eca76200b2c"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-60",
       "scored_lead_id": "scored_d100629c730487a4",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19300002100000030110000000",
+      "tax_map": "21.00-3-11",
+      "display_address": "7497 ROUTE 81, Durham, NY",
+      "display_owner": "Scourakis, John",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "955 Soundview Ave Ext",
+      "display_owner_mailing_city": "Southold",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11971",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1709,49 +1502,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 16000,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_d1a6b59a5030b26d"
+        "ev_03bf6e5f0747d7a7"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-62",
       "scored_lead_id": "scored_ffe9e7cf43180030",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19300003400000050131000000",
+      "tax_map": "34.00-5-13.1",
+      "display_address": "ROUTE 20B, Durham, NY",
+      "display_owner": "Lowry, Robert",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "15 Canoe Brook Dr",
+      "display_owner_mailing_city": "Princeton Jct",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "08550",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1761,49 +1547,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 24500,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_ca335ac4e2b0ca6d"
+        "ev_2ac881501864be35"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-63",
       "scored_lead_id": "scored_dcb0ef07cd326fb3",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19300003400300010150000000",
+      "tax_map": "34.03-1-15",
+      "display_address": "105 ENCHANTED VALLEY RD, Durham, NY",
+      "display_owner": "Keriazis, Harry",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "74 Lawrence Ct Apt A",
+      "display_owner_mailing_city": "White Plains",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10603",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1813,49 +1592,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 31500,
+      "display_year_built": 1958,
+      "display_property_use": "210",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_e90b4bf00b0e6c82"
+        "ev_3c70910a0f9fd24d"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-65",
       "scored_lead_id": "scored_f90e482bd451489c",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19300004900000030130000000",
+      "tax_map": "49.00-3-13",
+      "display_address": "HYLAND RD, Durham, NY",
+      "display_owner": "Van Hove, Johannes",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "145 Hillyer Cir",
+      "display_owner_mailing_city": "Middletown",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "07748",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1865,49 +1637,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 27000,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "322",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_af3a6a38567d21f2"
+        "ev_e87e69e7592e5a7b"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-66",
       "scored_lead_id": "scored_2a4f627f014008eb",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19300004900000030140000000",
+      "tax_map": "49.00-3-14",
+      "display_address": "88 HYLAND RD, Durham, NY",
+      "display_owner": "Van Hove, Johannes",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "145 Hillyer Cir",
+      "display_owner_mailing_city": "Middletown",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "07748",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1917,49 +1682,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 224800,
+      "display_year_built": 1971,
+      "display_property_use": "220",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_4d0114a8bab83657"
+        "ev_bd2b122aec53ae0d"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-71",
       "scored_lead_id": "scored_6f79bab7b6fd6469",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19320002300000020130000000",
+      "tax_map": "23.00-2-13",
+      "display_address": "6067 ROUTE 81, Greenville, NY",
+      "display_owner": "County of Greene",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "411 Main St",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -1969,49 +1727,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 60000,
+      "display_year_built": 1970,
+      "display_property_use": "210",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_6eb36ff84683d12e"
+        "ev_7ecdac82f4745501"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-72",
       "scored_lead_id": "scored_36a60e890aae9d64",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19320002300000020290000000",
+      "tax_map": "23.00-2-29",
+      "display_address": "ROUTE 81, Greenville, NY",
+      "display_owner": "County of Greene",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "411 Main St",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -2021,49 +1772,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 6000,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "312",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_24884f6e7e31a607"
+        "ev_e33949e19a7e9605"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-73",
       "scored_lead_id": "scored_ba7679d9dadc44d2",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19320002300200010010000000",
+      "tax_map": "23.02-1-1",
+      "display_address": "5956 ROUTE 81, Greenville, NY",
+      "display_owner": "Bier, Horst Otto",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "5956 State Route 81",
+      "display_owner_mailing_city": "Greenville",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12083",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -2073,49 +1817,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 69000,
+      "display_year_built": 1960,
+      "display_property_use": "220",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_a27bd64b2e70ca76"
+        "ev_5a49ef728972a060"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-74",
       "scored_lead_id": "scored_8038088ead5e23b2",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19320003500000020260000000",
+      "tax_map": "35.00-2-26",
+      "display_address": "753 BIG WOODS RD, Greenville, NY",
+      "display_owner": "Pena, Emily",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "921 Divisin St",
+      "display_owner_mailing_city": "Peekskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10566",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -2125,49 +1862,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 14000,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "322",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_8e9cfe5944d12dc3"
+        "ev_ca62a3506a82c4e8"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-75",
       "scored_lead_id": "scored_0e2dea104e9fa01f",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19320003600000040300000000",
+      "tax_map": "36.00-4-30",
+      "display_address": "PLATTEKILL RD, Greenville, NY",
+      "display_owner": "Fulton, John David",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "PO BOX 67",
+      "display_owner_mailing_city": "Valatie",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12184",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -2177,49 +1907,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 40000,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "312",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_3e05e90cad8aa341"
+        "ev_379381ccb8c44242"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-8",
       "scored_lead_id": "scored_a2f8968474bc64ed",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19228910300000060181000000",
+      "tax_map": "103.00-6-18.1",
+      "display_address": "249 BUTTERMILK FALLS RD, Athens, NY",
+      "display_owner": "Brown, Violet G -Estate",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "249 Buttermilk Falls Rd",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -2229,49 +1952,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 152000,
+      "display_year_built": 1890,
+      "display_property_use": "240",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_b7d2dd7afb220a06"
+        "ev_924eeb1b915c13b1"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-9",
       "scored_lead_id": "scored_6122edf95aab1203",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19228910400000010190000000",
+      "tax_map": "104.00-1-19",
+      "display_address": "7 ROUTE 49, Athens, NY",
+      "display_owner": "Piccirillo, Ignatius & Piccirillo, Carole",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "3610 Yacht Club Dr Unit 209",
+      "display_owner_mailing_city": "Aventura",
+      "display_owner_mailing_state": "FL",
+      "display_owner_mailing_zip": "33180",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -2281,49 +1997,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 11700,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "311",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_936bfa32ad13ffc5"
+        "ev_26740ef0b37b8477"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-90",
       "scored_lead_id": "scored_08399c37fb111e70",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19368920800000010241000000",
+      "tax_map": "208.00-1-24.1",
+      "display_address": "241 MINK HOLLOW RD, Hunter, NY",
+      "display_owner": "Mink Hollow Estates INC",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "2290 W County Line Rd STE 305",
+      "display_owner_mailing_city": "Jackson",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "08527",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -2333,49 +2042,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
-      "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_assessed_value": 76400,
+      "display_year_built": 1900,
+      "display_property_use": "210",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_1d8e952c40708b0c"
+        "ev_a4628c8b9cf48ccc"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-91",
       "scored_lead_id": "scored_7a64105044e544f7",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19368920800000010242000000",
+      "tax_map": "208.00-1-24.2",
+      "display_address": "MINK HOLLOW RD, Hunter, NY",
+      "display_owner": "Mink Hollow Estates Inc",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "2290 W County Iine Rd STE 305",
+      "display_owner_mailing_city": "Jackson",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "08527",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -2385,49 +2087,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 13000,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_b6f48a89f68f0213"
+        "ev_f21f866baf08a446"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-93",
       "scored_lead_id": "scored_9baad7ba777bbacb",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19380011100000020950000000",
+      "tax_map": "111.00-2-95",
+      "display_address": "WINDY LN, Jewett, NY",
+      "display_owner": "Friel, John & Regenstreif, Ellen",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "26 Cedar St",
+      "display_owner_mailing_city": "Cedar Grove",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "07009",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -2437,49 +2132,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 42400,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_971dfe7d9360d77f"
+        "ev_761cec467da3a790"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-96",
       "scored_lead_id": "scored_70288343f12758f3",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19380013200000030110000000",
+      "tax_map": "132.00-3-11",
+      "display_address": "68 SUN VALLEY LN, Jewett, NY",
+      "display_owner": "Magee Robert C Jr & Magee, Laura",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "65 Parkway Dr",
+      "display_owner_mailing_city": "Westbury",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "115901015",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -2489,49 +2177,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 9900,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_68b1c9114e566007"
+        "ev_236bc52d12586d67"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-98",
       "scored_lead_id": "scored_26368cf5a798d7b7",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19400010900000010230000000",
+      "tax_map": "109.00-1-23",
+      "display_address": "51 CARTWRIGHT RD, Lexington, NY",
+      "display_owner": "Thomson Barbara G",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "4 Sterley Ave",
+      "display_owner_mailing_city": "Saugerties",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12477",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -2541,49 +2222,42 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 47400,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "270",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_a2328d7fa7aa200d"
+        "ev_12c5346b03bd89af"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     },
     {
       "lead_id": "lead_unresolved_AAR-6892-99",
       "scored_lead_id": "scored_bd3b20517677ad97",
-      "primary_parcel_id": null,
-      "display_address": "",
-      "display_owner": "tax_foreclosure_notice against unidentified party",
+      "primary_parcel_id": "19400012700000030460000000",
+      "tax_map": "127.00-3-46",
+      "display_address": "VALLEY VIEW RD, Lexington, NY",
+      "display_owner": "Mancino Giuseppe",
+      "display_owner_source": "parcel_master",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "76 Drake Ave",
+      "display_owner_mailing_city": "New Rochelle",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10805",
       "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
-        "tax"
-      ],
-      "stack_contrib_patterns": [
         "tax"
       ],
       "display_pattern_set": [
@@ -2593,51 +2267,25 @@
       "display_deal_paths": [
         "wholesale"
       ],
-      "display_deal_path_details": [
-        {
-          "path": "wholesale",
-          "confidence": "moderate",
-          "rationale": "Single-signal distress; lower-conviction wholesale candidate."
-        }
-      ],
-      "display_title_complexity_tier": "None",
       "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_last_sale_price": null,
-      "display_last_sale_date": null,
+      "display_assessed_value": 46100,
       "display_year_built": null,
-      "display_match_confidence": 0,
+      "display_property_use": "314",
       "stack_depth": 1,
-      "score_reasons": [
-        {
-          "factor": "base_TAX_FORECLOSURE_NOTICE",
-          "delta": 55
-        }
-      ],
       "evidence_ids": [
-        "ev_0f810eeeffcd400c"
+        "ev_779a69da5e499d11"
       ],
-      "primary_event_date": "2025-10-01",
+      "primary_event_date": "2025-10-29",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:owner_not_on_document"
       ],
-      "enrichment_status": "UNENRICHED"
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "print_key",
+      "event_source": "tax_foreclosure_auction",
+      "owner_source": "parcel_master",
+      "enrichment_source": "parcel_master"
     }
-  ],
-  "build_label_reason": "Source-limited build: only sources ['tax_foreclosure_auction', 'parcel_master'] were enabled. Other sources are deferred.",
-  "deployment": {
-    "github_org": "xcerebroai",
-    "github_repo": "greene-ny-intel",
-    "live_url": "",
-    "scheduled_task_name": "",
-    "watchdog_task_name": "",
-    "scheduler_runtime_class": "",
-    "scheduler_test_fired_at": "",
-    "production_verification_status": "",
-    "production_verification_at": "",
-    "last_known_good_commit": "",
-    "last_known_good_dashboard_at": ""
-  },
-  "dropped_signals_unmapped_doc_type": 0
+  ]
 }

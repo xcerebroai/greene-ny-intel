@@ -3,7 +3,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_9427474c9eceb2ed"
+      "ev_f5cf66e35b5c3dcd"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-101",
@@ -32,23 +32,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_9427474c9eceb2ed"
+          "ev_f5cf66e35b5c3dcd"
         ],
         "instrument_numbers": [
           "AAR-6892-101"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -65,7 +65,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_a2f291fc54194d36"
+      "ev_36084e54526d6084"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-102",
@@ -94,23 +94,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_a2f291fc54194d36"
+          "ev_36084e54526d6084"
         ],
         "instrument_numbers": [
           "AAR-6892-102"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -127,7 +127,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_7f0f41d1c2569c36"
+      "ev_49d1c7fe29e34129"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-105",
@@ -156,23 +156,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_7f0f41d1c2569c36"
+          "ev_49d1c7fe29e34129"
         ],
         "instrument_numbers": [
           "AAR-6892-105"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -189,7 +189,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_181041be5aa84f3d"
+      "ev_07abdc24bfe54971"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-107",
@@ -218,23 +218,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_181041be5aa84f3d"
+          "ev_07abdc24bfe54971"
         ],
         "instrument_numbers": [
           "AAR-6892-107"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -251,7 +251,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_bb98a6e2f4286eec"
+      "ev_89133ee9dc64ffa2"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-11",
@@ -280,23 +280,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_bb98a6e2f4286eec"
+          "ev_89133ee9dc64ffa2"
         ],
         "instrument_numbers": [
           "AAR-6892-11"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -313,7 +313,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_cdca1e15e534c38e"
+      "ev_ba3e695850f7edf5"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-112",
@@ -342,23 +342,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_cdca1e15e534c38e"
+          "ev_ba3e695850f7edf5"
         ],
         "instrument_numbers": [
           "AAR-6892-112"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -375,7 +375,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_002eb1426a7b0546"
+      "ev_06899624ff8fcf3e"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-115",
@@ -404,23 +404,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_002eb1426a7b0546"
+          "ev_06899624ff8fcf3e"
         ],
         "instrument_numbers": [
           "AAR-6892-115"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -437,7 +437,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_df32eb57c5fb2e51"
+      "ev_5427f2af2f616b14"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-119",
@@ -466,23 +466,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_df32eb57c5fb2e51"
+          "ev_5427f2af2f616b14"
         ],
         "instrument_numbers": [
           "AAR-6892-119"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -499,7 +499,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_aaff359676ba9a38"
+      "ev_ac5ae67cd94433bf"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-12",
@@ -528,23 +528,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_aaff359676ba9a38"
+          "ev_ac5ae67cd94433bf"
         ],
         "instrument_numbers": [
           "AAR-6892-12"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -561,7 +561,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_40efc146e8fcd18d"
+      "ev_5490da748d941663"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-125",
@@ -590,23 +590,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_40efc146e8fcd18d"
+          "ev_5490da748d941663"
         ],
         "instrument_numbers": [
           "AAR-6892-125"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -623,7 +623,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_23b2bb730a90b912"
+      "ev_93c4d12411ffcbe1"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-126",
@@ -652,23 +652,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_23b2bb730a90b912"
+          "ev_93c4d12411ffcbe1"
         ],
         "instrument_numbers": [
           "AAR-6892-126"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -685,7 +685,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_ddebf6a6110834e8"
+      "ev_d0df11ebfe6d8718"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-13",
@@ -714,23 +714,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_ddebf6a6110834e8"
+          "ev_d0df11ebfe6d8718"
         ],
         "instrument_numbers": [
           "AAR-6892-13"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -747,7 +747,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_6dba34f08e077ed2"
+      "ev_4f9586a3a0e40a97"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-16",
@@ -776,23 +776,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_6dba34f08e077ed2"
+          "ev_4f9586a3a0e40a97"
         ],
         "instrument_numbers": [
           "AAR-6892-16"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -809,7 +809,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_b82a1158d6abdfef"
+      "ev_4097294d0ab61a4e"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-17",
@@ -838,23 +838,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_b82a1158d6abdfef"
+          "ev_4097294d0ab61a4e"
         ],
         "instrument_numbers": [
           "AAR-6892-17"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -871,7 +871,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_0ec654270778688c"
+      "ev_91bd13d6be194590"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-18",
@@ -900,23 +900,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_0ec654270778688c"
+          "ev_91bd13d6be194590"
         ],
         "instrument_numbers": [
           "AAR-6892-18"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -933,7 +933,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_fb05ee2a1b2851a6"
+      "ev_e796f0a224bd2706"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-19",
@@ -962,23 +962,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_fb05ee2a1b2851a6"
+          "ev_e796f0a224bd2706"
         ],
         "instrument_numbers": [
           "AAR-6892-19"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -995,7 +995,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_94547b3f0d9e0318"
+      "ev_b21ed4b1affef951"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-20",
@@ -1024,23 +1024,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_94547b3f0d9e0318"
+          "ev_b21ed4b1affef951"
         ],
         "instrument_numbers": [
           "AAR-6892-20"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1057,7 +1057,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_9fac0c2a0eb2a928"
+      "ev_eca25902bf4096ac"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-24",
@@ -1086,23 +1086,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_9fac0c2a0eb2a928"
+          "ev_eca25902bf4096ac"
         ],
         "instrument_numbers": [
           "AAR-6892-24"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1119,7 +1119,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_03ec450e8129922e"
+      "ev_421b9d9aa96bb52e"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-25",
@@ -1148,23 +1148,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_03ec450e8129922e"
+          "ev_421b9d9aa96bb52e"
         ],
         "instrument_numbers": [
           "AAR-6892-25"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1181,7 +1181,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_21e2be98fcecbfa3"
+      "ev_1d7c185c85afbd6e"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-26",
@@ -1210,23 +1210,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_21e2be98fcecbfa3"
+          "ev_1d7c185c85afbd6e"
         ],
         "instrument_numbers": [
           "AAR-6892-26"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1243,7 +1243,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_fb5a311185d8ae1a"
+      "ev_d7abaf4762a4760e"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-28",
@@ -1272,23 +1272,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_fb5a311185d8ae1a"
+          "ev_d7abaf4762a4760e"
         ],
         "instrument_numbers": [
           "AAR-6892-28"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1305,7 +1305,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_7caa4dadce01b1fa"
+      "ev_cc9480e6f70b04a3"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-36",
@@ -1334,23 +1334,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_7caa4dadce01b1fa"
+          "ev_cc9480e6f70b04a3"
         ],
         "instrument_numbers": [
           "AAR-6892-36"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1367,7 +1367,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_32911f29283f0b58"
+      "ev_fd88d3bcd0ac2cdc"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-38",
@@ -1396,23 +1396,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_32911f29283f0b58"
+          "ev_fd88d3bcd0ac2cdc"
         ],
         "instrument_numbers": [
           "AAR-6892-38"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1429,7 +1429,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_78cc52bea11d85f4"
+      "ev_fe2dfb3513afd8bc"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-41",
@@ -1458,23 +1458,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_78cc52bea11d85f4"
+          "ev_fe2dfb3513afd8bc"
         ],
         "instrument_numbers": [
           "AAR-6892-41"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1491,7 +1491,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_29a25859dbd8791e"
+      "ev_cbf39065ada4c6cf"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-42",
@@ -1520,23 +1520,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_29a25859dbd8791e"
+          "ev_cbf39065ada4c6cf"
         ],
         "instrument_numbers": [
           "AAR-6892-42"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1553,7 +1553,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_5c5ae7c48f7c7e19"
+      "ev_81270013fa1c3286"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-43",
@@ -1582,23 +1582,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_5c5ae7c48f7c7e19"
+          "ev_81270013fa1c3286"
         ],
         "instrument_numbers": [
           "AAR-6892-43"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1615,7 +1615,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_f61a557963339cf5"
+      "ev_e51203758b3738a9"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-49",
@@ -1644,23 +1644,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_f61a557963339cf5"
+          "ev_e51203758b3738a9"
         ],
         "instrument_numbers": [
           "AAR-6892-49"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1677,7 +1677,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_42578fb25202f076"
+      "ev_f0362828e6d5a3f1"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-5",
@@ -1706,23 +1706,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_42578fb25202f076"
+          "ev_f0362828e6d5a3f1"
         ],
         "instrument_numbers": [
           "AAR-6892-5"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1739,7 +1739,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_7a5e01558b9a9983"
+      "ev_e3ed314fcb57d0b4"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-54",
@@ -1768,23 +1768,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_7a5e01558b9a9983"
+          "ev_e3ed314fcb57d0b4"
         ],
         "instrument_numbers": [
           "AAR-6892-54"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1801,7 +1801,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_103500aee7ea8ebe"
+      "ev_fb222cb9f83a244a"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-56",
@@ -1830,23 +1830,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_103500aee7ea8ebe"
+          "ev_fb222cb9f83a244a"
         ],
         "instrument_numbers": [
           "AAR-6892-56"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1863,7 +1863,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_b5705a0266211da2"
+      "ev_42c83a1c34ee4d6f"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-59",
@@ -1892,23 +1892,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_b5705a0266211da2"
+          "ev_42c83a1c34ee4d6f"
         ],
         "instrument_numbers": [
           "AAR-6892-59"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1925,7 +1925,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_e3946aec86a0b330"
+      "ev_98739eca76200b2c"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-6",
@@ -1954,23 +1954,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_e3946aec86a0b330"
+          "ev_98739eca76200b2c"
         ],
         "instrument_numbers": [
           "AAR-6892-6"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -1987,7 +1987,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_d1a6b59a5030b26d"
+      "ev_03bf6e5f0747d7a7"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-60",
@@ -2016,23 +2016,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_d1a6b59a5030b26d"
+          "ev_03bf6e5f0747d7a7"
         ],
         "instrument_numbers": [
           "AAR-6892-60"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2049,7 +2049,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_ca335ac4e2b0ca6d"
+      "ev_2ac881501864be35"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-62",
@@ -2078,23 +2078,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_ca335ac4e2b0ca6d"
+          "ev_2ac881501864be35"
         ],
         "instrument_numbers": [
           "AAR-6892-62"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2111,7 +2111,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_e90b4bf00b0e6c82"
+      "ev_3c70910a0f9fd24d"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-63",
@@ -2140,23 +2140,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_e90b4bf00b0e6c82"
+          "ev_3c70910a0f9fd24d"
         ],
         "instrument_numbers": [
           "AAR-6892-63"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2173,7 +2173,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_af3a6a38567d21f2"
+      "ev_e87e69e7592e5a7b"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-65",
@@ -2202,23 +2202,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_af3a6a38567d21f2"
+          "ev_e87e69e7592e5a7b"
         ],
         "instrument_numbers": [
           "AAR-6892-65"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2235,7 +2235,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_4d0114a8bab83657"
+      "ev_bd2b122aec53ae0d"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-66",
@@ -2264,23 +2264,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_4d0114a8bab83657"
+          "ev_bd2b122aec53ae0d"
         ],
         "instrument_numbers": [
           "AAR-6892-66"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2297,7 +2297,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_6eb36ff84683d12e"
+      "ev_7ecdac82f4745501"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-71",
@@ -2326,23 +2326,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_6eb36ff84683d12e"
+          "ev_7ecdac82f4745501"
         ],
         "instrument_numbers": [
           "AAR-6892-71"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2359,7 +2359,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_24884f6e7e31a607"
+      "ev_e33949e19a7e9605"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-72",
@@ -2388,23 +2388,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_24884f6e7e31a607"
+          "ev_e33949e19a7e9605"
         ],
         "instrument_numbers": [
           "AAR-6892-72"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2421,7 +2421,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_a27bd64b2e70ca76"
+      "ev_5a49ef728972a060"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-73",
@@ -2450,23 +2450,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_a27bd64b2e70ca76"
+          "ev_5a49ef728972a060"
         ],
         "instrument_numbers": [
           "AAR-6892-73"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2483,7 +2483,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_8e9cfe5944d12dc3"
+      "ev_ca62a3506a82c4e8"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-74",
@@ -2512,23 +2512,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_8e9cfe5944d12dc3"
+          "ev_ca62a3506a82c4e8"
         ],
         "instrument_numbers": [
           "AAR-6892-74"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2545,7 +2545,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_3e05e90cad8aa341"
+      "ev_379381ccb8c44242"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-75",
@@ -2574,23 +2574,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_3e05e90cad8aa341"
+          "ev_379381ccb8c44242"
         ],
         "instrument_numbers": [
           "AAR-6892-75"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2607,7 +2607,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_b7d2dd7afb220a06"
+      "ev_924eeb1b915c13b1"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-8",
@@ -2636,23 +2636,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_b7d2dd7afb220a06"
+          "ev_924eeb1b915c13b1"
         ],
         "instrument_numbers": [
           "AAR-6892-8"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2669,7 +2669,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_936bfa32ad13ffc5"
+      "ev_26740ef0b37b8477"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-9",
@@ -2698,23 +2698,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_936bfa32ad13ffc5"
+          "ev_26740ef0b37b8477"
         ],
         "instrument_numbers": [
           "AAR-6892-9"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2731,7 +2731,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_1d8e952c40708b0c"
+      "ev_a4628c8b9cf48ccc"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-90",
@@ -2760,23 +2760,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_1d8e952c40708b0c"
+          "ev_a4628c8b9cf48ccc"
         ],
         "instrument_numbers": [
           "AAR-6892-90"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2793,7 +2793,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_b6f48a89f68f0213"
+      "ev_f21f866baf08a446"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-91",
@@ -2822,23 +2822,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_b6f48a89f68f0213"
+          "ev_f21f866baf08a446"
         ],
         "instrument_numbers": [
           "AAR-6892-91"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2855,7 +2855,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_971dfe7d9360d77f"
+      "ev_761cec467da3a790"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-93",
@@ -2884,23 +2884,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_971dfe7d9360d77f"
+          "ev_761cec467da3a790"
         ],
         "instrument_numbers": [
           "AAR-6892-93"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2917,7 +2917,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_68b1c9114e566007"
+      "ev_236bc52d12586d67"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-96",
@@ -2946,23 +2946,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_68b1c9114e566007"
+          "ev_236bc52d12586d67"
         ],
         "instrument_numbers": [
           "AAR-6892-96"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -2979,7 +2979,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_a2328d7fa7aa200d"
+      "ev_12c5346b03bd89af"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-98",
@@ -3008,23 +3008,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_a2328d7fa7aa200d"
+          "ev_12c5346b03bd89af"
         ],
         "instrument_numbers": [
           "AAR-6892-98"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
@@ -3041,7 +3041,7 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_0f810eeeffcd400c"
+      "ev_779a69da5e499d11"
     ],
     "filer_entity": null,
     "lead_id": "lead_unresolved_AAR-6892-99",
@@ -3070,23 +3070,23 @@
         "aggregation_key": {
           "canonical_doc_type": "tax_foreclosure_notice",
           "parcel_id": null,
-          "signal_type": "tax_foreclosure_notice"
+          "signal_type": "Tax Foreclosure Notice"
         },
         "canonical_doc_type": "tax_foreclosure_notice",
         "count": 1,
-        "earliest_recorded_date": "2025-10-01",
+        "earliest_recorded_date": "2025-10-29",
         "evidence_ids": [
-          "ev_0f810eeeffcd400c"
+          "ev_779a69da5e499d11"
         ],
         "instrument_numbers": [
           "AAR-6892-99"
         ],
-        "latest_recorded_date": "2025-10-01",
+        "latest_recorded_date": "2025-10-29",
         "recorded_date_range": [
-          "2025-10-01",
-          "2025-10-01"
+          "2025-10-29",
+          "2025-10-29"
         ],
-        "signal_type": "tax_foreclosure_notice",
+        "signal_type": "Tax Foreclosure Notice",
         "source_ids": [
           "tax_foreclosure_auction"
         ],
