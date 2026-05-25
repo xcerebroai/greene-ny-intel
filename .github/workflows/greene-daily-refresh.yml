@@ -226,19 +226,36 @@ jobs:
       # github-pages` deployment, neither of which is set here on
       # purpose). Live dashboard refreshes the moment the commit lands.
 
-      - name: Verify dashboard live
+      - name: Verify dashboard live (with cache-flush retry)
         run: |
-          sleep 30   # Pages cache flush ≈ 10–60 s after a main push
           set -e
-          status=$(curl -sS -o /dev/null -w "%{http_code}" \
-            "https://xcerebroai.github.io/greene-ny-intel/dashboard/data.json")
-          echo "data.json HTTP status: $status"
-          test "$status" = "200" || (echo "Live dashboard fetch failed"; exit 1)
-          # Lead-total sanity — full backfill should yield > 1000.
-          # If we ever drop below 800, something silently broke a
-          # historical pull and the run should fail.
-          live_total=$(curl -sS \
-            "https://xcerebroai.github.io/greene-ny-intel/dashboard/data.json" \
-            | python -c "import json,sys; print(json.load(sys.stdin)['lead_total'])")
-          echo "Live lead_total: $live_total"
-          test "$live_total" -gt 800
+          # The newly-committed payload's local lead_total — what the
+          # live URL must catch up to.
+          expected=$(python -c "import json; print(json.load(open('dashboard/data.json'))['lead_total'])")
+          echo "Expected lead_total (from this run): $expected"
+          # GitHub Pages takes ~10-90 s to flush after a main-branch push.
+          # Poll up to 8 minutes; pass as soon as the live total catches up
+          # OR the live total is already > 800 (full-backfill threshold).
+          set +e
+          for attempt in $(seq 1 32); do
+            live_total=$(curl -fsS \
+              "https://xcerebroai.github.io/greene-ny-intel/dashboard/data.json" \
+              | python -c "import json,sys; print(json.load(sys.stdin)['lead_total'])" 2>/dev/null)
+            rc=$?
+            ts=$(date -u +%H:%M:%S)
+            echo "[$ts attempt $attempt] live_total=$live_total expected=$expected rc=$rc"
+            if [ "$rc" = "0" ] && [ -n "$live_total" ] \
+               && [ "$live_total" = "$expected" ]; then
+              echo "Live URL caught up — $live_total leads."
+              exit 0
+            fi
+            sleep 15
+          done
+          set -e
+          echo "Live URL did not catch up to $expected within 8 min."
+          if [ -n "$live_total" ] && [ "$live_total" -gt 800 ]; then
+            echo "But live_total=$live_total > 800 (full-backfill threshold) — accepting as healthy stale-OK."
+            exit 0
+          fi
+          echo "Live total $live_total is below the 800 backfill threshold — FAIL."
+          exit 1
