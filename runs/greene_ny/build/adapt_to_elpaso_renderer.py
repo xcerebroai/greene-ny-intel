@@ -106,16 +106,44 @@ def to_elpaso_record(scored: dict) -> dict:
     if auction_id:
         sources = [f"https://aarauctions.com/servlet/Search.do?auctionId={auction_id}"]
 
+    # Per-source signal label + doc-type so the El Paso renderer's
+    # "Distress signal" sidebar facet shows distinct labels per source
+    # while every row still uses the `foreclosure_notice` signal_type
+    # (= fcl chip class) for color consistency.
+    src = scored.get("event_source") or "unknown"
+    SIGNAL_LABELS = {
+        "tax_foreclosure_auction":  ("Tax Foreclosure — Auction",
+                                      "TAX_SALE_AUCTION_LOT",
+                                      "tax_foreclosure_auction"),
+        "tax_foreclosure_petition": ("Tax Foreclosure — In-Rem Petition",
+                                      "TAX_FORECLOSURE_PETITION",
+                                      "tax_foreclosure_petition"),
+        "legal_notices_column":     ("Foreclosure Notice of Sale",
+                                      "COLUMN_NOTICE_OF_SALE",
+                                      "legal_notices_column"),
+    }
+    label, doc_raw, src_id = SIGNAL_LABELS.get(
+        src, ("Distress Event", "UNKNOWN", src)
+    )
+
+    # source_urls per source
+    if src == "tax_foreclosure_auction" and auction_id:
+        urls = [f"https://aarauctions.com/servlet/Search.do?auctionId={auction_id}"]
+    elif src == "tax_foreclosure_petition":
+        urls = ["https://greenecountyny.gov/departments/treasurer/"]
+    else:
+        urls = []
+
     signals = [{
         "signal_type": "foreclosure_notice",
-        "signal_label": "Tax Foreclosure Auction",
+        "signal_label": label,
         "signal_confidence": "HIGH",
-        "source_id": "tax_foreclosure_auction",
+        "source_id": src_id,
         "count": 1,
-        "source_urls": sources,
+        "source_urls": urls,
         "evidence_ids": list(scored.get("evidence_ids") or []),
         "instrument_numbers": [doc_num] if doc_num else [],
-        "doc_type_raw": "TAX_SALE_AUCTION_LOT",
+        "doc_type_raw": doc_raw,
         "recorded_date": sale_date,
         "sale_date": sale_date,
     }]
@@ -160,7 +188,7 @@ def to_elpaso_record(scored: dict) -> dict:
         "legal_description": "",
         "signals": signals,
         "signal_types": ["foreclosure_notice"],
-        "source_urls": sources,
+        "source_urls": urls,
         "latest_event_date": sale_date,
         "review_required": is_review,
         "review_reason": (
