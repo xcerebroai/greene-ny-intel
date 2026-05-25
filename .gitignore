@@ -26,10 +26,26 @@ Thumbs.db
 *.swo
 
 # Build artifacts that DO NOT belong in version control
-# (Phase 1+ may generate these; tracked separately by run manifests)
-data/raw/
+# (Phase 1+ may generate these; tracked separately by run manifests).
+# Use per-file patterns rather than `data/raw/` so we can negate
+# specific reference-data files (git's negation rules don't reach
+# inside an excluded directory).
+data/raw/*.jsonl
+data/raw/*.json
+data/raw/_workdir*/
+data/raw/*.pdf
 data/runs/*/raw/
 data/evidence/*.pdf
+# EXCEPTION: parcel_master.jsonl is reference data (NYS Tax Parcels
+# Public, full Greene county roll, ~38 k records / 36 MB). It is the
+# enrichment-only source feeding the PRINT_KEY join in the staged
+# pipeline; without it the dashboard publishes every lead as
+# "Unknown — UNKNOWN — No property address" (see commit log entry
+# for the 2026-05-25 regression). It updates annually with the
+# assessment roll, not daily, so we commit it rather than re-pulling
+# each cron tick. Refresh via the workflow_dispatch input
+# `refresh_parcel_master=true` when a new roll year ships.
+!data/raw/parcel_master.jsonl
 
 # Per-county run logs and transient artifacts
 # The runs/<slug>/ folder itself IS committed (launch files, manifests, notes).

@@ -41,6 +41,11 @@ on:
         description: "Optional AAR auctionId override (default: discover)"
         required: false
         type: string
+      refresh_parcel_master:
+        description: "Re-pull the NYS parcel_master roll (~10 min, run when a new assessment roll year ships)"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write   # commit refreshed data/ + dashboard/ back to main
@@ -84,6 +89,33 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements-refresh.txt
           python -c "import jsonschema; print('jsonschema', jsonschema.__version__)"
+
+      # parcel_master — NYS Tax Parcels Public roll, ~38k records, the
+      # ENRICHMENT source that supplies owner names + addresses via
+      # PRINT_KEY / Tax Map join. Committed to git as reference data;
+      # the checkout step puts it on disk. We verify presence (so a
+      # missing file fails LOUDLY instead of silently publishing all
+      # "Unknown — UNKNOWN" leads, which is the 2026-05-25 regression
+      # that triggered this work) and OPT-INTO a fresh re-pull only
+      # when the operator explicitly requests it (new roll year).
+      - name: parcel_master — verify enrichment data present
+        run: |
+          set -e
+          test -f data/raw/parcel_master.jsonl
+          rows=$(wc -l < data/raw/parcel_master.jsonl)
+          size=$(wc -c < data/raw/parcel_master.jsonl)
+          echo "parcel_master.jsonl: $rows rows, $size bytes"
+          test "$rows" -gt 30000 || (echo "parcel_master row count $rows below 30000 — file is corrupt or stale"; exit 1)
+
+      - name: parcel_master — re-pull (opt-in)
+        if: ${{ inputs.refresh_parcel_master == true || inputs.refresh_parcel_master == 'true' }}
+        run: |
+          set -e
+          echo "Refreshing NYS parcel_master roll (~10 min)…"
+          python scrapers/parcel_master.py
+          rows=$(wc -l < data/raw/parcel_master.jsonl)
+          echo "Fresh parcel_master.jsonl: $rows rows"
+          test "$rows" -gt 30000
 
       # AAR auction pulls — historical 3738 (2022, 87 lots) + current
       # discovery (or operator-supplied auctionId). `--append` merges
@@ -181,12 +213,25 @@ jobs:
           python - <<'PY'
           import json
           d = json.load(open('dashboard/data.json'))
-          print(f"refresh_date        : {d.get('refresh_date')}")
-          print(f"semantic_verdict    : {d.get('semantic_verdict')}")
-          print(f"lead_total          : {d.get('lead_total')}")
-          print(f"new_today_count     : {d.get('new_today_count')}")
-          print(f"last_30_days_count  : {d.get('last_30_days_count')}")
-          print(f"sources_active      : {d.get('sources_active')}")
+          print(f"refresh_date           : {d.get('refresh_date')}")
+          print(f"lead_total             : {d.get('lead_total')}")
+          print(f"actionable_leads       : {d.get('actionable_leads')}")
+          print(f"parcel_master_resolved : {d.get('parcel_master_enrichment_resolved')}")
+          print(f"new_today_count        : {d.get('new_today_count')}")
+          print(f"last_30_days_count     : {d.get('last_30_days_count')}")
+          # Sanity: enriched leads must vastly outnumber unenriched.
+          enr = d.get('parcel_master_enrichment_resolved') or 0
+          unenr = d.get('parcel_master_enrichment_unresolved') or 0
+          assert enr >= 800, (
+              f"parcel_master_enrichment_resolved={enr} (need ≥ 800) — "
+              "parcel_master join did not run. Refusing to publish all-"
+              "Unknown leads."
+          )
+          assert enr >= unenr, (
+              f"resolved={enr} < unresolved={unenr} — enrichment broken; "
+              "refusing to publish."
+          )
+          print("Enrichment sanity check OK.")
           PY
 
       - name: Commit refreshed artifacts
@@ -198,8 +243,10 @@ jobs:
         run: |
           git config user.name "greene-refresh-bot"
           git config user.email "refresh-bot@xcerebro.local"
-          # data/raw/*.jsonl is gitignored — adapters re-pull it each run.
-          # Commit pipeline outputs + dashboard payload only.
+          # Pipeline outputs + dashboard payload commit to main.
+          # data/raw/*.jsonl is gitignored EXCEPT parcel_master.jsonl
+          # (reference data — only re-committed when the opt-in
+          # `refresh_parcel_master` input fires this run).
           git add \
             data/dashboard.json \
             data/scored_leads.json \
@@ -213,6 +260,9 @@ jobs:
             dashboard/data/scored_leads.json \
             dashboard/data/matched_leads.json \
             dashboard/data/evidence_ledger.json
+          if [ "${{ inputs.refresh_parcel_master }}" = "true" ]; then
+            git add data/raw/parcel_master.jsonl
+          fi
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
@@ -226,36 +276,100 @@ jobs:
       # github-pages` deployment, neither of which is set here on
       # purpose). Live dashboard refreshes the moment the commit lands.
 
-      - name: Verify dashboard live (with cache-flush retry)
+      - name: Verify dashboard live (count + enrichment sanity)
         run: |
           set -e
-          # The newly-committed payload's local lead_total — what the
-          # live URL must catch up to.
-          expected=$(python -c "import json; print(json.load(open('dashboard/data.json'))['lead_total'])")
-          echo "Expected lead_total (from this run): $expected"
-          # GitHub Pages takes ~10-90 s to flush after a main-branch push.
-          # Poll up to 8 minutes; pass as soon as the live total catches up
-          # OR the live total is already > 800 (full-backfill threshold).
+          # Expected values from THIS run's locally-built payload.
+          expected_total=$(python -c "import json; d=json.load(open('dashboard/data.json')); print(d['lead_total'])")
+          expected_enr=$(python -c "import json; d=json.load(open('dashboard/data.json')); print(d['parcel_master_enrichment_resolved'])")
+          echo "Expected lead_total              : $expected_total"
+          echo "Expected parcel_master_resolved  : $expected_enr"
+
+          # Threshold guards. The 2026-05-25 regression published 1,180
+          # leads with enrichment=0 — a count-only check would have
+          # passed. The enrichment-resolved threshold below would have
+          # caught it.
+          MIN_TOTAL=800
+          MIN_ENRICHED=800
+
+          # Inline checker: fetches live data.json, prints summary
+          # tuple, exits 0 if BOTH thresholds met AND lead_total matches
+          # expected, 2 if total-only stale, 3 if enrichment broken,
+          # 4 if HTTP fail.
+          check_live () {
+            python <<PY
+          import json, sys, urllib.request
+          try:
+              with urllib.request.urlopen(
+                  "https://xcerebroai.github.io/greene-ny-intel/dashboard/data.json",
+                  timeout=20,
+              ) as r:
+                  d = json.loads(r.read())
+          except Exception as e:
+              print(f"LIVE_FETCH_FAIL: {e}")
+              sys.exit(4)
+          total = d.get("lead_total") or 0
+          enr   = d.get("parcel_master_enrichment_resolved") or 0
+          unenr = d.get("parcel_master_enrichment_unresolved") or 0
+          actionable = d.get("actionable_leads") or 0
+          # Spot-check actual records: any with empty addr + Unknown owner?
+          rows = d.get("records") or []
+          unknown_owner = sum(1 for r in rows if (r.get("owner_name") or "").strip() == "Unknown")
+          empty_addr = sum(1 for r in rows if not (r.get("property_full_address") or "").strip())
+          pct_unknown = (unknown_owner * 100 // max(1, len(rows)))
+          pct_empty_addr = (empty_addr * 100 // max(1, len(rows)))
+          print(f"LIVE total={total} enriched={enr} unenriched={unenr} "
+                f"actionable={actionable} pct_owner_unknown={pct_unknown}% "
+                f"pct_empty_addr={pct_empty_addr}%")
+          # Hard gates
+          if total < $MIN_TOTAL:
+              print(f"FAIL: lead_total {total} < {$MIN_TOTAL}")
+              sys.exit(2)
+          if enr < $MIN_ENRICHED:
+              print(f"FAIL: parcel_master_enrichment_resolved {enr} < {$MIN_ENRICHED} — "
+                    "every lead would render as 'Unknown — UNKNOWN — No property address'")
+              sys.exit(3)
+          if pct_empty_addr > 30:
+              print(f"FAIL: {pct_empty_addr}% of leads have no property_full_address (>30% threshold)")
+              sys.exit(3)
+          if pct_unknown > 50:
+              print(f"FAIL: {pct_unknown}% of leads have owner_name='Unknown' (>50% threshold)")
+              sys.exit(3)
+          if actionable < 500:
+              print(f"FAIL: actionable_leads {actionable} < 500 — board is mostly Unknown")
+              sys.exit(3)
+          # Soft: hasn't caught up to this run yet?
+          if total != $expected_total:
+              print(f"STALE: live total {total} != expected $expected_total — Pages cache still flushing")
+              sys.exit(2)
+              # exit 2 is retryable; exit 3 is hard fail
+          sys.exit(0)
+          PY
+          }
+
+          # Poll up to 8 minutes — exit 2 means "retry", any other
+          # non-zero is a hard fail (enrichment broken or HTTP down).
           set +e
           for attempt in $(seq 1 32); do
-            live_total=$(curl -fsS \
-              "https://xcerebroai.github.io/greene-ny-intel/dashboard/data.json" \
-              | python -c "import json,sys; print(json.load(sys.stdin)['lead_total'])" 2>/dev/null)
-            rc=$?
             ts=$(date -u +%H:%M:%S)
-            echo "[$ts attempt $attempt] live_total=$live_total expected=$expected rc=$rc"
-            if [ "$rc" = "0" ] && [ -n "$live_total" ] \
-               && [ "$live_total" = "$expected" ]; then
-              echo "Live URL caught up — $live_total leads."
+            echo "[$ts attempt $attempt] checking live..."
+            check_live
+            rc=$?
+            if [ $rc -eq 0 ]; then
+              echo "Live URL caught up + enrichment OK."
               exit 0
+            fi
+            if [ $rc -eq 3 ] || [ $rc -eq 4 ]; then
+              echo "Hard fail (rc=$rc) — refusing to keep retrying."
+              exit $rc
             fi
             sleep 15
           done
-          set -e
-          echo "Live URL did not catch up to $expected within 8 min."
-          if [ -n "$live_total" ] && [ "$live_total" -gt 800 ]; then
-            echo "But live_total=$live_total > 800 (full-backfill threshold) — accepting as healthy stale-OK."
-            exit 0
-          fi
-          echo "Live total $live_total is below the 800 backfill threshold — FAIL."
+          echo "Live URL did not catch up within 8 min."
+          # Final retry once more strictly — accept healthy stale if
+          # enrichment is intact on whatever IS live.
+          check_live
+          rc=$?
+          if [ $rc -eq 0 ]; then exit 0; fi
+          echo "Final state did not pass — FAIL (rc=$rc)"
           exit 1
