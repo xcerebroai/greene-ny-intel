@@ -79177,68 +79177,6 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_f7ef13299627a59e"
-    ],
-    "filer_entity": null,
-    "lead_id": "lead_unresolved_tiiBxvPLWp52BxAtI1G0-3",
-    "multi_owner_status": "SINGLE_OWNER",
-    "owner_count": 1,
-    "owner_name": "estate of Kenneth David Richardson lately domiciled at 569 County Route 38",
-    "owner_type": "ESTATE",
-    "owners": [
-      {
-        "confidence": null,
-        "is_primary": true,
-        "name": "estate of Kenneth David Richardson lately domiciled at 569 County Route 38",
-        "name_type": null,
-        "notes": null,
-        "resolution_status": "RESOLVED",
-        "role": "debtor",
-        "source_field": "document_body"
-      }
-    ],
-    "parcel_resolution_status": "UNRESOLVED",
-    "primary_owner_name": "estate of Kenneth David Richardson lately domiciled at 569 County Route 38",
-    "primary_parcel_id": null,
-    "review_reason": null,
-    "signals": [
-      {
-        "aggregation_key": {
-          "canonical_doc_type": "letters_of_administration",
-          "parcel_id": null,
-          "signal_type": "Letters of Administration"
-        },
-        "canonical_doc_type": "letters_of_administration",
-        "count": 1,
-        "earliest_recorded_date": "2026-02-26",
-        "evidence_ids": [
-          "ev_f7ef13299627a59e"
-        ],
-        "instrument_numbers": [
-          "tiiBxvPLWp52BxAtI1G0-3"
-        ],
-        "latest_recorded_date": "2026-02-26",
-        "recorded_date_range": [
-          "2026-02-26",
-          "2026-02-26"
-        ],
-        "signal_type": "Letters of Administration",
-        "source_ids": [
-          "legal_notices_column"
-        ],
-        "source_urls": [
-          "https://newyork.column.us/?id=tiiBxvPLWp52BxAtI1G0-3"
-        ]
-      }
-    ],
-    "source_ids": [
-      "legal_notices_column"
-    ]
-  },
-  {
-    "additional_owner_names": [],
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [
       "ev_ca54b5e4d890c4b3"
     ],
     "filer_entity": null,
