@@ -78185,68 +78185,6 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_9c95e01e40db5886"
-    ],
-    "filer_entity": null,
-    "lead_id": "lead_unresolved_c7L2HYcCi2mJrXEToWEB-2",
-    "multi_owner_status": "SINGLE_OWNER",
-    "owner_count": 1,
-    "owner_name": "notice_of_sale against unidentified party",
-    "owner_type": "UNKNOWN",
-    "owners": [
-      {
-        "confidence": null,
-        "is_primary": true,
-        "name": "notice_of_sale against unidentified party",
-        "name_type": null,
-        "notes": null,
-        "resolution_status": "REVIEW_REQUIRED",
-        "role": "unresolved",
-        "source_field": null
-      }
-    ],
-    "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "notice_of_sale against unidentified party",
-    "primary_parcel_id": null,
-    "review_reason": "document_body_debtor_not_extractable",
-    "signals": [
-      {
-        "aggregation_key": {
-          "canonical_doc_type": "notice_of_sale",
-          "parcel_id": null,
-          "signal_type": "Foreclosure Notice of Sale"
-        },
-        "canonical_doc_type": "notice_of_sale",
-        "count": 1,
-        "earliest_recorded_date": "2026-03-03",
-        "evidence_ids": [
-          "ev_9c95e01e40db5886"
-        ],
-        "instrument_numbers": [
-          "c7L2HYcCi2mJrXEToWEB-2"
-        ],
-        "latest_recorded_date": "2026-03-03",
-        "recorded_date_range": [
-          "2026-03-03",
-          "2026-03-03"
-        ],
-        "signal_type": "Foreclosure Notice of Sale",
-        "source_ids": [
-          "legal_notices_column"
-        ],
-        "source_urls": [
-          "https://newyork.column.us/?id=c7L2HYcCi2mJrXEToWEB-2"
-        ]
-      }
-    ],
-    "source_ids": [
-      "legal_notices_column"
-    ]
-  },
-  {
-    "additional_owner_names": [],
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [
       "ev_ddf8856a9a53e5b1"
     ],
     "filer_entity": null,
@@ -78298,68 +78236,6 @@
         ],
         "source_urls": [
           "https://newyork.column.us/?id=c7L2HYcCi2mJrXEToWEB-3"
-        ]
-      }
-    ],
-    "source_ids": [
-      "legal_notices_column"
-    ]
-  },
-  {
-    "additional_owner_names": [],
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [
-      "ev_f404a61174b82a14"
-    ],
-    "filer_entity": null,
-    "lead_id": "lead_unresolved_f7nv0FktyExrVBBaJjzP-3",
-    "multi_owner_status": "SINGLE_OWNER",
-    "owner_count": 1,
-    "owner_name": "notice_of_sale against unidentified party",
-    "owner_type": "UNKNOWN",
-    "owners": [
-      {
-        "confidence": null,
-        "is_primary": true,
-        "name": "notice_of_sale against unidentified party",
-        "name_type": null,
-        "notes": null,
-        "resolution_status": "REVIEW_REQUIRED",
-        "role": "unresolved",
-        "source_field": null
-      }
-    ],
-    "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "notice_of_sale against unidentified party",
-    "primary_parcel_id": null,
-    "review_reason": "document_body_debtor_not_extractable",
-    "signals": [
-      {
-        "aggregation_key": {
-          "canonical_doc_type": "notice_of_sale",
-          "parcel_id": null,
-          "signal_type": "Foreclosure Notice of Sale"
-        },
-        "canonical_doc_type": "notice_of_sale",
-        "count": 1,
-        "earliest_recorded_date": "2026-03-03",
-        "evidence_ids": [
-          "ev_f404a61174b82a14"
-        ],
-        "instrument_numbers": [
-          "f7nv0FktyExrVBBaJjzP-3"
-        ],
-        "latest_recorded_date": "2026-03-03",
-        "recorded_date_range": [
-          "2026-03-03",
-          "2026-03-03"
-        ],
-        "signal_type": "Foreclosure Notice of Sale",
-        "source_ids": [
-          "legal_notices_column"
-        ],
-        "source_urls": [
-          "https://newyork.column.us/?id=f7nv0FktyExrVBBaJjzP-3"
         ]
       }
     ],
