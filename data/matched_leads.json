@@ -77813,68 +77813,6 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_88f3cd60e4face82"
-    ],
-    "filer_entity": null,
-    "lead_id": "lead_unresolved_UP2YfYOIR8OgHm7Mk8lq-1",
-    "multi_owner_status": "SINGLE_OWNER",
-    "owner_count": 1,
-    "owner_name": "Heirs of Marilyn G. Flinte a/k/a Marilyn Flinte Whose whereabouts are unknown",
-    "owner_type": "ESTATE",
-    "owners": [
-      {
-        "confidence": null,
-        "is_primary": true,
-        "name": "Heirs of Marilyn G. Flinte a/k/a Marilyn Flinte Whose whereabouts are unknown",
-        "name_type": null,
-        "notes": null,
-        "resolution_status": "RESOLVED",
-        "role": "debtor",
-        "source_field": "document_body"
-      }
-    ],
-    "parcel_resolution_status": "UNRESOLVED",
-    "primary_owner_name": "Heirs of Marilyn G. Flinte a/k/a Marilyn Flinte Whose whereabouts are unknown",
-    "primary_parcel_id": null,
-    "review_reason": null,
-    "signals": [
-      {
-        "aggregation_key": {
-          "canonical_doc_type": "letters_of_administration",
-          "parcel_id": null,
-          "signal_type": "Letters of Administration"
-        },
-        "canonical_doc_type": "letters_of_administration",
-        "count": 1,
-        "earliest_recorded_date": "2026-03-12",
-        "evidence_ids": [
-          "ev_88f3cd60e4face82"
-        ],
-        "instrument_numbers": [
-          "UP2YfYOIR8OgHm7Mk8lq-1"
-        ],
-        "latest_recorded_date": "2026-03-12",
-        "recorded_date_range": [
-          "2026-03-12",
-          "2026-03-12"
-        ],
-        "signal_type": "Letters of Administration",
-        "source_ids": [
-          "legal_notices_column"
-        ],
-        "source_urls": [
-          "https://newyork.column.us/?id=UP2YfYOIR8OgHm7Mk8lq-1"
-        ]
-      }
-    ],
-    "source_ids": [
-      "legal_notices_column"
-    ]
-  },
-  {
-    "additional_owner_names": [],
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [
       "ev_48f2baa0cb25ddaf"
     ],
     "filer_entity": null,
