@@ -78433,68 +78433,6 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_f2383f566175d372"
-    ],
-    "filer_entity": null,
-    "lead_id": "lead_unresolved_gULA9HEtWpKqOUm2k0N7-3",
-    "multi_owner_status": "SINGLE_OWNER",
-    "owner_count": 1,
-    "owner_name": "estate of Harry W. Dillman lately domiciled at 1171 Sandy Plains Road",
-    "owner_type": "ESTATE",
-    "owners": [
-      {
-        "confidence": null,
-        "is_primary": true,
-        "name": "estate of Harry W. Dillman lately domiciled at 1171 Sandy Plains Road",
-        "name_type": null,
-        "notes": null,
-        "resolution_status": "RESOLVED",
-        "role": "debtor",
-        "source_field": "document_body"
-      }
-    ],
-    "parcel_resolution_status": "UNRESOLVED",
-    "primary_owner_name": "estate of Harry W. Dillman lately domiciled at 1171 Sandy Plains Road",
-    "primary_parcel_id": null,
-    "review_reason": null,
-    "signals": [
-      {
-        "aggregation_key": {
-          "canonical_doc_type": "letters_testamentary",
-          "parcel_id": null,
-          "signal_type": "Letters Testamentary"
-        },
-        "canonical_doc_type": "letters_testamentary",
-        "count": 1,
-        "earliest_recorded_date": "2026-03-27",
-        "evidence_ids": [
-          "ev_f2383f566175d372"
-        ],
-        "instrument_numbers": [
-          "gULA9HEtWpKqOUm2k0N7-3"
-        ],
-        "latest_recorded_date": "2026-03-27",
-        "recorded_date_range": [
-          "2026-03-27",
-          "2026-03-27"
-        ],
-        "signal_type": "Letters Testamentary",
-        "source_ids": [
-          "legal_notices_column"
-        ],
-        "source_urls": [
-          "https://newyork.column.us/?id=gULA9HEtWpKqOUm2k0N7-3"
-        ]
-      }
-    ],
-    "source_ids": [
-      "legal_notices_column"
-    ]
-  },
-  {
-    "additional_owner_names": [],
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [
       "ev_d987ec506e193fc1"
     ],
     "filer_entity": null,
