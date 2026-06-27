@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-06-26T12:07:43Z",
+  "generated_at": "2026-06-27T11:54:22Z",
   "build_label": "SOURCE_LIMITED",
   "build_label_reason": "Three PRIMARY event sources are live (AAR tax-foreclosure auction, Treasurer Annual Petition & Notice of Foreclosure PDF, Column legal notices) — 634 tax-foreclosure-notice + 1 foreclosure-notice-of-sale signals. SearchIQS clerk land records, NYSCEF Supreme + Surrogate, WebSurrogate, and WebCivil Supreme were probed 2026-05-25 with stealth chromium + playwright-stealth (same combo that broke Smith TX publicsearch.us): landing pages render, but every actionable request (guest-login click, search submit, follow-on nav) fires Cloudflare Managed Challenge (cType=managed, _cf_chl_opt) which did NOT auto-resolve in 40–60 s polls across cold + warmed sessions. Stealth empirically ruled out; punch-listed for an operator-supplied cf_clearance cookie + session-cookie pair (see runs/greene_ny/recon/stealth_recon_2026-05-25.md).",
   "mode": "production",
   "county": "Greene County",
   "state": "NY",
   "semantic_verdict": "DEPLOY_OK",
-  "lead_total": 1277,
+  "lead_total": 1278,
   "event_source_counts": {
     "tax_foreclosure_petition": 1089,
-    "legal_notices_column": 52,
+    "legal_notices_column": 53,
     "tax_foreclosure_auction": 136
   },
   "per_source_raw_records": {
     "tax_foreclosure_auction": 136,
     "tax_foreclosure_petition": 1275,
-    "legal_notices_column": 52
+    "legal_notices_column": 53
   },
   "owner_source_policy": "Owners attached downstream as enrichment from parcel_master via PRINT_KEY join. §17 keeps its honest owner-from-document routing (parties=[] on AAR rows; parties=[defendant] on Treasurer petition + Column notices). Owner is NEVER relabeled §17-resolved if §17 didn't resolve it from the source document.",
   "enrichment_breakdown": {
     "ENRICHED": 1175,
-    "UNENRICHED": 102
+    "UNENRICHED": 103
   },
   "seam_enrichment_breakdown": {
     "ENRICHED": 1039,
-    "UNENRICHED": 238
+    "UNENRICHED": 239
   },
   "owner_source_counts": {
-    "section_17": 1087,
+    "section_17": 1088,
     "unresolved": 54,
     "parcel_master": 136
   },
   "enrichment_join_method_counts": {
     "parcel_id": 1039,
-    "none": 102,
+    "none": 103,
     "print_key": 136
   },
   "pattern_counts": {
-    "estate": 3,
+    "estate": 4,
     "foreclosure": 49,
     "tax": 1411
   },
@@ -47,7 +47,7 @@
     "out_of_state": 158
   },
   "stack_depth_distribution": {
-    "1": 1116,
+    "1": 1117,
     "2": 137,
     "3": 23,
     "4": 1
@@ -56,10 +56,10 @@
     "Hot": 24,
     "Low": 8,
     "Strong": 154,
-    "Workable": 1091
+    "Workable": 1092
   },
   "deal_path_distribution": {
-    "wholesale": 1277
+    "wholesale": 1278
   },
   "records": [
     {
@@ -59550,6 +59550,51 @@
         "ev_8e91b38bddc4d629"
       ],
       "primary_event_date": "2026-06-20",
+      "review_flags": [],
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "UNENRICHED",
+      "row_enrichment_join_method": "none",
+      "event_source": "legal_notices_column",
+      "owner_source": "section_17",
+      "enrichment_source": "none"
+    },
+    {
+      "lead_id": "lead_unresolved_WDmWfutkY6BQ67OE4icR-1",
+      "scored_lead_id": "scored_2dfc6d6e4e0ea600",
+      "canonical_doc_types": [
+        "letters_of_administration"
+      ],
+      "primary_parcel_id": null,
+      "tax_map": null,
+      "display_address": "",
+      "display_owner": "estate of Donald Edward Shanagher",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "estate of Donald Edward Shanagher",
+      "display_owner_mailing_address": "",
+      "display_owner_mailing_city": "",
+      "display_owner_mailing_state": "",
+      "display_owner_mailing_zip": "",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "estate"
+      ],
+      "display_pattern_set": [
+        "estate"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": null,
+      "display_year_built": null,
+      "display_property_use": null,
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_1882db964dfdbcd3"
+      ],
+      "primary_event_date": "2026-06-27",
       "review_flags": [],
       "seam_enrichment_status": "UNENRICHED",
       "row_enrichment_status": "UNENRICHED",
