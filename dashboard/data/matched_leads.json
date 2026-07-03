@@ -73845,6 +73845,68 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
+      "ev_5b587d7505825b90"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_Ao1WVQqKLBkMy8Hx5nCR-0",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "notice_of_sale against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "notice_of_sale against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "notice_of_sale against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "document_body_debtor_not_extractable",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "notice_of_sale",
+          "parcel_id": null,
+          "signal_type": "Foreclosure Notice of Sale"
+        },
+        "canonical_doc_type": "notice_of_sale",
+        "count": 1,
+        "earliest_recorded_date": "2026-07-03",
+        "evidence_ids": [
+          "ev_5b587d7505825b90"
+        ],
+        "instrument_numbers": [
+          "Ao1WVQqKLBkMy8Hx5nCR-0"
+        ],
+        "latest_recorded_date": "2026-07-03",
+        "recorded_date_range": [
+          "2026-07-03",
+          "2026-07-03"
+        ],
+        "signal_type": "Foreclosure Notice of Sale",
+        "source_ids": [
+          "legal_notices_column"
+        ],
+        "source_urls": [
+          "https://newyork.column.us/?id=Ao1WVQqKLBkMy8Hx5nCR-0"
+        ]
+      }
+    ],
+    "source_ids": [
+      "legal_notices_column"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
       "ev_93ff30640c68fc5f"
     ],
     "filer_entity": null,
@@ -78794,6 +78856,68 @@
         ],
         "source_urls": [
           "https://newyork.column.us/?id=hf4AG5lC3hizoLrDz67Q-1"
+        ]
+      }
+    ],
+    "source_ids": [
+      "legal_notices_column"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_69e26d7ddd98d88f"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_hf4AG5lC3hizoLrDz67Q-2",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "letters_of_administration against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "letters_of_administration against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "letters_of_administration against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "document_body_debtor_not_extractable",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "letters_of_administration",
+          "parcel_id": null,
+          "signal_type": "Letters of Administration"
+        },
+        "canonical_doc_type": "letters_of_administration",
+        "count": 1,
+        "earliest_recorded_date": "2026-07-02",
+        "evidence_ids": [
+          "ev_69e26d7ddd98d88f"
+        ],
+        "instrument_numbers": [
+          "hf4AG5lC3hizoLrDz67Q-2"
+        ],
+        "latest_recorded_date": "2026-07-02",
+        "recorded_date_range": [
+          "2026-07-02",
+          "2026-07-02"
+        ],
+        "signal_type": "Letters of Administration",
+        "source_ids": [
+          "legal_notices_column"
+        ],
+        "source_urls": [
+          "https://newyork.column.us/?id=hf4AG5lC3hizoLrDz67Q-2"
         ]
       }
     ],
