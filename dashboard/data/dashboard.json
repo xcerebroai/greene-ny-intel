@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T11:54:33Z",
+  "generated_at": "2026-07-05T11:55:07Z",
   "build_label": "SOURCE_LIMITED",
   "build_label_reason": "Three PRIMARY event sources are live (AAR tax-foreclosure auction, Treasurer Annual Petition & Notice of Foreclosure PDF, Column legal notices) — 634 tax-foreclosure-notice + 1 foreclosure-notice-of-sale signals. SearchIQS clerk land records, NYSCEF Supreme + Surrogate, WebSurrogate, and WebCivil Supreme were probed 2026-05-25 with stealth chromium + playwright-stealth (same combo that broke Smith TX publicsearch.us): landing pages render, but every actionable request (guest-login click, search submit, follow-on nav) fires Cloudflare Managed Challenge (cType=managed, _cf_chl_opt) which did NOT auto-resolve in 40–60 s polls across cold + warmed sessions. Stealth empirically ruled out; punch-listed for an operator-supplied cf_clearance cookie + session-cookie pair (see runs/greene_ny/recon/stealth_recon_2026-05-25.md).",
   "mode": "production",
@@ -55,8 +55,8 @@
   "score_tier_distribution": {
     "Hot": 24,
     "Low": 8,
-    "Strong": 149,
-    "Workable": 1099
+    "Strong": 145,
+    "Workable": 1103
   },
   "deal_path_distribution": {
     "wholesale": 1280
@@ -56584,7 +56584,7 @@
     },
     {
       "lead_id": "lead_unresolved_CSq25aE9QJIjLcSLkxNR-4",
-      "scored_lead_id": "scored_9600a1fa9a249b64",
+      "scored_lead_id": "scored_ebcf508bb5649f54",
       "canonical_doc_types": [
         "notice_of_sale"
       ],
@@ -56598,8 +56598,8 @@
       "display_owner_mailing_city": "",
       "display_owner_mailing_state": "",
       "display_owner_mailing_zip": "",
-      "display_score": 65,
-      "display_tier": "Strong",
+      "display_score": 60,
+      "display_tier": "Workable",
       "display_patterns": [
         "foreclosure"
       ],
@@ -56968,7 +56968,7 @@
     },
     {
       "lead_id": "lead_unresolved_OqRk9bFdh9D7lBGsbHtu-2",
-      "scored_lead_id": "scored_c669320eb970ec6a",
+      "scored_lead_id": "scored_0d707c3756286d08",
       "canonical_doc_types": [
         "notice_of_sale"
       ],
@@ -56982,8 +56982,8 @@
       "display_owner_mailing_city": "",
       "display_owner_mailing_state": "",
       "display_owner_mailing_zip": "",
-      "display_score": 65,
-      "display_tier": "Strong",
+      "display_score": 60,
+      "display_tier": "Workable",
       "display_patterns": [
         "foreclosure"
       ],
@@ -59746,7 +59746,7 @@
     },
     {
       "lead_id": "lead_unresolved_ZYLwf4WeeWFr5Dfhrx11-2",
-      "scored_lead_id": "scored_72678bffe1ad3ed4",
+      "scored_lead_id": "scored_2d44975a3a8b84aa",
       "canonical_doc_types": [
         "notice_of_sale"
       ],
@@ -59760,8 +59760,8 @@
       "display_owner_mailing_city": "",
       "display_owner_mailing_state": "",
       "display_owner_mailing_zip": "",
-      "display_score": 65,
-      "display_tier": "Strong",
+      "display_score": 60,
+      "display_tier": "Workable",
       "display_patterns": [
         "foreclosure"
       ],
@@ -60994,7 +60994,7 @@
     },
     {
       "lead_id": "lead_unresolved_yjPbd5a33vTWCYEVY9G2-1",
-      "scored_lead_id": "scored_64e62af5d6ae1d32",
+      "scored_lead_id": "scored_d9e4333f93059796",
       "canonical_doc_types": [
         "notice_of_sale"
       ],
@@ -61008,8 +61008,8 @@
       "display_owner_mailing_city": "",
       "display_owner_mailing_state": "",
       "display_owner_mailing_zip": "",
-      "display_score": 65,
-      "display_tier": "Strong",
+      "display_score": 60,
+      "display_tier": "Workable",
       "display_patterns": [
         "foreclosure"
       ],
