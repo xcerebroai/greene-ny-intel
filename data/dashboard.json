@@ -1,64 +1,65 @@
 {
-  "generated_at": "2026-07-29T12:05:14Z",
+  "generated_at": "2026-07-30T12:03:29Z",
   "build_label": "SOURCE_LIMITED",
   "build_label_reason": "Three PRIMARY event sources are live (AAR tax-foreclosure auction, Treasurer Annual Petition & Notice of Foreclosure PDF, Column legal notices) — 634 tax-foreclosure-notice + 1 foreclosure-notice-of-sale signals. SearchIQS clerk land records, NYSCEF Supreme + Surrogate, WebSurrogate, and WebCivil Supreme were probed 2026-05-25 with stealth chromium + playwright-stealth (same combo that broke Smith TX publicsearch.us): landing pages render, but every actionable request (guest-login click, search submit, follow-on nav) fires Cloudflare Managed Challenge (cType=managed, _cf_chl_opt) which did NOT auto-resolve in 40–60 s polls across cold + warmed sessions. Stealth empirically ruled out; punch-listed for an operator-supplied cf_clearance cookie + session-cookie pair (see runs/greene_ny/recon/stealth_recon_2026-05-25.md).",
   "mode": "production",
   "county": "Greene County",
   "state": "NY",
   "semantic_verdict": "DEPLOY_OK",
-  "lead_total": 1197,
+  "lead_total": 1281,
   "event_source_counts": {
-    "tax_foreclosure_petition": 1006,
-    "legal_notices_column": 55,
+    "tax_foreclosure_petition": 1089,
+    "legal_notices_column": 56,
     "tax_foreclosure_auction": 136
   },
   "per_source_raw_records": {
     "tax_foreclosure_auction": 136,
-    "tax_foreclosure_petition": 1169,
-    "legal_notices_column": 55
+    "tax_foreclosure_petition": 1275,
+    "legal_notices_column": 56
   },
   "owner_source_policy": "Owners attached downstream as enrichment from parcel_master via PRINT_KEY join. §17 keeps its honest owner-from-document routing (parties=[] on AAR rows; parties=[defendant] on Treasurer petition + Column notices). Owner is NEVER relabeled §17-resolved if §17 didn't resolve it from the source document.",
   "enrichment_breakdown": {
-    "ENRICHED": 1095,
-    "UNENRICHED": 102
+    "ENRICHED": 1175,
+    "UNENRICHED": 106
   },
   "seam_enrichment_breakdown": {
-    "ENRICHED": 959,
-    "UNENRICHED": 238
+    "ENRICHED": 1039,
+    "UNENRICHED": 242
   },
   "owner_source_counts": {
-    "section_17": 1008,
-    "unresolved": 53,
+    "section_17": 1090,
+    "unresolved": 55,
     "parcel_master": 136
   },
   "enrichment_join_method_counts": {
-    "parcel_id": 959,
-    "none": 102,
+    "parcel_id": 1039,
+    "none": 106,
     "print_key": 136
   },
   "pattern_counts": {
     "estate": 7,
-    "foreclosure": 48,
-    "tax": 1305
+    "foreclosure": 49,
+    "tax": 1411
   },
   "attribute_counts": {
-    "absentee": 959,
-    "entity_owned": 183,
-    "out_of_state": 139
+    "absentee": 1039,
+    "entity_owned": 197,
+    "out_of_state": 158
   },
   "stack_depth_distribution": {
-    "1": 1055,
-    "2": 121,
-    "3": 21
+    "1": 1120,
+    "2": 137,
+    "3": 23,
+    "4": 1
   },
   "score_tier_distribution": {
-    "Hot": 21,
-    "Low": 13,
-    "Strong": 128,
-    "Workable": 1035
+    "Hot": 24,
+    "Low": 14,
+    "Strong": 144,
+    "Workable": 1099
   },
   "deal_path_distribution": {
-    "wholesale": 1197
+    "wholesale": 1281
   },
   "records": [
     {
@@ -346,6 +347,148 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19200006000000020420000000",
+      "scored_lead_id": "scored_e6b491fab09ff9ac",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19200006000000020420000000",
+      "tax_map": "60.00-2-42",
+      "display_address": "ROUTE 32C, Ashland, NY",
+      "display_owner": "Orosco Jesse and Orosco Leticia",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Orosco Jesse and Orosco Leticia",
+      "display_owner_mailing_address": "2681 W Linco Rd",
+      "display_owner_mailing_city": "Stevensville",
+      "display_owner_mailing_state": "MI",
+      "display_owner_mailing_zip": "49127",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 10800,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_12c25b436735fb5b"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19200007500000040370000000",
+      "scored_lead_id": "scored_ced9af6f80ea3979",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19200007500000040370000000",
+      "tax_map": "75.00-4-37",
+      "display_address": "POND VIEW RD, Ashland, NY",
+      "display_owner": "Gerbe William J and Gerbe Valentine",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Gerbe William J and Gerbe Valentine",
+      "display_owner_mailing_address": "3015 Farmwalk Rd",
+      "display_owner_mailing_city": "Yorktown Heights",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10598",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 22700,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_97e2d672867b1f7e"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19200007500000040380000000",
+      "scored_lead_id": "scored_b775461782e72b7b",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19200007500000040380000000",
+      "tax_map": "75.00-4-38",
+      "display_address": "POND VIEW RD, Ashland, NY",
+      "display_owner": "Gerbe William Jr and Gerbe Valentine",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Gerbe William Jr and Gerbe Valentine",
+      "display_owner_mailing_address": "3015 Farmwalk Rd",
+      "display_owner_mailing_city": "Yorktown Heights",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10598",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 25000,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_1c6279390955547a"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19200007600000010650000000",
       "scored_lead_id": "scored_c02b9a3cda65454c",
       "canonical_doc_types": [
@@ -480,6 +623,54 @@
         "ev_4bc015675b98da59"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19200007700000010142200000",
+      "scored_lead_id": "scored_90e13f5dc00a2121",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19200007700000010142200000",
+      "tax_map": "77.00-1-14.22",
+      "display_address": "241 CAMPBELL RD, Ashland, NY",
+      "display_owner": "Andrinopoulos George",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Andrinopoulos George",
+      "display_owner_mailing_address": "109 Lazarus Dr",
+      "display_owner_mailing_city": "Legdewood",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "07852",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 510700,
+      "display_year_built": 2005,
+      "display_property_use": "240",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_f3586bb80b89c315"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -726,6 +917,54 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19200009300000010062000000",
+      "scored_lead_id": "scored_5c0744b24eb4d39a",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19200009300000010062000000",
+      "tax_map": "93.00-1-6.2",
+      "display_address": "524 MULLER RD, Ashland, NY",
+      "display_owner": "Antzoulis Vasilios I and Antzoulis Andreas",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Antzoulis Vasilios I and Antzoulis Andreas",
+      "display_owner_mailing_address": "42 Garden Dr",
+      "display_owner_mailing_city": "Fairfield",
+      "display_owner_mailing_state": "CT",
+      "display_owner_mailing_zip": "06825",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 49600,
+      "display_year_built": 1999,
+      "display_property_use": "280",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_99b8e5726fcb63c6"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19200009300200010270000000",
       "scored_lead_id": "scored_c7baeb01df17b327",
       "canonical_doc_types": [
@@ -812,6 +1051,53 @@
         "ev_e3aabdd44251d44f"
       ],
       "primary_event_date": "2022-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19200009300200010480000000",
+      "scored_lead_id": "scored_71486b1c89bdcbd1",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19200009300200010480000000",
+      "tax_map": "93.02-1-48",
+      "display_address": "12138&140 ROUTE 23, Ashland, NY",
+      "display_owner": "Garraghan Kristen",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Garraghan Kristen",
+      "display_owner_mailing_address": "11988 Route 23",
+      "display_owner_mailing_city": "Windham",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12496",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 60000,
+      "display_year_built": 1850,
+      "display_property_use": "280",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_3dbb2070e85a950b"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -2571,6 +2857,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19228910400000010380000000",
+      "scored_lead_id": "scored_36862d500e1498e5",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19228910400000010380000000",
+      "tax_map": "104.00-1-38",
+      "display_address": "ROUTE 49, Athens, NY",
+      "display_owner": "Konstalid James",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Konstalid James",
+      "display_owner_mailing_address": "11 Mansfield Pl",
+      "display_owner_mailing_city": "Suffern",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10901",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 44000,
+      "display_year_built": null,
+      "display_property_use": "311",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_f831655d56fed6f9"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19228910400000040150000000",
       "scored_lead_id": "scored_8b5a72f64dc417ad",
       "canonical_doc_types": [
@@ -2712,6 +3045,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19228910400000060310000000",
+      "scored_lead_id": "scored_fd2ddeb52820fe7c",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19228910400000060310000000",
+      "tax_map": "104.00-6-31",
+      "display_address": "VOSENKILL RD, Athens, NY",
+      "display_owner": "Finch Earle E",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Finch Earle E",
+      "display_owner_mailing_address": "54 Cindy Crest Dr",
+      "display_owner_mailing_city": "Schenectady",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "123063411",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 52600,
+      "display_year_built": null,
+      "display_property_use": "322",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_0c1e5497353e1ae5"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19228910400000060360000000",
       "scored_lead_id": "scored_880cb738ebda09c0",
       "canonical_doc_types": [
@@ -2807,7 +3187,7 @@
     },
     {
       "lead_id": "lead_parcel_19228910500000030010000000",
-      "scored_lead_id": "scored_739da8226da73d6a",
+      "scored_lead_id": "scored_ac8a0743d7345941",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -2821,9 +3201,10 @@
       "display_owner_mailing_city": "Warren",
       "display_owner_mailing_state": "MI",
       "display_owner_mailing_zip": "48093",
-      "display_score": 60,
-      "display_tier": "Workable",
+      "display_score": 72,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -2840,9 +3221,10 @@
       "display_assessed_value": 68800,
       "display_year_built": null,
       "display_property_use": "322",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
-        "ev_dde4bd35c0c86aaf"
+        "ev_dde4bd35c0c86aaf",
+        "ev_f7056cc2e8f85faa"
       ],
       "primary_event_date": "2022-02-27",
       "review_flags": [],
@@ -4049,6 +4431,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19240006600000040162000000",
+      "scored_lead_id": "scored_27cf3835246ce76f",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19240006600000040162000000",
+      "tax_map": "66.00-4-16.2",
+      "display_address": "11 & 17 PANICOLA LN, Cairo, NY",
+      "display_owner": "Panicola Vito and Panicola Steven M Jr",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Panicola Vito and Panicola Steven M Jr",
+      "display_owner_mailing_address": "17 Panicola Ln",
+      "display_owner_mailing_city": "Freehold",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12431",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 67900,
+      "display_year_built": 1960,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_0176bad67adc46d6"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19240006600000040300000000",
       "scored_lead_id": "scored_2ad3edacdefe4403",
       "canonical_doc_types": [
@@ -4669,7 +5098,7 @@
     },
     {
       "lead_id": "lead_parcel_19240008200000030050000000",
-      "scored_lead_id": "scored_85f62f8eeb947b17",
+      "scored_lead_id": "scored_e53680ea1634b788",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -4683,9 +5112,10 @@
       "display_owner_mailing_city": "Hensonville",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "12439",
-      "display_score": 60,
-      "display_tier": "Workable",
+      "display_score": 72,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -4702,8 +5132,9 @@
       "display_assessed_value": 13100,
       "display_year_built": null,
       "display_property_use": "314",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
+        "ev_136ccf1a12b7724d",
         "ev_39d8769d332ae782"
       ],
       "primary_event_date": "2022-02-27",
@@ -4813,6 +5244,54 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19240008200000030370000000",
+      "scored_lead_id": "scored_aa529cb832f1a012",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19240008200000030370000000",
+      "tax_map": "82.00-3-37",
+      "display_address": "5683 ROUTE 23, Cairo, NY",
+      "display_owner": "Baratto Darlene and Giuliano Christine",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Baratto Darlene and Giuliano Christine",
+      "display_owner_mailing_address": "5819 Route 23",
+      "display_owner_mailing_city": "Acra",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12405",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 129200,
+      "display_year_built": 1880,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_c50395d1a8c05f4f"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19240008200000030500000000",
       "scored_lead_id": "scored_296cf40be75aecf8",
       "canonical_doc_types": [
@@ -4864,7 +5343,7 @@
     },
     {
       "lead_id": "lead_parcel_19240008200000030510000000",
-      "scored_lead_id": "scored_54f5d6c270c5f514",
+      "scored_lead_id": "scored_da2f9d8ea50ae4b1",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -4878,9 +5357,10 @@
       "display_owner_mailing_city": "Hensonville",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "12439",
-      "display_score": 60,
-      "display_tier": "Workable",
+      "display_score": 72,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -4897,8 +5377,9 @@
       "display_assessed_value": 11400,
       "display_year_built": null,
       "display_property_use": "314",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
+        "ev_01e4027b0e8fbf1d",
         "ev_2546b3133333a1ad"
       ],
       "primary_event_date": "2022-02-27",
@@ -6154,6 +6635,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19240008400000040200000000",
+      "scored_lead_id": "scored_bb665cc0781d7871",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19240008400000040200000000",
+      "tax_map": "84.00-4-20",
+      "display_address": "955 ROUTE 67, Cairo, NY",
+      "display_owner": "Heath Dustin J",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Heath Dustin J",
+      "display_owner_mailing_address": "943 Rt 67",
+      "display_owner_mailing_city": "Leeds",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12451",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 40051,
+      "display_year_built": null,
+      "display_property_use": "270",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_f9815978d5bd3e54"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19240008400000040440000000",
       "scored_lead_id": "scored_3ea708bee9bdcf3b",
       "canonical_doc_types": [
@@ -7078,6 +7606,54 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19240010000000020210000000",
+      "scored_lead_id": "scored_35ba58e4693ad877",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19240010000000020210000000",
+      "tax_map": "100.00-2-21",
+      "display_address": "4381&4383 ROUTE 23, Cairo, NY",
+      "display_owner": "Cairo, Assoc Inc Health Care R",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Cairo, Assoc Inc Health Care R",
+      "display_owner_mailing_address": "181 Tissal Rd",
+      "display_owner_mailing_city": "Saugerties",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12477",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 362250,
+      "display_year_built": 1996,
+      "display_property_use": "465",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_4cc666239d80b74b"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19240010000000020460000000",
       "scored_lead_id": "scored_1fd433e8567b7d1e",
       "canonical_doc_types": [
@@ -7413,6 +7989,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19240010100000010021000000",
+      "scored_lead_id": "scored_f8a32636f32ec2aa",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19240010100000010021000000",
+      "tax_map": "101.00-1-2.1",
+      "display_address": "37 ROUTE 85, Cairo, NY",
+      "display_owner": "Hulbert DeniseY and Hulbert, Estateof Glendon W",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Hulbert DeniseY and Hulbert, Estateof Glendon W",
+      "display_owner_mailing_address": "952 Ira Vail Rd",
+      "display_owner_mailing_city": "Leeds",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12451",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 20000,
+      "display_year_built": null,
+      "display_property_use": "331",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_599efcbdeafbe789"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19240010100000040060000000",
       "scored_lead_id": "scored_b5e6de991a49f69e",
       "canonical_doc_types": [
@@ -7653,6 +8276,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19240010100500020190000000",
+      "scored_lead_id": "scored_30b19781e6c4fc81",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19240010100500020190000000",
+      "tax_map": "101.05-2-19",
+      "display_address": "30 JEROME AVE, Cairo, NY",
+      "display_owner": "Van Dam Daryl John",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Van Dam Daryl John",
+      "display_owner_mailing_address": "1270 Fifth Ave  Apt 1N",
+      "display_owner_mailing_city": "New York",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10029",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 96000,
+      "display_year_built": 1925,
+      "display_property_use": "220",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_373d046c266d8a32"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19240010100500030012000000",
       "scored_lead_id": "scored_bdb49db703ab3603",
       "canonical_doc_types": [
@@ -7787,6 +8457,101 @@
         "ev_763a106e0fa89f53"
       ],
       "primary_event_date": "2020-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19240010100900010121000000",
+      "scored_lead_id": "scored_ce2bdd4d509739bd",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19240010100900010121000000",
+      "tax_map": "101.09-1-12.1",
+      "display_address": "451 MAIN ST, Cairo, NY",
+      "display_owner": "Wilkie Martin Jr",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Wilkie Martin Jr",
+      "display_owner_mailing_address": "PO BOX 116",
+      "display_owner_mailing_city": "Cairo",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12413",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 125000,
+      "display_year_built": 1955,
+      "display_property_use": "411",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_61f0ac9d0f7b2f3d"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19240010100900020050000000",
+      "scored_lead_id": "scored_fb1bf2b1c2eaaf26",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19240010100900020050000000",
+      "tax_map": "101.09-2-5",
+      "display_address": "460 MAIN ST, Cairo, NY",
+      "display_owner": "Patasso, EstateAnthony",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Patasso, EstateAnthony",
+      "display_owner_mailing_address": "1342 Boxwood Drive W",
+      "display_owner_mailing_city": "Hewlett",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11557",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 31800,
+      "display_year_built": 1900,
+      "display_property_use": "480",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_fa30745900f8a94b"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -8367,7 +9132,7 @@
     },
     {
       "lead_id": "lead_parcel_19240011700000020090000000",
-      "scored_lead_id": "scored_ef52f35af8ad1a80",
+      "scored_lead_id": "scored_f99d6833614241e5",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -8381,9 +9146,10 @@
       "display_owner_mailing_city": "Hempstead",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "11550",
-      "display_score": 60,
-      "display_tier": "Workable",
+      "display_score": 72,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -8400,9 +9166,10 @@
       "display_assessed_value": 263000,
       "display_year_built": 1890,
       "display_property_use": "240",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
-        "ev_0cdf780ae9a7ced8"
+        "ev_0cdf780ae9a7ced8",
+        "ev_1c2f74517b6a2b0d"
       ],
       "primary_event_date": "2022-02-27",
       "review_flags": [],
@@ -8702,23 +9469,24 @@
     },
     {
       "lead_id": "lead_parcel_19240011800000010150000000",
-      "scored_lead_id": "scored_85d03d37837258fe",
+      "scored_lead_id": "scored_45aebaae1901e1d4",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
       "primary_parcel_id": "19240011800000010150000000",
       "tax_map": "118.00-1-15",
       "display_address": "HIGH RIDGE VILLA RD, Cairo, NY",
-      "display_owner": "Coles John Jr, Ziakos Athanasios",
+      "display_owner": "Ziakos Athanasios and Coles John Jr",
       "display_owner_source": "section_17",
-      "display_owner_section17_raw": "Coles John Jr, Ziakos Athanasios",
+      "display_owner_section17_raw": "Ziakos Athanasios and Coles John Jr",
       "display_owner_mailing_address": "50-36 64th St",
       "display_owner_mailing_city": "Woodside",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "11377",
-      "display_score": 58,
-      "display_tier": "Workable",
+      "display_score": 70,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -8734,8 +9502,9 @@
       "display_assessed_value": 13300,
       "display_year_built": null,
       "display_property_use": "314",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
+        "ev_2cd7e4531e0549d2",
         "ev_615de89092d63b40"
       ],
       "primary_event_date": "2022-02-27",
@@ -9560,6 +10329,54 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19240013500000010040000000",
+      "scored_lead_id": "scored_36bbd9529abf3f24",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19240013500000010040000000",
+      "tax_map": "135.00-1-4",
+      "display_address": "335 FLOYD HAWVER RD, Cairo, NY",
+      "display_owner": "Zoccola Carl",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Zoccola Carl",
+      "display_owner_mailing_address": "215 West Main St",
+      "display_owner_mailing_city": "Oyster Bay",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11771",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 288000,
+      "display_year_built": 1960,
+      "display_property_use": "583",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_814e85b5219cfdc8"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19240013500000010140000000",
       "scored_lead_id": "scored_7be0fee0fd86a7fa",
       "canonical_doc_types": [
@@ -9646,6 +10463,53 @@
         "ev_d48625c20348c138"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19240013500000030351100000",
+      "scored_lead_id": "scored_ea810cb5f09ab355",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19240013500000030351100000",
+      "tax_map": "135.00-3-35.11",
+      "display_address": "4 STOPPLE VIEW LN, Cairo, NY",
+      "display_owner": "George Andrew and George Sandra",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "George Andrew and George Sandra",
+      "display_owner_mailing_address": "4 Stoppel View",
+      "display_owner_mailing_city": "Round Top",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12473",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 215600,
+      "display_year_built": 2006,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_dcbe3d56c90fc517"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -10608,6 +11472,55 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19260115607800010070000000",
+      "scored_lead_id": "scored_61465d0a57028f09",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19260115607800010070000000",
+      "tax_map": "156.78-1-7",
+      "display_address": "26 W BRIDGE ST, Catskill, Village, NY",
+      "display_owner": "Catskill Valley Properties Inc",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Catskill Valley Properties Inc",
+      "display_owner_mailing_address": "174 Mountain Ave",
+      "display_owner_mailing_city": "Ridgewood",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "07450",
+      "display_score": 62,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 158200,
+      "display_year_built": 1940,
+      "display_property_use": "482",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_25cd054c2c4d2753"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19260117100800010060000000",
       "scored_lead_id": "scored_db02c9658b61a0b1",
       "canonical_doc_types": [
@@ -10741,6 +11654,102 @@
         "ev_5965ce3b4b2385eb"
       ],
       "primary_event_date": "2022-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19260117100800090050000000",
+      "scored_lead_id": "scored_b50480231bf7f1fe",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19260117100800090050000000",
+      "tax_map": "171.08-9-5",
+      "display_address": "47 CAUTERSKILL AVE, Catskill, Village, NY",
+      "display_owner": "Young Rodney S",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Young Rodney S",
+      "display_owner_mailing_address": "PO BOX 90069",
+      "display_owner_mailing_city": "Anchorage",
+      "display_owner_mailing_state": "AK",
+      "display_owner_mailing_zip": "995090069",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 21000,
+      "display_year_built": 1880,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_4327f366684c0e82"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19260117100800090060000000",
+      "scored_lead_id": "scored_31f505a8e64a360a",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19260117100800090060000000",
+      "tax_map": "171.08-9-6",
+      "display_address": "CAUTERSKILL AVE, Catskill, Village, NY",
+      "display_owner": "Young Rodney",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Young Rodney",
+      "display_owner_mailing_address": "PO BOX 90069",
+      "display_owner_mailing_city": "Anchorage",
+      "display_owner_mailing_state": "AK",
+      "display_owner_mailing_zip": "995090069",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 2900,
+      "display_year_built": null,
+      "display_property_use": "330",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_864fb552b30eaa08"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -11091,7 +12100,7 @@
     },
     {
       "lead_id": "lead_parcel_19260117200500060360000000",
-      "scored_lead_id": "scored_6e14701f57427cba",
+      "scored_lead_id": "scored_2b82dcf1799c4b93",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -11102,6 +12111,55 @@
       "display_owner_source": "section_17",
       "display_owner_section17_raw": "Sutton Tammy",
       "display_owner_mailing_address": "169 Lindell Blvd",
+      "display_owner_mailing_city": "Long Beach",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11561",
+      "display_score": 70,
+      "display_tier": "Strong",
+      "display_patterns": [
+        "tax",
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 400,
+      "display_year_built": null,
+      "display_property_use": "311",
+      "stack_depth": 2,
+      "evidence_ids": [
+        "ev_181ac1fd5a883d80",
+        "ev_30a9d4cb487de379"
+      ],
+      "primary_event_date": "2022-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19260117200500060390000000",
+      "scored_lead_id": "scored_8bf55bffa8f32516",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19260117200500060390000000",
+      "tax_map": "172.05-6-39",
+      "display_address": "169 W MAIN ST, Catskill, Village, NY",
+      "display_owner": "Mancino Giuseppe",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Mancino Giuseppe",
+      "display_owner_mailing_address": "169 Lindel Blvd",
       "display_owner_mailing_city": "Long Beach",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "11561",
@@ -11120,14 +12178,14 @@
         "wholesale"
       ],
       "display_lead_status": "APPROVED_FOR_DASHBOARD",
-      "display_assessed_value": 400,
+      "display_assessed_value": 300,
       "display_year_built": null,
       "display_property_use": "311",
       "stack_depth": 1,
       "evidence_ids": [
-        "ev_181ac1fd5a883d80"
+        "ev_9155fd23bc4f5686"
       ],
-      "primary_event_date": "2022-02-27",
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -12002,6 +13060,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19268913600000090430000000",
+      "scored_lead_id": "scored_0e84a04f5ecf70f2",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268913600000090430000000",
+      "tax_map": "136.00-9-43",
+      "display_address": "30 FOSTER RD, Catskill, NY",
+      "display_owner": "Cooper Gregory A",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Cooper Gregory A",
+      "display_owner_mailing_address": "30 Foster Rd",
+      "display_owner_mailing_city": "Cairo",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12413",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 83900,
+      "display_year_built": 1991,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_5563120e426a0ccf"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19268913700000010090020000",
       "scored_lead_id": "scored_0d6da3a9d7e0d7c6",
       "canonical_doc_types": [
@@ -12773,6 +13878,54 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19268913800600040130000000",
+      "scored_lead_id": "scored_dcc2d2457b3c6ae0",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268913800600040130000000",
+      "tax_map": "138.06-4-13",
+      "display_address": "16 GREEN LAKE RD, Catskill, NY",
+      "display_owner": "GreaneyJohnJ and do DebraGreaney",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "GreaneyJohnJ and do DebraGreaney",
+      "display_owner_mailing_address": "1791 Route 23B",
+      "display_owner_mailing_city": "Leeds",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12451",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 32500,
+      "display_year_built": 1900,
+      "display_property_use": "260",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_9ba5f6a25d450560"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19268913800600050040000000",
       "scored_lead_id": "scored_1c90bc4fa0baccd9",
       "canonical_doc_types": [
@@ -13057,6 +14210,147 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19268915300000020120000000",
+      "scored_lead_id": "scored_b713737e01922211",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268915300000020120000000",
+      "tax_map": "153.00-2-12",
+      "display_address": "5191 ROUTE 32, Catskill, NY",
+      "display_owner": "SchofieldBarbaraand SevereChristopher",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "SchofieldBarbaraand SevereChristopher",
+      "display_owner_mailing_address": "5191 Route 32",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 145200,
+      "display_year_built": 1840,
+      "display_property_use": "281",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_d232aa0590cc2af5"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19268915300000040010020000",
+      "scored_lead_id": "scored_8187f1d15b972515",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268915300000040010020000",
+      "tax_map": "153.00-4-1.2",
+      "display_address": "CASTLE RD, Catskill, NY",
+      "display_owner": "KoschitzkiGary P and KoschitzkiMaria",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "KoschitzkiGary P and KoschitzkiMaria",
+      "display_owner_mailing_address": "118 Castle Rd",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 87400,
+      "display_year_built": null,
+      "display_property_use": "910",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_a13ed97416acc694"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19268915300000040030000000",
+      "scored_lead_id": "scored_11f8d5dfeaa18997",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268915300000040030000000",
+      "tax_map": "153.00-4-3",
+      "display_address": "118 CASTLE RD, Catskill, NY",
+      "display_owner": "KoschitzkiGarry P",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "KoschitzkiGarry P",
+      "display_owner_mailing_address": "118 Castle Rd",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 485900,
+      "display_year_built": 1900,
+      "display_property_use": "555",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_1873fbb0bbf8ade8"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19268915300000060070220000",
       "scored_lead_id": "scored_285a30e035b557fc",
       "canonical_doc_types": [
@@ -13096,6 +14390,53 @@
         "ev_20a6859d55c544f0"
       ],
       "primary_event_date": "2022-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19268915300000070020000000",
+      "scored_lead_id": "scored_04c4948c8b6af969",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268915300000070020000000",
+      "tax_map": "153.00-7-2",
+      "display_address": "ROUTE 32, Catskill, NY",
+      "display_owner": "Giambona Bartolo and Giambona Maria",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Giambona Bartolo and Giambona Maria",
+      "display_owner_mailing_address": "10 Hemlock Ln",
+      "display_owner_mailing_city": "Saugerties",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12477",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 22800,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_61481f9dcb5d7088"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -13578,6 +14919,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19268915500800010170000000",
+      "scored_lead_id": "scored_46ca65050c417762",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268915500800010170000000",
+      "tax_map": "155.08-1-17",
+      "display_address": "30 JAMES PL, Catskill, NY",
+      "display_owner": "Lewis Kathleen M",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Lewis Kathleen M",
+      "display_owner_mailing_address": "30 James Pl",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 150600,
+      "display_year_built": 2005,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_1764321cd38b4231"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19268915501200040150000000",
       "scored_lead_id": "scored_1a86fb784ab98ca6",
       "canonical_doc_types": [
@@ -13766,6 +15154,148 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19268915600200020120000000",
+      "scored_lead_id": "scored_a7d4e90dbabbca95",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268915600200020120000000",
+      "tax_map": "156.02-2-12",
+      "display_address": "285 HAMBURG RD, Catskill, NY",
+      "display_owner": "Strait Paul S",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Strait Paul S",
+      "display_owner_mailing_address": "3762 Lake Margaret Dr",
+      "display_owner_mailing_city": "Orlando",
+      "display_owner_mailing_state": "FL",
+      "display_owner_mailing_zip": "32181",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 12000,
+      "display_year_built": null,
+      "display_property_use": "311",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_043b9e887d51456d"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19268915600900010100000000",
+      "scored_lead_id": "scored_4182f90ce5b5aa13",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268915600900010100000000",
+      "tax_map": "156.09-1-10",
+      "display_address": "114 N ALLEN ST, Catskill, NY",
+      "display_owner": "Roe Richard C Jr. and Roe Ricca",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Roe Richard C Jr. and Roe Ricca",
+      "display_owner_mailing_address": "114 N Allen St",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 26800,
+      "display_year_built": 1830,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_35548d5e2a0f9ab2"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19268915600900010210000000",
+      "scored_lead_id": "scored_b3550dc5274bff55",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268915600900010210000000",
+      "tax_map": "156.09-1-21",
+      "display_address": "N ALLEN ST, Catskill, NY",
+      "display_owner": "Roe Richard C Jr. and Roe Ricca",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Roe Richard C Jr. and Roe Ricca",
+      "display_owner_mailing_address": "114 N Allen St",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 26600,
+      "display_year_built": null,
+      "display_property_use": "312",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_c1c5d0cde72dcbda"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19268915600900030070000000",
       "scored_lead_id": "scored_a2ee5e00a5aab77b",
       "canonical_doc_types": [
@@ -13851,6 +15381,54 @@
         "ev_a7b77dff7ffc9699"
       ],
       "primary_event_date": "2020-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19268915600900040090000000",
+      "scored_lead_id": "scored_5750d118f1b03b30",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268915600900040090000000",
+      "tax_map": "156.09-4-9",
+      "display_address": "JEFFERSON HTS, Catskill, NY",
+      "display_owner": "Mancino Giuseppe",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Mancino Giuseppe",
+      "display_owner_mailing_address": "231 E 5th St  #7",
+      "display_owner_mailing_city": "New York",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10003",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 7000,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_06fd76e03e4c1000"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -14052,7 +15630,7 @@
     },
     {
       "lead_id": "lead_parcel_19268916900000040070010000",
-      "scored_lead_id": "scored_32d2d94c068fc8f8",
+      "scored_lead_id": "scored_d4b3593db8c72241",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -14066,9 +15644,10 @@
       "display_owner_mailing_city": "Bayside",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "11361",
-      "display_score": 72,
-      "display_tier": "Strong",
+      "display_score": 84,
+      "display_tier": "Hot",
       "display_patterns": [
+        "tax",
         "tax",
         "tax"
       ],
@@ -14086,10 +15665,11 @@
       "display_assessed_value": 98600,
       "display_year_built": null,
       "display_property_use": "322",
-      "stack_depth": 2,
+      "stack_depth": 3,
       "evidence_ids": [
         "ev_d08deb809cd5e234",
-        "ev_e3eec44fe0f01729"
+        "ev_e3eec44fe0f01729",
+        "ev_e7e7613bff533547"
       ],
       "primary_event_date": "2025-02-27",
       "review_flags": [],
@@ -14446,6 +16026,54 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19268916900400020290000000",
+      "scored_lead_id": "scored_b2bc16dce90cdb83",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268916900400020290000000",
+      "tax_map": "169.04-2-29",
+      "display_address": "82 CARIDI DR UNIT 5, Catskill, NY",
+      "display_owner": "Caridi Scotland Caridi Michelle",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Caridi Scotland Caridi Michelle",
+      "display_owner_mailing_address": "5915 Forest Grove Dr  #1",
+      "display_owner_mailing_city": "Boyton Beach",
+      "display_owner_mailing_state": "FL",
+      "display_owner_mailing_zip": "33437",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 83900,
+      "display_year_built": 1982,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_0a823a2f23c3cf68"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19268916900400020330220000",
       "scored_lead_id": "scored_ed74afab01389e14",
       "canonical_doc_types": [
@@ -14533,6 +16161,53 @@
         "ev_6d4dcb300df8394c"
       ],
       "primary_event_date": "2022-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19268917000000030500000000",
+      "scored_lead_id": "scored_2e27f437e2473fb7",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268917000000030500000000",
+      "tax_map": "170.00-3-50",
+      "display_address": "109 GROVE SCHOOL RD, Catskill, NY",
+      "display_owner": "Passaretti Matthew",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Passaretti Matthew",
+      "display_owner_mailing_address": "109 Grove School Rd",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 37300,
+      "display_year_built": 2019,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_e6320f4191caaeff"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -14826,7 +16501,7 @@
     },
     {
       "lead_id": "lead_parcel_19268917100000040450010000",
-      "scored_lead_id": "scored_9c3286cdcd254d8f",
+      "scored_lead_id": "scored_654ab32f930a6ac9",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -14840,9 +16515,10 @@
       "display_owner_mailing_city": "Catskill",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "12414",
-      "display_score": 58,
-      "display_tier": "Workable",
+      "display_score": 70,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -14858,8 +16534,9 @@
       "display_assessed_value": 24900,
       "display_year_built": null,
       "display_property_use": "314",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
+        "ev_0b9205829dcc993f",
         "ev_7d82e58342e28088"
       ],
       "primary_event_date": "2025-02-27",
@@ -14957,6 +16634,53 @@
         "ev_8e8a449536be5c4d"
       ],
       "primary_event_date": "2022-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19268917100700090050000000",
+      "scored_lead_id": "scored_304a4d9122cb5b3d",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268917100700090050000000",
+      "tax_map": "171.07-9-5",
+      "display_address": "408 W BRIDGE ST, Catskill, NY",
+      "display_owner": "Lawless Florence J",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Lawless Florence J",
+      "display_owner_mailing_address": "408 W Bridge St",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12414",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 79200,
+      "display_year_built": 1885,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_c5890269edd4f025"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -15206,7 +16930,7 @@
     },
     {
       "lead_id": "lead_parcel_19268918500100020070000000",
-      "scored_lead_id": "scored_9eba450bd02262e7",
+      "scored_lead_id": "scored_dc34a115e138feef",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -15220,9 +16944,10 @@
       "display_owner_mailing_city": "Pleasant Valley",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "12569",
-      "display_score": 58,
-      "display_tier": "Workable",
+      "display_score": 70,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -15238,8 +16963,9 @@
       "display_assessed_value": 95600,
       "display_year_built": 1940,
       "display_property_use": "210",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
+        "ev_ca515657a0ca150f",
         "ev_fdd2e14de3e33f83"
       ],
       "primary_event_date": "2022-02-27",
@@ -15683,23 +17409,24 @@
     },
     {
       "lead_id": "lead_parcel_19268919900800040060000000",
-      "scored_lead_id": "scored_2c73a0bb14af0134",
+      "scored_lead_id": "scored_7e62a484e9c4fe4a",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
       "primary_parcel_id": "19268919900800040060000000",
       "tax_map": "199.08-4-6",
       "display_address": "ROUTE 32A, Catskill, NY",
-      "display_owner": "Edwards Shane",
+      "display_owner": "EdwardsShane",
       "display_owner_source": "section_17",
-      "display_owner_section17_raw": "Edwards Shane",
+      "display_owner_section17_raw": "EdwardsShane",
       "display_owner_mailing_address": "331 Route 212",
       "display_owner_mailing_city": "Saugerties",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "12477",
-      "display_score": 58,
-      "display_tier": "Workable",
+      "display_score": 70,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -15715,9 +17442,10 @@
       "display_assessed_value": 14400,
       "display_year_built": null,
       "display_property_use": "314",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
-        "ev_1406280ee09fd4d9"
+        "ev_1406280ee09fd4d9",
+        "ev_5c7ae031e69ac65b"
       ],
       "primary_event_date": "2025-02-27",
       "review_flags": [],
@@ -15863,6 +17591,53 @@
         "ev_80638a3b067e3371"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19268920000000010040020000",
+      "scored_lead_id": "scored_d901b20db344515b",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19268920000000010040020000",
+      "tax_map": "200.00-1-4.2",
+      "display_address": "201 PENNSYLVANIA AVE, Catskill, NY",
+      "display_owner": "BorgiaAntoinette",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "BorgiaAntoinette",
+      "display_owner_mailing_address": "201 Pennsylvania Ave",
+      "display_owner_mailing_city": "Catskill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12463",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 46300,
+      "display_year_built": 1920,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_079a55fcf1c8f5a9"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -17622,7 +19397,7 @@
     },
     {
       "lead_id": "lead_parcel_19288905400000010152000000",
-      "scored_lead_id": "scored_a490c57284ab8112",
+      "scored_lead_id": "scored_8c4bf90476a6d757",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -17633,6 +19408,55 @@
       "display_owner_source": "section_17",
       "display_owner_section17_raw": "Silver Jaime",
       "display_owner_mailing_address": "104 All Peat Beds Rd",
+      "display_owner_mailing_city": "Earlton",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12058",
+      "display_score": 70,
+      "display_tier": "Strong",
+      "display_patterns": [
+        "tax",
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 109000,
+      "display_year_built": 1870,
+      "display_property_use": "210",
+      "stack_depth": 2,
+      "evidence_ids": [
+        "ev_90c96dd0f96c40fc",
+        "ev_afbc0be28b76e97a"
+      ],
+      "primary_event_date": "2020-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19288905400000020280000000",
+      "scored_lead_id": "scored_0f60c6f2d307acbc",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19288905400000020280000000",
+      "tax_map": "54.00-2-28",
+      "display_address": "OFF ROUTE 81, Coxsackie, NY",
+      "display_owner": "Polach JosephJr",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Polach JosephJr",
+      "display_owner_mailing_address": "PO BOX 19",
       "display_owner_mailing_city": "Earlton",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "12058",
@@ -17651,14 +19475,14 @@
         "wholesale"
       ],
       "display_lead_status": "APPROVED_FOR_DASHBOARD",
-      "display_assessed_value": 109000,
-      "display_year_built": 1870,
-      "display_property_use": "210",
+      "display_assessed_value": 8500,
+      "display_year_built": null,
+      "display_property_use": "311",
       "stack_depth": 1,
       "evidence_ids": [
-        "ev_afbc0be28b76e97a"
+        "ev_d6e0232692252595"
       ],
-      "primary_event_date": "2020-02-27",
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -17800,6 +19624,53 @@
         "ev_eba53ceaff6e214d"
       ],
       "primary_event_date": "2022-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19288905400300030142000000",
+      "scored_lead_id": "scored_b7593c438fccba0a",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19288905400300030142000000",
+      "tax_map": "54.03-3-14.2",
+      "display_address": "776 POTIC CREEK RD, Coxsackie, NY",
+      "display_owner": "Polach Joseph Jr",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Polach Joseph Jr",
+      "display_owner_mailing_address": "PO BOX 19",
+      "display_owner_mailing_city": "Earlton",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12058",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 30000,
+      "display_year_built": null,
+      "display_property_use": "312",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_3cea632e195acaee"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -18288,6 +20159,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19288905500000030120000000",
+      "scored_lead_id": "scored_3028e1d22b0db8ca",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19288905500000030120000000",
+      "tax_map": "55.00-3-12",
+      "display_address": "44 VAN RIPER RD, Coxsackie, NY",
+      "display_owner": "Ramos Edgar and Zelaya Linda",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Ramos Edgar and Zelaya Linda",
+      "display_owner_mailing_address": "44 Van Riper Rd",
+      "display_owner_mailing_city": "West Coxsackie",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12192",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 81000,
+      "display_year_built": null,
+      "display_property_use": "270",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_275383d7e9ecfb61"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19288905500000040240000000",
       "scored_lead_id": "scored_07b6551489370c5f",
       "canonical_doc_types": [
@@ -18384,7 +20302,7 @@
     },
     {
       "lead_id": "lead_parcel_19288905500000060030000000",
-      "scored_lead_id": "scored_e65101ccbd4f338e",
+      "scored_lead_id": "scored_dcb6d479b18afed8",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -18398,9 +20316,10 @@
       "display_owner_mailing_city": "W Coxsackie",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "12192",
-      "display_score": 58,
-      "display_tier": "Workable",
+      "display_score": 70,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -18416,9 +20335,10 @@
       "display_assessed_value": 39500,
       "display_year_built": null,
       "display_property_use": "270",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
-        "ev_69915b22517bdc60"
+        "ev_69915b22517bdc60",
+        "ev_a23dd21fa0ac302b"
       ],
       "primary_event_date": "2022-02-27",
       "review_flags": [],
@@ -19237,6 +21157,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19288907100000020580000000",
+      "scored_lead_id": "scored_1d2fa98d35097c28",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19288907100000020580000000",
+      "tax_map": "71.00-2-58",
+      "display_address": "SR 385, Coxsackie, NY",
+      "display_owner": "Powell William III",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Powell William III",
+      "display_owner_mailing_address": "85 Ely St",
+      "display_owner_mailing_city": "Coxsackie",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12051",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 12500,
+      "display_year_built": null,
+      "display_property_use": "312",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_c3f58fec205a5af5"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19288908600000070200000000",
       "scored_lead_id": "scored_c6e40f9ddf8804fc",
       "canonical_doc_types": [
@@ -19334,7 +21301,7 @@
     },
     {
       "lead_id": "lead_parcel_19288908800000040440000000",
-      "scored_lead_id": "scored_2e635bd2b764d5b7",
+      "scored_lead_id": "scored_8ef4532e228dccc1",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -19348,9 +21315,10 @@
       "display_owner_mailing_city": "Athens",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "12015",
-      "display_score": 70,
-      "display_tier": "Strong",
+      "display_score": 82,
+      "display_tier": "Hot",
       "display_patterns": [
+        "tax",
         "tax",
         "tax"
       ],
@@ -19367,12 +21335,60 @@
       "display_assessed_value": 45000,
       "display_year_built": null,
       "display_property_use": "322",
-      "stack_depth": 2,
+      "stack_depth": 3,
       "evidence_ids": [
         "ev_36f1ee80a0c6663a",
+        "ev_8784a8149f19b386",
         "ev_eb7e00e5a0ca328e"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19288908800600010030000000",
+      "scored_lead_id": "scored_eb80ef0b13bca4d6",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19288908800600010030000000",
+      "tax_map": "88.06-1-3",
+      "display_address": "1788 SLEEPY HOLLOW RD, Coxsackie, NY",
+      "display_owner": "NepomucenoAntonio C and Nepomuceno Rita",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "NepomucenoAntonio C and Nepomuceno Rita",
+      "display_owner_mailing_address": "46-03 211th St",
+      "display_owner_mailing_city": "Bayside",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11361",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 4800,
+      "display_year_built": null,
+      "display_property_use": "311",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_f2219559ea7b8e02"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -22163,6 +24179,7 @@
       "display_patterns": [
         "tax",
         "tax",
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -22178,11 +24195,12 @@
       "display_assessed_value": 150000,
       "display_year_built": 2006,
       "display_property_use": "210",
-      "stack_depth": 3,
+      "stack_depth": 4,
       "evidence_ids": [
         "ev_15a048960254d514",
         "ev_495a079faa605872",
-        "ev_661c800363dad00e"
+        "ev_661c800363dad00e",
+        "ev_deaad5bc40532cf8"
       ],
       "primary_event_date": "2025-02-27",
       "review_flags": [],
@@ -22289,7 +24307,7 @@
     },
     {
       "lead_id": "lead_parcel_19300002100000030110000000",
-      "scored_lead_id": "scored_a151d627cc2624ee",
+      "scored_lead_id": "scored_1e068d82f0e4d289",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -22303,9 +24321,10 @@
       "display_owner_mailing_city": "Southold",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "11971",
-      "display_score": 58,
-      "display_tier": "Workable",
+      "display_score": 70,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -22321,9 +24340,10 @@
       "display_assessed_value": 16000,
       "display_year_built": null,
       "display_property_use": "314",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
-        "ev_7a0040c0052cd44b"
+        "ev_7a0040c0052cd44b",
+        "ev_8fa444a08020797d"
       ],
       "primary_event_date": "2025-02-27",
       "review_flags": [],
@@ -22432,7 +24452,7 @@
     },
     {
       "lead_id": "lead_parcel_19300002100300010020000000",
-      "scored_lead_id": "scored_85c05851c5ce6875",
+      "scored_lead_id": "scored_9a4f54601c0ce477",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -22446,9 +24466,10 @@
       "display_owner_mailing_city": "Gloversville",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "12078",
-      "display_score": 72,
-      "display_tier": "Strong",
+      "display_score": 84,
+      "display_tier": "Hot",
       "display_patterns": [
+        "tax",
         "tax",
         "tax"
       ],
@@ -22466,8 +24487,9 @@
       "display_assessed_value": 5500,
       "display_year_built": null,
       "display_property_use": "314",
-      "stack_depth": 2,
+      "stack_depth": 3,
       "evidence_ids": [
+        "ev_0f7661eb90edc50f",
         "ev_4249255a70a56234",
         "ev_be0dafab52b0862c"
       ],
@@ -22482,7 +24504,7 @@
     },
     {
       "lead_id": "lead_parcel_19300002100300010060000000",
-      "scored_lead_id": "scored_4f57143abc5de767",
+      "scored_lead_id": "scored_e86da2de542b6d9b",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -22496,9 +24518,10 @@
       "display_owner_mailing_city": "Durham",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "12422",
-      "display_score": 58,
-      "display_tier": "Workable",
+      "display_score": 70,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -22514,9 +24537,10 @@
       "display_assessed_value": 50000,
       "display_year_built": 1800,
       "display_property_use": "210",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
-        "ev_6042df9505b85a63"
+        "ev_6042df9505b85a63",
+        "ev_9293d5905f01f6d0"
       ],
       "primary_event_date": "2022-02-27",
       "review_flags": [],
@@ -22992,6 +25016,53 @@
         "ev_3b33ea72d80f9cbb"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19300003200000020040000000",
+      "scored_lead_id": "scored_e7e4ff72e4e07f7f",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19300003200000020040000000",
+      "tax_map": "32.00-2-4",
+      "display_address": "CUNNINGHAM RD, Durham, NY",
+      "display_owner": "Furlong Martin and Furlong Thomas",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Furlong Martin and Furlong Thomas",
+      "display_owner_mailing_address": "475 Cochrane Rd",
+      "display_owner_mailing_city": "Durham",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12422",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 15000,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_dd6e0f1abaa0680a"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -24521,6 +26592,54 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19300005000100020060000000",
+      "scored_lead_id": "scored_88327f5985d37e1a",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19300005000100020060000000",
+      "tax_map": "50.01-2-6",
+      "display_address": "2336 ROUTE 145, Durham, NY",
+      "display_owner": "Talty Matthew M Jr c/o Stephen Pagnotta, Executor",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Talty Matthew M Jr c/o Stephen Pagnotta, Executor",
+      "display_owner_mailing_address": "6921 60th Rd",
+      "display_owner_mailing_city": "Maspeth",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11378",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 125000,
+      "display_year_built": 1970,
+      "display_property_use": "418",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_2f96485a8ebf3772"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19300006200000040010000000",
       "scored_lead_id": "scored_f134f972993adf9c",
       "canonical_doc_types": [
@@ -24807,7 +26926,7 @@
     },
     {
       "lead_id": "lead_parcel_19300006400000040010000000",
-      "scored_lead_id": "scored_b4fef1bc3cd99966",
+      "scored_lead_id": "scored_240519168873f1a4",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -24821,9 +26940,10 @@
       "display_owner_mailing_city": "Earlton",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "12058",
-      "display_score": 58,
-      "display_tier": "Workable",
+      "display_score": 70,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -24839,9 +26959,10 @@
       "display_assessed_value": 35500,
       "display_year_built": 1975,
       "display_property_use": "210",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
-        "ev_72b0051e336bcd54"
+        "ev_72b0051e336bcd54",
+        "ev_9e62bc215f4ca105"
       ],
       "primary_event_date": "2022-02-27",
       "review_flags": [],
@@ -24938,6 +27059,53 @@
         "ev_1908d8b5615ca10b"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19300006400000070030000000",
+      "scored_lead_id": "scored_1ffff5c6e8f53f65",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19300006400000070030000000",
+      "tax_map": "64.00-7-3",
+      "display_address": "130 DURSO AVE, Durham, NY",
+      "display_owner": "Falvey Kristin M and Custodian forC G & F M Falvey",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Falvey Kristin M and Custodian forC G & F M Falvey",
+      "display_owner_mailing_address": "127 Durso Ave",
+      "display_owner_mailing_city": "Acra",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12405",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 11000,
+      "display_year_built": 2001,
+      "display_property_use": "421",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_3cdde04f52329897"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -25174,6 +27342,53 @@
         "ev_3d97662d74e3c5c7"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19300006500000020410000000",
+      "scored_lead_id": "scored_474c4afe7699d398",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19300006500000020410000000",
+      "tax_map": "65.00-2-41",
+      "display_address": "OFF EDISON TIMMERMAN RD, Durham, NY",
+      "display_owner": "Muller William and Muller Judith",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Muller William and Muller Judith",
+      "display_owner_mailing_address": "340 Edison Timmerman Rd",
+      "display_owner_mailing_city": "Cairo",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12413",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 12000,
+      "display_year_built": null,
+      "display_property_use": "322",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_5fd66bec784fb8ec"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -26466,6 +28681,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19320002500000040360000000",
+      "scored_lead_id": "scored_4ff8c83aeb2bc85d",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19320002500000040360000000",
+      "tax_map": "25.00-4-36",
+      "display_address": "SCUTT RD, Greenville, NY",
+      "display_owner": "Zindell Patricia E",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Zindell Patricia E",
+      "display_owner_mailing_address": "450 Scutt Rd",
+      "display_owner_mailing_city": "Greenville",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12083",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 4000,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_615dab44dd7aa1ad"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19320002500000050010000000",
       "scored_lead_id": "scored_406532161adf854c",
       "canonical_doc_types": [
@@ -26694,6 +28956,53 @@
         "ev_9f127753432195c9"
       ],
       "primary_event_date": "2020-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19320003600000040250000000",
+      "scored_lead_id": "scored_6b91fb85b369a86d",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19320003600000040250000000",
+      "tax_map": "36.00-4-25",
+      "display_address": "115 SOCIETY HILL RD, Greenville, NY",
+      "display_owner": "Ellett Dennis",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Ellett Dennis",
+      "display_owner_mailing_address": "115 Society Hill Rd",
+      "display_owner_mailing_city": "Greenville",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12083",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 82000,
+      "display_year_built": null,
+      "display_property_use": "270",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_a8332aaebee2cb9e"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -27139,6 +29448,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19320005000000010110000000",
+      "scored_lead_id": "scored_101757cbdf9c42d4",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19320005000000010110000000",
+      "tax_map": "50.00-1-11",
+      "display_address": "54 BIG WOODS RD, Greenville, NY",
+      "display_owner": "Murphy James and Murphy Brigid",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Murphy James and Murphy Brigid",
+      "display_owner_mailing_address": "54 Big Woods Rd",
+      "display_owner_mailing_city": "Freehold",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12431",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 84000,
+      "display_year_built": 1970,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_05461b69e7e683df"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19320005000000010530000000",
       "scored_lead_id": "scored_120a78c723d2a403",
       "canonical_doc_types": [
@@ -27465,6 +29821,53 @@
         "ev_33f15ab2f3a213dc"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19320005100300010120000000",
+      "scored_lead_id": "scored_14a1a787b6f1981e",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19320005100300010120000000",
+      "tax_map": "51.03-1-12",
+      "display_address": "9433 ROUTE 32, Greenville, NY",
+      "display_owner": "Hannon Christopher",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Hannon Christopher",
+      "display_owner_mailing_address": "12 Sheeps Ln",
+      "display_owner_mailing_city": "Highland",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12525",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 108000,
+      "display_year_built": 1900,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_93ba136a94ecffcd"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -27990,6 +30393,101 @@
         "ev_b384bf545beb193d"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19340014200000010080000000",
+      "scored_lead_id": "scored_6630a67380f063c0",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19340014200000010080000000",
+      "tax_map": "142.00-1-8",
+      "display_address": "366 MEAD RD, Halcott, NY",
+      "display_owner": "MaxAdam and Max Libra",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "MaxAdam and Max Libra",
+      "display_owner_mailing_address": "2 Terminal Rd",
+      "display_owner_mailing_city": "Lyndhurst",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "07071",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 129700,
+      "display_year_built": 1950,
+      "display_property_use": "240",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_af81d47aee9bd23f"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19340014200000020230000000",
+      "scored_lead_id": "scored_f6bc13c1e15ba2c9",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19340014200000020230000000",
+      "tax_map": "142.00-2-23",
+      "display_address": "310 BETTY MOUNTAIN RD, Halcott, NY",
+      "display_owner": "Santaniello Scott",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Santaniello Scott",
+      "display_owner_mailing_address": "24 Edgar Dr",
+      "display_owner_mailing_city": "Smithtown",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11787",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 103300,
+      "display_year_built": 1976,
+      "display_property_use": "260",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_7c1b4849a9156366"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -28665,7 +31163,7 @@
     },
     {
       "lead_id": "lead_parcel_19360116400000060020000000",
-      "scored_lead_id": "scored_1e0c40a3a144f7ad",
+      "scored_lead_id": "scored_0d6b4a815bc4dbfb",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -28679,9 +31177,10 @@
       "display_owner_mailing_city": "Catskill",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "12414",
-      "display_score": 58,
-      "display_tier": "Workable",
+      "display_score": 70,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -28697,9 +31196,10 @@
       "display_assessed_value": 890,
       "display_year_built": null,
       "display_property_use": "551",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
-        "ev_07f3a63160bdb4b8"
+        "ev_07f3a63160bdb4b8",
+        "ev_489181b558ccfddb"
       ],
       "primary_event_date": "2022-02-27",
       "review_flags": [],
@@ -28946,6 +31446,54 @@
         "ev_552f0f935a268e73"
       ],
       "primary_event_date": "2020-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19360116400900050140000000",
+      "scored_lead_id": "scored_b9411dd982177ec3",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19360116400900050140000000",
+      "tax_map": "164.09-5-14",
+      "display_address": "MOUNTAIN DR, Hunter, Village, NY",
+      "display_owner": "Steinwagner John",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Steinwagner John",
+      "display_owner_mailing_address": "132 Franklin Ave #4",
+      "display_owner_mailing_city": "Long Branch",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "07740",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 8400,
+      "display_year_built": null,
+      "display_property_use": "311",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_e6995915f94aab56"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -30053,6 +32601,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19368915000000030051000000",
+      "scored_lead_id": "scored_4f8acc5faa88362b",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368915000000030051000000",
+      "tax_map": "150.00-3-5.1",
+      "display_address": "912 ROUTE 25, Hunter, NY",
+      "display_owner": "Paolino Jeffrey",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Paolino Jeffrey",
+      "display_owner_mailing_address": "74 Orchard Street 2nd Fl",
+      "display_owner_mailing_city": "New York",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10002",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 281400,
+      "display_year_built": 1890,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_80c1a84b27e96f6c"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19368915000300020150000000",
       "scored_lead_id": "scored_0ad8cb8c1ecf2982",
       "canonical_doc_types": [
@@ -30531,7 +33126,7 @@
     },
     {
       "lead_id": "lead_parcel_19368916405800010060000000",
-      "scored_lead_id": "scored_23e73340ee086e93",
+      "scored_lead_id": "scored_399ff36bc13fa3b8",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -30545,9 +33140,10 @@
       "display_owner_mailing_city": "Maspeth",
       "display_owner_mailing_state": "NY",
       "display_owner_mailing_zip": "11378",
-      "display_score": 58,
-      "display_tier": "Workable",
+      "display_score": 70,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -30563,8 +33159,9 @@
       "display_assessed_value": 94700,
       "display_year_built": 1970,
       "display_property_use": "210",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
+        "ev_40e971244746b48b",
         "ev_7fa534e27ee16a60"
       ],
       "primary_event_date": "2022-02-27",
@@ -31437,6 +34034,198 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19368918100000040050000000",
+      "scored_lead_id": "scored_9736bf331ac31022",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368918100000040050000000",
+      "tax_map": "181.00-4-5",
+      "display_address": "ROUTE 23A, Hunter, NY",
+      "display_owner": "Saracino Paul A",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Saracino Paul A",
+      "display_owner_mailing_address": "215 E End Ave",
+      "display_owner_mailing_city": "Belford",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "07718",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 6400,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_e8c392445b5d628e"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19368918100000040060000000",
+      "scored_lead_id": "scored_91eea0152b7d5c94",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368918100000040060000000",
+      "tax_map": "181.00-4-6",
+      "display_address": "ROUTE 23A, Hunter, NY",
+      "display_owner": "Saracino Felice",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Saracino Felice",
+      "display_owner_mailing_address": "215 E End Ave",
+      "display_owner_mailing_city": "Belford",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "07718",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 28200,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_3eddb6bab0b3fb0e"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19368918100000060102200000",
+      "scored_lead_id": "scored_0bcc57ddff30d44f",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368918100000060102200000",
+      "tax_map": "181.00-6-10.22",
+      "display_address": "OFF KISSLEY RD, Hunter, NY",
+      "display_owner": "Gillis Daniel",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Gillis Daniel",
+      "display_owner_mailing_address": "PO BOX 396",
+      "display_owner_mailing_city": "Hunter",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12442",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 36800,
+      "display_year_built": null,
+      "display_property_use": "910",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_27ae8004f2fdbdad"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19368918100700020070000000",
+      "scored_lead_id": "scored_6522f44d15b4ad66",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368918100700020070000000",
+      "tax_map": "181.07-2-7",
+      "display_address": "6550 ROUTE 23A, Hunter, NY",
+      "display_owner": "Good Drink Inc.",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Good Drink Inc.",
+      "display_owner_mailing_address": "PO BOX 751",
+      "display_owner_mailing_city": "Woodstock",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12498",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 207816,
+      "display_year_built": 1880,
+      "display_property_use": "424",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_bd4370ac4c19f531"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19368918100700040160000000",
       "scored_lead_id": "scored_787138d00c6bbb68",
       "canonical_doc_types": [
@@ -31523,6 +34312,53 @@
         "ev_1bf90277d36a41e0"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19368918200000010102000000",
+      "scored_lead_id": "scored_defe62d41a7ac31f",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368918200000010102000000",
+      "tax_map": "182.00-1-10.2",
+      "display_address": "CLUM HILL RD, Hunter, NY",
+      "display_owner": "Ledic Anthony",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Ledic Anthony",
+      "display_owner_mailing_address": "144-33 25th Dr",
+      "display_owner_mailing_city": "Flushing",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11354",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 12300,
+      "display_year_built": null,
+      "display_property_use": "312",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_d29da7c6f48e23c7"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -31912,6 +34748,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19368918200000040320000000",
+      "scored_lead_id": "scored_5ecdf23cd25aad8e",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368918200000040320000000",
+      "tax_map": "182.00-4-32",
+      "display_address": "CLUM HILL RD, Hunter, NY",
+      "display_owner": "Karu Ain",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Karu Ain",
+      "display_owner_mailing_address": "PO BOX 400",
+      "display_owner_mailing_city": "Haines Falls",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "124360400",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 11000,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_ba44f78792f9ab34"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19368918200700020040000000",
       "scored_lead_id": "scored_4a84f288181a1dde",
       "canonical_doc_types": [
@@ -31951,6 +34834,53 @@
         "ev_44967cb73c029ede"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19368918200700020080000000",
+      "scored_lead_id": "scored_108ad8a7add47452",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368918200700020080000000",
+      "tax_map": "182.07-2-8",
+      "display_address": "ROUTE 23A, Hunter, NY",
+      "display_owner": "Papandrea Gerardo and Papandrea Flora",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Papandrea Gerardo and Papandrea Flora",
+      "display_owner_mailing_address": "6356 Route 32",
+      "display_owner_mailing_city": "Cairo",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12413",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 11200,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_4185167e8f0ad9d2"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -32097,6 +35027,101 @@
         "ev_b842264750800e06"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19368919700000020150000000",
+      "scored_lead_id": "scored_dfb0709adecede96",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368919700000020150000000",
+      "tax_map": "197.00-2-15",
+      "display_address": "1055 PLATTE CLOVE RD, Hunter, NY",
+      "display_owner": "Wozny Elzbieta",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Wozny Elzbieta",
+      "display_owner_mailing_address": "5 Wayne St",
+      "display_owner_mailing_city": "Jersey City",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "07302",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 124100,
+      "display_year_built": 1947,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_71da531425dacbc3"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19368919700000020160000000",
+      "scored_lead_id": "scored_b5a014f1428f2cd0",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368919700000020160000000",
+      "tax_map": "197.00-2-16",
+      "display_address": "1073 PLATTE CLOVE RD, Hunter, NY",
+      "display_owner": "Lipman Roberta",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Lipman Roberta",
+      "display_owner_mailing_address": "5800 Arlington Ave 4X",
+      "display_owner_mailing_city": "Bronx",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10471",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 53100,
+      "display_year_built": 1960,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_8e168e1777a5e296"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -32343,6 +35368,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19368920600400030160000000",
+      "scored_lead_id": "scored_7b24011da520d09b",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368920600400030160000000",
+      "tax_map": "206.04-3-16",
+      "display_address": "2035 ROUTE 214, Hunter, NY",
+      "display_owner": "Sullivan Terance J",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Sullivan Terance J",
+      "display_owner_mailing_address": "555 W. 149th St  Apt 5",
+      "display_owner_mailing_city": "New York",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10031",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 78200,
+      "display_year_built": 1940,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_36649a28a2e4dcc2"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19368920700000020150000000",
       "scored_lead_id": "scored_ad29353dc1ca97af",
       "canonical_doc_types": [
@@ -32575,6 +35647,100 @@
         "ev_307c2ea1aa4803d6"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19368920900000050280000000",
+      "scored_lead_id": "scored_65b8261b85ebfacd",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368920900000050280000000",
+      "tax_map": "209.00-5-28",
+      "display_address": "45 CORFU RD, Hunter, NY",
+      "display_owner": "Torello Walter",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Torello Walter",
+      "display_owner_mailing_address": "187 Bayview Ave",
+      "display_owner_mailing_city": "Staten Island",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10309",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 99800,
+      "display_year_built": 1992,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_57d8f1a2741c3aaa"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19368921000000010210000000",
+      "scored_lead_id": "scored_17d201918c7056a0",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19368921000000010210000000",
+      "tax_map": "210.00-1-21",
+      "display_address": "JOSH RD, Hunter, NY",
+      "display_owner": "Katz Edward",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Katz Edward",
+      "display_owner_mailing_address": "PO BOX 414",
+      "display_owner_mailing_city": "Rhinebeck",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12572",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 12800,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_494cfec3074113c5"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -33776,6 +36942,103 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19380012900000010031210000",
+      "scored_lead_id": "scored_cd5e127ba3e7d9b8",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19380012900000010031210000",
+      "tax_map": "129.00-1-3.121",
+      "display_address": "ROUTE 23C, Jewett, NY",
+      "display_owner": "Chowaniec Richard and Paczes Ryszard",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Chowaniec Richard and Paczes Ryszard",
+      "display_owner_mailing_address": "499 Ridgewood Ave",
+      "display_owner_mailing_city": "Glen Ridge",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "07028",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 425000,
+      "display_year_built": 2021,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_9a17cfaef06bc03d"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19380012900000010440000000",
+      "scored_lead_id": "scored_b1644a63f232e7bb",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19380012900000010440000000",
+      "tax_map": "129.00-1-44",
+      "display_address": "4968 ROUTE 23C, Jewett, NY",
+      "display_owner": "Chowaniec Richard and Paczes Ryszard",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Chowaniec Richard and Paczes Ryszard",
+      "display_owner_mailing_address": "5986 N Orchis Ter",
+      "display_owner_mailing_city": "Beverly Hills",
+      "display_owner_mailing_state": "FL",
+      "display_owner_mailing_zip": "34465",
+      "display_score": 62,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 83000,
+      "display_year_built": null,
+      "display_property_use": "312",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_e839211d01f5a67e"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19380012900000030370000000",
       "scored_lead_id": "scored_e0d49f5cf884b38f",
       "canonical_doc_types": [
@@ -34431,6 +37694,54 @@
         "ev_4b93a4f93322f7f3"
       ],
       "primary_event_date": "2022-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19380013200000040150000000",
+      "scored_lead_id": "scored_e1593a638998c0f8",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19380013200000040150000000",
+      "tax_map": "132.00-4-15",
+      "display_address": "JUNIPER HILL RD, Jewett, NY",
+      "display_owner": "Tondar",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Tondar",
+      "display_owner_mailing_address": "154 Blackhouse Rd",
+      "display_owner_mailing_city": "Trumbull",
+      "display_owner_mailing_state": "CT",
+      "display_owner_mailing_zip": "06611",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 24200,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_f7e394a89ec43753"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -37483,6 +40794,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19400016100000020430000000",
+      "scored_lead_id": "scored_a0da2a457cbacfae",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19400016100000020430000000",
+      "tax_map": "161.00-2-43",
+      "display_address": "318 TUMBLEWEED RANCH RD, Lexington, NY",
+      "display_owner": "Rinaldi Jared & Travis and Rinaldi Meaghan",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Rinaldi Jared & Travis and Rinaldi Meaghan",
+      "display_owner_mailing_address": "318 Tumbleweed Ranch Rd",
+      "display_owner_mailing_city": "West Kill",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12492",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 254400,
+      "display_year_built": 1988,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_b290b7f5c1bb3e7d"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19400016100000020590000000",
       "scored_lead_id": "scored_c9e83dd1f07d2688",
       "canonical_doc_types": [
@@ -38665,6 +42023,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19420001500000010030000000",
+      "scored_lead_id": "scored_b883d5f070b703b9",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19420001500000010030000000",
+      "tax_map": "15.00-1-3",
+      "display_address": "710 ALCOVE RD, New Baltimore, NY",
+      "display_owner": "Maurer Richard (Estate)",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Maurer Richard (Estate)",
+      "display_owner_mailing_address": "838 Alcove Rd",
+      "display_owner_mailing_city": "Hannacroix",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12087",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 57400,
+      "display_year_built": null,
+      "display_property_use": "270",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_7746f49ca4804f39"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19420001500000010042000000",
       "scored_lead_id": "scored_43fb2059074a2432",
       "canonical_doc_types": [
@@ -39238,6 +42643,53 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19420001700300010060000000",
+      "scored_lead_id": "scored_953ebfd18e2682b8",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19420001700300010060000000",
+      "tax_map": "17.03-1-6",
+      "display_address": "4034 ROUTE 51, New Baltimore, NY",
+      "display_owner": "Weeks Matthew B",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Weeks Matthew B",
+      "display_owner_mailing_address": "4034 Co Rte 51",
+      "display_owner_mailing_city": "Hannacroix",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12087",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 138500,
+      "display_year_built": 1980,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_36d57620b5bb2ca7"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19420002600000040190000000",
       "scored_lead_id": "scored_353f2445908f1f22",
       "canonical_doc_types": [
@@ -39709,23 +43161,24 @@
     },
     {
       "lead_id": "lead_parcel_19420002800000030040000000",
-      "scored_lead_id": "scored_311d9e632140c650",
+      "scored_lead_id": "scored_9d8118bf5bf81326",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
       "primary_parcel_id": "19420002800000030040000000",
       "tax_map": "28.00-3-4",
       "display_address": "ROUTE 9W, New Baltimore, NY",
-      "display_owner": "= ZRZ Inc",
+      "display_owner": "ZRZ Inc.",
       "display_owner_source": "section_17",
-      "display_owner_section17_raw": "= ZRZ Inc",
+      "display_owner_section17_raw": "ZRZ Inc.",
       "display_owner_mailing_address": "1108 Fulbright Dr",
       "display_owner_mailing_city": "Morrisville",
       "display_owner_mailing_state": "NC",
       "display_owner_mailing_zip": "27560",
-      "display_score": 62,
-      "display_tier": "Workable",
+      "display_score": 74,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -39743,9 +43196,10 @@
       "display_assessed_value": 38000,
       "display_year_built": null,
       "display_property_use": "311",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
-        "ev_339039101e09e93b"
+        "ev_339039101e09e93b",
+        "ev_4215754a3b10685c"
       ],
       "primary_event_date": "2025-02-27",
       "review_flags": [],
@@ -39758,23 +43212,24 @@
     },
     {
       "lead_id": "lead_parcel_19420002800000030060000000",
-      "scored_lead_id": "scored_5c20a6b41a75e7e0",
+      "scored_lead_id": "scored_eaa263cc7db381f1",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
       "primary_parcel_id": "19420002800000030060000000",
       "tax_map": "28.00-3-6",
       "display_address": "ROUTE 9W, New Baltimore, NY",
-      "display_owner": "= ZRZ Inc",
+      "display_owner": "ZRZ Inc",
       "display_owner_source": "section_17",
-      "display_owner_section17_raw": "= ZRZ Inc",
+      "display_owner_section17_raw": "ZRZ Inc",
       "display_owner_mailing_address": "1108 Fulbright Dr",
       "display_owner_mailing_city": "Morrisville",
       "display_owner_mailing_state": "NC",
       "display_owner_mailing_zip": "27560",
-      "display_score": 62,
-      "display_tier": "Workable",
+      "display_score": 74,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -39792,8 +43247,9 @@
       "display_assessed_value": 46500,
       "display_year_built": null,
       "display_property_use": "311",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
+        "ev_0b33ebc5da8a8c05",
         "ev_60cb6a1c9c46fc90"
       ],
       "primary_event_date": "2025-02-27",
@@ -41681,6 +45137,54 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19440007500000050040000000",
+      "scored_lead_id": "scored_2fd3a79f5c5c5f95",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19440007500000050040000000",
+      "tax_map": "75.00-5-4",
+      "display_address": "13655 ROUTE 23, Prattsville, NY",
+      "display_owner": "Atakhanian Yourik",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Atakhanian Yourik",
+      "display_owner_mailing_address": "518 Bernita Dr",
+      "display_owner_mailing_city": "River Valley",
+      "display_owner_mailing_state": "NJ",
+      "display_owner_mailing_zip": "076755902",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 43400,
+      "display_year_built": null,
+      "display_property_use": "312",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_a9d64f7f305fa7cb"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19440007500300030080000000",
       "scored_lead_id": "scored_adeb38d0d6f46165",
       "canonical_doc_types": [
@@ -42164,7 +45668,7 @@
     },
     {
       "lead_id": "lead_parcel_19460004600000010420000000",
-      "scored_lead_id": "scored_cd1f2d10b3e64943",
+      "scored_lead_id": "scored_b21ae58511f55879",
       "canonical_doc_types": [
         "tax_foreclosure_notice"
       ],
@@ -42178,9 +45682,10 @@
       "display_owner_mailing_city": "Greenwich",
       "display_owner_mailing_state": "CT",
       "display_owner_mailing_zip": "06830",
-      "display_score": 60,
-      "display_tier": "Workable",
+      "display_score": 72,
+      "display_tier": "Strong",
       "display_patterns": [
+        "tax",
         "tax"
       ],
       "display_pattern_set": [
@@ -42197,8 +45702,9 @@
       "display_assessed_value": 43000,
       "display_year_built": null,
       "display_property_use": "314",
-      "stack_depth": 1,
+      "stack_depth": 2,
       "evidence_ids": [
+        "ev_53dea81a0c1d30ef",
         "ev_fd8a1a8c42ae787e"
       ],
       "primary_event_date": "2022-02-27",
@@ -42353,6 +45859,54 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19460006100000010261100000",
+      "scored_lead_id": "scored_c69fa4b072e36f4f",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19460006100000010261100000",
+      "tax_map": "61.00-1-26.11",
+      "display_address": "69 SIAM RD, Windham, NY",
+      "display_owner": "The Lancman Family LLC",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "The Lancman Family LLC",
+      "display_owner_mailing_address": "418 East 59th St  15A",
+      "display_owner_mailing_city": "New York",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "10022",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 829700,
+      "display_year_built": 2003,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_5d247bf010ec4107"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19460006100000010281100000",
       "scored_lead_id": "scored_d89d93f7095ef847",
       "canonical_doc_types": [
@@ -42487,6 +46041,54 @@
         "ev_8d9bd455bb40a1af"
       ],
       "primary_event_date": "2020-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19460006100000030110000000",
+      "scored_lead_id": "scored_7215c326dd20af7e",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19460006100000030110000000",
+      "tax_map": "61.00-3-11",
+      "display_address": "BIRCHWOOD DR, Windham, NY",
+      "display_owner": "Micabalo Zosimo Md E and Revocable",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Micabalo Zosimo Md E and Revocable",
+      "display_owner_mailing_address": "10705 Back Plains Dr",
+      "display_owner_mailing_city": "Las Vegas",
+      "display_owner_mailing_state": "NV",
+      "display_owner_mailing_zip": "89134",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 28400,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_413791148fea0e49"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -42779,6 +46381,53 @@
         "ev_7ec3cf7374ad5acc"
       ],
       "primary_event_date": "2022-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19460006300000040210000000",
+      "scored_lead_id": "scored_02f415fc519a83ab",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19460006300000040210000000",
+      "tax_map": "63.00-4-21",
+      "display_address": "4017 ROUTE 23, Windham, NY",
+      "display_owner": "Tangney Thomas",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Tangney Thomas",
+      "display_owner_mailing_address": "840 Shore Dr  4F",
+      "display_owner_mailing_city": "Long Beach",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11561",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 22100,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_7d6b14f8e123960c"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -44835,6 +48484,54 @@
       "enrichment_source": "parcel_master"
     },
     {
+      "lead_id": "lead_parcel_19460009600000030240000000",
+      "scored_lead_id": "scored_4ad396c82cd1edf3",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19460009600000030240000000",
+      "tax_map": "96.00-3-24",
+      "display_address": "PELHAM LN, Windham, NY",
+      "display_owner": "Haskopoulos Constantinos",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Haskopoulos Constantinos",
+      "display_owner_mailing_address": "3483 Woodridge Parkway",
+      "display_owner_mailing_city": "Palm Harbr",
+      "display_owner_mailing_state": "FL",
+      "display_owner_mailing_zip": "34684",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "out_of_state"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 23400,
+      "display_year_built": null,
+      "display_property_use": "314",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_ef938b37e549b9f2"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
       "lead_id": "lead_parcel_19460009600000030312000000",
       "scored_lead_id": "scored_0ea238fe02098e8b",
       "canonical_doc_types": [
@@ -45015,6 +48712,102 @@
         "ev_e003ac2dbd49806b"
       ],
       "primary_event_date": "2022-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19460009600200010210000000",
+      "scored_lead_id": "scored_14d0ca0147b34405",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19460009600200010210000000",
+      "tax_map": "96.02-1-21",
+      "display_address": "274 ROUTE 65, Windham, NY",
+      "display_owner": "Crystal Pond Associates, LLC",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Crystal Pond Associates, LLC",
+      "display_owner_mailing_address": "444 Route 111",
+      "display_owner_mailing_city": "Smithtown",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11787",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 30000,
+      "display_year_built": null,
+      "display_property_use": "438",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_19a193b7396b9797"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19460009600200010220000000",
+      "scored_lead_id": "scored_ffd7d0b17c483163",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19460009600200010220000000",
+      "tax_map": "96.02-1-22",
+      "display_address": "274 ROUTE 65, Windham, NY",
+      "display_owner": "Crystal Pond Associates, LLC",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Crystal Pond Associates, LLC",
+      "display_owner_mailing_address": "444 Route 111",
+      "display_owner_mailing_city": "Smithtown",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "11787",
+      "display_score": 60,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee",
+        "entity_owned"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 24000,
+      "display_year_built": null,
+      "display_property_use": "438",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_ead354439ab22ae4"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -45680,6 +49473,53 @@
         "ev_0fa58d469ab901de"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "ENRICHED",
+      "row_enrichment_status": "ENRICHED",
+      "row_enrichment_join_method": "parcel_id",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "parcel_master"
+    },
+    {
+      "lead_id": "lead_parcel_19460011300000020550000000",
+      "scored_lead_id": "scored_914df1084352ba24",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": "19460011300000020550000000",
+      "tax_map": "113.00-2-55",
+      "display_address": "379 ROUTE 40, Windham, NY",
+      "display_owner": "Pagana Anthony",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Pagana Anthony",
+      "display_owner_mailing_address": "PO BOX 223",
+      "display_owner_mailing_city": "Maplecrest",
+      "display_owner_mailing_state": "NY",
+      "display_owner_mailing_zip": "12454",
+      "display_score": 58,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [
+        "absentee"
+      ],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": 212000,
+      "display_year_built": 1790,
+      "display_property_use": "210",
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_af3ee9c352033072"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "ENRICHED",
       "row_enrichment_status": "ENRICHED",
@@ -52599,6 +56439,54 @@
       "enrichment_source": "none"
     },
     {
+      "lead_id": "lead_unresolved_BEOuGf7rE34TkyCf390V-1",
+      "scored_lead_id": "scored_d77b25d08fb9ce69",
+      "canonical_doc_types": [
+        "lis_pendens"
+      ],
+      "primary_parcel_id": null,
+      "tax_map": null,
+      "display_address": "",
+      "display_owner": "Unknown",
+      "display_owner_source": "unresolved",
+      "display_owner_section17_raw": "lis_pendens against unidentified party",
+      "display_owner_mailing_address": "",
+      "display_owner_mailing_city": "",
+      "display_owner_mailing_state": "",
+      "display_owner_mailing_zip": "",
+      "display_score": 40,
+      "display_tier": "Low",
+      "display_patterns": [
+        "foreclosure"
+      ],
+      "display_pattern_set": [
+        "foreclosure"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_year_built": null,
+      "display_property_use": null,
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_617cef1bc1728d1e"
+      ],
+      "primary_event_date": "2026-07-30",
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:expected_debtor_name_type DF missing"
+      ],
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "UNENRICHED",
+      "row_enrichment_join_method": "none",
+      "event_source": "legal_notices_column",
+      "owner_source": "unresolved",
+      "enrichment_source": "none"
+    },
+    {
       "lead_id": "lead_unresolved_CSq25aE9QJIjLcSLkxNR-0",
       "scored_lead_id": "scored_ddc2e6319f75320c",
       "canonical_doc_types": [
@@ -53778,6 +57666,144 @@
         "ev_ea51d8c9d89e4482"
       ],
       "primary_event_date": "2025-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "UNENRICHED",
+      "row_enrichment_join_method": "none",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "none"
+    },
+    {
+      "lead_id": "lead_unresolved_TX-PETITION-2019-56.20-1-33",
+      "scored_lead_id": "scored_c1bfff9e65023df5",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": null,
+      "tax_map": null,
+      "display_address": "",
+      "display_owner": "Post Frances J",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Post Frances J",
+      "display_owner_mailing_address": "",
+      "display_owner_mailing_city": "",
+      "display_owner_mailing_state": "",
+      "display_owner_mailing_zip": "",
+      "display_score": 55,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": null,
+      "display_year_built": null,
+      "display_property_use": null,
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_1a1e00ac87747eab"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [],
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "UNENRICHED",
+      "row_enrichment_join_method": "none",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "section_17",
+      "enrichment_source": "none"
+    },
+    {
+      "lead_id": "lead_unresolved_TX-PETITION-2019-63.00-3-17",
+      "scored_lead_id": "scored_ccb0a90f7170ce01",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": null,
+      "tax_map": null,
+      "display_address": "",
+      "display_owner": "Unknown",
+      "display_owner_source": "unresolved",
+      "display_owner_section17_raw": "tax_foreclosure_notice against unidentified party",
+      "display_owner_mailing_address": "",
+      "display_owner_mailing_city": "",
+      "display_owner_mailing_state": "",
+      "display_owner_mailing_zip": "",
+      "display_score": 55,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "REVIEW_REQUIRED",
+      "display_assessed_value": null,
+      "display_year_built": null,
+      "display_property_use": null,
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_fef687a5377981d8"
+      ],
+      "primary_event_date": "2019-02-27",
+      "review_flags": [
+        "parcel_resolution_review_required",
+        "matched_lead_review_reason:known_filer_pattern match: law_enforcement:MARSHAL"
+      ],
+      "seam_enrichment_status": "UNENRICHED",
+      "row_enrichment_status": "UNENRICHED",
+      "row_enrichment_join_method": "none",
+      "event_source": "tax_foreclosure_petition",
+      "owner_source": "unresolved",
+      "enrichment_source": "none"
+    },
+    {
+      "lead_id": "lead_unresolved_TX-PETITION-2019-67.00-5-6",
+      "scored_lead_id": "scored_e7ab6163e4aaf0fe",
+      "canonical_doc_types": [
+        "tax_foreclosure_notice"
+      ],
+      "primary_parcel_id": null,
+      "tax_map": null,
+      "display_address": "",
+      "display_owner": "Footers George Steven",
+      "display_owner_source": "section_17",
+      "display_owner_section17_raw": "Footers George Steven",
+      "display_owner_mailing_address": "",
+      "display_owner_mailing_city": "",
+      "display_owner_mailing_state": "",
+      "display_owner_mailing_zip": "",
+      "display_score": 55,
+      "display_tier": "Workable",
+      "display_patterns": [
+        "tax"
+      ],
+      "display_pattern_set": [
+        "tax"
+      ],
+      "display_attributes": [],
+      "display_deal_paths": [
+        "wholesale"
+      ],
+      "display_lead_status": "APPROVED_FOR_DASHBOARD",
+      "display_assessed_value": null,
+      "display_year_built": null,
+      "display_property_use": null,
+      "stack_depth": 1,
+      "evidence_ids": [
+        "ev_6fc2d13dd7378ef0"
+      ],
+      "primary_event_date": "2019-02-27",
       "review_flags": [],
       "seam_enrichment_status": "UNENRICHED",
       "row_enrichment_status": "UNENRICHED",
