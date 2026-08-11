@@ -75271,6 +75271,68 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
+      "ev_0073cc0a0271f7aa"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_T5TYHH7YVlJKXXKB3Xoe-1",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "Estate of Winifred J. Clark",
+    "owner_type": "ESTATE",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "Estate of Winifred J. Clark",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "RESOLVED",
+        "role": "debtor",
+        "source_field": "document_body"
+      }
+    ],
+    "parcel_resolution_status": "UNRESOLVED",
+    "primary_owner_name": "Estate of Winifred J. Clark",
+    "primary_parcel_id": null,
+    "review_reason": null,
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "letters_of_administration",
+          "parcel_id": null,
+          "signal_type": "Letters of Administration"
+        },
+        "canonical_doc_type": "letters_of_administration",
+        "count": 1,
+        "earliest_recorded_date": "2026-08-11",
+        "evidence_ids": [
+          "ev_0073cc0a0271f7aa"
+        ],
+        "instrument_numbers": [
+          "T5TYHH7YVlJKXXKB3Xoe-1"
+        ],
+        "latest_recorded_date": "2026-08-11",
+        "recorded_date_range": [
+          "2026-08-11",
+          "2026-08-11"
+        ],
+        "signal_type": "Letters of Administration",
+        "source_ids": [
+          "legal_notices_column"
+        ],
+        "source_urls": [
+          "https://newyork.column.us/?id=T5TYHH7YVlJKXXKB3Xoe-1"
+        ]
+      }
+    ],
+    "source_ids": [
+      "legal_notices_column"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
       "ev_2e54e07ca2cb5857"
     ],
     "filer_entity": null,
@@ -79301,6 +79363,68 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
+      "ev_865992fd8876f2a8"
+    ],
+    "filer_entity": "COUNTY OF GREENE Lakeview Loan Servicing LLC",
+    "lead_id": "lead_unresolved_kqr5GCLiMV7FfCguYK8L-0",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "lis_pendens against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "lis_pendens against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "lis_pendens against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "expected_debtor_name_type DF missing",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "lis_pendens",
+          "parcel_id": null,
+          "signal_type": "Lis Pendens"
+        },
+        "canonical_doc_type": "lis_pendens",
+        "count": 1,
+        "earliest_recorded_date": "2026-08-11",
+        "evidence_ids": [
+          "ev_865992fd8876f2a8"
+        ],
+        "instrument_numbers": [
+          "kqr5GCLiMV7FfCguYK8L-0"
+        ],
+        "latest_recorded_date": "2026-08-11",
+        "recorded_date_range": [
+          "2026-08-11",
+          "2026-08-11"
+        ],
+        "signal_type": "Lis Pendens",
+        "source_ids": [
+          "legal_notices_column"
+        ],
+        "source_urls": [
+          "https://newyork.column.us/?id=kqr5GCLiMV7FfCguYK8L-0"
+        ]
+      }
+    ],
+    "source_ids": [
+      "legal_notices_column"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
       "ev_d1fbdd878905f79c"
     ],
     "filer_entity": null,
@@ -79352,68 +79476,6 @@
         ],
         "source_urls": [
           "https://newyork.column.us/?id=mir2T5PuguwkumnhHhlV-0"
-        ]
-      }
-    ],
-    "source_ids": [
-      "legal_notices_column"
-    ]
-  },
-  {
-    "additional_owner_names": [],
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [
-      "ev_9889c52367868c7b"
-    ],
-    "filer_entity": null,
-    "lead_id": "lead_unresolved_s1HTB5skxfEPoZDJJ7t5-3",
-    "multi_owner_status": "SINGLE_OWNER",
-    "owner_count": 1,
-    "owner_name": "notice_of_sale against unidentified party",
-    "owner_type": "UNKNOWN",
-    "owners": [
-      {
-        "confidence": null,
-        "is_primary": true,
-        "name": "notice_of_sale against unidentified party",
-        "name_type": null,
-        "notes": null,
-        "resolution_status": "REVIEW_REQUIRED",
-        "role": "unresolved",
-        "source_field": null
-      }
-    ],
-    "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "notice_of_sale against unidentified party",
-    "primary_parcel_id": null,
-    "review_reason": "document_body_debtor_not_extractable",
-    "signals": [
-      {
-        "aggregation_key": {
-          "canonical_doc_type": "notice_of_sale",
-          "parcel_id": null,
-          "signal_type": "Foreclosure Notice of Sale"
-        },
-        "canonical_doc_type": "notice_of_sale",
-        "count": 1,
-        "earliest_recorded_date": "2026-05-13",
-        "evidence_ids": [
-          "ev_9889c52367868c7b"
-        ],
-        "instrument_numbers": [
-          "s1HTB5skxfEPoZDJJ7t5-3"
-        ],
-        "latest_recorded_date": "2026-05-13",
-        "recorded_date_range": [
-          "2026-05-13",
-          "2026-05-13"
-        ],
-        "signal_type": "Foreclosure Notice of Sale",
-        "source_ids": [
-          "legal_notices_column"
-        ],
-        "source_urls": [
-          "https://newyork.column.us/?id=s1HTB5skxfEPoZDJJ7t5-3"
         ]
       }
     ],
