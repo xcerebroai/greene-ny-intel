@@ -65165,68 +65165,6 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
-      "ev_5030817e9de81ecb"
-    ],
-    "filer_entity": "SOLELY IN ITS CAPACITY AS SEPARATE TRUSTEE OF GITSIT MORTGAGE LOAN TRUST BBPLC1",
-    "lead_id": "lead_unresolved_4Sw2nTZmCvgy0vgNxpjV-1",
-    "multi_owner_status": "SINGLE_OWNER",
-    "owner_count": 1,
-    "owner_name": "lis_pendens against unidentified party",
-    "owner_type": "UNKNOWN",
-    "owners": [
-      {
-        "confidence": null,
-        "is_primary": true,
-        "name": "lis_pendens against unidentified party",
-        "name_type": null,
-        "notes": null,
-        "resolution_status": "REVIEW_REQUIRED",
-        "role": "unresolved",
-        "source_field": null
-      }
-    ],
-    "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "lis_pendens against unidentified party",
-    "primary_parcel_id": null,
-    "review_reason": "expected_debtor_name_type DF missing",
-    "signals": [
-      {
-        "aggregation_key": {
-          "canonical_doc_type": "lis_pendens",
-          "parcel_id": null,
-          "signal_type": "Lis Pendens"
-        },
-        "canonical_doc_type": "lis_pendens",
-        "count": 1,
-        "earliest_recorded_date": "2026-05-14",
-        "evidence_ids": [
-          "ev_5030817e9de81ecb"
-        ],
-        "instrument_numbers": [
-          "4Sw2nTZmCvgy0vgNxpjV-1"
-        ],
-        "latest_recorded_date": "2026-05-14",
-        "recorded_date_range": [
-          "2026-05-14",
-          "2026-05-14"
-        ],
-        "signal_type": "Lis Pendens",
-        "source_ids": [
-          "legal_notices_column"
-        ],
-        "source_urls": [
-          "https://newyork.column.us/?id=4Sw2nTZmCvgy0vgNxpjV-1"
-        ]
-      }
-    ],
-    "source_ids": [
-      "legal_notices_column"
-    ]
-  },
-  {
-    "additional_owner_names": [],
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [
       "ev_ed0dd561a07e6b5e"
     ],
     "filer_entity": "SOLELY IN ITS CAPACITY AS SEPARATE TRUSTEE OF GITSIT MORTGAGE LOAN TRUST BBPLC1",
@@ -78918,68 +78856,6 @@
         ],
         "source_urls": [
           "https://newyork.column.us/?id=ZYLwf4WeeWFr5Dfhrx11-3"
-        ]
-      }
-    ],
-    "source_ids": [
-      "legal_notices_column"
-    ]
-  },
-  {
-    "additional_owner_names": [],
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [
-      "ev_91f25721f3f37499"
-    ],
-    "filer_entity": null,
-    "lead_id": "lead_unresolved_hf4AG5lC3hizoLrDz67Q-0",
-    "multi_owner_status": "SINGLE_OWNER",
-    "owner_count": 1,
-    "owner_name": "letters_of_administration against unidentified party",
-    "owner_type": "UNKNOWN",
-    "owners": [
-      {
-        "confidence": null,
-        "is_primary": true,
-        "name": "letters_of_administration against unidentified party",
-        "name_type": null,
-        "notes": null,
-        "resolution_status": "REVIEW_REQUIRED",
-        "role": "unresolved",
-        "source_field": null
-      }
-    ],
-    "parcel_resolution_status": "REVIEW_REQUIRED",
-    "primary_owner_name": "letters_of_administration against unidentified party",
-    "primary_parcel_id": null,
-    "review_reason": "document_body_debtor_not_extractable",
-    "signals": [
-      {
-        "aggregation_key": {
-          "canonical_doc_type": "letters_of_administration",
-          "parcel_id": null,
-          "signal_type": "Letters of Administration"
-        },
-        "canonical_doc_type": "letters_of_administration",
-        "count": 1,
-        "earliest_recorded_date": "2026-05-14",
-        "evidence_ids": [
-          "ev_91f25721f3f37499"
-        ],
-        "instrument_numbers": [
-          "hf4AG5lC3hizoLrDz67Q-0"
-        ],
-        "latest_recorded_date": "2026-05-14",
-        "recorded_date_range": [
-          "2026-05-14",
-          "2026-05-14"
-        ],
-        "signal_type": "Letters of Administration",
-        "source_ids": [
-          "legal_notices_column"
-        ],
-        "source_urls": [
-          "https://newyork.column.us/?id=hf4AG5lC3hizoLrDz67Q-0"
         ]
       }
     ],
