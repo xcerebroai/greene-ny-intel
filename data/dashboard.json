@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-09-06T11:28:38Z",
+  "generated_at": "2026-09-07T11:31:08Z",
   "build_label": "SOURCE_LIMITED",
   "build_label_reason": "Three PRIMARY event sources are live (AAR tax-foreclosure auction, Treasurer Annual Petition & Notice of Foreclosure PDF, Column legal notices) — 634 tax-foreclosure-notice + 1 foreclosure-notice-of-sale signals. SearchIQS clerk land records, NYSCEF Supreme + Surrogate, WebSurrogate, and WebCivil Supreme were probed 2026-05-25 with stealth chromium + playwright-stealth (same combo that broke Smith TX publicsearch.us): landing pages render, but every actionable request (guest-login click, search submit, follow-on nav) fires Cloudflare Managed Challenge (cType=managed, _cf_chl_opt) which did NOT auto-resolve in 40–60 s polls across cold + warmed sessions. Stealth empirically ruled out; punch-listed for an operator-supplied cf_clearance cookie + session-cookie pair (see runs/greene_ny/recon/stealth_recon_2026-05-25.md).",
   "mode": "production",
   "county": "Greene County",
   "state": "NY",
   "semantic_verdict": "DEPLOY_OK",
-  "lead_total": 1293,
+  "lead_total": 1289,
   "event_source_counts": {
     "tax_foreclosure_petition": 1089,
-    "legal_notices_column": 68,
+    "legal_notices_column": 64,
     "tax_foreclosure_auction": 136
   },
   "per_source_raw_records": {
     "tax_foreclosure_auction": 136,
     "tax_foreclosure_petition": 1275,
-    "legal_notices_column": 68
+    "legal_notices_column": 64
   },
   "owner_source_policy": "Owners attached downstream as enrichment from parcel_master via PRINT_KEY join. §17 keeps its honest owner-from-document routing (parties=[] on AAR rows; parties=[defendant] on Treasurer petition + Column notices). Owner is NEVER relabeled §17-resolved if §17 didn't resolve it from the source document.",
   "enrichment_breakdown": {
     "ENRICHED": 1175,
-    "UNENRICHED": 118
+    "UNENRICHED": 114
   },
   "seam_enrichment_breakdown": {
     "ENRICHED": 1039,
-    "UNENRICHED": 254
+    "UNENRICHED": 250
   },
   "owner_source_counts": {
     "section_17": 1098,
-    "unresolved": 59,
+    "unresolved": 55,
     "parcel_master": 136
   },
   "enrichment_join_method_counts": {
     "parcel_id": 1039,
-    "none": 118,
+    "none": 114,
     "print_key": 136
   },
   "pattern_counts": {
     "estate": 10,
-    "foreclosure": 58,
+    "foreclosure": 54,
     "tax": 1411
   },
   "attribute_counts": {
@@ -47,19 +47,19 @@
     "out_of_state": 158
   },
   "stack_depth_distribution": {
-    "1": 1132,
+    "1": 1128,
     "2": 137,
     "3": 23,
     "4": 1
   },
   "score_tier_distribution": {
     "Hot": 24,
-    "Low": 21,
-    "Strong": 161,
-    "Workable": 1087
+    "Low": 19,
+    "Strong": 160,
+    "Workable": 1086
   },
   "deal_path_distribution": {
-    "wholesale": 1293
+    "wholesale": 1289
   },
   "records": [
     {
@@ -56823,54 +56823,6 @@
       "enrichment_source": "none"
     },
     {
-      "lead_id": "lead_unresolved_PsQDvU4p70oBdczU8Eu9-0",
-      "scored_lead_id": "scored_df9dcffe034e7baf",
-      "canonical_doc_types": [
-        "notice_of_sale"
-      ],
-      "primary_parcel_id": null,
-      "tax_map": null,
-      "display_address": "",
-      "display_owner": "Unknown",
-      "display_owner_source": "unresolved",
-      "display_owner_section17_raw": "notice_of_sale against unidentified party",
-      "display_owner_mailing_address": "",
-      "display_owner_mailing_city": "",
-      "display_owner_mailing_state": "",
-      "display_owner_mailing_zip": "",
-      "display_score": 60,
-      "display_tier": "Workable",
-      "display_patterns": [
-        "foreclosure"
-      ],
-      "display_pattern_set": [
-        "foreclosure"
-      ],
-      "display_attributes": [],
-      "display_deal_paths": [
-        "wholesale"
-      ],
-      "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_year_built": null,
-      "display_property_use": null,
-      "stack_depth": 1,
-      "evidence_ids": [
-        "ev_1e4c51442b8e03f3"
-      ],
-      "primary_event_date": "2026-06-09",
-      "review_flags": [
-        "parcel_resolution_review_required",
-        "matched_lead_review_reason:document_body_debtor_not_extractable"
-      ],
-      "seam_enrichment_status": "UNENRICHED",
-      "row_enrichment_status": "UNENRICHED",
-      "row_enrichment_join_method": "none",
-      "event_source": "legal_notices_column",
-      "owner_source": "unresolved",
-      "enrichment_source": "none"
-    },
-    {
       "lead_id": "lead_unresolved_PsQDvU4p70oBdczU8Eu9-1",
       "scored_lead_id": "scored_9754028aa39d7bda",
       "canonical_doc_types": [
@@ -60774,54 +60726,6 @@
       "enrichment_source": "none"
     },
     {
-      "lead_id": "lead_unresolved_km0JiF9HTiHUCEqYvjyo-2",
-      "scored_lead_id": "scored_38802e0a9d201dea",
-      "canonical_doc_types": [
-        "notice_of_sale"
-      ],
-      "primary_parcel_id": null,
-      "tax_map": null,
-      "display_address": "",
-      "display_owner": "Unknown",
-      "display_owner_source": "unresolved",
-      "display_owner_section17_raw": "notice_of_sale against unidentified party",
-      "display_owner_mailing_address": "",
-      "display_owner_mailing_city": "",
-      "display_owner_mailing_state": "",
-      "display_owner_mailing_zip": "",
-      "display_score": 60,
-      "display_tier": "Workable",
-      "display_patterns": [
-        "foreclosure"
-      ],
-      "display_pattern_set": [
-        "foreclosure"
-      ],
-      "display_attributes": [],
-      "display_deal_paths": [
-        "wholesale"
-      ],
-      "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_year_built": null,
-      "display_property_use": null,
-      "stack_depth": 1,
-      "evidence_ids": [
-        "ev_36ae0da40141ea62"
-      ],
-      "primary_event_date": "2026-06-09",
-      "review_flags": [
-        "parcel_resolution_review_required",
-        "matched_lead_review_reason:document_body_debtor_not_extractable"
-      ],
-      "seam_enrichment_status": "UNENRICHED",
-      "row_enrichment_status": "UNENRICHED",
-      "row_enrichment_join_method": "none",
-      "event_source": "legal_notices_column",
-      "owner_source": "unresolved",
-      "enrichment_source": "none"
-    },
-    {
       "lead_id": "lead_unresolved_km0JiF9HTiHUCEqYvjyo-3",
       "scored_lead_id": "scored_db9677bca205eac5",
       "canonical_doc_types": [
@@ -61063,7 +60967,7 @@
     },
     {
       "lead_id": "lead_unresolved_mir2T5PuguwkumnhHhlV-0",
-      "scored_lead_id": "scored_d5250a7ef8802bef",
+      "scored_lead_id": "scored_a8949f261fcc2eae",
       "canonical_doc_types": [
         "notice_of_sale"
       ],
@@ -61077,8 +60981,8 @@
       "display_owner_mailing_city": "",
       "display_owner_mailing_state": "",
       "display_owner_mailing_zip": "",
-      "display_score": 65,
-      "display_tier": "Strong",
+      "display_score": 60,
+      "display_tier": "Workable",
       "display_patterns": [
         "foreclosure"
       ],
@@ -61254,54 +61158,6 @@
       "enrichment_source": "none"
     },
     {
-      "lead_id": "lead_unresolved_vt6hWL9BebjYiHRcptnk-1",
-      "scored_lead_id": "scored_790bf383bab220c6",
-      "canonical_doc_types": [
-        "lis_pendens"
-      ],
-      "primary_parcel_id": null,
-      "tax_map": null,
-      "display_address": "",
-      "display_owner": "Unknown",
-      "display_owner_source": "unresolved",
-      "display_owner_section17_raw": "lis_pendens against unidentified party",
-      "display_owner_mailing_address": "",
-      "display_owner_mailing_city": "",
-      "display_owner_mailing_state": "",
-      "display_owner_mailing_zip": "",
-      "display_score": 35,
-      "display_tier": "Low",
-      "display_patterns": [
-        "foreclosure"
-      ],
-      "display_pattern_set": [
-        "foreclosure"
-      ],
-      "display_attributes": [],
-      "display_deal_paths": [
-        "wholesale"
-      ],
-      "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_year_built": null,
-      "display_property_use": null,
-      "stack_depth": 1,
-      "evidence_ids": [
-        "ev_6b3f50da0f774c42"
-      ],
-      "primary_event_date": "2026-06-09",
-      "review_flags": [
-        "parcel_resolution_review_required",
-        "matched_lead_review_reason:expected_debtor_name_type DF missing"
-      ],
-      "seam_enrichment_status": "UNENRICHED",
-      "row_enrichment_status": "UNENRICHED",
-      "row_enrichment_join_method": "none",
-      "event_source": "legal_notices_column",
-      "owner_source": "unresolved",
-      "enrichment_source": "none"
-    },
-    {
       "lead_id": "lead_unresolved_vt6hWL9BebjYiHRcptnk-2",
       "scored_lead_id": "scored_2801ad1b4fc2fe1f",
       "canonical_doc_types": [
@@ -61386,54 +61242,6 @@
         "ev_5f9b32b6cd5ae23d"
       ],
       "primary_event_date": "2026-06-23",
-      "review_flags": [
-        "parcel_resolution_review_required",
-        "matched_lead_review_reason:expected_debtor_name_type DF missing"
-      ],
-      "seam_enrichment_status": "UNENRICHED",
-      "row_enrichment_status": "UNENRICHED",
-      "row_enrichment_join_method": "none",
-      "event_source": "legal_notices_column",
-      "owner_source": "unresolved",
-      "enrichment_source": "none"
-    },
-    {
-      "lead_id": "lead_unresolved_w41uCoxfAoww8D6JHp5A-1",
-      "scored_lead_id": "scored_6653cd792a52f287",
-      "canonical_doc_types": [
-        "lis_pendens"
-      ],
-      "primary_parcel_id": null,
-      "tax_map": null,
-      "display_address": "",
-      "display_owner": "Unknown",
-      "display_owner_source": "unresolved",
-      "display_owner_section17_raw": "lis_pendens against unidentified party",
-      "display_owner_mailing_address": "",
-      "display_owner_mailing_city": "",
-      "display_owner_mailing_state": "",
-      "display_owner_mailing_zip": "",
-      "display_score": 35,
-      "display_tier": "Low",
-      "display_patterns": [
-        "foreclosure"
-      ],
-      "display_pattern_set": [
-        "foreclosure"
-      ],
-      "display_attributes": [],
-      "display_deal_paths": [
-        "wholesale"
-      ],
-      "display_lead_status": "REVIEW_REQUIRED",
-      "display_assessed_value": null,
-      "display_year_built": null,
-      "display_property_use": null,
-      "stack_depth": 1,
-      "evidence_ids": [
-        "ev_1b8f8fc3c1ca3e38"
-      ],
-      "primary_event_date": "2026-06-09",
       "review_flags": [
         "parcel_resolution_review_required",
         "matched_lead_review_reason:expected_debtor_name_type DF missing"
