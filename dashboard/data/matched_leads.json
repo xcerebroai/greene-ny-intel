@@ -74961,6 +74961,68 @@
     "additional_owner_names": [],
     "enrichment_status": "UNENRICHED",
     "evidence_ids": [
+      "ev_31aa0e1ea505f782"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_JabiSyHdHuHLQ4kbcSUp-3",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "notice_of_sale against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "notice_of_sale against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "notice_of_sale against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "document_body_debtor_not_extractable",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "notice_of_sale",
+          "parcel_id": null,
+          "signal_type": "Foreclosure Notice of Sale"
+        },
+        "canonical_doc_type": "notice_of_sale",
+        "count": 1,
+        "earliest_recorded_date": "2026-09-25",
+        "evidence_ids": [
+          "ev_31aa0e1ea505f782"
+        ],
+        "instrument_numbers": [
+          "JabiSyHdHuHLQ4kbcSUp-3"
+        ],
+        "latest_recorded_date": "2026-09-25",
+        "recorded_date_range": [
+          "2026-09-25",
+          "2026-09-25"
+        ],
+        "signal_type": "Foreclosure Notice of Sale",
+        "source_ids": [
+          "legal_notices_column"
+        ],
+        "source_urls": [
+          "https://newyork.column.us/?id=JabiSyHdHuHLQ4kbcSUp-3"
+        ]
+      }
+    ],
+    "source_ids": [
+      "legal_notices_column"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
       "ev_66f3d944590c222d"
     ],
     "filer_entity": null,
@@ -78923,68 +78985,6 @@
     ],
     "source_ids": [
       "tax_foreclosure_petition"
-    ]
-  },
-  {
-    "additional_owner_names": [],
-    "enrichment_status": "UNENRICHED",
-    "evidence_ids": [
-      "ev_1882db964dfdbcd3"
-    ],
-    "filer_entity": null,
-    "lead_id": "lead_unresolved_WDmWfutkY6BQ67OE4icR-1",
-    "multi_owner_status": "SINGLE_OWNER",
-    "owner_count": 1,
-    "owner_name": "estate of Donald Edward Shanagher",
-    "owner_type": "ESTATE",
-    "owners": [
-      {
-        "confidence": null,
-        "is_primary": true,
-        "name": "estate of Donald Edward Shanagher",
-        "name_type": null,
-        "notes": null,
-        "resolution_status": "RESOLVED",
-        "role": "debtor",
-        "source_field": "document_body"
-      }
-    ],
-    "parcel_resolution_status": "UNRESOLVED",
-    "primary_owner_name": "estate of Donald Edward Shanagher",
-    "primary_parcel_id": null,
-    "review_reason": null,
-    "signals": [
-      {
-        "aggregation_key": {
-          "canonical_doc_type": "letters_of_administration",
-          "parcel_id": null,
-          "signal_type": "Letters of Administration"
-        },
-        "canonical_doc_type": "letters_of_administration",
-        "count": 1,
-        "earliest_recorded_date": "2026-06-27",
-        "evidence_ids": [
-          "ev_1882db964dfdbcd3"
-        ],
-        "instrument_numbers": [
-          "WDmWfutkY6BQ67OE4icR-1"
-        ],
-        "latest_recorded_date": "2026-06-27",
-        "recorded_date_range": [
-          "2026-06-27",
-          "2026-06-27"
-        ],
-        "signal_type": "Letters of Administration",
-        "source_ids": [
-          "legal_notices_column"
-        ],
-        "source_urls": [
-          "https://newyork.column.us/?id=WDmWfutkY6BQ67OE4icR-1"
-        ]
-      }
-    ],
-    "source_ids": [
-      "legal_notices_column"
     ]
   },
   {
