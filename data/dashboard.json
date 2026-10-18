@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T14:16:13Z",
+  "generated_at": "2026-10-18T14:40:17Z",
   "build_label": "SOURCE_LIMITED",
   "build_label_reason": "Three PRIMARY event sources are live (AAR tax-foreclosure auction, Treasurer Annual Petition & Notice of Foreclosure PDF, Column legal notices) — 634 tax-foreclosure-notice + 1 foreclosure-notice-of-sale signals. SearchIQS clerk land records, NYSCEF Supreme + Surrogate, WebSurrogate, and WebCivil Supreme were probed 2026-05-25 with stealth chromium + playwright-stealth (same combo that broke Smith TX publicsearch.us): landing pages render, but every actionable request (guest-login click, search submit, follow-on nav) fires Cloudflare Managed Challenge (cType=managed, _cf_chl_opt) which did NOT auto-resolve in 40–60 s polls across cold + warmed sessions. Stealth empirically ruled out; punch-listed for an operator-supplied cf_clearance cookie + session-cookie pair (see runs/greene_ny/recon/stealth_recon_2026-05-25.md).",
   "mode": "production",
@@ -55,8 +55,8 @@
   "score_tier_distribution": {
     "Hot": 24,
     "Low": 16,
-    "Strong": 153,
-    "Workable": 1104
+    "Strong": 152,
+    "Workable": 1105
   },
   "deal_path_distribution": {
     "wholesale": 1297
@@ -56920,7 +56920,7 @@
     },
     {
       "lead_id": "lead_unresolved_CXMyyuBVQgYSO1k07zCF-0",
-      "scored_lead_id": "scored_eeb357971928c155",
+      "scored_lead_id": "scored_ee109b44620705a3",
       "canonical_doc_types": [
         "notice_of_sale"
       ],
@@ -56934,8 +56934,8 @@
       "display_owner_mailing_city": "",
       "display_owner_mailing_state": "",
       "display_owner_mailing_zip": "",
-      "display_score": 65,
-      "display_tier": "Strong",
+      "display_score": 60,
+      "display_tier": "Workable",
       "display_patterns": [
         "foreclosure"
       ],
@@ -57397,7 +57397,7 @@
     },
     {
       "lead_id": "lead_unresolved_Ku7E2ZnHG3iJPJk4rZSv-1",
-      "scored_lead_id": "scored_0c99798501399927",
+      "scored_lead_id": "scored_83582509f9226faa",
       "canonical_doc_types": [
         "letters_of_administration"
       ],
@@ -57411,7 +57411,7 @@
       "display_owner_mailing_city": "",
       "display_owner_mailing_state": "",
       "display_owner_mailing_zip": "",
-      "display_score": 60,
+      "display_score": 55,
       "display_tier": "Workable",
       "display_patterns": [
         "estate"
