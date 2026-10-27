@@ -39065,13 +39065,13 @@
     "lead_id": "lead_parcel_19320005100100010100000000",
     "multi_owner_status": "SINGLE_OWNER",
     "owner_count": 1,
-    "owner_name": "‘Vetere Jonathon",
+    "owner_name": "Vetere Jonathon",
     "owner_type": "INDIVIDUAL",
     "owners": [
       {
         "confidence": null,
         "is_primary": true,
-        "name": "‘Vetere Jonathon",
+        "name": "Vetere Jonathon",
         "name_type": "DF",
         "notes": null,
         "resolution_status": "RESOLVED",
@@ -39080,7 +39080,7 @@
       }
     ],
     "parcel_resolution_status": "RESOLVED",
-    "primary_owner_name": "‘Vetere Jonathon",
+    "primary_owner_name": "Vetere Jonathon",
     "primary_parcel_id": "19320005100100010100000000",
     "review_reason": null,
     "signals": [
@@ -79538,6 +79538,68 @@
         ],
         "source_urls": [
           "https://newyork.column.us/?id=cR7BMz9uavctHhDydGQl-0"
+        ]
+      }
+    ],
+    "source_ids": [
+      "legal_notices_column"
+    ]
+  },
+  {
+    "additional_owner_names": [],
+    "enrichment_status": "UNENRICHED",
+    "evidence_ids": [
+      "ev_b897aada1fdb8881"
+    ],
+    "filer_entity": null,
+    "lead_id": "lead_unresolved_cR7BMz9uavctHhDydGQl-1",
+    "multi_owner_status": "SINGLE_OWNER",
+    "owner_count": 1,
+    "owner_name": "notice_of_sale against unidentified party",
+    "owner_type": "UNKNOWN",
+    "owners": [
+      {
+        "confidence": null,
+        "is_primary": true,
+        "name": "notice_of_sale against unidentified party",
+        "name_type": null,
+        "notes": null,
+        "resolution_status": "REVIEW_REQUIRED",
+        "role": "unresolved",
+        "source_field": null
+      }
+    ],
+    "parcel_resolution_status": "REVIEW_REQUIRED",
+    "primary_owner_name": "notice_of_sale against unidentified party",
+    "primary_parcel_id": null,
+    "review_reason": "document_body_debtor_not_extractable",
+    "signals": [
+      {
+        "aggregation_key": {
+          "canonical_doc_type": "notice_of_sale",
+          "parcel_id": null,
+          "signal_type": "Foreclosure Notice of Sale"
+        },
+        "canonical_doc_type": "notice_of_sale",
+        "count": 1,
+        "earliest_recorded_date": "2026-10-27",
+        "evidence_ids": [
+          "ev_b897aada1fdb8881"
+        ],
+        "instrument_numbers": [
+          "cR7BMz9uavctHhDydGQl-1"
+        ],
+        "latest_recorded_date": "2026-10-27",
+        "recorded_date_range": [
+          "2026-10-27",
+          "2026-10-27"
+        ],
+        "signal_type": "Foreclosure Notice of Sale",
+        "source_ids": [
+          "legal_notices_column"
+        ],
+        "source_urls": [
+          "https://newyork.column.us/?id=cR7BMz9uavctHhDydGQl-1"
         ]
       }
     ],
